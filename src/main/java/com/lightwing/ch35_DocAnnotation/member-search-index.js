@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.lightwing.ch35_DocAnnotation","c":"SquareNum","l":"getNumber()"},{"p":"com.lightwing.ch35_DocAnnotation","c":"SquareNum","l":"main(String[])","url":"main-java.lang.String:A-"},{"p":"com.lightwing.ch35_DocAnnotation","c":"SquareNum","l":"SquareNum()"}]
