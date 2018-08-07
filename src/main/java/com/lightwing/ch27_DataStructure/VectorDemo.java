@@ -17,26 +17,26 @@ public class VectorDemo {
         System.out.println("Initial size: " + v.size());
         System.out.println("Initial capacity: " +
                 v.capacity());
-        v.addElement(new Integer(1));
-        v.addElement(new Integer(2));
-        v.addElement(new Integer(3));
-        v.addElement(new Integer(4));
+        v.addElement(1);
+        v.addElement(2);
+        v.addElement(3);
+        v.addElement(4);
         System.out.println("Capacity after four additions: " +
                 v.capacity());
 
-        v.addElement(new Double(5.45));
+        v.addElement(5.45);
         System.out.println("Current capacity: " +
                 v.capacity());
-        v.addElement(new Double(6.08));
-        v.addElement(new Integer(7));
+        v.addElement(6.08);
+        v.addElement(7);
         System.out.println("Current capacity: " +
                 v.capacity());
-        v.addElement(new Float(9.4));
-        v.addElement(new Integer(10));
+        v.addElement(9.4f);
+        v.addElement(10);
         System.out.println("Current capacity: " +
                 v.capacity());
-        v.addElement(new Integer(11));
-        v.addElement(new Integer(12));
+        v.addElement(11);
+        v.addElement(12);
         System.out.println("First element: " +
                 (Integer) v.firstElement());
         System.out.println("Last element: " +

@@ -1,3 +1,5 @@
+package com.lightwing.ch01_BasicGrammer;
+
 class FreshJuice {
     enum FreshJuiceSize {
         SMALL, MEDIUM, LARGE
