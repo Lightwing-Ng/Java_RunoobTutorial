@@ -26,7 +26,7 @@ public class Puppy {
 
     public static void main(String[] args) {
         // 创建对象
-        Puppy myPuppy = new Puppy("tommy");
+        Puppy myPuppy = new Puppy("Tommy");
         // 通过方法来设定age
         myPuppy.setAge();
         // 调用另一个方法获取age

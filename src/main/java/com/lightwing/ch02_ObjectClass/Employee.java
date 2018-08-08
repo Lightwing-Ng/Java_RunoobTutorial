@@ -24,21 +24,21 @@ public class Employee {
         age = empAge;
     }
 
-    /* 设置designation的值*/
+    // 设置designation的值
     void empDesignation(String empDesig) {
         designation = empDesig;
     }
 
-    /* 设置salary的值*/
+    // 设置salary的值
     void empSalary(double empSalary) {
         salary = empSalary;
     }
 
-    /* 打印信息 */
+    // 打印信息
     void printEmployee() {
-        System.out.println("名字: " + name);
-        System.out.println("年龄: " + age);
-        System.out.println("职位: " + designation);
-        System.out.println("薪水: " + salary);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Position: " + designation);
+        System.out.println("Salary: " + String.format("%,.2f", salary));
     }
 }
