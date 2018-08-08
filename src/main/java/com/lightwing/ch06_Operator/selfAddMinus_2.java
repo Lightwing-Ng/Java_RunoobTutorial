@@ -14,7 +14,7 @@ public class selfAddMinus_2 {
         int b = 5;
         int x = 2 * ++a;
         int y = 2 * b++;
-        System.out.println("自增运算符前缀运算后a = " + a + ", x = " + x);
-        System.out.println("自增运算符后缀运算后b = " + b + ", y = " + y);
+        System.out.println("自增运算符前缀运算后 a = " + a + ", x = " + x);
+        System.out.println("自增运算符后缀运算后 b = " + b + ", y = " + y);
     }
 }

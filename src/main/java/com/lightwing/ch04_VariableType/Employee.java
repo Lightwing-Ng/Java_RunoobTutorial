@@ -21,17 +21,17 @@ public class Employee {
 
     // 设定 salary 的值
     private void setSalary() {
-        salary = (double) 1000;
+        salary = (double) 28850;
     }
 
     // 打印信息
     private void printEmp() {
         System.out.println("Name: " + name);
-        System.out.println("Salary: " + salary);
+        System.out.println("Salary: " + String.format("%,.2f", salary));
     }
 
     public static void main(String[] args) {
-        Employee empOne = new Employee("RUNOOB");
+        Employee empOne = new Employee("Lightwing Ng");
         empOne.setSalary();
         empOne.printEmp();
     }

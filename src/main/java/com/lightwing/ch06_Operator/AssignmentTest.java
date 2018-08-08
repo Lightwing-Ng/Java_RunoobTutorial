@@ -37,8 +37,8 @@ public class AssignmentTest {
         c &= a;
         System.out.println("c &= 2  = " + c);
         c ^= a;
-        System.out.println("c ^= a   = " + c);
+        System.out.println("c ^= a  = " + c);
         c |= a;
-        System.out.println("c |= a   = " + c);
+        System.out.println("c |= a  = " + c);
     }
 }
