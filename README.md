@@ -81,7 +81,7 @@ Java 中主要有如下几种类型的变量
 
 ### 1.7 Java 枚举
 
-Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使用枚举可以减少代码中的bug。
+Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使用枚举可以减少代码中的 bug。
 
 例如，我们为果汁店设计一个程序，它将限制果汁为小杯、中杯、大杯。这就意味着它不允许顾客点除了这三种尺寸外的果汁。
 
@@ -363,21 +363,21 @@ public class Puppy {
 - 一个源文件中只能有一个 public 类
 - 一个源文件可以有多个非 public 类
 - 源文件的名称应该和 public 类的类名保持一致。例如：源文件中 public 类的类名是 Employee，那么源文件应该命名为 Employee.java。
-- 如果一个类定义在某个包中，那么package语句应该在源文件的首行。
-- 如果源文件包含import语句，那么应该放在package语句和类定义之间。如果没有package语句，那么import语句应该在源文件中最前面。
-- import语句和package语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。
+- 如果一个类定义在某个包中，那么 package 语句应该在源文件的首行。
+- 如果源文件包含 import 语句，那么应该放在 package 语句和类定义之间。如果没有 package 语句，那么 import 语句应该在源文件中最前面。
+- import 语句和 package 语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。
 
-类有若干种访问级别，并且类也分不同的类型：抽象类和final类等。这些将在访问控制章节介绍。
+类有若干种访问级别，并且类也分不同的类型：抽象类和 final 类等。这些将在访问控制章节介绍。
 
-除了上面提到的几种类型，Java还有一些特殊的类，如：内部类、匿名类。
+除了上面提到的几种类型，Java 还有一些特殊的类，如：内部类、匿名类。
 
-### 2.8 Java包
+### 2.8 Java 包
 
-包主要用来对类和接口进行分类。当开发Java程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类。
+包主要用来对类和接口进行分类。当开发 Java 程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类。
 
-### 2.9 Import语句
+### 2.9 Import 语句
 
-在Java中，如果给出一个完整的限定名，包括包名、类名，那么Java编译器就可以很容易地定位到源代码或者类。Import语句就是用来提供一个合理的路径，使得编译器可以找到某个类。
+在 Java 中，如果给出一个完整的限定名，包括包名、类名，那么 Java 编译器就可以很容易地定位到源代码或者类。Import 语句就是用来提供一个合理的路径，使得编译器可以找到某个类。
 
 例如，下面的命令行将会命令编译器载入 `java_installation/java/io` 路径下的所有类
 
@@ -391,7 +391,7 @@ import java.io.*;
 
 首先打开文本编辑器，把下面的代码粘贴进去。注意将文件保存为 Employee.java。
 
-Employee类有四个成员变量：name、age、designation和salary。该类显式声明了一个构造方法，该方法只有一个参数。
+Employee 类有四个成员变量：name、age、designation 和 salary。该类显式声明了一个构造方法，该方法只有一个参数。
 
 ```java
 public class Employee {
@@ -405,17 +405,17 @@ public class Employee {
         this.name = name;
     }
 
-    // 设置age的值
+    // 设置 age 的值
     void empAge(int empAge) {
         age = empAge;
     }
 
-    // 设置designation的值
+    // 设置 designation 的值
     void empDesignation(String empDesig) {
         designation = empDesig;
     }
 
-    // 设置salary的值
+    // 设置 salary 的值
     void empSalary(double empSalary) {
         salary = empSalary;
     }
@@ -430,11 +430,11 @@ public class Employee {
 }
 ```
 
-程序都是从main方法开始执行。为了能运行这个程序，必须包含main方法并且创建一个实例对象。
+程序都是从 main 方法开始执行。为了能运行这个程序，必须包含 main 方法并且创建一个实例对象。
 
-下面给出EmployeeTest类，该类实例化2个 Employee 类的实例，并调用方法设置变量的值。
+下面给出 EmployeeTest 类，该类实例化2个 Employee 类的实例，并调用方法设置变量的值。
 
-将下面的代码保存在 EmployeeTest.java文件中。
+将下面的代码保存在 EmployeeTest.java 文件中。
 
 ```java
 public class EmployeeTest {
@@ -487,7 +487,7 @@ Java 的两大数据类型:
 
 ### 3.1 内置数据类型
 
-Java语言提供了8种基本类型。6种数字类型（4个整数型，2个浮点型），一种字符类型，还有一种布尔型。
+Java 语言提供了8种基本类型。6种数字类型（4个整数型，2个浮点型），一种字符类型，还有一种布尔型。
 
 #### **byte**
 
@@ -503,7 +503,7 @@ Java语言提供了8种基本类型。6种数字类型（4个整数型，2个浮
 - short 数据类型是 16 位、有符号的以二进制补码表示的整数
 - 最小值是 `-32768（-2^15）`；
 - 最大值是 `32767（2^15 - 1）`；
-- Short 数据类型也可以像 byte 那样节省空间。一个short变量是int型变量所占空间的二分之一；
+- Short 数据类型也可以像 byte 那样节省空间。一个 short 变量是 int 型变量所占空间的二分之一；
 - 默认值是 0；
 - 例子：short s = 1000，short r = -20000。
 
@@ -528,7 +528,7 @@ Java语言提供了8种基本类型。6种数字类型（4个整数型，2个浮
 
 #### float
 
-- float 数据类型是单精度、32位、符合IEEE 754标准的浮点数；
+- float 数据类型是单精度、32位、符合 IEEE 754标准的浮点数；
 - float 在储存大型浮点数组的时候可节省内存空间；
 - 默认值是 `0.0f`；
 - 浮点数不能用来表示精确的值，如货币；
@@ -536,15 +536,15 @@ Java语言提供了8种基本类型。6种数字类型（4个整数型，2个浮
 
 #### double
 
-- double 数据类型是双精度、64 位、符合IEEE 754标准的浮点数；
-- 浮点数的默认类型为double类型；
-- double类型同样不能表示精确的值，如货币；
+- double 数据类型是双精度、64 位、符合 IEEE 754标准的浮点数；
+- 浮点数的默认类型为 double 类型；
+- double 类型同样不能表示精确的值，如货币；
 - 默认值是 `0.0d`；
 - 例子：double d1 = 123.4。
 
 #### boolean
 
-- boolean数据类型表示一位的信息；
+- boolean 数据类型表示一位的信息；
 - 只有两个取值：true 和 false；
 - 这种类型只作为一种标志来记录 true/false 情况；
 - 默认值是 `false`；
@@ -552,7 +552,7 @@ Java语言提供了8种基本类型。6种数字类型（4个整数型，2个浮
 
 #### char
 
-- char类型是一个单一的 16 位 Unicode 字符；
+- char 类型是一个单一的 16 位 Unicode 字符；
 - 最小值是 `\u0000`（即为0）；
 - 最大值是 `\uffff`（即为65,535）；
 - char 数据类型可以储存任何字符；
@@ -610,10 +610,10 @@ public class PrimitiveTypeTest {
         // char
         System.out.println("基本类型：char 二进制位数：" + Character.SIZE);
         System.out.println("包装类：java.lang.Character");
-        // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台
+        // 以数值形式而不是字符形式将 Character.MIN_VALUE 输出到控制台
         System.out.println("最小值：Character.MIN_VALUE="
                 + (int) Character.MIN_VALUE);
-        // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台
+        // 以数值形式而不是字符形式将 Character.MAX_VALUE 输出到控制台
         System.out.println("最大值：Character.MAX_VALUE="
                 + (int) Character.MAX_VALUE);
     }
@@ -659,15 +659,17 @@ public class PrimitiveTypeTest {
 最大值：Character.MAX_VALUE=65535
 ```
 
-Float和Double的最小值和最大值都是以科学记数法的形式输出的，结尾的"E+数字"表示E之前的数字要乘以10的多少次方。比如3.14E3就是3.14 × 103 =3140，3.14E-3 就是 3.14 x 10-3 =0.00314。
+Float 和 Double 的最小值和最大值都是以科学记数法的形式输出的，结尾的"E+数字"表示 E 之前的数字要乘以10的多少次方。比如3.14E3就是3.14 × 103 =3140，3
+.14E-3 就是 3.14 x 10-3 =0.00314。
 
-实际上，JAVA中还存在另外一种基本类型void，它也有对应的包装类 `java.lang.Void`，不过我们无法直接对它们进行操作。
+实际上，Java 中还存在另外一种基本类型 void，它也有对应的包装类 `java.lang.Void`，不过我们无法直接对它们进行操作。
 
 ### 3.3 引用类型
 
-- 在Java中，**引用类型的变量非常类似于C/C++的指针**。引用类型指向一个对象，指向对象的变量是引用变量。这些变量在声明时被指定为一个特定的类型，比如 Employee、Puppy 等。变量一旦声明后，类型就不能被改变了。
+- 在 Java 中，**引用类型的变量非常类似于 C/C++ 的指针**。引用类型指向一个对象，指向对象的变量是引用变量。这些变量在声明时被指定为一个特定的类型，比如 Employee、Puppy 
+等。变量一旦声明后，类型就不能被改变了。
 - 对象、数组都是引用数据类型。
-- 所有引用类型的默认值都是null。
+- 所有引用类型的默认值都是 null。
 - 一个引用变量可以用来引用任何与之兼容的类型。
 - 例子：`Site site = new Site("Runoob")`。
 
@@ -690,7 +692,7 @@ byte a = 68;
 char a = 'A'
 ```
 
-byte、int、long、和short都可以用十进制、16进制以及8进制的方式来表示。
+byte、int、long、和 short 都可以用十进制、16进制以及8进制的方式来表示。
 
 当使用常量的时候，前缀 0 表示 8 进制，而前缀 0x 代表 16 进制, 例如：
 
@@ -700,7 +702,7 @@ int octal = 0144;
 int hexa =  0x64;
 ```
 
-和其他语言一样，Java的字符串常量也是包含在两个引号之间的字符序列。下面是字符串型字面量的例子：
+和其他语言一样，Java 的字符串常量也是包含在两个引号之间的字符序列。下面是字符串型字面量的例子：
 
 ```java
 "Hello World"
@@ -708,14 +710,14 @@ int hexa =  0x64;
 "\"This is in quotes\""
 ```
 
-字符串常量和字符常量都可以包含任何Unicode字符。例如：
+字符串常量和字符常量都可以包含任何 Unicode 字符。例如：
 
 ```java
 char a = '\u0001';
 String a = "\u0001";
 ```
 
-Java语言支持一些特殊的转义字符序列。
+Java 语言支持一些特殊的转义字符序列。
 
 | 符号   | 字符含义                 |
 | ------ | ------------------------ |
@@ -730,7 +732,7 @@ Java语言支持一些特殊的转义字符序列。
 | \'     | 单引号                   |
 | \\     | 反斜杠                   |
 | \ddd   | 八进制字符 (ddd)         |
-| \uxxxx | 16进制Unicode字符 (xxxx) |
+| \uxxxx | 16进制 Unicode 字符 (xxxx) |
 
 ### 3.5 自动类型转换
 
@@ -746,7 +748,7 @@ byte,short,char—> int —> long—> float —> double
 
 数据类型转换必须满足如下规则：
 
-1. 不能对boolean类型进行类型转换。
+1. 不能对 boolean 类型进行类型转换。
 2. 不能把对象类型转换成不相关类的对象。
 3. 在把容量大的类型转换为容量小的类型时必须使用强制类型转换。
 4. 转换过程中可能导致溢出或损失精度，例如：
@@ -765,19 +767,20 @@ byte b = (byte)i;
 (int)-45.89f == -45
 ```
 
-必须满足转换前的数据类型的位数要低于转换后的数据类型，例如: short数据类型的位数为16位，就可以自动转换位数为32的int类型，同样float数据类型的位数为32，可以自动转换为64位的double类型。
+必须满足转换前的数据类型的位数要低于转换后的数据类型，例如: short 数据类型的位数为16位，就可以自动转换位数为32的 int 类型，同样 float 数据类型的位数为32，可以自动转换为64
+位的 double 类型。
 
 ```java
 public class AutomaticTypeConversion {
     public static void main(String[] args) {
         // char 自动类型转换为 int
         int i1 = 'a';
-        System.out.println("char自动类型转换为int后的值等于" + i1);
+        System.out.println("char 自动类型转换为 int 后的值等于" + i1);
         // 定义一个 char 类型
         char c2 = 'A';
         // char 类型和 int 类型计算
         int i2 = c2 + 1;
-        System.out.println("char类型和int计算后的值等于" + i2);
+        System.out.println("char 类型和 int 计算后的值等于" + i2);
     }
 }
 ```
@@ -785,8 +788,8 @@ public class AutomaticTypeConversion {
 运行结果为:
 
 ```powershell
-char自动类型转换为int后的值等于97
-char类型和int计算后的值等于66
+char 自动类型转换为 int 后的值等于97
+char 类型和 int 计算后的值等于66
 ```
 
 **解析：**c1 的值为字符 **a** ,查 ASCII 码表可知对应的 int 类型值为 97， A 对应值为 65，所以 i2=65+1=66。
@@ -802,7 +805,7 @@ public class ForcedTypeConversion {
         int i1 = 123;
         // 强制类型转换为 byte
         byte b = (byte) i1;
-        System.out.println("int强制类型转换为byte后的值等于" + b);
+        System.out.println("int 强制类型转换为 byte 后的值等于" + b);
     }
 }
 ```
@@ -810,7 +813,7 @@ public class ForcedTypeConversion {
 运行结果：
 
 ```powershell
-int强制类型转换为byte后的值等于123
+int 强制类型转换为 byte 后的值等于123
 ```
 
 ### 3.7 隐含强制类型转换
@@ -822,18 +825,18 @@ int强制类型转换为byte后的值等于123
 
 ## 04 Variable Type
 
-在Java语言中，所有的变量在使用前必须声明。声明变量的基本格式如下：
+在 Java 语言中，所有的变量在使用前必须声明。声明变量的基本格式如下：
 
 ```java
 type identifier [ = value][, identifier [= value] ...] ;
 ```
 
-格式说明：type为Java数据类型。identifier是变量名。可以使用逗号隔开来声明多个同类型变量。
+格式说明：type 为 Java 数据类型。identifier 是变量名。可以使用逗号隔开来声明多个同类型变量。
 
 以下列出了一些变量的声明实例。注意有些包含了初始化过程。
 
 ```java
-int a, b, c;         // 声明三个int型整数：a、 b、c
+int a, b, c;         // 声明三个 int 型整数：a、 b、c
 int d = 3, e = 4, f = 5; // 声明三个整数并赋予初值
 byte z = 22;         // 声明并初始化 z
 String s = "runoob"; // 声明并初始化字符串 s
@@ -841,7 +844,7 @@ double pi = 3.14159; // 声明了双精度浮点型变量 pi
 char x = 'x';        // 声明变量 x 的值是字符 'x'。
 ```
 
-Java语言支持的变量类型有：
+Java 语言支持的变量类型有：
 
 - 类变量：独立于方法之外的变量，用 `static` 修饰。
 - 实例变量：独立于方法之外的变量，不过没有 `static` 修饰。
@@ -868,7 +871,7 @@ public class Variable {
 
 #### 4.1.1 实例1
 
-在以下实例中age是一个局部变量。定义在pupAge()方法中，它的作用域就限制在这个方法中。
+在以下实例中 age 是一个局部变量。定义在 pupAge() 方法中，它的作用域就限制在这个方法中。
 
 ```java
 public class Test {
@@ -926,7 +929,7 @@ age = age + 7;
 - 实例变量可以声明在使用前或者使用后；
 - 访问修饰符可以修饰实例变量；
 - 实例变量对于类中的方法、构造方法或者语句块是可见的。一般情况下应该把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见；
-- 实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定；
+- 实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是 false，引用类型变量的默认值是 null。变量的值可以在声明时指定，也可以在构造方法中指定；
 - 实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：`ObejectReference.VariableName`。
 
 #### 实例
@@ -971,15 +974,16 @@ Salary: 28,850.00
 
 ### 4.3 Java 类变量（静态变量）
 
-- 类变量也称为静态变量，在类中以static关键字声明，但必须在方法构造方法和语句块之外。
+- 类变量也称为静态变量，在类中以 static 关键字声明，但必须在方法构造方法和语句块之外。
 - 无论一个类创建了多少个对象，类只拥有类变量的一份拷贝。
-- 静态变量除了被声明为常量外很少使用。常量是指声明为public/private，final和static类型的变量。常量初始化后不可改变。
-- 静态变量储存在静态存储区。经常被声明为常量，很少单独使用static声明变量。
+- 静态变量除了被声明为常量外很少使用。常量是指声明为 public/private，final 和 static 类型的变量。常量初始化后不可改变。
+- 静态变量储存在静态存储区。经常被声明为常量，很少单独使用 static 声明变量。
 - 静态变量在第一次被访问时创建，在程序结束时销毁。
-- 与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为public类型。
-- 默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是false，引用类型默认值是null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化。
+- 与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为 public 类型。
+- 默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是 false，引用类型默认值是 null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化。
 - 静态变量可以通过：*`ClassName.VariableName`* 的方式访问。
-- 类变量被声明为public static final类型时，类变量名称一般建议使用大写字母。如果静态变量不是public和final类型，其命名方式与实例变量以及局部变量的命名方式一致。
+- 类变量被声明为 public static final 类型时，类变量名称一般建议使用大写字母。如果静态变量不是 public 和 final 
+类型，其命名方式与实例变量以及局部变量的命名方式一致。
 
 #### 实例
 
@@ -1004,11 +1008,11 @@ public class StaticEmployee {
 
 **注意：**如果其他类想要访问该变量，可以这样访问：**`Employee.DEPARTMENT`**。
 
-本章节中我们学习了Java的变量类型，下一章节中我们将介绍Java修饰符的使用。
+本章节中我们学习了 Java 的变量类型，下一章节中我们将介绍 Java 修饰符的使用。
 
 ## 05 Modifier
 
-Java语言提供了很多修饰符，主要分为以下两类：
+Java 语言提供了很多修饰符，主要分为以下两类：
 
 - 访问修饰符
 - 非访问修饰符
@@ -1029,7 +1033,7 @@ public static void main(String[] arguments) {
 
 ### 5.1 访问控制修饰符
 
-Java中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。Java 支持 4 种不同的访问权限。
+Java 中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。Java 支持 4 种不同的访问权限。
 
 - **`default`** (即缺省，什么也不写）: 在同一包内可见，不使用任何修饰符。使用对象：类、接口、变量、方法。
 - **`private`** : 在同一类内可见。使用对象：变量、方法。 **注意：不能修饰类（外部类）**
@@ -1080,7 +1084,8 @@ public class Logger {
 }
 ```
 
-实例中，Logger 类中的 format 变量为私有变量，所以其他类不能直接得到和设置该变量的值。为了使其他类能够操作该变量，定义了两个 public 方法：getFormat() （返回 format的值）和 setFormat(String)（设置 format 的值）
+实例中，Logger 类中的 format 变量为私有变量，所以其他类不能直接得到和设置该变量的值。为了使其他类能够操作该变量，定义了两个 public 方法：getFormat() （返回 
+format 的值）和 setFormat(String)（设置 format 的值）
 
 #### 5.1.3 公有访问修饰符-public
 
@@ -1103,7 +1108,7 @@ public static void main(String[] arguments) {
 protected 需要从以下两个点来分析说明：
 
 - **子类与基类在同一包中**：被声明为 protected 的变量、方法和构造器能被同一个包中的任何其他类访问；
-- **子类与基类不在同一包中**：那么在子类中，子类实例可以访问其从基类继承而来的 protected 方法，而不能访问基类实例的protected方法。
+- **子类与基类不在同一包中**：那么在子类中，子类实例可以访问其从基类继承而来的 protected 方法，而不能访问基类实例的 protected 方法。
 
 protected 访问修饰符可以修饰类及其方法和成员变量能够声明，但是接口及接口的成员变量和成员方法不能声明为 protected。 可以看看以下颜色图理解：
 
@@ -1164,7 +1169,7 @@ synchronized 和 volatile 修饰符，主要用于线程的编程。
 
 对类变量和方法的访问可以直接使用 **`classname.variablename`** 和 **`classname.methodname`** 的方式访问。
 
-如下例所示，static修饰符用来创建类方法和类变量。
+如下例所示，static 修饰符用来创建类方法和类变量。
 
 ```java
 public class InstanceCounter {
@@ -1345,7 +1350,7 @@ public class MyRunnable implements Runnable {
 
 ## 06 Operator
 
-计算机的最基本用途之一就是执行数学运算，作为一门计算机语言，Java也提供了一套丰富的运算符来操纵变量。我们可以把运算符分成以下几组：
+计算机的最基本用途之一就是执行数学运算，作为一门计算机语言，Java 也提供了一套丰富的运算符来操纵变量。我们可以把运算符分成以下几组：
 
 - 算术运算符
 - 关系运算符
@@ -1358,15 +1363,15 @@ public class MyRunnable implements Runnable {
 
 算术运算符用在数学表达式中，它们的作用和在数学中的作用一样。下表列出了所有的算术运算符。
 
-表格中的实例假设整数变量A的值为10，变量B的值为20：
+表格中的实例假设整数变量 A 的值为10，变量 B 的值为20：
 
 | 操作符 | 描述                              | 例子                               |
 | ------ | --------------------------------- | ---------------------------------- |
 | +      | 加法 - 相加运算符两侧的值         | A + B 等于 30                      |
 | -      | 减法 - 左操作数减去右操作数       | A – B 等于 -10                     |
-| *      | 乘法 - 相乘操作符两侧的值         | A * B等于200                       |
-| /      | 除法 - 左操作数除以右操作数       | B / A等于2                         |
-| ％     | 取余 - 左操作数除以右操作数的余数 | B%A等于0                           |
+| *      | 乘法 - 相乘操作符两侧的值         | A * B 等于200                       |
+| /      | 除法 - 左操作数除以右操作数       | B / A 等于2                         |
+| ％     | 取余 - 左操作数除以右操作数的余数 | B % A 等于0                           |
 | ++     | 自增: 操作数的值增加1             | B++ 或 ++B 等于 21（区别详见下文） |
 | --     | 自减: 操作数的值减少1             | B-- 或 --B 等于 19（区别详见下文） |
 
@@ -1440,8 +1445,8 @@ public class selfAddMinus_1 {
 
 解析：
 
-- int b = ++a; 拆分运算过程为: a=a+1=4; b=a=4, 最后结果为b=4,a=4
-- int d = --c; 拆分运算过程为: c=c-1=2; d=c=2, 最后结果为d=2,c=2
+- int b = ++a; 拆分运算过程为: a=a+1=4; b=a=4, 最后结果为 b=4,a=4
+- int d = --c; 拆分运算过程为: c=c-1=2; d=c=2, 最后结果为 d=2,c=2
 
 2. 前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。
 3. 后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算 实例：
@@ -1471,9 +1476,9 @@ public class selfAddMinus_2 {
 
 ### 6.2 关系运算符
 
-下表为Java支持的关系运算符
+下表为 Java 支持的关系运算符
 
-表格中的实例整数变量A的值为10，变量B的值为20：
+表格中的实例整数变量 A 的值为10，变量 B 的值为20：
 
 | 运算符 | 描述                                                         | 例子                   |
 | ------ | ------------------------------------------------------------ | ---------------------- |
@@ -1486,7 +1491,7 @@ public class selfAddMinus_2 {
 
 #### 实例
 
-下面的简单示例程序演示了关系运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+下面的简单示例程序演示了关系运算符。复制并粘贴下面的 Java 程序并保存为 Test.java 文件，然后编译并运行这个程序：
 
 ```java
 public class RelationshipTest {
@@ -1518,9 +1523,9 @@ b <= a = false
 
 ### 6.3 位运算符
 
-Java定义了位运算符，应用于整数类型(int)，长整型(long)，短整型(short)，字符型(char)，和字节型(byte)等类型。
+Java 定义了位运算符，应用于整数类型(int)，长整型(long)，短整型(short)，字符型(char)，和字节型(byte)等类型。
 
-位运算符作用在所有的位上，并且按位运算。假设a = 60，b = 13;它们的二进制格式表示将如下：
+位运算符作用在所有的位上，并且按位运算。假设 a = 60，b = 13;它们的二进制格式表示将如下：
 
 ```
 A = 0011 1100
@@ -1532,7 +1537,7 @@ A ^ B = 0011 0001
 ~A= 1100 0011
 ```
 
-下表列出了位运算符的基本运算,假设整数变量A的值为60和变量B的值为13：
+下表列出了位运算符的基本运算,假设整数变量 A 的值为60和变量 B 的值为13：
 
 | 操作符 | 描述                                                         | 例子                           |
 | ------ | ------------------------------------------------------------ | ------------------------------ |
@@ -1546,7 +1551,7 @@ A ^ B = 0011 0001
 
 #### 实例
 
-下面的简单示例程序演示了位运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+下面的简单示例程序演示了位运算符。复制并粘贴下面的 Java 程序并保存为 Test.java 文件，然后编译并运行这个程序：
 
 ```java
 public class BitTest {
@@ -1593,17 +1598,17 @@ a >>> 2 = 15
 ```
 ### 6.4 逻辑运算符
 
-下表列出了逻辑运算符的基本运算，假设布尔变量A为真，变量B为假
+下表列出了逻辑运算符的基本运算，假设布尔变量 A 为真，变量 B 为假
 
 | 操作符 | 描述                                                         | 例子                |
 | ------ | ------------------------------------------------------------ | ------------------- |
 | &&     | 称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。     | （A && B）为假。    |
 | \| \|  | 称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。 | （A \| \| B）为真。 |
-| ！     | 称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true，则逻辑非运算符将得到false。 | ！（A && B）为真。  |
+| ！     | 称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为 true，则逻辑非运算符将得到 false。 | ！（A && B）为真。  |
 
 #### 实例
 
-下面的简单示例程序演示了逻辑运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+下面的简单示例程序演示了逻辑运算符。复制并粘贴下面的 Java 程序并保存为 Test.java 文件，然后编译并运行这个程序：
 
 ```java
 public class LogicTest {
@@ -1627,7 +1632,7 @@ a || b = true
 
 #### 短路逻辑运算符
 
-当使用与逻辑运算符时，在两个操作数都为true时，结果才为true，但是当得到第一个操作为false时，其结果就必定是false，这时候就不会再判断第二个操作了。
+当使用与逻辑运算符时，在两个操作数都为 true 时，结果才为 true，但是当得到第一个操作为 false 时，其结果就必定是 false，这时候就不会再判断第二个操作了。
 
 ##### 实例
 
@@ -1637,8 +1642,8 @@ public class LogicShortCircuit {
         // 定义一个变量；
         int a = 5;
         boolean b = (a < 4) && (a++ < 10);
-        System.out.println("使用短路逻辑运算符的结果为" + b);
-        System.out.println("a的结果为" + a);
+        System.out.println("使用短路逻辑运算符的结果为 " + b);
+        System.out.println("a 的结果为" + a);
     }
 }
 ```
@@ -1646,33 +1651,33 @@ public class LogicShortCircuit {
 运行结果为：
 
 ```powershell
-使用短路逻辑运算符的结果为false
-a的结果为5
+使用短路逻辑运算符的结果为 false
+a 的结果为5
 ```
 
 > **解析：** 该程序使用到了短路逻辑运算符(&&)，首先判断 a<4 的结果为 false，则 b 的结果必定是 false，所以不再执行第二个操作 a++<10 的判断，所以 a 的值为 5。
 
 ### 6.5 赋值运算符
 
-下面是Java语言支持的赋值运算符：
+下面是 Java 语言支持的赋值运算符：
 
 | 操作符  | 描述                                                         | 例子                            |
 | ------- | ------------------------------------------------------------ | ------------------------------- |
-| =       | 简单的赋值运算符，将右操作数的值赋给左侧操作数               | C = A + B将把A + B得到的值赋给C |
-| + =     | 加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数     | C + = A等价于C = C + A          |
-| - =     | 减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数     | C - = A等价于C = C -  A         |
-| * =     | 乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数     | C * = A等价于C = C * A          |
-| / =     | 除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数     | C / = A等价于C = C / A          |
-| （％）= | 取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数 | C％= A等价于C = C％A            |
-| << =    | 左移位赋值运算符                                             | C << = 2等价于C = C << 2        |
-| >> =    | 右移位赋值运算符                                             | C >> = 2等价于C = C >> 2        |
-| ＆=     | 按位与赋值运算符                                             | C＆= 2等价于C = C＆2            |
-| ^ =     | 按位异或赋值操作符                                           | C ^ = 2等价于C = C ^ 2          |
-| \| =    | 按位或赋值操作符                                             | C \| = 2等价于C = C \| 2        |
+| =       | 简单的赋值运算符，将右操作数的值赋给左侧操作数               | C = A + B 将把 A + B 得到的值赋给 C |
+| + =     | 加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数     | C + = A 等价于 C = C + A          |
+| - =     | 减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数     | C - = A 等价于 C = C -  A         |
+| * =     | 乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数     | C * = A 等价于 C = C * A          |
+| / =     | 除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数     | C / = A 等价于 C = C / A          |
+| （％）= | 取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数 | C％= A 等价于 C = C％A            |
+| << =    | 左移位赋值运算符                                             | C << = 2 等价于 C = C << 2        |
+| >> =    | 右移位赋值运算符                                             | C >> = 2 等价于 C = C >> 2        |
+| ＆=     | 按位与赋值运算符                                             | C＆= 2 等价于 C = C＆2            |
+| ^ =     | 按位异或赋值操作符                                           | C ^ = 2 等价于 C = C ^ 2          |
+| \| =    | 按位或赋值操作符                                             | C \| = 2等价于 C = C \| 2        |
 
 #### 实例
 
-面的简单示例程序演示了赋值运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+面的简单示例程序演示了赋值运算符。复制并粘贴下面的 Java 程序并保存为 Test.java 文件，然后编译并运行这个程序：
 
 ```java
 public class AssignmentTest {
@@ -1768,7 +1773,7 @@ Value of b is: 20
 
 该运算符用于操作对象实例，检查该对象是否是一个特定类型（类类型或接口类型）。
 
-instanceof运算符使用格式如下：
+instanceof 运算符使用格式如下：
 
 ```java
 ( Object reference variable ) instanceof  (class/interface type)
@@ -1783,7 +1788,7 @@ String name = "James";
 boolean result = name instanceof String; // 由于 name 是 String 类型，所以返回真
 ```
 
-如果被比较的对象兼容于右侧类型,该运算符仍然返回true。
+如果被比较的对象兼容于右侧类型,该运算符仍然返回 true。
 
 看下面的例子：
 
@@ -1806,13 +1811,13 @@ public class Car extends Vehicle {
 true
 ```
 
-### 6.8 Java运算符优先级
+### 6.8 Java 运算符优先级
 
 当多个运算符出现在一个表达式中，谁先谁后呢？这就涉及到运算符的优先级别的问题。在一个多运算符的表达式中，运算符优先级不同会导致最后得出的结果差别甚大。
 
 例如，（1+3）＋（3+2）*2，这个表达式如果按加号最优先计算，答案就是 18，如果按照乘号最优先，答案则是 14。
 
-再如，x = 7 + 3 * 2;这里x得到13，而不是20，因为乘法运算符比加法运算符有较高的优先级，所以先计算3 * 2得到6，然后再加7。
+再如，x = 7 + 3 * 2;这里 x 得到13，而不是20，因为乘法运算符比加法运算符有较高的优先级，所以先计算3 * 2得到6，然后再加7。
 
 下表中具有最高优先级的运算符在的表的最上面，最低优先级的在表的底部。
 
@@ -1838,17 +1843,17 @@ true
 
 顺序结构的程序语句只能被执行一次。如果您想要同样的操作执行多次,，就需要使用循环结构。
 
-Java中有三种主要的循环结构：
+Java 中有三种主要的循环结构：
 
 - **while** 循环
 - **do…while** 循环
 - **for** 循环
 
-在Java5中引入了一种主要用于数组的增强型for循环。
+在 Java5中引入了一种主要用于数组的增强型 for 循环。
 
 ### 7.1 while 循环
 
-while是最基本的循环，它的结构为：
+while 是最基本的循环，它的结构为：
 
 ```java
 while( 布尔表达式 ) { //循环内容 }
@@ -1934,9 +1939,9 @@ value of x: 19
 
 ### 7.3 for 循环
 
-虽然所有循环结构都可以用 while 或者 do...while表示，但 Java 提供了另一种语句 —— for 循环，使一些循环结构变得更加简单。
+虽然所有循环结构都可以用 while 或者 do...while 表示，但 Java 提供了另一种语句 —— for 循环，使一些循环结构变得更加简单。
 
-for循环执行的次数是在执行前就确定的。语法格式如下：
+for 循环执行的次数是在执行前就确定的。语法格式如下：
 
 ```java
 for(初始化; 布尔表达式; 更新) { //代码语句 }
@@ -1945,7 +1950,7 @@ for(初始化; 布尔表达式; 更新) { //代码语句 }
 关于 for 循环有以下几点说明：
 
 - 最先执行初始化步骤。可以声明一种类型，但可初始化一个或多个循环控制变量，也可以是空语句。
-- 然后，检测布尔表达式的值。如果为 true，循环体被执行。如果为false，循环终止，开始执行循环体后面的语句。
+- 然后，检测布尔表达式的值。如果为 true，循环体被执行。如果为 false，循环终止，开始执行循环体后面的语句。
 - 执行一次循环后，更新循环控制变量。
 - 再次检测布尔表达式。循环执行上面的过程。
 
@@ -2128,7 +2133,7 @@ if 语句的用语法如下：
 
 ```java
 if(布尔表达式) { 
-	// 如果布尔表达式为true将执行的语句 
+	// 如果布尔表达式为 true 将执行的语句 
 }
 ```
 
@@ -2162,9 +2167,9 @@ if…else 的用法如下：
 
 ```java
 if(布尔表达式) { 
-	// 如果布尔表达式的值为true 
+	// 如果布尔表达式的值为 true 
 } else { 
-	// 如果布尔表达式的值为false 
+	// 如果布尔表达式的值为 false 
 }
 ```
 
@@ -2206,13 +2211,13 @@ if...else 语法格式如下:
 
 ```java
 if (布尔表达式 1) {
-    // 如果布尔表达式 1的值为true执行代码
+    // 如果布尔表达式 1的值为 true 执行代码
 } else if (布尔表达式 2) {
-    // 如果布尔表达式 2的值为true执行代码
+    // 如果布尔表达式 2的值为 true 执行代码
 } else if (布尔表达式 3) {
-    // 如果布尔表达式 3的值为true执行代码
+    // 如果布尔表达式 3的值为 true 执行代码
 } else {
-    // 如果以上布尔表达式都不为true执行代码
+    // 如果以上布尔表达式都不为 true 执行代码
 }
 ```
 
@@ -2253,9 +2258,9 @@ Value of X is 30
 
 ```java
 if (布尔表达式 1) {
-    // 如果布尔表达式 1的值为true执行代码
+    // 如果布尔表达式 1的值为 true 执行代码
     if (布尔表达式 2) {
-        // 如果布尔表达式 2的值为true执行代码
+        // 如果布尔表达式 2的值为 true 执行代码
     }
 }
 ```
@@ -2300,7 +2305,7 @@ case value :
 case value :
     // 语句
     break; // 可选
-// 你可以有任意数量的case语句
+// 你可以有任意数量的 case 语句
 default : // 可选
     // 语句
 }
@@ -2367,7 +2372,7 @@ byte c = 0x4a;
 
 所有的包装类**（Integer、Long、Byte、Double、Float、Short）**都是抽象类 Number 的子类。
 
-![Java Number类](http://www.runoob.com/wp-content/uploads/2013/12/number1.png)
+![Java Number 类](http://www.runoob.com/wp-content/uploads/2013/12/number1.png)
 
 这种由编译器特别支持的包装称为装箱，所以当内置数据类型被当作对象使用的时候，编译器会把内置类型装箱为包装类。相似的，编译器也可以把一个对象拆箱为内置类型。Number 类属于 java.lang 包。
 
@@ -2389,7 +2394,7 @@ public class IntegerTest {
 15
 ```
 
-当 x 被赋为整型值时，由于x是一个对象，所以编译器要对x进行装箱。然后，为了使x能进行加运算，所以要对x进行拆箱。
+当 x 被赋为整型值时，由于 x 是一个对象，所以编译器要对 x 进行装箱。然后，为了使 x 能进行加运算，所以要对 x 进行拆箱。
 
 
 
@@ -2431,29 +2436,30 @@ public class MathTest {
 
 | 序号 | 方法与描述                                                   |
 | ---- | ------------------------------------------------------------ |
-| 1    | [xxxValue()](http://www.runoob.com/java/number-xxxvalue.html) 将 Number 对象转换为xxx数据类型的值并返回。 |
-| 2    | [compareTo()](http://www.runoob.com/java/number-compareto.html) 将number对象与参数比较。 |
-| 3    | [equals()](http://www.runoob.com/java/number-equals.html) 判断number对象是否与参数相等。 |
+| 1    | [xxxValue()](http://www.runoob.com/java/number-xxxvalue.html) 将 Number 对象转换为 
+xxx 数据类型的值并返回。 |
+| 2    | [compareTo()](http://www.runoob.com/java/number-compareto.html) 将 number 对象与参数比较。 |
+| 3    | [equals()](http://www.runoob.com/java/number-equals.html) 判断 number 对象是否与参数相等。 |
 | 4    | [valueOf()](http://www.runoob.com/java/number-valueof.html) 返回一个 Number 对象指定的内置数据类型 |
 | 5    | [toString()](http://www.runoob.com/java/number-tostring.html) 以字符串形式返回值。 |
-| 6    | [parseInt()](http://www.runoob.com/java/number-parseInt.html) 将字符串解析为int类型。 |
+| 6    | [parseInt()](http://www.runoob.com/java/number-parseInt.html) 将字符串解析为 int 类型。 |
 | 7    | [abs()](http://www.runoob.com/java/number-abs.html) 返回参数的绝对值。 |
 | 8    | [ceil()](http://www.runoob.com/java/number-ceil.html) 返回大于等于( >= )给定参数的的最小整数。 |
 | 9    | [floor()](http://www.runoob.com/java/number-floor.html) 返回小于等于（<=）给定参数的最大整数 。 |
-| 10   | [rint()](http://www.runoob.com/java/number-rint.html) 返回与参数最接近的整数。返回类型为double。 |
+| 10   | [rint()](http://www.runoob.com/java/number-rint.html) 返回与参数最接近的整数。返回类型为 double。 |
 | 11   | [round()](http://www.runoob.com/java/number-round.html) 它表示**四舍五入**，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 |
 | 12   | [min()](http://www.runoob.com/java/number-min.html) 返回两个参数中的最小值。 |
 | 13   | [max()](http://www.runoob.com/java/number-max.html) 返回两个参数中的最大值。 |
-| 14   | [exp()](http://www.runoob.com/java/number-exp.html) 返回自然数底数e的参数次方。 |
+| 14   | [exp()](http://www.runoob.com/java/number-exp.html) 返回自然数底数 e 的参数次方。 |
 | 15   | [log()](http://www.runoob.com/java/number-log.html) 返回参数的自然数底数的对数值。 |
 | 16   | [pow()](http://www.runoob.com/java/number-pow.html) 返回第一个参数的第二个参数次方。 |
 | 17   | [sqrt()](http://www.runoob.com/java/number-sqrt.html) 求参数的算术平方根。 |
-| 18   | [sin()](http://www.runoob.com/java/number-sin.html) 求指定double类型参数的正弦值。 |
-| 19   | [cos()](http://www.runoob.com/java/number-cos.html) 求指定double类型参数的余弦值。 |
-| 20   | [tan()](http://www.runoob.com/java/number-tan.html) 求指定double类型参数的正切值。 |
-| 21   | [asin()](http://www.runoob.com/java/number-asin.html) 求指定double类型参数的反正弦值。 |
-| 22   | [acos()](http://www.runoob.com/java/number-acos.html) 求指定double类型参数的反余弦值。 |
-| 23   | [atan()](http://www.runoob.com/java/number-atan.html) 求指定double类型参数的反正切值。 |
+| 18   | [sin()](http://www.runoob.com/java/number-sin.html) 求指定 double 类型参数的正弦值。 |
+| 19   | [cos()](http://www.runoob.com/java/number-cos.html) 求指定 double 类型参数的余弦值。 |
+| 20   | [tan()](http://www.runoob.com/java/number-tan.html) 求指定 double 类型参数的正切值。 |
+| 21   | [asin()](http://www.runoob.com/java/number-asin.html) 求指定 double 类型参数的反正弦值。 |
+| 22   | [acos()](http://www.runoob.com/java/number-acos.html) 求指定 double 类型参数的反余弦值。 |
+| 23   | [atan()](http://www.runoob.com/java/number-atan.html) 求指定 double 类型参数的反正切值。 |
 | 24   | [atan2()](http://www.runoob.com/java/number-atan2.html) 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 |
 | 25   | [toDegrees()](http://www.runoob.com/java/number-todegrees.html) 将参数转化为角度。 |
 | 26   | [toRadians()](http://www.runoob.com/java/number-toradians.html) 将角度转换为弧度。 |
@@ -2533,17 +2539,17 @@ char[] charArray = {
 };
 ```
 
-然而，在实际开发过程中，我们经常会遇到需要使用对象，而不是内置数据类型的情况。为了解决这个问题，Java语言为内置数据类型char提供了包装类Character类。
+然而，在实际开发过程中，我们经常会遇到需要使用对象，而不是内置数据类型的情况。为了解决这个问题，Java 语言为内置数据类型 char 提供了包装类 Character 类。
 
-Character类提供了一系列方法来操纵字符。你可以使用Character的构造方法创建一个Character类对象，例如：
+Character 类提供了一系列方法来操纵字符。你可以使用 Character 的构造方法创建一个 Character 类对象，例如：
 
 ```java
 Character ch = new Character('a');
 ```
 
-在某些情况下，Java编译器会自动创建一个Character对象。
+在某些情况下，Java 编译器会自动创建一个 Character 对象。
 
-例如，将一个char类型的参数传递给需要一个Character类型参数的方法时，那么编译器会自动地将char类型参数转换为Character对象。 这种特征称为装箱，反过来称为拆箱。
+例如，将一个 char 类型的参数传递给需要一个 Character 类型参数的方法时，那么编译器会自动地将 char 类型参数转换为 Character 对象。 这种特征称为装箱，反过来称为拆箱。
 
 ### 实例
 
@@ -2561,11 +2567,11 @@ char c = test('x');
 
 前面有反斜杠（\）的字符代表转义字符，它对编译器来说是有特殊含义的。
 
-下面列表展示了Java的转义序列：
+下面列表展示了 Java 的转义序列：
 
 | 转义序列 | 描述                     |
 | -------- | ------------------------ |
-| \t       | 在文中该处插入一个tab键  |
+| \t       | 在文中该处插入一个 tab 键  |
 | \b       | 在文中该处插入一个后退键 |
 | \n       | 在文中该处换行           |
 | \r       | 在文中该处插入回车       |
@@ -2598,7 +2604,7 @@ public class EscapeCharacterTest {
 
 ### 10.2 Character 方法
 
-下面是Character类的方法：
+下面是 Character 类的方法：
 
 | 序号 | 方法与描述                                                   |
 | ---- | ------------------------------------------------------------ |
@@ -2613,7 +2619,7 @@ public class EscapeCharacterTest {
 
 ## 11 Character Class
 
-字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。
+字符串广泛应用在 Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。
 
 
 
@@ -2661,7 +2667,7 @@ runoob
 
 String 类的一个访问器方法是 length() 方法，它返回字符串对象包含的字符数。
 
-下面的代码执行后，len变量等于14:
+下面的代码执行后，len 变量等于14:
 
 ```java
 public class StringLength {
@@ -2730,7 +2736,7 @@ public class ConnectString {
 
 我们知道输出格式化数字可以使用 printf() 和 format() 方法。
 
-String 类使用静态方法 format() 返回一个String 对象而不是 PrintStream 对象。
+String 类使用静态方法 format() 返回一个 String 对象而不是 PrintStream 对象。
 
 String 类的静态方法 format() 能用来创建可复用的格式化字符串，而不仅仅是用于一次打印输出。
 
@@ -2766,7 +2772,8 @@ fs = String.format("浮点型变量的值为 " +
 | 3        | [int compareTo(String anotherString)](http://www.runoob.com/java/java-string-compareto.html) 按字典顺序比较两个字符串。 |
 | 4        | [int compareToIgnoreCase(String str)](http://www.runoob.com/java/java-string-comparetoignorecase.html) 按字典顺序比较两个字符串，不考虑大小写。 |
 | 5        | [String concat(String str)](http://www.runoob.com/java/java-string-concat.html) 将指定字符串连接到此字符串的结尾。 |
-| 6        | [boolean contentEquals(StringBuffer sb)](http://www.runoob.com/java/java-string-contentequals.html) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 |
+| 6        | [boolean contentEquals(StringBuffer sb)](http://www.runoob
+.com/java/java-string-contentequals.html) 当且仅当字符串与指定的 StringBuffer 有相同顺序的字符时候返回真。 |
 | 7        | [static String copyValueOf(char[\] data)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
 | 8        | [static String copyValueOf(char[\] data, int offset, int count)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
 | 9        | [boolean endsWith(String suffix)](http://www.runoob.com/java/java-string-endswith.html) 测试此字符串是否以指定的后缀结束。 |
@@ -2806,7 +2813,8 @@ fs = String.format("浮点型变量的值为 " +
 | 43       | [String toUpperCase()](http://www.runoob.com/java/java-string-touppercase.html) 使用默认语言环境的规则将此 String 中的所有字符都转换为大写。 |
 | 44       | [String toUpperCase(Locale locale)](http://www.runoob.com/java/java-string-touppercase.html) 使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。 |
 | 45       | [String trim()](http://www.runoob.com/java/java-string-trim.html) 返回字符串的副本，忽略前导空白和尾部空白。 |
-| 46       | [static String valueOf(primitive data type x)](http://www.runoob.com/java/java-string-valueof.html) 返回给定data type类型x参数的字符串表示形式。 |
+| 46       | [static String valueOf(primitive data type x)](http://www.runoob
+.com/java/java-string-valueof.html) 返回给定 data type 类型 x 参数的字符串表示形式。 |
 
 ## 12 StringBuffer & StringBuilder
 
@@ -2889,7 +2897,8 @@ dataType[] arrayRefVar;	// 首选的方法   或
 dataType arrayRefVar[];	// 效果相同，但不是首选方法
 ```
 
-**注意:** 建议使用 **dataType[] arrayRefVar** 的声明风格声明数组变量。 dataType arrayRefVar[] 风格是来自 C/C++ 语言 ，在Java中采用是为了让 C/C++ 程序员能够快速理解java语言。
+**注意:** 建议使用 **dataType[] arrayRefVar** 的声明风格声明数组变量。 dataType arrayRefVar[] 风格是来自 C/C++ 语言 ，在 
+Java 中采用是为了让 C/C++ 程序员能够快速理解 Java 语言。
 
 #### 实例
 
@@ -2904,7 +2913,7 @@ double myList[]; // 效果相同，但不是首选方法
 
 ### 13.2 创建数组
 
-Java语言使用new操作符来创建数组，语法如下：
+Java 语言使用 new 操作符来创建数组，语法如下：
 
 ```java
 arrayRefVar = new dataType[arraySize];
@@ -2970,7 +2979,7 @@ public class ArrayTest {
 
 下面的图片描绘了数组 myList。这里 myList 数组里有 10 个 double 元素，它的下标从 0 到 9。
 
-![java数组结构说明](http://www.runoob.com/wp-content/uploads/2013/12/12-130Q0221Q5602.jpg)
+![java 数组结构说明](http://www.runoob.com/wp-content/uploads/2013/12/12-130Q0221Q5602.jpg)
 
 
 
@@ -3028,7 +3037,7 @@ JDK 1.5 引进了一种新的循环类型，被称为 foreach 循环或者加强
 
 #### 实例
 
-该实例用来显示数组myList中的所有元素：
+该实例用来显示数组 myList 中的所有元素：
 
 ```java
 public class ForEachTest {
@@ -3163,10 +3172,14 @@ java.util.Arrays 类能方便地操作数组，它提供的所有方法都是静
 
 | 序号 | 方法和说明                                                   |
 | ---- | ------------------------------------------------------------ |
-| 1    | **public static int binarySearch(Object[] a, Object key)** 用二分查找算法在给定数组中搜索给定值的对象(Byte,Int,double等)。数组在调用前必须排序好的。如果查找值包含在数组中，则返回搜索键的索引；否则返回 (-(*插入点*) - 1)。 |
-| 2    | **public static boolean equals(long[] a, long[] a2)** 如果两个指定的 long 型数组彼此*相等*，则返回 true。如果两个数组包含相同数量的元素，并且两个数组中的所有相应元素对都是相等的，则认为这两个数组是相等的。换句话说，如果两个数组以相同顺序包含相同的元素，则两个数组是相等的。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）。 |
-| 3    | **public static void fill(int[] a, int val)** 将指定的 int 值分配给指定 int 型数组指定范围中的每个元素。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）。 |
-| 4    | **public static void sort(Object[] a)** 对指定对象数组根据其元素的自然顺序进行升序排列。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）。 |
+| 1    | **public static int binarySearch(Object[] a, Object key)** 用二分查找算法在给定数组中搜索给定值的对象(Byte,
+ Int, double 等)。数组在调用前必须排序好的。如果查找值包含在数组中，则返回搜索键的索引；否则返回 (-(*插入点*) - 1)。 |
+| 2    | **public static boolean equals(long[] a, long[] a2)** 如果两个指定的 long 型数组彼此*相等*，则返回 
+true。如果两个数组包含相同数量的元素，并且两个数组中的所有相应元素对都是相等的，则认为这两个数组是相等的。换句话说，如果两个数组以相同顺序包含相同的元素，则两个数组是相等的。同样的方法适用于所有的其他基本数据类型（Byte，short，Int 等）。 |
+| 3    | **public static void fill(int[] a, int val)** 将指定的 int 值分配给指定 int 
+型数组指定范围中的每个元素。同样的方法适用于所有的其他基本数据类型（Byte，short，Int 等）。 |
+| 4    | **public static void sort(Object[] a)** 
+对指定对象数组根据其元素的自然顺序进行升序排列。同样的方法适用于所有的其他基本数据类型（Byte，short，Int 等）。 |
 
 ## 14 Date Time
 
@@ -3184,26 +3197,28 @@ Date()
 Date(long millisec)
 ```
 
-Date对象创建以后，可以调用下面的方法。
+Date 对象创建以后，可以调用下面的方法。
 
 | 序号 | 方法和描述                                                   |
 | ---- | ------------------------------------------------------------ |
-| 1    | **boolean after(Date date)** 若当调用此方法的Date对象在指定日期之后返回true,否则返回false。 |
-| 2    | **boolean before(Date date)** 若当调用此方法的Date对象在指定日期之前返回true,否则返回false。 |
+| 1    | **boolean after(Date date)** 若当调用此方法的 Date 对象在指定日期之后返回 true,否则返回 false。 |
+| 2    | **boolean before(Date date)** 若当调用此方法的 Date 对象在指定日期之前返回 true,否则返回 false。 |
 | 3    | **Object clone( )** 返回此对象的副本。                       |
-| 4    | **int compareTo(Date date)** 比较当调用此方法的Date对象和指定日期。两者相等时候返回0。调用对象在指定日期之前则返回负数。调用对象在指定日期之后则返回正数。 |
-| 5    | **int compareTo(Object obj)** 若obj是Date类型则操作等同于compareTo(Date) 。否则它抛出ClassCastException。 |
-| 6    | **boolean equals(Object date)** 当调用此方法的Date对象和指定日期相等时候返回true,否则返回false。 |
+| 4    | **int compareTo(Date date)** 比较当调用此方法的 
+Date 对象和指定日期。两者相等时候返回0。调用对象在指定日期之前则返回负数。调用对象在指定日期之后则返回正数。 |
+| 5    | **int compareTo(Object obj)** 若 obj 是 Date 类型则操作等同于 compareTo(Date) 
+。否则它抛出 ClassCastException。 |
+| 6    | **boolean equals(Object date)** 当调用此方法的 Date 对象和指定日期相等时候返回 true,否则返回 false。 |
 | 7    | **long getTime( )** 返回自 1970 年 1 月 1 日 00:00:00 GMT 以来此 Date 对象表示的毫秒数。 |
 | 8    | **int hashCode( )**  返回此对象的哈希码值。                  |
-| 9    | **void setTime(long time)**   用自1970年1月1日00:00:00 GMT以后time毫秒数设置时间和日期。 |
+| 9    | **void setTime(long time)**   用自1970年1月1日00:00:00 GMT 以后 time 毫秒数设置时间和日期。 |
 | 10   | **String toString( )** 把此 Date 对象转换为以下形式的 String： dow mon dd hh:mm:ss zzz yyyy 其中： dow 是一周中的某一天 (Sun, Mon, Tue, Wed, Thu, Fri, Sat)。 |
 
 
 
 ### 14.1 获取当前日期时间
 
-Java中获取当前日期和时间很简单，使用 Date 对象的 toString() 方法来打印当前日期和时间，如下所示：
+Java 中获取当前日期和时间很简单，使用 Date 对象的 toString() 方法来打印当前日期和时间，如下所示：
 
 #### 实例
 
@@ -3229,10 +3244,11 @@ Wed Aug 08 17:12:34 CST 2018
 
 ### 14.2 日期比较
 
-Java使用以下三种方法来比较两个日期：
+Java 使用以下三种方法来比较两个日期：
 
 - 使用 getTime() 方法获取两个日期（自1970年1月1日经历的毫秒数值），然后比较这两个值。
-- 使用方法 before()，after() 和 equals()。例如，一个月的12号比18号早，则 new Date(99, 2, 12).before(new Date (99, 2, 18)) 返回true。
+- 使用方法 before()，after() 和 equals()。例如，一个月的12号比18号早，则 new Date(99, 2, 12).before(new Date (99, 2, 
+18)) 返回 true。
 - 使用 compareTo() 方法，它是由 Comparable 接口定义的，Date 类实现了这个接口。
 
 
@@ -3302,7 +3318,7 @@ Current Date: Wed 2016.11.09 at 08:23:19 AM UTC
 
 
 
-### 14.5 使用printf格式化日期
+### 14.5 使用 printf 格式化日期
 
 printf 方法可以很轻松地格式化时间和日期。使用两个字母格式，它以 %t 开头并且以下面表格中的一个字母结尾。
 
@@ -3332,11 +3348,11 @@ public class printfDemo_1 {
         // d 的使用
         System.out.printf("月/日/年格式：%tD%n", date);
         // r 的使用
-        System.out.printf("HH:MM:SS PM格式（12时制）：%tr%n", date);
+        System.out.printf("HH:MM:SS PM 格式（12时制）：%tr%n", date);
         // t 的使用
-        System.out.printf("HH:MM:SS格式（24时制）：%tT%n", date);
+        System.out.printf("HH:MM:SS 格式（24时制）：%tT%n", date);
         // R 的使用
-        System.out.printf("HH:MM格式（24时制）：%tR", date);
+        System.out.printf("HH:MM 格式（24时制）：%tR", date);
     }
 }
 ```
@@ -3347,9 +3363,9 @@ public class printfDemo_1 {
 全部日期和时间信息：Wed Aug 08 17:18:40 CST 2018
 年-月-日格式：2018-08-08
 月/日/年格式：08/08/18
-HH:MM:SS PM格式（12时制）：05:18:40 PM
-HH:MM:SS格式（24时制）：17:18:40
-HH:MM格式（24时制）：17:18 
+HH:MM:SS PM 格式（12时制）：05:18:40 PM
+HH:MM:SS 格式（24时制）：17:18:40
+HH:MM 格式（24时制）：17:18 
 ```
 
 如果你需要重复提供日期，那么利用这种方式来格式化它的每一部分就有点复杂了。因此，可以利用一个格式化字符串指出要被格式化的参数的索引。
@@ -3364,7 +3380,7 @@ public class printfDemo_2 {
         // 初始化 Date 对象
         Date date = new Date();
 
-        // 使用toString()显示日期和时间
+        // 使用 toString()显示日期和时间
         System.out.printf("%1$s %2$tB %2$td, %2$tY",
                 "Due date:", date);
     }
@@ -3408,30 +3424,30 @@ Due date: August 8, 2018
 public class printfDemo_4 {
     public static void main(String args[]) {
         Date date = new Date();
-        // b的使用，月份简称
+        // b 的使用，月份简称
         String str = String.format(Locale.US, "英文月份简称：%tb", date);
         System.out.println(str);
         System.out.printf("本地月份简称：%tb%n", date);
-        // B的使用，月份全称
+        // B 的使用，月份全称
         str = String.format(Locale.US, "英文月份全称：%tB", date);
         System.out.println(str);
         System.out.printf("本地月份全称：%tB%n", date);
-        // a的使用，星期简称
+        // a 的使用，星期简称
         str = String.format(Locale.US, "英文星期的简称：%ta", date);
         System.out.println(str);
-        // A的使用，星期全称
+        // A 的使用，星期全称
         System.out.printf("本地星期的简称：%tA%n", date);
-        // C的使用，年前两位
+        // C 的使用，年前两位
         System.out.printf("年的前两位数字（不足两位前面补0）：%tC%n", date);
-        // y的使用，年后两位
+        // y 的使用，年后两位
         System.out.printf("年的后两位数字（不足两位前面补0）：%ty%n", date);
-        // j的使用，一年的天数
+        // j 的使用，一年的天数
         System.out.printf("一年中的天数（即年的第几天）：%tj%n", date);
-        // m的使用，月份
+        // m 的使用，月份
         System.out.printf("两位数字的月份（不足两位前面补0）：%tm%n", date);
-        // d的使用，日（二位，不够补零）
+        // d 的使用，日（二位，不够补零）
         System.out.printf("两位数字的日（不足两位前面补0）：%td%n", date);
-        // e的使用，日（一位不补零）
+        // e 的使用，日（一位不补零）
         System.out.printf("月份的日（前面不补0）：%te", date);
     }
 }
@@ -3458,7 +3474,7 @@ public class printfDemo_4 {
 
 ### 14.6 解析字符串为时间
 
-SimpleDateFormat 类有一些附加的方法，特别是parse()，它试图按照给定的SimpleDateFormat 对象的格式化存储来解析字符串。例如：
+SimpleDateFormat 类有一些附加的方法，特别是 parse()，它试图按照给定的 SimpleDateFormat 对象的格式化存储来解析字符串。例如：
 
 #### 实例
 
@@ -3494,7 +3510,7 @@ $ java DateDemo 2007-12-01
 
 ### 14.7 Java 休眠(sleep)
 
-sleep()使当前线程进入停滞状态（阻塞当前线程），让出CPU的使用、目的是不让当前线程独自霸占该进程所获的CPU资源，以留一定时间给其他线程执行的机会。
+sleep()使当前线程进入停滞状态（阻塞当前线程），让出 CPU 的使用、目的是不让当前线程独自霸占该进程所获的 CPU 资源，以留一定时间给其他线程执行的机会。
 
 你可以让程序休眠一毫秒的时间或者到您的计算机的寿命长的任意段时间。例如，下面的程序会休眠3秒：
 
@@ -3563,33 +3579,33 @@ Process finished with exit code 0
 
 
 
-### 14.9 Calendar类
+### 14.9 Calendar 类
 
-我们现在已经能够格式化并创建一个日期对象了，但是我们如何才能设置和获取日期数据的特定部分呢，比如说小时，日，或者分钟? 我们又如何在日期的这些部分加上或者减去值呢? 答案是使用Calendar 类。
+我们现在已经能够格式化并创建一个日期对象了，但是我们如何才能设置和获取日期数据的特定部分呢，比如说小时，日，或者分钟? 我们又如何在日期的这些部分加上或者减去值呢? 答案是使用 Calendar 类。
 
-Calendar类的功能要比Date类强大很多，而且在实现方式上也比Date类要复杂一些。
+Calendar 类的功能要比 Date 类强大很多，而且在实现方式上也比 Date 类要复杂一些。
 
-Calendar类是一个抽象类，在实际使用时实现特定的子类的对象，创建对象的过程对程序员来说是透明的，只需要使用getInstance方法创建即可。
+Calendar 类是一个抽象类，在实际使用时实现特定的子类的对象，创建对象的过程对程序员来说是透明的，只需要使用 getInstance 方法创建即可。
 
-#### 14.9.1 创建一个代表系统当前日期的Calendar对象
+#### 14.9.1 创建一个代表系统当前日期的 Calendar 对象
 
 ```java
 Calendar c = Calendar.getInstance(); // 默认是当前日期
 ```
 
-#### 14.9.2 创建一个指定日期的Calendar对象
+#### 14.9.2 创建一个指定日期的 Calendar 对象
 
-使用Calendar类代表特定的时间，需要首先创建一个Calendar的对象，然后再设定该对象中的年月日参数来完成。
+使用 Calendar 类代表特定的时间，需要首先创建一个 Calendar 的对象，然后再设定该对象中的年月日参数来完成。
 
 ```java
-// 创建一个代表2009年6月12日的Calendar对象
+// 创建一个代表2009年6月12日的 Calendar 对象
 Calendar c1 = Calendar.getInstance();
 c1.set(2009, 6 - 1, 12);
 ```
 
-#### 14.9.3 Calendar类对象字段类型
+#### 14.9.3 Calendar 类对象字段类型
 
-Calendar类中用以下这些常量表示不同的意义，jdk内的很多类其实都是采用的这种思想
+Calendar 类中用以下这些常量表示不同的意义，JDK 内的很多类其实都是采用的这种思想
 
 | 常量                  | 描述                           |
 | --------------------- | ------------------------------ |
@@ -3603,9 +3619,9 @@ Calendar类中用以下这些常量表示不同的意义，jdk内的很多类其
 | Calendar.SECOND       | 秒                             |
 | Calendar.DAY_OF_WEEK  | 星期几                         |
 
-#### 14.9.4 Calendar类对象信息的设置
+#### 14.9.4 Calendar 类对象信息的设置
 
-##### **Set设置**
+##### **Set 设置**
 
 如：
 
@@ -3620,12 +3636,12 @@ public final void set(int year,int month,int date)
 ```
 
 ```java
-c1.set(2009, 6 - 1, 12);//把Calendar对象c1的年月日分别设这为：2009、6、12
+c1.set(2009, 6 - 1, 12); // 把 Calendar 对象 c1的年月日分别设这为：2009、6、12
 ```
 
 利用字段类型设置
 
-如果只设定某个字段，例如日期的值，则可以使用如下set方法：
+如果只设定某个字段，例如日期的值，则可以使用如下 set 方法：
 
 ```java
 public void set(int field, int value)
@@ -3637,35 +3653,35 @@ public void set(int field, int value)
 c1.set(Calendar.DATE, 10);
 ```
 
-把c1对象代表的年份设置为2008年，其他的所有数值会被重新计算
+把 c1 对象代表的年份设置为2008年，其他的所有数值会被重新计算
 
 ```java
 c1.set(Calendar.YEAR, 2008);
 ```
 
-其他字段属性set的意义以此类推
+其他字段属性 set 的意义以此类推
 
-##### **Add设置**
+##### **Add 设置**
 
 ```
 Calendar c1 = Calendar.getInstance();
 ```
 
-把c1对象的日期加上10，也就是c1也就表示为10天后的日期，其它所有的数值会被重新计算
+把 c1 对象的日期加上10，也就是 c1 也就表示为10天后的日期，其它所有的数值会被重新计算
 
 ```
 c1.add(Calendar.DATE, 10);
 ```
 
-把c1对象的日期减去10，也就是c1也就表示为10天前的日期，其它所有的数值会被重新计算
+把 c1 对象的日期减去10，也就是 c1 也就表示为10天前的日期，其它所有的数值会被重新计算
 
 ```
 c1.add(Calendar.DATE, -10);
 ```
 
-其他字段属性的add的意义以此类推
+其他字段属性的 add 的意义以此类推
 
-#### 14.9.5 Calendar类对象信息的获得
+#### 14.9.5 Calendar 类对象信息的获得
 
 ```java
 Calendar c1 = Calendar.getInstance(); 	// 获得年份
@@ -3674,19 +3690,21 @@ int month = c1.get(Calendar.MONTH) + 1;	// 获得日期
 int date = c1.get(Calendar.DATE); 		// 获得小时
 int hour = c1.get(Calendar.HOUR_OF_DAY); // 获得分钟
 int minute = c1.get(Calendar.MINUTE); 	// 获得秒
-int second = c1.get(Calendar.SECOND); 	// 获得星期几（注意（这个与Date类是不同的）：1代表星期日、2代表星期1、3代表星期二，以此类推）
+int second = c1.get(Calendar.SECOND); 	// 获得星期几（注意（这个与 Date 类是不同的）：1代表星期日、2代表星期1、3代表星期二，以此类推）
 int day = c1.get(Calendar.DAY_OF_WEEK);
 ```
 
 
 
-### 14.10 GregorianCalendar类
+### 14.10 GregorianCalendar 类
 
-Calendar类实现了公历日历，GregorianCalendar是Calendar类的一个具体实现。
+Calendar 类实现了公历日历，GregorianCalendar 是 Calendar 类的一个具体实现。
 
-Calendar 的getInstance（）方法返回一个默认用当前的语言环境和时区初始化的GregorianCalendar对象。GregorianCalendar定义了两个字段：AD和BC。这是代表公历定义的两个时代。
+Calendar 的 getInstance（）方法返回一个默认用当前的语言环境和时区初始化的 GregorianCalendar 对象。GregorianCalendar 定义了两个字段：AD
+ 和 BC
+。这是代表公历定义的两个时代。
 
-下面列出GregorianCalendar对象的几个构造方法：
+下面列出 GregorianCalendar 对象的几个构造方法：
 
 | **序号** | **构造函数和说明**                                           |
 | -------- | ------------------------------------------------------------ |
@@ -3698,13 +3716,13 @@ Calendar 的getInstance（）方法返回一个默认用当前的语言环境和
 | 6        | **GregorianCalendar(TimeZone zone)**  在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 |
 | 7        | **GregorianCalendar(TimeZone zone, Locale aLocale)**   在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 |
 
-这里是GregorianCalendar 类提供的一些有用的方法列表：
+这里是 GregorianCalendar 类提供的一些有用的方法列表：
 
 | **序号** | **方法和说明**                                               |
 | -------- | ------------------------------------------------------------ |
 | 1        | **void add(int field, int amount)**  根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。 |
-| 2        | **protected void computeFields()**  转换UTC毫秒值为时间域值  |
-| 3        | **protected void computeTime()**  覆盖Calendar ，转换时间域值为UTC毫秒值 |
+| 2        | **protected void computeFields()**  转换 UTC 毫秒值为时间域值  |
+| 3        | **protected void computeTime()**  覆盖 Calendar ，转换时间域值为 UTC 毫秒值 |
 | 4        | **boolean equals(Object obj)**  比较此 GregorianCalendar 与指定的 Object。 |
 | 5        | **int get(int field)**  获取指定字段的时间值                 |
 | 6        | **int getActualMaximum(int field)**  返回当前日期，给定字段的最大值 |
@@ -3717,7 +3735,7 @@ Calendar 的getInstance（）方法返回一个默认用当前的语言环境和
 | 13       | **long getTimeInMillis()**  获取用长整型表示的日历的当前时间 |
 | 14       | **TimeZone getTimeZone()**  获取时区。                       |
 | 15       | **int getMinimum(int field)**  返回给定字段的最小值。        |
-| 16       | **int hashCode()**  重写hashCode.                            |
+| 16       | **int hashCode()**  重写 hashCode.                            |
 | 17       | **boolean isLeapYear(int year)** 确定给定的年份是否为闰年。  |
 | 18       | **void roll(int field, boolean up)**  在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。 |
 | 19       | **void set(int field, int value)**  用给定的值设置时间字段。 |
@@ -3725,8 +3743,8 @@ Calendar 的getInstance（）方法返回一个默认用当前的语言环境和
 | 21       | **void set(int year, int month, int date, int hour, int minute)**  设置年、月、日、小时、分钟的值。 |
 | 22       | **void set(int year, int month, int date, int hour, int minute, int second)**  设置年、月、日、小时、分钟、秒的值。 |
 | 23       | **void setGregorianChange(Date date)**  设置 GregorianCalendar 的更改日期。 |
-| 24       | **void setTime(Date date)**  用给定的日期设置Calendar的当前时间。 |
-| 25       | **void setTimeInMillis(long millis)**  用给定的long型毫秒数设置Calendar的当前时间。 |
+| 24       | **void setTime(Date date)**  用给定的日期设置 Calendar 的当前时间。 |
+| 25       | **void setTimeInMillis(long millis)**  用给定的 long 型毫秒数设置 Calendar 的当前时间。 |
 | 26       | **void setTimeZone(TimeZone value)**  用给定时区值设置当前时区。 |
 | 27       | **String toString()**  返回代表日历的字符串。                |
 
@@ -3785,7 +3803,7 @@ Time: 5:32:14
 当前年份不是闰年
 ```
 
-关于 Calender 类的完整列表，你可以参考标准的 [Java文档](http://www.runoob.com/manual/jdk1.6/)。
+关于 Calender 类的完整列表，你可以参考标准的 [Java 文档](http://www.runoob.com/manual/jdk1.6/)。
 
 ## 15 Regular Expression
 
@@ -3819,7 +3837,8 @@ Java 正则表达式和 Perl 的是最为相似的。
 
 - Matcher 类：
 
-  Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+  Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与 Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个
+   Matcher 对象。
 
 - `PatternSyntaxException`：
 
@@ -3867,7 +3886,7 @@ true
 - (B(C))
 - (C)
 
-可以通过调用 matcher 对象的 groupCount 方法来查看表达式有多少个分组。groupCount 方法返回一个 int 值，表示matcher对象当前有多个捕获组。
+可以通过调用 matcher 对象的 groupCount 方法来查看表达式有多少个分组。groupCount 方法返回一个 int 值，表示 matcher 对象当前有多个捕获组。
 
 还有一个特殊的组（group(0)），它总是代表整个表达式。该组不包括在 groupCount 的返回值中。
 
@@ -3919,7 +3938,8 @@ Found value: s, creating powerful tunes that feature lush vocals paired with pia
 
 在 Java 中，\\ 表示：**我要插入一个正则表达式的反斜线，所以其后的字符具有特殊的意义。**
 
-所以，在其他的语言中（如Perl），一个反斜杠 \ 就足以具有转义的作用，而在 Java 中正则表达式中则需要有两个反斜杠才能被解析为其他语言中的转义作用。也可以简单的理解在 Java 的正则表达式中，两个 \\ 代表其他语言中的一个 \，这也就是为什么表示一位数字的正则表达式是 \\d，而表示一个普通的反斜杠是 \\\\。
+所以，在其他的语言中（如 Perl），一个反斜杠 \ 就足以具有转义的作用，而在 Java 中正则表达式中则需要有两个反斜杠才能被解析为其他语言中的转义作用。也可以简单的理解在 Java 
+的正则表达式中，两个 \\ 代表其他语言中的一个 \，这也就是为什么表示一位数字的正则表达式是 \\d，而表示一个普通的反斜杠是 \\\\。
 
 | 字符          | 说明                                                         |
 | ------------- | ------------------------------------------------------------ |
@@ -4002,7 +4022,8 @@ Found value: s, creating powerful tunes that feature lush vocals paired with pia
 | 2        | **public StringBuffer appendTail(StringBuffer sb)** 实现终端添加和替换步骤。 |
 | 3        | **public String replaceAll(String replacement)**   替换模式与给定替换字符串相匹配的输入序列的每个子序列。 |
 | 4        | **public String replaceFirst(String replacement)**  替换模式与给定替换字符串匹配的输入序列的第一个子序列。 |
-| 5        | **public static String quoteReplacement(String s)** 返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给Matcher类的appendReplacement 方法一个字面字符串一样工作。 |
+| 5        | **public static String quoteReplacement(String s)** 
+返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给 Matcher 类的 appendReplacement 方法一个字面字符串一样工作。 |
 
 #### 15.4.4 start 和 end 方法
 
@@ -4053,7 +4074,7 @@ Start 方法返回在以前的匹配操作期间，由给定组所捕获的子�
 
 #### 15.4.5 matches 和 lookingAt 方法
 
-matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而lookingAt 不要求。
+matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而 lookingAt 不要求。
 
 lookingAt 方法虽然不需要整句都匹配，但是需要从第一个字符开始匹配。
 
@@ -4125,7 +4146,7 @@ The cat says meow. All cats say meow.
 
 #### 15.4.7 appendReplacement 和 appendTail 方法
 
-Matcher 类也提供了appendReplacement 和 appendTail 方法用于文本替换：
+Matcher 类也提供了 appendReplacement 和 appendTail 方法用于文本替换：
 
 看下面的例子来解释这个功能：
 
@@ -4236,7 +4257,7 @@ static float interest(float principal, int year) {
 }
 ```
 
-**注意：** 在一些其它语言中方法指过程和函数。一个返回非void类型返回值的方法称为函数；一个返回void类型返回值的方法叫做过程。
+**注意：** 在一些其它语言中方法指过程和函数。一个返回非 void 类型返回值的方法称为函数；一个返回 void 类型返回值的方法叫做过程。
 
 #### 实例
 
@@ -4270,7 +4291,7 @@ Java 支持两种调用方法的方式，根据方法是否返回值来选择。
 int larger = max(30, 40);
 ```
 
-如果方法返回值是void，方法调用一定是一条语句。例如，方法println返回void。下面的调用是个语句：
+如果方法返回值是 void，方法调用一定是一条语句。例如，方法 println 返回 void。下面的调用是个语句：
 
 ```java
 System.out.println("欢迎访问菜鸟教程！");
@@ -4350,9 +4371,9 @@ public class TestVoidMethod {
 C
 ```
 
-这里 printGrade 方法是一个void类型方法，它不返回值。
+这里 printGrade 方法是一个 void 类型方法，它不返回值。
 
-一个void方法的调用一定是一个语句。 所以，它被在main方法第三行以语句形式调用。就像任何以分号结束的语句一样。
+一个 void 方法的调用一定是一个语句。 所以，它被在 main 方法第三行以语句形式调用。就像任何以分号结束的语句一样。
 
 
 
@@ -4416,13 +4437,13 @@ public class TestPassByValue {
 交换后 num1 的值为：1 ，num2 的值为：2
 ```
 
-传递两个参数调用swap方法。有趣的是，方法被调用后，实参的值并没有改变。
+传递两个参数调用 swap 方法。有趣的是，方法被调用后，实参的值并没有改变。
 
 
 
 ### 16.8 方法的重载
 
-上面使用的max方法仅仅适用于int型数据。但如果你想得到两个浮点类型数据的最大值呢？
+上面使用的 max 方法仅仅适用于 int 型数据。但如果你想得到两个浮点类型数据的最大值呢？
 
 解决方法是创建另一个有相同名字但参数不同的方法，如下面代码所示：
 
@@ -4435,13 +4456,13 @@ public static double max(double num1, double num2) {
 }
 ```
 
-如果你调用max方法时传递的是int型参数，则 int型参数的max方法就会被调用；
+如果你调用 max 方法时传递的是 int 型参数，则 int 型参数的 max 方法就会被调用；
 
-如果传递的是double型参数，则double类型的max方法体会被调用，这叫做方法重载；
+如果传递的是 double 型参数，则 double 类型的 max 方法体会被调用，这叫做方法重载；
 
 就是说一个类的两个方法拥有相同的名字，但是有不同的参数列表。
 
-Java编译器根据方法签名判断哪个方法应该被调用。
+Java 编译器根据方法签名判断哪个方法应该被调用。
 
 方法重载可以让程序更清晰易读。执行密切相关任务的方法应该使用相同的名字。
 
@@ -4461,7 +4482,7 @@ Java编译器根据方法签名判断哪个方法应该被调用。
 
 方法的参数范围涵盖整个方法。参数实际上是一个局部变量。
 
-for循环的初始化部分声明的变量，其作用范围在整个循环。
+for 循环的初始化部分声明的变量，其作用范围在整个循环。
 
 但循环体内声明的变量其适用范围是从它声明到循环体结束。它包含如下所示的变量声明：
 
@@ -4471,7 +4492,7 @@ for循环的初始化部分声明的变量，其作用范围在整个循环。
 
 ### 16.10 命令行参数的使用
 
-有时候你希望运行一个程序时候再传递给它消息。这要靠传递命令行参数给main()函数实现。
+有时候你希望运行一个程序时候再传递给它消息。这要靠传递命令行参数给 main() 函数实现。
 
 命令行参数是在执行程序时候紧跟在程序名字后面的信息。
 
@@ -4510,7 +4531,7 @@ args[6]: -100
 
 通常会使用构造方法给一个类的实例变量赋初值，或者执行其它必要的步骤来创建一个完整的对象。
 
-不管你与否自定义构造方法，所有的类都有构造方法，因为Java自动提供了一个默认构造方法，它把所有成员初始化为0。
+不管你与否自定义构造方法，所有的类都有构造方法，因为 Java 自动提供了一个默认构造方法，它把所有成员初始化为0。
 
 一旦你定义了自己的构造方法，默认构造方法就会失效。
 
@@ -4596,7 +4617,7 @@ class MyClass {
 
 ### 16.10 可变参数
 
-JDK 1.5 开始，Java支持传递同类型的可变参数给一个方法。
+JDK 1.5 开始，Java 支持传递同类型的可变参数给一个方法。
 
 方法的可变参数的声明如下所示：
 
@@ -4671,7 +4692,7 @@ public class FinalizationDemo {
         Cake c2 = new Cake(2);
         Cake c3 = new Cake(3);
         c2 = c3 = null;
-        // 调用Java垃圾收集器
+        // 调用 Java 垃圾收集器
         System.gc();
     }
 }
@@ -4829,7 +4850,7 @@ end
 
 在此前已经介绍过，控制台的输出由 print( ) 和 println() 完成。这些方法都由类 PrintStream 定义，System.out 是该类对象的一个引用。
 
-PrintStream 继承了 OutputStream类，并且实现了方法 write()。这样，write() 也可以用来往控制台写操作。
+PrintStream 继承了 OutputStream 类，并且实现了方法 write()。这样，write() 也可以用来往控制台写操作。
 
 PrintStream 定义 write() 的最简单格式如下所示：
 
@@ -4892,14 +4913,17 @@ InputStream f = new FileInputStream("C:/java/hello");
 File f = new File("C:/java/hello"); InputStream out = new FileInputStream(f);
 ```
 
-创建了InputStream对象，就可以使用下面的方法来读取流或者进行其他的流操作。
+创建了 InputStream 对象，就可以使用下面的方法来读取流或者进行其他的流操作。
 
 | **序号** | **方法及描述**                                               |
 | -------- | ------------------------------------------------------------ |
-| 1        | **public void close() throws IOException{}** 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 |
-| 2        | **protected void finalize()throws IOException {}** 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 |
+| 1        | **public void close() throws IOException{}** 关闭此文件输入流并释放与此流有关的所有系统资源。抛出 
+IOException 异常。 |
+| 2        | **protected void finalize()throws IOException {}** 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 
+close 方法。抛出 IOException 异常。 |
 | 3        | **public int read(int r)throws IOException{}** 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 |
-| 4        | **public int read(byte[] r) throws IOException{}** 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 |
+| 4        | **public int read(byte[] r) throws IOException{}** 这个方法从输入流读取 r
+.length 长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 |
 | 5        | **public int available() throws IOException{}** 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 |
 
 除了 InputStream 外，还有一些其他的输入流，更多的细节参考下面链接：
@@ -4923,7 +4947,7 @@ File f = new File("C:/java/hello"); InputStream out = new FileInputStream(f);
 OutputStream f = new FileOutputStream("C:/java/hello")
 ```
 
-也可以使用一个文件对象来创建一个输出流来写文件。我们首先得使用File()方法来创建一个文件对象：
+也可以使用一个文件对象来创建一个输出流来写文件。我们首先得使用 File() 方法来创建一个文件对象：
 
 ```java
 File f = new File("C:/java/hello"); OutputStream f = new FileOutputStream(f);
@@ -4933,12 +4957,14 @@ File f = new File("C:/java/hello"); OutputStream f = new FileOutputStream(f);
 
 | **序号** | **方法及描述**                                               |
 | -------- | ------------------------------------------------------------ |
-| 1        | **public void close() throws IOException{}** 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 |
-| 2        | **protected void finalize()throws IOException {}** 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 |
+| 1        | **public void close() throws IOException{}** 关闭此文件输入流并释放与此流有关的所有系统资源。抛出 
+IOException 异常。 |
+| 2        | **protected void finalize()throws IOException {}** 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 
+close 方法。抛出 IOException 异常。 |
 | 3        | **public void write(int w)throws IOException{}** 这个方法把指定的字节写到输出流中。 |
-| 4        | **public void write(byte[] w)** 把指定数组中w.length长度的字节写到OutputStream中。 |
+| 4        | **public void write(byte[] w)** 把指定数组中 w.length 长度的字节写到 OutputStream 中。 |
 
-除了OutputStream外，还有一些其他的输出流，更多的细节参考下面链接：
+除了 OutputStream 外，还有一些其他的输出流，更多的细节参考下面链接：
 
 - [ByteArrayOutputStream](http://www.runoob.com/java/java-bytearrayoutputstream.html)
 - [DataOutputStream](http://www.runoob.com/java/java-dataoutputstream.html)
@@ -4973,7 +4999,7 @@ public class fileStreamTest {
 }
 ```
 
-上面的程序首先创建文件test.txt，并把给定的数字以二进制形式写进该文件，同时输出到控制台上。
+上面的程序首先创建文件 test.txt，并把给定的数字以二进制形式写进该文件，同时输出到控制台上。
 
 以上代码由于是二进制写入，可能存在乱码，你可以使用以下代码实例来解决乱码问题：
 
@@ -4985,7 +5011,7 @@ public class fileStreamTest2 {
         // 构建 FileOutputStream 对象,文件不存在会自动新建
 
         OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
-        // 构建OutputStreamWriter对象,参数可以指定编码,默认为操作系统默认编码,windows上是gbk
+        // 构建 OutputStreamWriter 对象,参数可以指定编码,默认为操作系统默认编码,windows 上是 gbk
 
         writer.append("中文输入");
         // 写入到缓冲区
@@ -4994,7 +5020,7 @@ public class fileStreamTest2 {
         // 换行
 
         writer.append("English");
-        // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入
+        // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接 close 也会写入
 
         writer.close();
         // 关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉
@@ -5003,15 +5029,15 @@ public class fileStreamTest2 {
         // 关闭输出流,释放系统资源
 
         FileInputStream fip = new FileInputStream(f);
-        // 构建FileInputStream对象
+        // 构建 FileInputStream 对象
 
         InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
-        // 构建InputStreamReader对象,编码与写入相同
+        // 构建 InputStreamReader 对象,编码与写入相同
 
         StringBuilder sb = new StringBuilder();
         while (reader.ready()) {
             sb.append((char) reader.read());
-            // 转成char加到StringBuffer对象中
+            // 转成 char 加到 StringBuffer 对象中
         }
         System.out.println(sb.toString());
         reader.close();
@@ -5027,7 +5053,7 @@ public class fileStreamTest2 {
 
 ### 17.6 文件和 I/O
 
-还有一些关于文件和I/O的类，我们也需要知道：
+还有一些关于文件和 I/O 的类，我们也需要知道：
 
 - [File Class(类)](http://www.runoob.com/java/java-file.html)
 - [FileReader Class(类)](http://www.runoob.com/java/java-filereader.html)
@@ -5039,9 +5065,9 @@ public class fileStreamTest2 {
 
 ##### 17.6.1.1 创建目录：
 
-File类中有两个方法可以用来创建文件夹：
+File 类中有两个方法可以用来创建文件夹：
 
-- **mkdir()** 方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。
+- **mkdir()** 方法创建一个文件夹，成功则返回 true，失败则返回 false。失败表明 File 对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。
 - **mkdirs()** 方法创建一个文件夹和它的所有父文件夹。
 
 下面的例子创建 "`/tmp/user/java/bin`"文件夹：
@@ -5170,8 +5196,8 @@ public class ScannerDemo_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // 从键盘接收数据
-        // next方式接收字符串
-        System.out.println("next方式接收: ");
+        // next 方式接收字符串
+        System.out.println("next 方式接收: ");
         // 判断是否还有输入
         if (scan.hasNext()) {
             String str1 = scan.next();
@@ -5187,7 +5213,7 @@ public class ScannerDemo_1 {
 ```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
-next方式接收：
+next 方式接收：
 runoob com
 输入的数据为：runoob
 ```
@@ -5201,8 +5227,8 @@ public class ScannerDemo_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // 从键盘接收数据
-        // nextLine方式接收字符串
-        System.out.println("nextLine方式接收：");
+        // nextLine 方式接收字符串
+        System.out.println("nextLine 方式接收：");
         // 判断是否还有输入
         if (scan.hasNextLine()) {
             String str2 = scan.nextLine();
@@ -5218,7 +5244,7 @@ public class ScannerDemo_2 {
 ```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
-nextLine方式接收：
+nextLine 方式接收：
 runoob com
 输入的数据为：runoob com
 ```
@@ -5237,7 +5263,7 @@ next() 不能得到带有空格的字符串。
 
 #### nextLine()：
 
-1. 以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+1. 以 Enter 为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
 2. 可以获得空白。
 
 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：
@@ -5328,17 +5354,18 @@ end
 
 异常是程序中的一些错误，但并不是所有的错误都是异常，并且错误有时候是可以避免的。
 
-比如说，你的代码少了一个分号，那么运行出来结果是提示是错误 java.lang.Error；如果你用System.out.println(11/0)，那么你是因为你用0做了除数，会抛出 java.lang.ArithmeticException 的异常。
+比如说，你的代码少了一个分号，那么运行出来结果是提示是错误 java.lang.Error；如果你用 System.out.println(11/0)，那么你是因为你用0做了除数，会抛出 
+java.lang.ArithmeticException 的异常。
 
 异常发生的原因有很多，通常包含以下几大类：
 
 - 用户输入了非法数据。
 - 要打开的文件不存在。
-- 网络通信时连接中断，或者JVM内存溢出。
+- 网络通信时连接中断，或者 JVM 内存溢出。
 
 这些异常有的是因为用户错误引起，有的是程序错误引起的，还有其它一些是因为物理错误引起的。-
 
-要理解Java异常处理是如何工作的，你需要掌握以下三种类型的异常：
+要理解 Java 异常处理是如何工作的，你需要掌握以下三种类型的异常：
 
 - **检查性异常：**最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
 - **运行时异常：** 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
@@ -5350,9 +5377,9 @@ end
 
 所有的异常类是从 java.lang.Exception 类继承的子类。
 
-Exception 类是 Throwable 类的子类。除了Exception类外，Throwable还有一个子类Error 。
+Exception 类是 Throwable 类的子类。除了 Exception 类外，Throwable 还有一个子类 Error 。
 
-Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。
+Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在 Java 程序处理的范畴之外。
 
 Error 用来指示运行时环境发生的错误。
 
@@ -5412,12 +5439,12 @@ Java 根据各个类库也定义了一些其他的异常，下面的表中列出
 
 | **序号** | **方法及说明**                                               |
 | -------- | ------------------------------------------------------------ |
-| 1        | **public String getMessage()** 返回关于发生的异常的详细信息。这个消息在Throwable 类的构造函数中初始化了。 |
-| 2        | **public Throwable getCause()** 返回一个Throwable 对象代表异常原因。 |
-| 3        | **public String toString()** 使用getMessage()的结果返回类的串级名字。 |
-| 4        | **public void printStackTrace()** 打印toString()结果和栈层次到System.err，即错误输出流。 |
+| 1        | **public String getMessage()** 返回关于发生的异常的详细信息。这个消息在 Throwable 类的构造函数中初始化了。 |
+| 2        | **public Throwable getCause()** 返回一个 Throwable 对象代表异常原因。 |
+| 3        | **public String toString()** 使用 getMessage() 的结果返回类的串级名字。 |
+| 4        | **public void printStackTrace()** 打印 toString() 结果和栈层次到 System.err，即错误输出流。 |
 | 5        | **public StackTraceElement [] getStackTrace()** 返回一个包含堆栈层次的数组。下标为0的元素代表栈顶，最后一个元素代表方法调用堆栈的栈底。 |
-| 6        | **public Throwable fillInStackTrace()** 用当前的调用栈层次填充Throwable 对象栈层次，添加到栈层次任何先前信息中。 |
+| 6        | **public Throwable fillInStackTrace()** 用当前的调用栈层次填充 Throwable 对象栈层次，添加到栈层次任何先前信息中。 |
 
 
 
@@ -5425,7 +5452,7 @@ Java 根据各个类库也定义了一些其他的异常，下面的表中列出
 
 使用 try 和 catch 关键字可以捕获异常。try/catch 代码块放在异常可能发生的地方。
 
-try/catch代码块中的代码称为保护代码，使用 try/catch 的语法如下：
+try/catch 代码块中的代码称为保护代码，使用 try/catch 的语法如下：
 
 ```java
 try {
@@ -5484,7 +5511,7 @@ try {
 }
 ```
 
-上面的代码段包含了 3 个 catch块。
+上面的代码段包含了 3 个 catch 块。
 
 可以在 try 语句后面添加任意数量的 catch 块。
 
@@ -5556,7 +5583,7 @@ public class className {
 
 
 
-### 19.7 finally关键字
+### 19.7 finally 关键字
 
 finally 关键字用来创建在 try 代码块后面执行的代码块。
 
@@ -5629,7 +5656,7 @@ class MyException extends Exception {
 }
 ```
 
-只继承Exception 类来创建的异常类是检查性异常类。
+只继承 Exception 类来创建的异常类是检查性异常类。
 
 下面的 InsufficientFundsException 类是用户定义的异常类，它继承自 Exception。
 
@@ -5660,7 +5687,7 @@ public class InsufficientFundsException extends Exception {
 
 ```java
 public class CheckingAccount {
-    // balance为余额，number为卡号
+    // balance 为余额，number 为卡号
     private double balance;
     private int number;
 
@@ -5736,16 +5763,16 @@ Sorry, but you are short $200.0
 
 ### 19.9 通用异常
 
-在Java中定义了两种类型的异常和错误。
+在 Java 中定义了两种类型的异常和错误。
 
 - **JVM(Java****虚拟机****)** **异常：**由 JVM 抛出的异常或错误。例如：NullPointerException 类，ArrayIndexOutOfBoundsException 类，ClassCastException 类。
-- **程序级异常：**由程序或者API程序抛出的异常。例如 IllegalArgumentException 类，IllegalStateException 类。
+- **程序级异常：**由程序或者 API 程序抛出的异常。例如 IllegalArgumentException 类，IllegalStateException 类。
 
 ## 20 Inherit
 
 ### 20.1 继承的概念
 
-继承是Java面向对象编程技术的一块基石，因为它允许创建分等级层次的类。
+继承是 Java 面向对象编程技术的一块基石，因为它允许创建分等级层次的类。
 
 继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。
 
@@ -5844,7 +5871,8 @@ public class Animal {
 }
 ```
 
-这个Animal类就可以作为一个父类，然后企鹅类和老鼠类继承这个类之后，就具有父类当中的属性和方法，子类就不会存在重复的代码，维护性也提高，代码也更加简洁，提高代码的复用性（复用性主要是可以多次使用，不用再多次写同样的代码） 继承之后的代码：
+这个 Animal
+类就可以作为一个父类，然后企鹅类和老鼠类继承这个类之后，就具有父类当中的属性和方法，子类就不会存在重复的代码，维护性也提高，代码也更加简洁，提高代码的复用性（复用性主要是可以多次使用，不用再多次写同样的代码） 继承之后的代码：
 
 #### 20.4.4 企鹅类：
 
@@ -5869,20 +5897,23 @@ public class Mouse extends Animal {
 
 
 ### 20.5 继承的特性
-
-- 子类拥有父类非private的属性，方法。
+ 
+- 子类拥有父类非 private 的属性，方法。
 - 子类可以拥有自己的属性和方法，即子类可以对父类进行扩展。
 - 子类可以用自己的方式实现父类的方法。
-- Java的继承是单继承，但是可以多重继承，单继承就是一个子类只能继承一个父类，多重继承就是，例如A类继承B类，B类继承C类，所以按照关系就是C类是B类的父类，B类是A类的父类，这是java继承区别于C++继承的一个特性。
+- Java 的继承是单继承，但是可以多重继承，单继承就是一个子类只能继承一个父类，多重继承就是，例如 A 类继承 B 类，B 类继承 C 类，所以按照关系就是 C 类是 B 
+类的父类，B 类是 A 类的父类，这是 Java
+继承区别于 C++ 继承的一个特性。
 - 提高了类之间的耦合性（继承的缺点，耦合度高就会造成代码之间的联系）。
 
 
 
 ### 20.6 继承关键字
 
-继承可以使用 extends 和 implements 这两个关键字来实现继承，而且所有的类都是继承于 java.lang.Object，当一个类没有继承的两个关键字，则默认继承object（这个类在 **java.lang** 包中，所以不需要 **import**）祖先类。
+继承可以使用 extends 和 implements 这两个关键字来实现继承，而且所有的类都是继承于 java.lang.Object，当一个类没有继承的两个关键字，则默认继承 
+object（这个类在 **java.lang** 包中，所以不需要 **import**）祖先类。
 
-#### 20.6.1 extends关键字
+#### 20.6.1 extends 关键字
 
 在 Java 中，类的继承是单一继承，也就是说，一个子类只能拥有一个父类，所以 extends 只能继承一个类。
 
@@ -5906,7 +5937,7 @@ public class Penguin  extends  Animal {
 
 #### 20.6.2 implements 关键字
 
-使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。
+使用 implements 关键字可以变相的使 Java 具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。
 
 ```java
 public interface A {
@@ -5922,9 +5953,9 @@ public class C implements A, B {
 
 #### 20.6.3 super 与 this 关键字
 
-super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。
+super 关键字：我们可以通过 super 关键字来实现对父类成员的访问，用来引用当前对象的父类。
 
-this关键字：指向自己的引用。
+this 关键字：指向自己的引用。
 
 ##### 实例
 
@@ -6088,13 +6119,13 @@ public class TestDog {
 狗可以跑和走
 ```
 
-在上面的例子中可以看到，尽管b属于Animal类型，但是它运行的是Dog类的move方法。
+在上面的例子中可以看到，尽管 b 属于 Animal 类型，但是它运行的是 Dog 类的 move 方法。
 
 这是由于在编译阶段，只是检查参数的引用类型。
 
-然而在运行时，Java虚拟机(JVM)指定对象的类型并且运行该对象的方法。
+然而在运行时，Java 虚拟机(JVM)指定对象的类型并且运行该对象的方法。
 
-因此在上面的例子中，之所以能编译成功，是因为Animal类中存在move方法，然而运行时，运行的是特定对象的方法。
+因此在上面的例子中，之所以能编译成功，是因为 Animal 类中存在 move 方法，然而运行时，运行的是特定对象的方法。
 
 思考以下例子：
 
@@ -6132,8 +6163,8 @@ location: class Animal
                 b.bark();
                  ^
 ```
-
-该程序将抛出一个编译错误，因为b的引用类型Animal没有bark方法。
+ 
+该程序将抛出一个编译错误，因为 b 的引用类型 Animal 没有 bark 方法。
 
 
 
@@ -6141,21 +6172,21 @@ location: class Animal
 
 - 参数列表必须完全与被重写方法的相同；
 - 返回类型必须完全与被重写方法的返回类型相同；
-- 访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。
+- 访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为 public，那么在子类中重写该方法就不能声明为  protected。
 - 父类的成员方法只能被它的子类重写。
-- 声明为final的方法不能被重写。
-- 声明为static的方法不能被重写，但是能够被再次声明。
-- 子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。
-- 子类和父类不在同一个包中，那么子类只能够重写父类的声明为public和protected的非final方法。
+- 声明为 final 的方法不能被重写。
+- 声明为 static 的方法不能被重写，但是能够被再次声明。
+- 子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为 private 和 final 的方法。
+- 子类和父类不在同一个包中，那么子类只能够重写父类的声明为 public 和 protected 的非 final 方法。
 - 重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。
 - 构造方法不能被重写。
 - 如果不能继承一个方法，则不能重写这个方法。
 
 
 
-#### 21.1.2 Super关键字的使用
+#### 21.1.2 Super 关键字的使用
 
-当需要在子类中调用父类的被重写方法时，要使用super关键字。
+当需要在子类中调用父类的被重写方法时，要使用 super 关键字。
 
 ```java
 class Animal {
@@ -6255,7 +6286,7 @@ public class Overloading {
 
 ### 21.4 总结
 
-方法的重写(Overriding)和重载(Overloading)是java多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。
+方法的重写(Overriding)和重载(Overloading)是 Java 多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。
 
 - (1)方法重载是一个类中定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同,则称为方法的重载(Overloading)。
 - (2)方法重写是在子类存在方法与父类的方法的名字相同,而且参数的个数与类型一样,返回值也一样的方法,就称为重写(Overriding)。
@@ -6375,13 +6406,13 @@ class Dog extends Animal {
 
 ### 22.3 虚方法
 
-我们将介绍在Java中，当设计类时，被重写的方法的行为怎样影响多态性。
+我们将介绍在 Java 中，当设计类时，被重写的方法的行为怎样影响多态性。
 
 我们已经讨论了方法的重写，也就是子类能够重写父类的方法。
 
 当子类对象调用重写的方法时，调用的是子类的方法，而不是父类中被重写的方法。
 
-要想调用父类中被重写的方法，则必须使用关键字super。
+要想调用父类中被重写的方法，则必须使用关键字 super。
 
 ```java
 public class Employee {
@@ -6426,7 +6457,7 @@ public class Employee {
 }
 ```
 
-假设下面的类继承Employee类：
+假设下面的类继承 Employee 类：
 
 ```java
 public class Salary extends Employee {
@@ -6495,11 +6526,12 @@ Salary 类的 mailCheck 方法
 - 实例中，实例化了两个 Salary 对象：一个使用 Salary 引用 s，另一个使用 Employee 引用 e。
 - 当调用 s.mailCheck() 时，编译器在编译时会在 Salary 类中找到 mailCheck()，执行过程 JVM 就调用 Salary 类的 mailCheck()。
 - 因为 e 是 Employee 的引用，所以调用 e 的 mailCheck() 方法时，编译器会去 Employee 类查找 mailCheck() 方法 。
-- 在编译的时候，编译器使用 Employee 类中的 mailCheck() 方法验证该语句， 但是在运行的时候，Java虚拟机(JVM)调用的是 Salary 类中的 mailCheck() 方法。
+- 在编译的时候，编译器使用 Employee 类中的 mailCheck() 方法验证该语句， 但是在运行的时候，Java 虚拟机(JVM)调用的是 Salary 类中的 mailCheck
+() 方法。
 
 以上整个过程被称为虚拟方法调用，该方法被称为虚拟方法。
 
-Java中所有的方法都能以这种方式表现，因此，重写的方法能在运行时调用，不管编译的时候源代码中引用变量是什么数据类型。
+Java 中所有的方法都能以这种方式表现，因此，重写的方法能在运行时调用，不管编译的时候源代码中引用变量是什么数据类型。
 
 
 
@@ -6514,11 +6546,12 @@ Java 重写(Override)与重载(Overload)。
 #### 方式二：接口
 
 1. 生活中的接口最具代表性的就是插座，例如一个三接头的插头都能接在三孔插座中，因为这个是每个国家都有各自规定的接口规则，有可能到国外就不行，那是因为国外自己定义的接口类型。
-2. java中的接口类似于生活中的接口，就是一些方法特征的集合，但没有方法的实现。具体可以看 [java接口](http://www.runoob.com/java/java-interfaces.html) 这一章节的内容。
+2. java 中的接口类似于生活中的接口，就是一些方法特征的集合，但没有方法的实现。具体可以看 [java 接口](http://www.runoob
+.com/java/java-interfaces.html) 这一章节的内容。
 
 #### 方式三：抽象类和抽象方法
 
-详情请看 [Java抽象类](http://www.runoob.com/java/java-abstraction.html) 章节。
+详情请看 [Java 抽象类](http://www.runoob.com/java/java-abstraction.html) 章节。
 
 ## 23 Abstract Class
 
@@ -6530,13 +6563,13 @@ Java 重写(Override)与重载(Overload)。
 
 父类包含了子类集合的常见的方法，但是由于父类本身是抽象的，所以不能使用这些方法。
 
-在Java中抽象类表示的是一种继承关系，一个类只能继承一个抽象类，而一个类却可以实现多个接口。
+在 Java 中抽象类表示的是一种继承关系，一个类只能继承一个抽象类，而一个类却可以实现多个接口。
 
 
 
 ### 23.1 抽象类
 
-在Java语言中使用abstract class来定义抽象类。如下实例：
+在 Java 语言中使用 abstract class 来定义抽象类。如下实例：
 
 ```java
 public abstract class Employee {
@@ -6585,7 +6618,7 @@ public abstract class Employee {
 }
 ```
 
-注意到该Employee类没有什么不同，尽管该类是抽象类，但是它仍然有3个成员变量，7个成员方法和1个构造方法。 现在如果你尝试如下的例子：
+注意到该 Employee 类没有什么不同，尽管该类是抽象类，但是它仍然有3个成员变量，7个成员方法和1个构造方法。 现在如果你尝试如下的例子：
 
 ```java
 public class AbstractDemo {
@@ -6604,7 +6637,7 @@ public class AbstractDemo {
 }
 ```
 
-当你尝试编译AbstractDemo类时，会产生如下错误：
+当你尝试编译 AbstractDemo 类时，会产生如下错误：
 
 ```shell
 Employee.java:46: Employee is abstract; cannot be instantiated
@@ -6617,7 +6650,7 @@ Employee.java:46: Employee is abstract; cannot be instantiated
 
 ### 23.2 继承抽象类
 
-我们能通过一般的方法继承Employee类：
+我们能通过一般的方法继承 Employee 类：
 
 ```java
 public class Salary extends Employee {
@@ -6656,7 +6689,7 @@ public class Salary extends Employee {
 }
 ```
 
-尽管我们不能实例化一个Employee类的对象，但是如果我们实例化一个Salary类对象，该对象将从 Employee 类继承7个成员方法，且通过该方法可以设置或获取三个成员变量。
+尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承7个成员方法，且通过该方法可以设置或获取三个成员变量。
 
 ```java
 public class AbstractDemo {
@@ -6695,7 +6728,7 @@ Mailing check to John Adams with salary 2,400.00
 
 如果你想设计这样一个类，该类包含一个特别的成员方法，该方法的具体实现由它的子类确定，那么你可以在父类中声明该方法为抽象方法。
 
-Abstract关键字同样可以用来声明抽象方法，抽象方法只包含一个方法名，而没有方法体。
+Abstract 关键字同样可以用来声明抽象方法，抽象方法只包含一个方法名，而没有方法体。
 
 抽象方法没有定义，方法名后面直接跟一个分号，而不是花括号。
 
@@ -6716,7 +6749,7 @@ public abstract class Employee {
 
 继承抽象方法的子类必须重写该方法。否则，该子类也必须声明为抽象类。最终，必须有子类实现该抽象方法，否则，从最初的父类到最终的子类都不能用来实例化对象。
 
-如果Salary类继承了Employee类，那么它必须实现computePay()方法：
+如果 Salary 类继承了 Employee 类，那么它必须实现 computePay() 方法：
 
 ```java
 public class Salary extends Employee {
@@ -6762,7 +6795,7 @@ public class Salary extends Employee {
 1. 抽象类不能被实例化(初学者很容易犯的错)，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象。
 2. 抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类。
 3. 抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能。
-4. 构造方法，类方法（用static修饰的方法）不能声明为抽象方法。
+4. 构造方法，类方法（用 static 修饰的方法）不能声明为抽象方法。
 5. 抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类。
 
 ## 24 Encapsulation
@@ -6786,9 +6819,9 @@ public class Salary extends Employee {
 
 
 
-### 24.2 实现Java封装的步骤
+### 24.2 实现 Java 封装的步骤
 
-1. 修改属性的可见性来限制对属性的访问（一般限制为private），例如：
+1. 修改属性的可见性来限制对属性的访问（一般限制为 private），例如：
 
 ```java
 public class Person {
@@ -6820,13 +6853,13 @@ public class Person {
 }
 ```
 
-采用 **this** 关键字是为了解决实例变量（private String name）和局部变量（setName(String name)中的name变量）之间发生的同名的冲突。
+采用 **this** 关键字是为了解决实例变量（private String name）和局部变量（setName(String name)中的 name 变量）之间发生的同名的冲突。
 
 
 
 #### 实例
 
-让我们来看一个java封装类的例子：
+让我们来看一个 Java 封装类的例子：
 
 ```java
 public class EncapTest {
@@ -6860,13 +6893,13 @@ public class EncapTest {
 }
 ```
 
-以上实例中public方法是外部类访问该类成员变量的入口。
+以上实例中 public 方法是外部类访问该类成员变量的入口。
 
-通常情况下，这些方法被称为getter和setter方法。
+通常情况下，这些方法被称为 getter 和 setter 方法。
 
-因此，任何要访问类中私有成员变量的类都要通过这些getter和setter方法。
+因此，任何要访问类中私有成员变量的类都要通过这些 getter 和 setter 方法。
 
-通过如下的例子说明EncapTest类的变量怎样被访问：
+通过如下的例子说明 EncapTest 类的变量怎样被访问：
 
 ```java
 public class RunEncap {
@@ -6892,7 +6925,7 @@ Name: James Age: 20
 
 ## 25 Interface
 
-接口（英文：Interface），在 JAVA 编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。
+接口（英文：Interface），在 JAVA 编程语言中是一个抽象类型，是抽象方法的集合，接口通常以 interface 来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。
 
 接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法。
 
@@ -6942,7 +6975,7 @@ Name: James Age: 20
 }
 ```
 
-Interface关键字用来声明一个接口。下面是接口声明的一个简单例子。
+Interface 关键字用来声明一个接口。下面是接口声明的一个简单例子。
 
 ```java
 import java.lang.; //引入包
@@ -6976,7 +7009,7 @@ interface Animal {
 
 当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。
 
-类使用implements关键字实现接口。在类声明中，Implements关键字放在class声明后面。
+类使用 implements 关键字实现接口。在类声明中，Implements 关键字放在 class 声明后面。
 
 实现一个接口的语法，可以使用这个公式：
 
@@ -7031,9 +7064,9 @@ Mammal travels
 
 ### 25.7 接口的继承
 
-一个接口能继承另一个接口，和类之间的继承方式比较相似。接口的继承使用extends关键字，子接口继承父接口的方法。
+一个接口能继承另一个接口，和类之间的继承方式比较相似。接口的继承使用 extends 关键字，子接口继承父接口的方法。
 
-下面的Sports接口被Hockey和Football接口继承：
+下面的 Sports 接口被 Hockey 和 Football 接口继承：
 
 ```java
 public interface Hockey extends Sports {
@@ -7057,21 +7090,21 @@ public interface Football extends Sports {
 }
 ```
 
-Hockey接口自己声明了四个方法，从Sports接口继承了两个方法，这样，实现Hockey接口的类需要实现六个方法。
+Hockey 接口自己声明了四个方法，从 Sports 接口继承了两个方法，这样，实现 Hockey 接口的类需要实现六个方法。
 
-相似的，实现Football接口的类需要实现五个方法，其中两个来自于Sports接口。
+相似的，实现 Football 接口的类需要实现五个方法，其中两个来自于 Sports 接口。
 
 
 
 ### 25.8 接口的多继承
 
-在Java中，类的多继承是不合法，但接口允许多继承。
+在 Java 中，类的多继承是不合法，但接口允许多继承。
 
-在接口的多继承中extends关键字只需要使用一次，在其后跟着继承接口。 如下所示：
+在接口的多继承中 extends 关键字只需要使用一次，在其后跟着继承接口。 如下所示：
 
 public interface Hockey extends Sports, Event
 
-以上的程序片段是合法定义的子接口，与类不同的是，接口允许多继承，而 Sports及 Event 可能定义或是继承相同的方法
+以上的程序片段是合法定义的子接口，与类不同的是，接口允许多继承，而 Sports 及 Event 可能定义或是继承相同的方法
 
 
 
@@ -7095,7 +7128,8 @@ public interface EventListener {
 
 - 建立一个公共的父接口：
 
-  正如EventListener接口，这是由几十个其他接口扩展的Java API，你可以使用一个标记接口来建立一组接口的父接口。例如：当一个接口继承了EventListener接口，Java虚拟机(JVM)就知道该接口将要被用于一个事件的代理方案。
+  正如 EventListener 接口，这是由几十个其他接口扩展的 Java 
+  API，你可以使用一个标记接口来建立一组接口的父接口。例如：当一个接口继承了 EventListener 接口，Java 虚拟机(JVM)就知道该接口将要被用于一个事件的代理方案。
 
 - 向一个类添加数据类型：
 
@@ -7119,7 +7153,7 @@ Java 使用包（package）这种机制是为了防止命名冲突，访问控�
 package pkg1[．pkg2[．pkg3…]];
 ```
 
-例如,一个Something.java 文件它的内容
+例如,一个 Something.java 文件它的内容
 
 ```java
 package net.java.util;
@@ -7153,7 +7187,7 @@ public class Something {
 
 #### 实例
 
-让我们来看一个例子，这个例子创建了一个叫做animals的包。通常使用小写的字母来命名避免与类、接口名字的冲突。
+让我们来看一个例子，这个例子创建了一个叫做 animals 的包。通常使用小写的字母来命名避免与类、接口名字的冲突。
 
 在 animals 包中加入一个接口（interface）：
 
@@ -7187,7 +7221,7 @@ public class MammalInt extends Animal {
 }
 ```
 
-然后，编译这两个文件，并把他们放在一个叫做animals的子目录中。 用下面的命令来运行：
+然后，编译这两个文件，并把他们放在一个叫做 animals 的子目录中。 用下面的命令来运行：
 
 ```powershell
 $ mkdir animals
@@ -7213,7 +7247,8 @@ import package1[.package2…].(classname|*);
 
 #### 例子
 
-下面的 payroll 包已经包含了 Employee 类，接下来向 payroll 包中添加一个 Boss 类。Boss 类引用 Employee 类的时候可以不用使用 payroll 前缀，Boss类的实例如下。
+下面的 payroll 包已经包含了 Employee 类，接下来向 payroll 包中添加一个 Boss 类。Boss 类引用 Employee 类的时候可以不用使用 payroll 
+前缀，Boss 类的实例如下。
 
 ```java
 public class Boss {
@@ -7258,7 +7293,7 @@ import payroll.Employee;
 
 下面是管理你自己 java 中文件的一种简单方式：
 
-将类、接口等类型的源码放在一个文本中，这个文件的名字就是这个类型的名字，并以.java作为扩展名。例如：
+将类、接口等类型的源码放在一个文本中，这个文件的名字就是这个类型的名字，并以.java 作为扩展名。例如：
 
 ```java
 // 文件名: Car.java
@@ -7294,7 +7329,7 @@ class Google {
 }
 ```
 
-现在，我们用-d选项来编译这个文件，如下：
+现在，我们用 -d 选项来编译这个文件，如下：
 
 ```powershell
 $javac -d . Runoob.java
@@ -7320,7 +7355,7 @@ import com.runoob.test.*;
 <path-two>\classes\com\runoob\test\Google.class
 ```
 
-这样，你可以将你的类目录分享给其他的编程人员，而不用透露自己的源码。用这种方法管理源码和类文件可以让编译器和java 虚拟机（JVM）可以找到你程序中使用的所有类型。
+这样，你可以将你的类目录分享给其他的编程人员，而不用透露自己的源码。用这种方法管理源码和类文件可以让编译器和 Java 虚拟机（JVM）可以找到你程序中使用的所有类型。
 
 类目录的绝对路径叫做 **class path**。设置在系统变量 **CLASSPATH** 中。编译器和 java 虚拟机通过将 package 名字加到 class path 后来构造 .class 文件的路径。
 
@@ -7332,24 +7367,24 @@ import com.runoob.test.*;
 
 ### 26.5 设置 CLASSPATH 系统变量
 
-用下面的命令显示当前的CLASSPATH变量：
+用下面的命令显示当前的 CLASSPATH 变量：
 
 - Windows 平台（DOS 命令行下）：C:\> set CLASSPATH
 - UNIX 平台（Bourne shell 下）：# echo $CLASSPATH
 
-删除当前CLASSPATH变量内容：
+删除当前 CLASSPATH 变量内容：
 
 - Windows 平台（DOS 命令行下）：C:\> set CLASSPATH=
 - UNIX 平台（Bourne shell 下）：# unset CLASSPATH; export CLASSPATH
 
-设置CLASSPATH变量:
+设置 CLASSPATH 变量:
 
 - Windows 平台（DOS 命令行下）： C:\> set CLASSPATH=C:\users\jack\java\classes
 - UNIX 平台（Bourne shell 下）：# CLASSPATH=/home/jack/java/classes; export CLASSPATH
 
 ## 27 Data Structure
 
-Java工具包提供了强大的数据结构。在Java中的数据结构主要包括以下几种接口和类：
+Java 工具包提供了强大的数据结构。在 Java 中的数据结构主要包括以下几种接口和类：
 
 - 枚举（Enumeration）
 - 位集合（BitSet）
@@ -7359,7 +7394,7 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 - 哈希表（Hashtable）
 - 属性（Properties）
 
-以上这些类是传统遗留的，在Java2中引入了一种新的框架-集合框架(Collection)，我们后面再讨论。
+以上这些类是传统遗留的，在 Java2 中引入了一种新的框架-集合框架(Collection)，我们后面再讨论。
 
 
 
@@ -7367,7 +7402,7 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 枚举（Enumeration）接口虽然它本身不属于数据结构,但它在其他数据结构的范畴里应用很广。 枚举（The Enumeration）接口定义了一种从数据结构中取回连续元素的方式。
 
-例如，枚举定义了一个叫nextElement 的方法，该方法用来得到一个包含多元素的数据结构的下一个元素。
+例如，枚举定义了一个叫 nextElement 的方法，该方法用来得到一个包含多元素的数据结构的下一个元素。
 
 关于枚举接口的更多信息，[请参见枚举（Enumeration）](http://www.runoob.com/java/java-enumeration-interface.html)。
 
@@ -7385,11 +7420,11 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 ### 27.3 向量（Vector）
 
-向量（Vector）类和传统数组非常相似，但是Vector的大小能根据需要动态的变化。
+向量（Vector）类和传统数组非常相似，但是 Vector 的大小能根据需要动态的变化。
 
-和数组一样，Vector对象的元素也能通过索引访问。
+和数组一样，Vector 对象的元素也能通过索引访问。
 
-使用Vector类最主要的好处就是在创建对象的时候不必给对象指定大小，它的大小会根据需要动态的变化。
+使用 Vector 类最主要的好处就是在创建对象的时候不必给对象指定大小，它的大小会根据需要动态的变化。
 
 关于该类的更多信息，[请参见向量(Vector)](http://www.runoob.com/java/java-vector-class.html)
 
@@ -7411,9 +7446,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 字典（Dictionary） 类是一个抽象类，它定义了键映射到值的数据结构。
 
-当你想要通过特定的键而不是整数索引来访问数据的时候，这时候应该使用Dictionary。
+当你想要通过特定的键而不是整数索引来访问数据的时候，这时候应该使用 Dictionary。
 
-由于Dictionary类是抽象类，所以它只提供了键映射到值的数据结构，而没有提供特定的实现。
+由于 Dictionary 类是抽象类，所以它只提供了键映射到值的数据结构，而没有提供特定的实现。
 
 关于该类的更多信息，[请参见字典（ Dictionary）](http://www.runoob.com/java/java-dictionary-class.html)。
 
@@ -7421,7 +7456,7 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 ### 27.6 哈希表（Hashtable）
 
-Hashtable类提供了一种在用户定义键结构的基础上来组织数据的手段。
+Hashtable 类提供了一种在用户定义键结构的基础上来组织数据的手段。
 
 例如，在地址列表的哈希表中，你可以根据邮政编码作为键来存储和排序数据，而不是通过人名。
 
@@ -7435,7 +7470,7 @@ Hashtable类提供了一种在用户定义键结构的基础上来组织数据�
 
 Properties 继承于 Hashtable.Properties 类表示了一个持久的属性集.属性列表中每个键及其对应值都是一个字符串。
 
-Properties 类被许多Java类使用。例如，在获取环境变量时它就作为System.getProperties()方法的返回值。
+Properties 类被许多 Java 类使用。例如，在获取环境变量时它就作为 System.getProperties() 方法的返回值。
 
 关于该类的更多信息，[请参见属性（Properties）](http://www.runoob.com/java/java-properties-class.html)。
 
@@ -7471,7 +7506,7 @@ Properties 类被许多Java类使用。例如，在获取环境变量时它就�
 
 ![img](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
 
-Java 集合框架提供了一套性能优良，使用方便的接口和类，java集合框架位于java.util包中， 所以当使用集合框架的时候需要进行导包。
+Java 集合框架提供了一套性能优良，使用方便的接口和类，Java 集合框架位于 java.util 包中， 所以当使用集合框架的时候需要进行导包。
 
 
 
@@ -7481,57 +7516,64 @@ Java 集合框架提供了一套性能优良，使用方便的接口和类，jav
 
 | 序号 | 接口描述                                                     |
 | ---- | ------------------------------------------------------------ |
-| 1    | Collection 接口 Collection 是最基本的集合接口，一个 Collection 代表一组 Object，即 Collection 的元素, Java不提供直接继承自Collection的类，只提供继承于的子接口(如List和set)。Collection 接口存储一组不唯一，无序的对象。 |
-| 2    | List 接口 List接口是一个有序的 Collection，使用此接口能够精确的控制每个元素插入的位置，能够通过索引(元素在List中位置，类似于数组的下标)来访问List中的元素，第一个元素的索引为 0，而且允许有相同的元素。List 接口存储一组不唯一，有序（插入顺序）的对象。 |
+| 1    | Collection 接口 Collection 是最基本的集合接口，一个 Collection 代表一组 Object，即 Collection 的元素, Java 
+不提供直接继承自 Collection 的类，只提供继承于的子接口(如 List 和 set)。Collection 接口存储一组不唯一，无序的对象。 |
+| 2    | List 接口 List 接口是一个有序的 Collection，使用此接口能够精确的控制每个元素插入的位置，能够通过索引(元素在 List 中位置，类似于数组的下标)
+来访问 List 中的元素，第一个元素的索引为 0，而且允许有相同的元素。List 接口存储一组不唯一，有序（插入顺序）的对象。 |
 | 3    | Set Set 具有与 Collection 完全一样的接口，只是行为上不同，Set 不保存重复的元素。Set 接口存储一组唯一，无序的对象。 |
-| 4    | SortedSet  继承于Set保存有序的集合。                         |
-| 5    | Map Map 接口存储一组键值对象，提供key（键）到value（值）的映射。 |
-| 6    | Map.Entry  描述在一个Map中的一个元素（键/值对）。是一个Map的内部类。 |
+| 4    | SortedSet  继承于 Set 保存有序的集合。                         |
+| 5    | Map Map 接口存储一组键值对象，提供 key（键）到 value（值）的映射。 |
+| 6    | Map.Entry  描述在一个 Map 中的一个元素（键/值对）。是一个 Map 的内部类。 |
 | 7    | SortedMap 继承于 Map，使 Key 保持在升序排列。                |
 | 8    | Enumeration 这是一个传统的接口和定义的方法，通过它可以枚举（一次获得一个）对象集合中的元素。这个传统接口已被迭代器取代。 |
 
 ### 28.2 Set 和 List 的区别
 
 1. Set 接口实例存储的是无序的，不重复的数据。List 接口实例存储的是有序的，可以重复的元素。
-2. Set检索效率低下，删除和插入效率高，插入和删除不会引起元素位置改变 **<实现类有HashSet,TreeSet>**。
-3. List和数组类似，可以动态增长，根据实际存储的数据的长度自动增长List的长度。查找元素效率高，插入删除效率低，因为会引起其他元素位置改变 **<实现类有ArrayList,LinkedList,Vector>** 。
+2. Set 检索效率低下，删除和插入效率高，插入和删除不会引起元素位置改变 **<实现类有 HashSet,TreeSet>**。
+3. List 和数组类似，可以动态增长，根据实际存储的数据的长度自动增长 List 的长度。查找元素效率高，插入删除效率低，因为会引起其他元素位置改变 **<实现类有 ArrayList,
+LinkedList,Vector>** 。
 
 
 
 ### 28.3 集合实现类（集合类）
 
-Java提供了一套实现了Collection接口的标准集合类。其中一些是具体类，这些类可以直接拿来使用，而另外一些是抽象类，提供了接口的部分实现。
+Java 提供了一套实现了 Collection 接口的标准集合类。其中一些是具体类，这些类可以直接拿来使用，而另外一些是抽象类，提供了接口的部分实现。
 
 标准集合类汇总于下表：
 
 | 序号 | 类描述                                                       |
 | ---- | ------------------------------------------------------------ |
 | 1    | **AbstractCollection**  实现了大部分的集合接口。             |
-| 2    | **AbstractList**  继承于AbstractCollection 并且实现了大部分List接口。 |
+| 2    | **AbstractList**  继承于 AbstractCollection 并且实现了大部分 List 接口。 |
 | 3    | **AbstractSequentialList**  继承于 AbstractList ，提供了对数据元素的链式访问而不是随机访问。 |
-| 4    | LinkedList 该类实现了List接口，允许有null（空）元素。主要用于创建链表数据结构，该类没有同步方法，如果多个线程同时访问一个List，则必须自己实现访问同步，解决方法就是在创建List时候构造一个同步的List。例如：`Listlist=Collections.synchronizedList(newLinkedList(...));`LinkedList 查找效率低。 |
-| 5    | ArrayList 该类也是实现了List的接口，实现了可变大小的数组，随机访问和遍历元素时，提供更好的性能。该类也是非同步的,在多线程的情况下不要使用。ArrayList 增长当前长度的50%，插入删除效率低。 |
-| 6    | **AbstractSet**  继承于AbstractCollection 并且实现了大部分Set接口。 |
-| 7    | HashSet 该类实现了Set接口，不允许出现重复元素，不保证集合中元素的顺序，允许包含值为null的元素，但最多只能一个。 |
+| 4    | LinkedList 该类实现了 List 接口，允许有 null（空）元素。主要用于创建链表数据结构，该类没有同步方法，如果多个线程同时访问一个 List
+，则必须自己实现访问同步，解决方法就是在创建 List 时候构造一个同步的 List。例如：`Listlist=Collections.synchronizedList(newLinkedList(
+...));`LinkedList 查找效率低。 |
+| 5    | ArrayList 该类也是实现了 List 的接口，实现了可变大小的数组，随机访问和遍历元素时，提供更好的性能。该类也是非同步的,在多线程的情况下不要使用。ArrayList 
+增长当前长度的50%，插入删除效率低。 |
+| 6    | **AbstractSet**  继承于 AbstractCollection 并且实现了大部分 Set 接口。 |
+| 7    | HashSet 该类实现了 Set 接口，不允许出现重复元素，不保证集合中元素的顺序，允许包含值为 null 的元素，但最多只能一个。 |
 | 8    | LinkedHashSet 具有可预知迭代顺序的 `Set` 接口的哈希表和链接列表实现。 |
-| 9    | TreeSet 该类实现了Set接口，可以实现排序等功能。              |
-| 10   | **AbstractMap**  实现了大部分的Map接口。                     |
-| 11   | HashMap  HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。 该类实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。 |
-| 12   | TreeMap  继承了AbstractMap，并且使用一颗树。                 |
-| 13   | WeakHashMap  继承AbstractMap类，使用弱密钥的哈希表。         |
-| 14   | LinkedHashMap  继承于HashMap，使用元素的自然顺序对元素进行排序. |
-| 15   | IdentityHashMap  继承AbstractMap类，比较文档时使用引用相等。 |
+| 9    | TreeSet 该类实现了 Set 接口，可以实现排序等功能。              |
+| 10   | **AbstractMap**  实现了大部分的 Map 接口。                     |
+| 11   | HashMap  HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。 该类实现了 
+Map 接口，根据键的 HashCode 值存储数据，具有很快的访问速度，最多允许一条记录的键为 null，不支持线程同步。 |
+| 12   | TreeMap  继承了 AbstractMap，并且使用一颗树。                 |
+| 13   | WeakHashMap  继承 AbstractMap 类，使用弱密钥的哈希表。         |
+| 14   | LinkedHashMap  继承于 HashMap，使用元素的自然顺序对元素进行排序. |
+| 15   | IdentityHashMap  继承 AbstractMap 类，比较文档时使用引用相等。 |
 
-在前面的教程中已经讨论通过java.util包中定义的类，如下所示：
+在前面的教程中已经讨论通过 java.util 包中定义的类，如下所示：
 
 | 序号 | 类描述                                                       |
 | ---- | ------------------------------------------------------------ |
-| 1    | Vector  该类和ArrayList非常相似，但是该类是同步的，可以用在多线程的情况，该类允许设置默认的增长长度，默认扩容方式为原来的2倍。 |
-| 2    | Stack  栈是Vector的一个子类，它实现了一个标准的后进先出的栈。 |
-| 3    | Dictionary  Dictionary 类是一个抽象类，用来存储键/值对，作用和Map类相似。 |
+| 1    | Vector  该类和 ArrayList 非常相似，但是该类是同步的，可以用在多线程的情况，该类允许设置默认的增长长度，默认扩容方式为原来的2倍。 |
+| 2    | Stack  栈是 Vector 的一个子类，它实现了一个标准的后进先出的栈。 |
+| 3    | Dictionary  Dictionary 类是一个抽象类，用来存储键/值对，作用和 Map 类相似。 |
 | 4    | Hashtable  Hashtable 是 Dictionary(字典) 类的子类，位于 java.util 包中。 |
 | 5    | Properties  Properties 继承于 Hashtable，表示一个持久的属性集，属性列表中每个键及其对应值都是一个字符串。 |
-| 6    | BitSet 一个Bitset类创建一种特殊类型的数组来保存位值。BitSet中数组大小会随需要增加。 |
+| 6    | BitSet 一个 Bitset 类创建一种特殊类型的数组来保存位值。BitSet 中数组大小会随需要增加。 |
 
 
 
@@ -7539,9 +7581,9 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 
 集合框架定义了几种算法，可用于集合和映射。这些算法被定义为集合类的静态方法。
 
-在尝试比较不兼容的类型时，一些方法能够抛出 ClassCastException异常。当试图修改一个不可修改的集合时，抛出UnsupportedOperationException异常。
+在尝试比较不兼容的类型时，一些方法能够抛出 ClassCastException 异常。当试图修改一个不可修改的集合时，抛出 UnsupportedOperationException 异常。
 
-集合定义三个静态的变量：EMPTY_SET，EMPTY_LIST，EMPTY_MAP的。这些变量都不可改变。
+集合定义三个静态的变量：EMPTY_SET，EMPTY_LIST，EMPTY_MAP 的。这些变量都不可改变。
 
 | 序号 | 算法描述                                               |
 | ---- | ------------------------------------------------------ |
@@ -7553,13 +7595,14 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 
 通常情况下，你会希望遍历一个集合中的元素。例如，显示集合中的每个元素。
 
-一般遍历数组都是采用for循环或者增强for，这两个方法也可以用在集合框架，但是还有一种方法是采用迭代器遍历集合框架，它是一个对象，实现了Iterator 接口或ListIterator接口。
+一般遍历数组都是采用 for 循环或者增强 for，这两个方法也可以用在集合框架，但是还有一种方法是采用迭代器遍历集合框架，它是一个对象，实现了 Iterator 接口或 
+ListIterator 接口。
 
-迭代器，使你能够通过循环来得到或删除集合的元素。ListIterator 继承了Iterator，以允许双向遍历列表和修改元素。
+迭代器，使你能够通过循环来得到或删除集合的元素。ListIterator 继承了 Iterator，以允许双向遍历列表和修改元素。
 
 | 序号 | 迭代器方法描述                                               |
 | ---- | ------------------------------------------------------------ |
-| 1    | 使用 Java Iterator 这里通过实例列出Iterator和listIterator接口提供的所有方法。 |
+| 1    | 使用 Java Iterator 这里通过实例列出 Iterator 和 listIterator 接口提供的所有方法。 |
 
 #### 28.5.1 遍历 ArrayList
 
@@ -7570,9 +7613,9 @@ public class TraversalArray {
         list.add("Hello");
         list.add("World");
         list.add("HAHAHAHA");
-        // 第一种遍历方法使用foreach遍历List
+        // 第一种遍历方法使用 foreach 遍历 List
         for (String str : list) {
-            // 也可以改写for(int i=0;i<list.size();i++)这种形式
+            // 也可以改写 for(int i=0;i<list.size();i++)这种形式
             System.out.println(str);
         }
 
@@ -7596,7 +7639,7 @@ public class TraversalArray {
 
  **解析：**
 
-三种方法都是用来遍历ArrayList集合，第三种方法是采用迭代器的方法，该方法可以不用担心在遍历的过程中会超出集合的长度。
+三种方法都是用来遍历 ArrayList 集合，第三种方法是采用迭代器的方法，该方法可以不用担心在遍历的过程中会超出集合的长度。
 
 #### 28.5.2 遍历 Map
 
@@ -7609,7 +7652,7 @@ public class TraversalMap {
         map.put("3", "value3");
 
         // 第一种：普遍使用，二次取值
-        System.out.println("通过Map.keySet遍历key和value：");
+        System.out.println("通过 Map.keySet 遍历 key 和 value：");
         for (String key : map.keySet()) {
             System.out.println(
                     "key= " + key +
@@ -7618,7 +7661,7 @@ public class TraversalMap {
         }
 
         //第二种
-        System.out.println("通过Map.entrySet使用iterator遍历key和value：");
+        System.out.println("通过 Map.entrySet 使用 iterator 遍历 key 和 value：");
         Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, String> entry = it.next();
@@ -7629,7 +7672,7 @@ public class TraversalMap {
         }
 
         // 第三种：推荐，尤其是容量大时
-        System.out.println("通过Map.entrySet遍历key和value");
+        System.out.println("通过 Map.entrySet 遍历 key 和 value");
         for (Map.Entry<String, String> entry : map.entrySet()) {
             System.out.println(
                     "key= " + entry.getKey() +
@@ -7638,7 +7681,7 @@ public class TraversalMap {
         }
 
         // 第四种
-        System.out.println("通过Map.values()遍历所有的value，但不能遍历key");
+        System.out.println("通过 Map.values()遍历所有的 value，但不能遍历 key");
         for (String v : map.values()) {
             System.out.println("value= " + v);
         }
@@ -7652,25 +7695,25 @@ public class TraversalMap {
 
 ### 28.6 如何使用比较器
 
-TreeSet和TreeMap的按照排序顺序来存储元素. 然而，这是通过比较器来精确定义按照什么样的排序顺序。
+TreeSet 和 TreeMap 的按照排序顺序来存储元素. 然而，这是通过比较器来精确定义按照什么样的排序顺序。
 
 这个接口可以让我们以不同的方式来排序一个集合。
 
 | 序号 | 比较器方法描述                                               |
 | ---- | ------------------------------------------------------------ |
-| 1    | 使用 Java Comparator 这里通过实例列出Comparator接口提供的所有方法 |
+| 1    | 使用 Java Comparator 这里通过实例列出 Comparator 接口提供的所有方法 |
 
 
 
 ### 28.7 总结
 
-Java集合框架为程序员提供了预先包装的数据结构和算法来操纵他们。
+Java 集合框架为程序员提供了预先包装的数据结构和算法来操纵他们。
 
 集合是一个对象，可容纳其他对象的引用。集合接口声明对每一种类型的集合可以执行的操作。
 
-集合框架的类和接口均在java.util包中。
+集合框架的类和接口均在 java.util 包中。
 
-任何对象加入集合类后，自动转变为Object类型，所以在取出的时候，需要进行强制类型转换。
+任何对象加入集合类后，自动转变为 Object 类型，所以在取出的时候，需要进行强制类型转换。
 
 ## 29 Generic
 
@@ -7695,7 +7738,7 @@ Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了�
 - 所有泛型方法声明都有一个类型参数声明部分（由尖括号分隔），该类型参数声明部分在方法返回类型之前（在下面例子中的<E>）。
 - 每一个类型参数声明部分包含一个或多个类型参数，参数间用逗号隔开。一个泛型参数，也被称为一个类型变量，是用于指定一个泛型类型名称的标识符。
 - 类型参数能被用来声明返回值类型，并且能作为泛型方法得到的实际参数类型的占位符。
-- 泛型方法体的声明和其他方法一样。注意类型参数只能代表引用型类型，不能是原始类型（像int,double,char的等）。
+- 泛型方法体的声明和其他方法一样。注意类型参数只能代表引用型类型，不能是原始类型（像 int, double, char 的等）。
 
 #### 实例
 
@@ -7744,9 +7787,9 @@ H E L L O
 
 有界的类型参数:
 
-可能有时候，你会想限制那些被允许传递到一个类型参数的类型种类范围。例如，一个操作数字的方法可能只希望接受Number或者Number子类的实例。这就是有界类型参数的目的。
+可能有时候，你会想限制那些被允许传递到一个类型参数的类型种类范围。例如，一个操作数字的方法可能只希望接受 Number 或者 Number 子类的实例。这就是有界类型参数的目的。
 
-要声明一个有界的类型参数，首先列出类型参数的名称，后跟extends关键字，最后紧跟它的上界。
+要声明一个有界的类型参数，首先列出类型参数的名称，后跟 extends 关键字，最后紧跟它的上界。
 
 #### 实例
 
@@ -7756,7 +7799,7 @@ H E L L O
 public class MaximumTest {
     // 比较三个值并返回最大值
     private static <T extends Comparable<T>> T maximum(T x, T y, T z) {
-        T max = x; // 假设x是初始最大值
+        T max = x; // 假设 x 是初始最大值
         if (y.compareTo(max) > 0) 
             max = y; // y 更大
         
@@ -7837,7 +7880,7 @@ public class Box<T> {
 
 ### 29.3 类型通配符
 
-1. 类型通配符一般是使用?代替具体的类型参数。例如 **List<?>** 在逻辑上是**List<String>, List<Integer>** 等所有List<具体类型实参>的父类。
+1. 类型通配符一般是使用?代替具体的类型参数。例如 **List<?>** 在逻辑上是**List<String>, List<Integer>** 等所有 List<具体类型实参>的父类。
 
 #### 实例
 
@@ -8355,7 +8398,7 @@ void addRecipients(Message.RecipientType type,                    Address[] addr
 
 下面是一个发送 HTML E-mail 的例子。假设你的本地主机已经连接到网络。
 
-和上一个例子很相似，除了我们要使用 setContent() 方法来通过第二个参数为 "text/html"，来设置内容来指定要发送HTML 内容。
+和上一个例子很相似，除了我们要使用 setContent() 方法来通过第二个参数为 "text/html"，来设置内容来指定要发送 HTML 内容。
 
 ```java
 public class SendFileEmail {
@@ -8476,7 +8519,11 @@ Java 代码如下：
 
 ## SendEmail2.java 文件代码：
 
-// 需要用户名密码邮件发送实例 //文件名 SendEmail2.java //本实例以QQ邮箱为例，你需要在qq后台设置   import java.util.Properties;   import javax.mail.Authenticator; import javax.mail.Message; import javax.mail.MessagingException; import javax.mail.PasswordAuthentication; import javax.mail.Session; import javax.mail.Transport; import javax.mail.internet.InternetAddress; import javax.mail.internet.MimeMessage;   public class SendEmail2 {    public static void main(String [] args)    {       // 收件人电子邮箱       String to = "xxx@qq.com";         // 发件人电子邮箱       String from = "xxx@qq.com";         // 指定发送邮件的主机为 smtp.qq.com       String host = "smtp.qq.com";  //QQ 邮件服务器         // 获取系统属性       Properties properties = System.getProperties();         // 设置邮件服务器       properties.setProperty("mail.smtp.host", host);         properties.put("mail.smtp.auth", "true");       // 获取默认session对象       Session session = Session.getDefaultInstance(properties,new Authenticator(){         public PasswordAuthentication getPasswordAuthentication()         {          return new PasswordAuthentication("xxx@qq.com", "qq邮箱密码"); //发件人邮件用户名、密码         }        });         try{          // 创建默认的 MimeMessage 对象          MimeMessage message = new MimeMessage(session);            // Set From: 头部头字段          message.setFrom(new InternetAddress(from));            // Set To: 头部头字段          message.addRecipient(Message.RecipientType.TO,                                   new InternetAddress(to));            // Set Subject: 头部头字段          message.setSubject("This is the Subject Line!");            // 设置消息体          message.setText("This is actual message");            // 发送消息          Transport.send(message);          System.out.println("Sent message successfully....from runoob.com");       }catch (MessagingException mex) {          mex.printStackTrace();       }    } }
+// 需要用户名密码邮件发送实例 //文件名 SendEmail2.java //本实例以 QQ 邮箱为例，你需要在 qq 后台设置   import java.util.Properties;   
+import javax.mail.Authenticator; import javax.mail.Message; import javax.mail.MessagingException;
+ import javax.mail.PasswordAuthentication; import javax.mail.Session; import javax.mail
+ .Transport; import javax.mail.internet.InternetAddress; import javax.mail.internet.MimeMessage; 
+   public class SendEmail2 {    public static void main(String [] args)    {       // 收件人电子邮箱       String to = "xxx@qq.com";         // 发件人电子邮箱       String from = "xxx@qq.com";         // 指定发送邮件的主机为 smtp.qq.com       String host = "smtp.qq.com";  //QQ 邮件服务器         // 获取系统属性       Properties properties = System.getProperties();         // 设置邮件服务器       properties.setProperty("mail.smtp.host", host);         properties.put("mail.smtp.auth", "true");       // 获取默认 session 对象       Session session = Session.getDefaultInstance(properties,new Authenticator(){         public PasswordAuthentication getPasswordAuthentication()         {          return new PasswordAuthentication("xxx@qq.com", "qq 邮箱密码"); //发件人邮件用户名、密码         }        });         try{          // 创建默认的 MimeMessage 对象          MimeMessage message = new MimeMessage(session);            // Set From: 头部头字段          message.setFrom(new InternetAddress(from));            // Set To: 头部头字段          message.addRecipient(Message.RecipientType.TO,                                   new InternetAddress(to));            // Set Subject: 头部头字段          message.setSubject("This is the Subject Line!");            // 设置消息体          message.setText("This is actual message");            // 发送消息          Transport.send(message);          System.out.println("Sent message successfully....from runoob.com");       }catch (MessagingException mex) {          mex.printStackTrace();       }    } }
 
 ## 33 Multi-Threaded Programming
 
@@ -8504,7 +8551,7 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
 - 就绪状态:
 
-  当线程对象调用了 start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待JVM里线程调度器的调度。
+  当线程对象调用了 start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待 JVM 里线程调度器的调度。
 
 - 运行状态:
 
@@ -8516,7 +8563,8 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
   - 等待阻塞：运行状态中的线程执行 wait() 方法，使线程进入到等待阻塞状态。
   - 同步阻塞：线程在获取 synchronized 同步锁失败(因为同步锁被其他线程占用)。
-  - 其他阻塞：通过调用线程的 sleep() 或 join() 发出了 I/O 请求时，线程就会进入到阻塞状态。当sleep() 状态超时，join() 等待线程终止或超时，或者 I/O 处理完毕，线程重新转入就绪状态。
+  - 其他阻塞：通过调用线程的 sleep() 或 join() 发出了 I/O 请求时，线程就会进入到阻塞状态。当 sleep() 状态超时，join() 等待线程终止或超时，或者 I/O 
+  处理完毕，线程重新转入就绪状态。
 
 - 死亡状态:
 
@@ -8790,7 +8838,7 @@ public class CallableThreadTest implements Callable<Integer> {
         FutureTask<Integer> ft = new FutureTask<>(ctt);
         for (int i = 0; i < 100; i++) {
             System.out.println(
-                    Thread.currentThread().getName() + " 的循环变量i的值" + i
+                    Thread.currentThread().getName() + " 的循环变量 i 的值" + i
             );
             if (i == 20)
                 new Thread(ft, "有返回值的线程").start();
@@ -8859,7 +8907,7 @@ Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器�
 
 
 
-### 34.1 Applet的生命周期
+### 34.1 Applet 的生命周期
 
 Applet 类中的四个方法给我们提供了一个框架，你可以在该框架上开发小程序：
 
@@ -8927,7 +8975,7 @@ Applet 类提供了对这些方法的默认实现，这些方法可以在需要�
 
 Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器内。因为它有完整的 Java API 支持,所以 Applet 是一个全功能的 Java 应用程序。
 
-<applet> 标签是在 HTML 文件中嵌入 Applet 的基础。以下是一个调用"Hello World"applet的例子；
+<applet> 标签是在 HTML 文件中嵌入 Applet 的基础。以下是一个调用「Hello World」 Applet 的例子；
 
 ## HTML 代码：
 
@@ -9018,7 +9066,8 @@ Applet 调用 parseColor()方法将颜色参数解析为一个 Color 值。parse
 
 ## 事件处理
 
-Applet 类从 Container 类继承了许多事件处理方法。Container 类定义了几个方法，例如：processKeyEvent() 和processMouseEvent()，用来处理特别类型的事件，还有一个捕获所有事件的方法叫做 processEvent。
+Applet 类从 Container 类继承了许多事件处理方法。Container 类定义了几个方法，例如：processKeyEvent() 和 processMouseEvent()
+，用来处理特别类型的事件，还有一个捕获所有事件的方法叫做 processEvent。
 
 为了响应一个事件，Applet 必须重写合适的事件处理方法。
 
@@ -9036,7 +9085,7 @@ import java.awt.event.MouseListener; import java.awt.event.MouseEvent; import ja
 
 ## 显示图片
 
-Applet 能显示 GIF,JPEG,BMP 等其他格式的图片。为了在 Applet 中显示图片，你需要使用 java.awt.Graphics 类的drawImage()方法。
+Applet 能显示 GIF,JPEG,BMP 等其他格式的图片。为了在 Applet 中显示图片，你需要使用 java.awt.Graphics 类的 drawImage() 方法。
 
 如下实例演示了显示图片的所有步骤：
 
@@ -9322,7 +9371,7 @@ Generating ./help-doc.html...
 10. [Java 实例 – 标签(Label)](http://www.runoob.com/java/java/method-label.html)
 11. [Java 实例 – enum 和 switch 语句使用](http://www.runoob.com/java/java/method-enum.html)
 12. [Java 实例 – Enum（枚举）构造函数及方法的使用](http://www.runoob.com/java/java/method-enum1.html)
-13. [Java 实例 – for 和 foreach循环使用](http://www.runoob.com/java/java/method-for.html)
+13. [Java 实例 – for 和 foreach 循环使用](http://www.runoob.com/java/java/method-for.html)
 14. [Java 实例 – Varargs 可变参数使用](http://www.runoob.com/java/java/method-varargs.html)
 15. [Java 实例 – 重载(overloading)方法中使用 Varargs](http://www.runoob.com/java/java/method-varargs1.html)
 
@@ -9382,8 +9431,8 @@ Generating ./help-doc.html...
 ### 36.9 Java 异常处理
 
 1. [Java 实例 - 异常处理方法](http://www.runoob.com/java/exception-method.html)
-2. [Java 实例 - 多个异常处理（多个catch）](http://www.runoob.com/java/exception-hierarchy.html)
-3. [Java 实例 - Finally的用法](http://www.runoob.com/java/exception-finally.html)
+2. [Java 实例 - 多个异常处理（多个 catch）](http://www.runoob.com/java/exception-hierarchy.html)
+3. [Java 实例 - Finally 的用法](http://www.runoob.com/java/exception-finally.html)
 4. [Java 实例 - 使用 catch 处理异常](http://www.runoob.com/java/exception-catch.html)
 5. [Java 实例 - 多线程异常处理](http://www.runoob.com/java/exception-thread.html)
 6. [Java 实例 - 获取异常的堆栈信息](http://www.runoob.com/java/exception-printstack.html)
@@ -9416,7 +9465,7 @@ Generating ./help-doc.html...
 
 1. [Java 实例 – 数组转集合](http://www.runoob.com/java/collection-array.html)
 2. [Java 实例 – 集合比较](http://www.runoob.com/java/collection-compare.html)
-3. [Java 实例 – HashMap遍历](http://www.runoob.com/java/collection-iterate.html)
+3. [Java 实例 – HashMap 遍历](http://www.runoob.com/java/collection-iterate.html)
 4. [Java 实例 – 集合长度](http://www.runoob.com/java/collection-size.html)
 5. [Java 实例 – 集合打乱顺序](http://www.runoob.com/java/collection-shuffle.html)
 6. [Java 实例 – 集合遍历](http://www.runoob.com/java/collection-iterator.html)
@@ -9437,15 +9486,15 @@ Generating ./help-doc.html...
 
 ### 36.12 Java 网络实例
 
-1. [Java 实例 – 获取指定主机的IP地址](http://www.runoob.com/java/net-address.html)
+1. [Java 实例 – 获取指定主机的 IP 地址](http://www.runoob.com/java/net-address.html)
 2. [Java 实例 – 查看端口是否已使用](http://www.runoob.com/java/net-port.html)
-3. [Java 实例 – 获取本机ip地址及主机名](http://www.runoob.com/java/net-localip.html)
+3. [Java 实例 – 获取本机 IP 地址及主机名](http://www.runoob.com/java/net-localip.html)
 4. [Java 实例 – 获取远程文件大小](http://www.runoob.com/java/net-serverfile.html)
 5. [Java 实例 – Socket 实现多线程服务器程序](http://www.runoob.com/java/net-multisoc.html)
 6. [Java 实例 – 查看主机指定文件的最后修改时间](http://www.runoob.com/java/net-filetime.html)
 7. [Java 实例 – 使用 Socket 连接到指定主机](http://www.runoob.com/java/net-connected.html)
 8. [Java 实例 – 网页抓取](http://www.runoob.com/java/net-webpage.html)
-9. [Java 实例 – 获取 URL响应头的日期信息](http://www.runoob.com/java/net-urldate.html)
+9. [Java 实例 – 获取 URL 响应头的日期信息](http://www.runoob.com/java/net-urldate.html)
 10. [Java 实例 – 获取 URL 响应头信息](http://www.runoob.com/java/net-url-header.html)
 11. [Java 实例 – 解析 URL](http://www.runoob.com/java/net-url.html)
 12. [Java 实例 – ServerSocket 和 Socket 通信实例](http://www.runoob.com/java/net-serversocket-socket.html)
@@ -9459,7 +9508,7 @@ Generating ./help-doc.html...
 3. [Java 实例 – 状态监测](http://www.runoob.com/java/thread-monitor.html)
 4. [Java 实例 – 线程优先级设置](http://www.runoob.com/java/thread-getpri.html)
 5. [Java 实例 – 死锁及解决方法](http://www.runoob.com/java/thread-deadlock.html)
-6. [Java 实例 – 获取线程id](http://www.runoob.com/java/thread-id.html)
+6. [Java 实例 – 获取线程 ID](http://www.runoob.com/java/thread-id.html)
 7. [Java 实例 – 线程挂起](http://www.runoob.com/java/thread-suspend.html)
 8. [Java 实例 – 终止线程](http://www.runoob.com/java/thread-stop.html)
 9. [Java 实例 – 生产者/消费者问题](http://www.runoob.com/html/thread-procon.html)
