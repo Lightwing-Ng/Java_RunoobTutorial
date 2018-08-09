@@ -20,13 +20,12 @@ public class GenericTest_2 {
         age.add(18);
         number.add(314);
 
-        // getUperNumber(name);//1
-        getUperNumber(age); //2
-        getUperNumber(number); //3
+        getUperNumber(age);     // 2
+        getUperNumber(number);  // 3
     }
 
     public static void getData(List<?> data) {
-        System.out.println("data :" + data.get(0));
+        System.out.println("data: " + data.get(0));
     }
 
     private static void getUperNumber(List<? extends Number> data) {

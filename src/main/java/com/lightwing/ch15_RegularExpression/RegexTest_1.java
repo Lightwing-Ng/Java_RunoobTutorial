@@ -19,6 +19,6 @@ public class RegexTest_1 {
         String pattern = ".*est.*";
 
         boolean isMatch = Pattern.matches(pattern, content);
-        System.out.println("字符串中是否包含了 'est' 子字符串? " + isMatch);
+        System.out.println("字符串中是否包含了 'est' 子字符串? \n" + isMatch);
     }
 }

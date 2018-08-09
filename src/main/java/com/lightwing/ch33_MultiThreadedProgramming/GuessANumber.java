@@ -16,7 +16,7 @@ public class GuessANumber extends Thread {
 
     public void run() {
         int counter = 0;
-        int guess = 0;
+        int guess;
         do {
             guess = (int) (Math.random() * 100 + 1);
             System.out.println(this.getName() + " guesses " + guess);

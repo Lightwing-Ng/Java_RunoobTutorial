@@ -19,8 +19,10 @@ public class Salary extends Employee {
 
     public void mailCheck() {
         System.out.println("Within mailCheck of Salary class ");
-        System.out.println("Mailing check to " + getName()
-                + " with salary " + salary);
+        System.out.println(
+                "Mailing check to " + getName()
+                        + " with salary " + String.format("%,.2f", salary)
+        );
     }
 
     public double getSalary() {
@@ -33,7 +35,9 @@ public class Salary extends Employee {
     }
 
     public double computePay() {
-        System.out.println("Computing salary pay for " + getName());
+        System.out.println(
+                "Computing salary pay for " + getName()
+        );
         return salary / 52;
     }
 }

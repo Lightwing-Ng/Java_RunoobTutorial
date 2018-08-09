@@ -24,8 +24,7 @@ public class DirList {
                 else
                     System.out.println(value + " 是一个文件");
             }
-        } else {
+        } else
             System.out.println(dirname + " 不是一个目录");
-        }
     }
 }

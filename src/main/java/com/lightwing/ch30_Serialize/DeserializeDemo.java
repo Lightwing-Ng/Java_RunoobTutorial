@@ -30,7 +30,7 @@ public class DeserializeDemo {
             c.printStackTrace();
             return;
         }
-        System.out.println("Deserialized Employee...");
+        System.out.println("Deserialize Employee...");
         System.out.println("Name: " + e.name);
         System.out.println("Address: " + e.address);
         System.out.println("SSN: " + e.SSN);

@@ -21,7 +21,7 @@ public class Employee {
 
     public void mailCheck() {
         System.out.println(
-                "邮寄支票给： " +
+                "邮寄支票给: " +
                         this.name + " " +
                         this.address
         );

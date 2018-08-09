@@ -24,13 +24,13 @@ class SubClass extends SuperClass {
     }
 
     SubClass(int n) {
-        System.out.println("SubClass(int n):" + n);
+        System.out.println("SubClass(int n): " + n);
     }
 }
 
 public class TestSuperSub {
     public static void main(String args[]) {
-        SubClass sc = new SubClass();
-        SubClass sc2 = new SubClass(200);
+        SubClass sc_1 = new SubClass();
+        SubClass sc_2 = new SubClass(200);
     }
 }

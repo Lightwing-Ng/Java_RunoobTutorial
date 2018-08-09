@@ -28,6 +28,8 @@ public class ArrayTest {
         for (int i = 0; i < size; i++)
             total += myList[i];
 
-        System.out.println("总和为: " + total);
+        System.out.println(
+                "总和为: " + String.format("%,.2f", total)
+        );
     }
 }

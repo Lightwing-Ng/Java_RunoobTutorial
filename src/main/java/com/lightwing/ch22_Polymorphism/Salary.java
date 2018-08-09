@@ -18,8 +18,10 @@ public class Salary extends Employee {
 
     public void mailCheck() {
         System.out.println("Salary 类的 mailCheck 方法 ");
-        System.out.println("邮寄支票给：" + getName()
-                + " ，工资为：" + salary);
+        System.out.println(
+                "邮寄支票给: " + getName()
+                + " ，工资为: " + String.format("%,.2f", salary)
+        );
     }
 
     public double getSalary() {
@@ -27,13 +29,12 @@ public class Salary extends Employee {
     }
 
     private void setSalary(double newSalary) {
-        if (newSalary >= 0.0) {
+        if (newSalary >= 0.0)
             salary = newSalary;
-        }
     }
 
     public double computePay() {
-        System.out.println("计算工资，付给：" + getName());
+        System.out.println("计算工资，付给: " + getName());
         return salary / 52;
     }
 }

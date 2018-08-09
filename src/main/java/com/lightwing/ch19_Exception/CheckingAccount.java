@@ -17,8 +17,8 @@ public class CheckingAccount {
     }
 
     // 方法：存钱
-    void deposit(double amount) {
-        balance += amount;
+    void deposit() {
+        balance += 500.0;
     }
 
     // 方法：取钱

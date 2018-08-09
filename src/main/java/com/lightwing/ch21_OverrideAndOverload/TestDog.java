@@ -5,7 +5,7 @@ package com.lightwing.ch21_OverrideAndOverload;
  * @Description TODO
  * @Author Lightwing Ng
  * @DateTime 2018/8/7, 16:57
- * @Version 1.0
+ * @Version 1.1
  **/
 
 class Animal {

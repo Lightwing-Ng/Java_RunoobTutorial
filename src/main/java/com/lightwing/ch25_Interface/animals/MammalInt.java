@@ -7,7 +7,7 @@ package com.lightwing.ch25_Interface;
  * @DateTime 2018/8/7, 19:03
  * @Version 1.0
  **/
-public class MammalInt extends Animal {
+public class MammalInt extends com.lightwing.ch25_Interface.Animal {
     public void eat() {
         System.out.println("Mammal eats");
     }

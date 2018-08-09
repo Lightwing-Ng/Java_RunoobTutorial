@@ -24,7 +24,9 @@ public class GreetingServer extends Thread {
     public void run() {
         while (true) {
             try {
-                System.out.println("等待远程连接，端口号为：" + serverSocket.getLocalPort() + "...");
+                System.out.println(
+                        "等待远程连接，端口号为：" + serverSocket.getLocalPort() + "..."
+                );
                 Socket server = serverSocket.accept();
                 System.out.println("远程主机地址：" + server.getRemoteSocketAddress());
                 DataInputStream in = new DataInputStream(server.getInputStream());

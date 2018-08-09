@@ -26,6 +26,6 @@ public class GenericTest_1 {
     }
 
     private static void getData(List<?> data) {
-        System.out.println("data :" + data.get(0));
+        System.out.println("data: " + data.get(0));
     }
 }

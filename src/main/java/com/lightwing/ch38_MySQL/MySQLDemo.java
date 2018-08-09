@@ -32,7 +32,8 @@ public class MySQLDemo {
             String sql;
             sql = "SELECT " +
                     "`cust_id`, `cust_name`, `cust_phone`, `cust_address`" +
-                    "FROM `customer`";
+                    "FROM " +
+                    "`customer`";
             ResultSet rs = stmt.executeQuery(sql);
 
             // 4.展开结果集数据库
@@ -48,7 +49,6 @@ public class MySQLDemo {
                 System.out.print(", Name: " + name);
                 System.out.print(", Phone: " + phone);
                 System.out.println(", Address: " + add);
-                System.out.print("\n");
             }
             // 7.完成后关闭
             rs.close();

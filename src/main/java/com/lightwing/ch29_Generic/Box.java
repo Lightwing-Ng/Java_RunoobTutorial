@@ -25,7 +25,7 @@ public class Box<T> {
         integerBox.add(10);
         stringBox.add("菜鸟教程");
 
-        System.out.printf("整型值为 :%d\n\n", integerBox.get());
-        System.out.printf("字符串为 :%s\n", stringBox.get());
+        System.out.printf("整型值为: %d\n", integerBox.get());
+        System.out.printf("字符串为: %s\n", stringBox.get());
     }
 }
