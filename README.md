@@ -15,8 +15,8 @@
 package com.lightwing.ch01_BasicGrammer;
 
 public class HelloWorld {
-    /* 这是第一个Java程序
-     * 它将打印Hello World
+    /* 这是第一个 Java 程序
+     * 它将打印 Hello World
      * 这是一个多行注释的示例
      */
     public static void main(String[] args) {
@@ -31,9 +31,9 @@ public class HelloWorld {
 
 - 打开 SublimeText，把上面的代码添加进去；
 - 把文件名保存为：HelloWorld.java；
-- 打开 cmd 命令窗口，进入目标文件所在的位置，假设是C:\
-- 在命令行窗口键入 javac HelloWorld.java  按下enter键编译代码。如果代码没有错误，cmd命令提示符会进入下一行。（假设环境变量都设置好了）。
-- 再键入java HelloWorld 按下 Enter 键就可以运行程序了
+- 打开 cmd 命令窗口，进入目标文件所在的位置，假设是 C:\
+- 在命令行窗口键入 javac HelloWorld.java  按下 enter 键编译代码。如果代码没有错误，cmd 命令提示符会进入下一行。（假设环境变量都设置好了）。
+- 再键入 java HelloWorld 按下 Enter 键就可以运行程序了
 
 你将会在窗口看到 Hello World
 
@@ -41,20 +41,20 @@ public class HelloWorld {
 
 编写 Java 程序时，应注意以下几点：
 
-- **大小写敏感**：Java是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。
+- **大小写敏感**：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。
 - **类名**：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 MyFirstJavaClass 。
 - **方法名**：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。
-- **源文件名**：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记Java是大小写敏感的），文件名的后缀为.java。（如果文件名和类名不相同则会导致编译错误）。
-- **主方法入口**：所有的Java 程序由**public static void main(String []args)**方法开始执行。
+- **源文件名**：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为.java。（如果文件名和类名不相同则会导致编译错误）。
+- **主方法入口**：所有的 Java 程序由**public static void main(String []args)**方法开始执行。
 
 ### 1.3 Java 标识符
 
-Java所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。
+Java 所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。
 
-关于Java标识符，有以下几点需要注意：
+关于 Java 标识符，有以下几点需要注意：
 
-- 所有的标识符都应该以字母（A-Z或者a-z）,美元符（$）、或者下划线（_）开始
-- 首字符之后可以是字母（A-Z或者a-z）,美元符（$）、下划线（_）或数字的任何字符组合
+- 所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始
+- 首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合
 - 关键字不能用作标识符
 - 标识符是大小写敏感的
 - 合法标识符举例：age、$salary、_value、__1_value
@@ -65,7 +65,7 @@ Java所有的组成部分都需要名字。类名、变量名以及方法名都�
 - 访问控制修饰符 : default, public , protected, private
 - 非访问控制修饰符 : final, abstract, strictfp
 
-在后面的章节中我们会深入讨论Java修饰符。
+在后面的章节中我们会深入讨论 Java 修饰符。
 
 ### 1.5 Java 变量
 
@@ -121,7 +121,7 @@ class FreshJuiceTest {
 | | `final`              | 最终值,不可改变的            |
 | | `implements`         | 实现（接口）                 |
 | | `interface`          | 接口                         |
-| | `native`             | 本地，原生方法（非Java实现） |
+| | `native`             | 本地，原生方法（非 Java 实现） |
 | | `new`                | 新,创建                      |
 | |`static`               | 静态                         |
 | | `strictfp`           | 严格,精准                    |
@@ -129,7 +129,7 @@ class FreshJuiceTest {
 | | `transient`          | 短暂                         |
 | |`volatile`             | 易失                         |
 | **程序控制语句**     | `break`                      | 跳出循环             |
-| | `case`               | 定义一个值以供switch选择     |
+| | `case`               | 定义一个值以供 switch 选择     |
 | | `continue`           | 继续                         |
 | | `default`            | 默认                         |
 | | `do`                 | 运行                         |
@@ -169,8 +169,8 @@ class FreshJuiceTest {
 package com.lightwing.ch01_BasicGrammer;
 
 public class HelloWorld {
-    /* 这是第一个Java程序
-     * 它将打印Hello World
+    /* 这是第一个 Java 程序
+     * 它将打印 Hello World
      * 这是一个多行注释的示例
      */
     public static void main(String[] args) {
@@ -183,17 +183,17 @@ public class HelloWorld {
 
 ### 1.10 Java 空行
 
-空白行，或者有注释的行，Java编译器都会忽略掉。
+空白行，或者有注释的行，Java 编译器都会忽略掉。
 
 ### 1.11 继承
 
-在Java中，一个类可以由其他类派生。如果你要创建一个类，而且已经存在一个类具有你所需要的属性或方法，那么你可以将新创建的类继承该类。
+在 Java 中，一个类可以由其他类派生。如果你要创建一个类，而且已经存在一个类具有你所需要的属性或方法，那么你可以将新创建的类继承该类。
 
 利用继承的方法，可以重用已存在类的方法和属性，而不用重写这些代码。被继承的类称为超类（super class），派生类称为子类（subclass）。
 
 ### 1.12 接口
 
-在Java中，接口可理解为对象间相互通信的协议。接口在继承中扮演着很重要的角色。
+在 Java 中，接口可理解为对象间相互通信的协议。接口在继承中扮演着很重要的角色。
 
 接口只定义派生要用到的方法，但是方法的具体实现完全取决于派生类。
 
@@ -203,7 +203,7 @@ public class HelloWorld {
 
 ## 02 Object Class
 
-Java作为一种面向对象语言。支持以下基本概念：
+Java 作为一种面向对象语言。支持以下基本概念：
 
 - 多态
 - 继承
@@ -234,9 +234,9 @@ Java作为一种面向对象语言。支持以下基本概念：
 
 ### 2.2 Java 中的类
 
-类可以看成是创建Java对象的模板。
+类可以看成是创建 Java 对象的模板。
 
-通过下面一个简单的类来理解下Java中类的定义：
+通过下面一个简单的类来理解下 Java 中类的定义：
 
 ```java
 public class Dog {
@@ -259,13 +259,13 @@ public class Dog {
 
 - **局部变量**：在方法、构造方法或者语句块中定义的变量被称为局部变量。变量声明和初始化都是在方法中，方法结束后，变量就会自动销毁。
 - **成员变量**：成员变量是定义在类中，方法体之外的变量。这种变量在创建对象的时候实例化。成员变量可以被类中方法、构造方法和特定类的语句块访问。
-- **类变量**：类变量也声明在类中，方法体之外，但必须声明为static类型。
+- **类变量**：类变量也声明在类中，方法体之外，但必须声明为 static 类型。
 
-一个类可以拥有多个方法，在上面的例子中：barking()、hungry()和sleeping()都是Dog类的方法。
+一个类可以拥有多个方法，在上面的例子中：barking()、hungry()和 sleeping()都是 Dog 类的方法。
 
 ### 2.3 构造方法
 
-每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认构造方法。
+每个类都有构造方法。如果没有显式地为类定义构造方法，Java 编译器将会为该类提供一个默认构造方法。
 
 在创建一个对象的时候，至少要调用一个构造方法。构造方法的名称必须与类同名，一个类可以有多个构造方法。
 
@@ -284,11 +284,11 @@ public class Puppy {
 
 ### 2.4 创建对象
 
-对象是根据类创建的。在Java中，使用关键字new来创建一个新的对象。创建对象需要以下三步：
+对象是根据类创建的。在 Java 中，使用关键字 new 来创建一个新的对象。创建对象需要以下三步：
 
 - **声明**：声明一个对象，包括对象名称和对象类型。
-- **实例化**：使用关键字new来创建一个对象。
-- **初始化**：使用new创建对象时，会调用构造方法初始化对象。
+- **实例化**：使用关键字 new 来创建一个对象。
+- **初始化**：使用 new 创建对象时，会调用构造方法初始化对象。
 
 下面是一个创建对象的例子：
 
@@ -338,9 +338,9 @@ public class Puppy {
     public static void main(String[] args) {
         // 创建对象
         Puppy myPuppy = new Puppy("tommy");
-        // 通过方法来设定age
+        // 通过方法来设定 age
         myPuppy.setAge();
-        // 调用另一个方法获取age
+        // 调用另一个方法获取 age
         myPuppy.getAge();
         // 你也可以像下面这样访问成员变量
         System.out.println("变量值: " + myPuppy.puppyAge);
@@ -358,11 +358,11 @@ public class Puppy {
 
 ### 2.7 源文件声明规则 
 
-在本节的最后部分，我们将学习源文件的声明规则。当在一个源文件中定义多个类，并且还有import语句和package语句时，要特别注意这些规则。
+在本节的最后部分，我们将学习源文件的声明规则。当在一个源文件中定义多个类，并且还有 import 语句和 package 语句时，要特别注意这些规则。
 
-- 一个源文件中只能有一个public类
-- 一个源文件可以有多个非public类
-- 源文件的名称应该和public类的类名保持一致。例如：源文件中public类的类名是Employee，那么源文件应该命名为Employee.java。
+- 一个源文件中只能有一个 public 类
+- 一个源文件可以有多个非 public 类
+- 源文件的名称应该和 public 类的类名保持一致。例如：源文件中 public 类的类名是 Employee，那么源文件应该命名为 Employee.java。
 - 如果一个类定义在某个包中，那么package语句应该在源文件的首行。
 - 如果源文件包含import语句，那么应该放在package语句和类定义之间。如果没有package语句，那么import语句应该在源文件中最前面。
 - import语句和package语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。
@@ -1467,7 +1467,7 @@ public class selfAddMinus_2 {
 自增运算符后缀运算后 b = 6, y = 10
 ```
 
-------
+
 
 ### 6.2 关系运算符
 
@@ -1514,7 +1514,7 @@ b >= a = true
 b <= a = false
 ```
 
-------
+
 
 ### 6.3 位运算符
 
@@ -1762,7 +1762,7 @@ Value of b is: 30
 Value of b is: 20
 ```
 
-------
+
 
 ### 6.7 `instanceof` 运算符
 
@@ -1886,7 +1886,7 @@ value of x: 18
 value of x: 19
 ```
 
-------
+
 
 ### 7.2 do…while 循环
 
@@ -1930,7 +1930,7 @@ value of x: 18
 value of x: 19
 ```
 
-------
+
 
 ### 7.3 for 循环
 
@@ -1977,7 +1977,7 @@ value of x: 18
 value of x: 19
 ```
 
-------
+
 
 ### 7.4 Java 增强 for 循环
 
@@ -2020,7 +2020,7 @@ public class AugmentedForTest {
 James, Larry, Tom, Lacy,
 ```
 
-------
+
 
 ### 7.5 break 关键字
 
@@ -2062,7 +2062,7 @@ public class BreakTest {
 20
 ```
 
-------
+
 
 ### 7.6 continue 关键字
 
@@ -2116,7 +2116,7 @@ Java 有两种分支结构：
 - **if** 语句
 - **switch** 语句
 
-------
+
 
 ### 8.1 if 语句
 
@@ -2150,7 +2150,7 @@ public class IfTest {
 这是 if 语句
 ```
 
-------
+
 
 ### 8.2 if...else 语句
 
@@ -2188,7 +2188,7 @@ public class IfElseTest {
 这是 else 语句
 ```
 
-------
+
 
 ### 8.3 if...else if...else 语句
 
@@ -2241,7 +2241,7 @@ public class IfElseifElse {
 Value of X is 30
 ```
 
-------
+
 
 ### 8.4 嵌套的 if…else 语句
 
@@ -2282,7 +2282,7 @@ public class NestedTest {
 X = 30 and Y = 10
 ```
 
-------
+
 
 ### 8.2 switch 语句
 
@@ -2391,7 +2391,7 @@ public class IntegerTest {
 
 当 x 被赋为整型值时，由于x是一个对象，所以编译器要对x进行装箱。然后，为了使x能进行加运算，所以要对x进行拆箱。
 
-------
+
 
 ### 9.1 Java Math 类
 
@@ -2423,7 +2423,7 @@ public class MathTest {
 3.141592653589793
 ```
 
-------
+
 
 ### 9.2 Number & Math 类方法
 
@@ -2459,7 +2459,7 @@ public class MathTest {
 | 26   | [toRadians()](http://www.runoob.com/java/number-toradians.html) 将角度转换为弧度。 |
 | 27   | [random()](http://www.runoob.com/java/number-random.html) 返回一个随机数。 |
 
-------
+
 
 ### 9.3 Math 的 floor,round 和 ceil 方法实例比较
 
@@ -2555,7 +2555,7 @@ Character ch = 'a';
 char c = test('x');
 ```
 
-------
+
 
 ### 10.1 转义序列
 
@@ -2594,7 +2594,7 @@ public class EscapeCharacterTest {
 访问"菜鸟教程!"
 ```
 
-------
+
 
 ### 10.2 Character 方法
 
@@ -2615,7 +2615,7 @@ public class EscapeCharacterTest {
 
 字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。
 
-------
+
 
 ### 11.1 创建字符串
 
@@ -2653,7 +2653,7 @@ runoob
 
 如果需要对字符串做很多修改，那么应该选择使用 [StringBuffer & StringBuilder 类](http://www.runoob.com/java/java-stringbuffer.html)。
 
-------
+
 
 ### 11.2 字符串长度
 
@@ -2679,7 +2679,7 @@ public class StringLength {
 菜鸟教程网址长度 : 14
 ```
 
-------
+
 
 ### 11.3 连接字符串
 
@@ -2724,7 +2724,7 @@ public class ConnectString {
 1、菜鸟教程网址：www.runoob.com
 ```
 
-------
+
 
 ### 11.4 创建格式化字符串
 
@@ -2753,7 +2753,7 @@ fs = String.format("浮点型变量的值为 " +
                    " %s", floatVar, intVar, stringVar);
 ```
 
-------
+
 
 ### 11.5 String 方法
 
@@ -2878,7 +2878,7 @@ Java 语言中提供的数组是用来存储固定大小的同类型元素。
 
 本教程将为大家介绍 Java 数组的声明、创建和初始化，并给出其对应的代码。
 
-------
+
 
 ### 13.1 声明数组变量
 
@@ -2900,7 +2900,7 @@ double[] myList; // 首选的方法   或
 double myList[]; // 效果相同，但不是首选方法
 ```
 
-------
+
 
 ### 13.2 创建数组
 
@@ -2972,7 +2972,7 @@ public class ArrayTest {
 
 ![java数组结构说明](http://www.runoob.com/wp-content/uploads/2013/12/12-130Q0221Q5602.jpg)
 
-------
+
 
 ### 13.3 处理数组
 
@@ -3020,7 +3020,7 @@ Total is 11.7
 Max is 3.5
 ```
 
-------
+
 
 ### 13. 4 foreach 循环
 
@@ -3053,7 +3053,7 @@ public class ForEachTest {
 3.5
 ```
 
-------
+
 
 ### 13.5 数组作为函数的参数
 
@@ -3075,7 +3075,7 @@ public static void printArray(int[] array) {
 printArray(new int[]{3, 1, 2, 6, 4, 2});
 ```
 
-------
+
 
 ### 13.6 数组作为函数的返回值
 
@@ -3091,7 +3091,7 @@ public static int[] reverse(int[] list) {
 
 以上实例中 result 数组作为函数的返回值。
 
-------
+
 
 ### 13.7 多维数组
 
@@ -3146,7 +3146,7 @@ s[1][2] = new String("!");
 num[1][0];
 ```
 
-------
+
 
 ## 13.10 Arrays 类
 
@@ -3199,7 +3199,7 @@ Date对象创建以后，可以调用下面的方法。
 | 9    | **void setTime(long time)**   用自1970年1月1日00:00:00 GMT以后time毫秒数设置时间和日期。 |
 | 10   | **String toString( )** 把此 Date 对象转换为以下形式的 String： dow mon dd hh:mm:ss zzz yyyy 其中： dow 是一周中的某一天 (Sun, Mon, Tue, Wed, Thu, Fri, Sat)。 |
 
-------
+
 
 ### 14.1 获取当前日期时间
 
@@ -3225,7 +3225,7 @@ public class DateDemo {
 Wed Aug 08 17:12:34 CST 2018
 ```
 
-------
+
 
 ### 14.2 日期比较
 
@@ -3235,7 +3235,7 @@ Java使用以下三种方法来比较两个日期：
 - 使用方法 before()，after() 和 equals()。例如，一个月的12号比18号早，则 new Date(99, 2, 12).before(new Date (99, 2, 18)) 返回true。
 - 使用 compareTo() 方法，它是由 Comparable 接口定义的，Date 类实现了这个接口。
 
-------
+
 
 ### 14.3 使用 SimpleDateFormat 格式化日期
 
@@ -3271,7 +3271,7 @@ SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
 Current Date: Wed 2016.11.09 at 08:23:19 AM UTC
 ```
 
-------
+
 
 ### 14.4 日期和时间的格式化编码
 
@@ -3300,7 +3300,7 @@ Current Date: Wed 2016.11.09 at 08:23:19 AM UTC
 | '        | 文字定界符               | Delimiter               |
 | "        | 单引号                   | `                       |
 
-------
+
 
 ### 14.5 使用printf格式化日期
 
@@ -3454,7 +3454,7 @@ public class printfDemo_4 {
 月份的日（前面不补0）：8
 ```
 
-------
+
 
 ### 14.6 解析字符串为时间
 
@@ -3490,7 +3490,7 @@ $ java DateDemo 2007-12-01
 2007-12-01 Parses as Sat Dec 01 00:00:00 GMT 2007
 ```
 
-------
+
 
 ### 14.7 Java 休眠(sleep)
 
@@ -3523,7 +3523,7 @@ Wed Aug 08 17:24:13 CST 2018
 Wed Aug 08 17:24:16 CST 2018
 ```
 
-------
+
 
 ### 14.8 测量时间
 
@@ -3561,7 +3561,7 @@ Difference is : 3035
 Process finished with exit code 0
 ```
 
-------
+
 
 ### 14.9 Calendar类
 
@@ -3678,7 +3678,7 @@ int second = c1.get(Calendar.SECOND); 	// 获得星期几（注意（这个与Da
 int day = c1.get(Calendar.DAY_OF_WEEK);
 ```
 
-------
+
 
 ### 14.10 GregorianCalendar类
 
@@ -3795,9 +3795,9 @@ Time: 5:32:14
 
 正则表达式并不仅限于某一种语言，但是在每种语言中有细微的差别。
 
-### 正则表达式实例
+### 15.1 正则表达式实例
 
-一个字符串其实就是一个简单的正则表达式，例如 **Hello World** 正则表达式匹配 "Hello World" 字符串。
+一个字符串其实就是一个简单的正则表达式，例如 **Hello World** 正则表达式匹配 「Hello World」 字符串。
 
 **.**（点号）也是一个正则表达式，它匹配任何一个字符如："a" 或 "1"。
 
@@ -3811,7 +3811,7 @@ Time: 5:32:14
 
 Java 正则表达式和 Perl 的是最为相似的。
 
-java.util.regex 包主要包括以下三个类：
+`java.util.regex` 包主要包括以下三个类：
 
 - Pattern 类：
 
@@ -3821,29 +3821,46 @@ java.util.regex 包主要包括以下三个类：
 
   Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
 
-- PatternSyntaxException：
+- `PatternSyntaxException`：
 
   PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
 
 以下实例中使用了正则表达式 **.\*runoob.*** 用于查找字符串中是否包了 **runoob** 子串：
 
-## 实例
+```java
+public class RegexTest_1 {
+    public static void main(String args[]) {
+        String content = "The musical duo invokes disco funk sounds of the 70s, creating powerful" +
+                " tunes that feature lush vocals paired with piano and guitar. Expect unique " +
+                "takes on classic hits, such as Prince's 'Kiss,' as well as original compositions" +
+                " on the group's 'Lust Calling' tour. " + "In the article posted on its official WeChat platform, the police department released its latest results on the crackdown of gropers in the city’s subway.";
 
-import java.util.regex.*;   class RegexExample1{    public static void main(String args[]){       String content = "I am noob " +         "from runoob.com.";         String pattern = ".*runoob.*";         boolean isMatch = Pattern.matches(pattern, content);       System.out.println("字符串中是否包含了 'runoob' 子字符串? " + isMatch);    } }
+        String pattern = ".*est.*";
+
+        boolean isMatch = Pattern.matches(pattern, content);
+        System.out.println("字符串中是否包含了 'est' 子字符串? \n" + isMatch);
+    }
+}
+```
 
 实例输出结果为：
 
-字符串中是否包含了 'runoob' 子字符串? true
+```powershell
+字符串中是否包含了 'est' 子字符串? 
+true
+```
 
-------
 
-## 捕获组
+
+
+
+### 15.2 捕获组
 
 捕获组是把多个字符当一个单独单元进行处理的方法，它通过对括号内的字符分组来创建。
 
 例如，正则表达式 (dog) 创建了单一分组，组里包含"d"，"o"，和"g"。
 
-捕获组是通过从左至右计算其开括号来编号。例如，在表达式（（A）（B（C））），有四个这样的组：
+捕获组是通过从左至右计算其开括号来编号。例如，在表达式((A)(B(C)))，有四个这样的组：
 
 - ((A)(B(C)))
 - (A)
@@ -3854,26 +3871,49 @@ import java.util.regex.*;   class RegexExample1{    public static void main(Stri
 
 还有一个特殊的组（group(0)），它总是代表整个表达式。该组不包括在 groupCount 的返回值中。
 
-## 实例
+#### 实例
 
 下面的例子说明如何从一个给定的字符串中找到数字串：
 
-## RegexMatches.java 文件代码：
+```java
+public class RegexTest_2 {
+    public static void main(String args[]) {
+        // 按指定模式在字符串查找
+        String line = "The musical duo invokes disco funk sounds of the 70s, creating powerful" +
+                " tunes that feature lush vocals paired with piano and guitar. Expect unique " +
+                "takes on classic hits, such as Prince's 'Kiss,' as well as original compositions" +
+                " on the group's 'Lust Calling' tour. " + "In the article posted on its official WeChat platform, the police department released its latest results on the crackdown of gropers in the city’s subway.";
+        String pattern = "(\\D*)(\\d+)(.*)";
 
-import java.util.regex.Matcher; import java.util.regex.Pattern;   public class RegexMatches {     public static void main( String args[] ){         // 按指定模式在字符串查找       String line = "This order was placed for QT3000! OK?";       String pattern = "(\\D*)(\\d+)(.*)";         // 创建 Pattern 对象       Pattern r = Pattern.compile(pattern);         // 现在创建 matcher 对象       Matcher m = r.matcher(line);       if (m.find( )) {          System.out.println("Found value: " + m.group(0) );          System.out.println("Found value: " + m.group(1) );          System.out.println("Found value: " + m.group(2) );          System.out.println("Found value: " + m.group(3) );        } else {          System.out.println("NO MATCH");       }    } }
+        // 创建 Pattern 对象
+        Pattern r = Pattern.compile(pattern);
+
+        // 现在创建 matcher 对象
+        Matcher m = r.matcher(line);
+        if (m.find()) {
+            System.out.println("Found value: " + m.group(0));
+            System.out.println("Found value: " + m.group(1));
+            System.out.println("Found value: " + m.group(2));
+            System.out.println("Found value: " + m.group(3));
+        } else {
+            System.out.println("NO MATCH");
+        }
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
-Found value: This order was placed for QT3000! OK?
-Found value: This order was placed for QT
-Found value: 3000
-Found value: ! OK?
+```powershell
+Found value: The musical duo invokes disco funk sounds of the 70s, creating powerful tunes that feature lush vocals paired with piano and guitar. Expect unique takes on classic hits, such as Prince's 'Kiss,' as well as original compositions on the group's 'Lust Calling' tour. In the article posted on its official WeChat platform, the police department released its latest results on the crackdown of gropers in the city’s subway.
+Found value: The musical duo invokes disco funk sounds of the 
+Found value: 70
+Found value: s, creating powerful tunes that feature lush vocals paired with piano and guitar. Expect unique takes on classic hits, such as Prince's 'Kiss,' as well as original compositions on the group's 'Lust Calling' tour. In the article posted on its official WeChat platform, the police department released its latest results on the crackdown of gropers in the city’s subway.
 ```
 
-------
 
-## 正则表达式语法
+
+### 15.3 正则表达式语法
 
 在其他语言中，\\ 表示：**我想要在正则表达式中插入一个普通的（字面上的）反斜杠，请不要给它任何特殊的意义。**
 
@@ -3926,22 +3966,22 @@ Found value: ! OK?
 
 > 根据 Java Language Specification 的要求，Java 源代码的字符串中的反斜线被解释为 Unicode 转义或其他字符转义。因此必须在字符串字面值中使用两个反斜线，表示正则表达式受到保护，不被 Java 字节码编译器解释。例如，当解释为正则表达式时，字符串字面值 "\b" 与单个退格字符匹配，而 "\\b" 与单词边界匹配。字符串字面值 "\(hello\)" 是非法的，将导致编译时错误；要与字符串 (hello) 匹配，必须使用字符串字面值 "\\(hello\\)"。
 
-------
 
-## Matcher 类的方法
 
-## 索引方法
+### 15.4 Matcher 类的方法
+
+#### 15.4.1 索引方法
 
 索引方法提供了有用的索引值，精确表明输入字符串中在哪能找到匹配：
 
 | **序号** | **方法及说明**                                               |
 | -------- | ------------------------------------------------------------ |
-| 1        | **public int start()**  返回以前匹配的初始索引。             |
+| 1        | **`public int start()`**  返回以前匹配的初始索引。           |
 | 2        | **public int start(int group)**  返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引 |
 | 3        | **public int end()** 返回最后匹配字符之后的偏移量。          |
 | 4        | **public int end(int group)** 返回在以前的匹配操作期间，由给定组所捕获子序列的最后字符之后的偏移量。 |
 
-## 研究方法
+#### 15.4.2 研究方法
 
 研究方法用来检查输入字符串并返回一个布尔值，表示是否找到该模式：
 
@@ -3952,29 +3992,47 @@ Found value: ! OK?
 | 3        | **public boolean find(int start****）** 重置此匹配器，然后尝试查找匹配该模式、从指定索引开始的输入序列的下一个子序列。 |
 | 4        | **public boolean matches()**  尝试将整个区域与模式匹配。     |
 
-## 替换方法
+#### 15.4.3 替换方法
 
 替换方法是替换输入字符串里文本的方法：
 
 | **序号** | **方法及说明**                                               |
 | -------- | ------------------------------------------------------------ |
-| 1        | **public Matcher appendReplacement(StringBuffer sb, String replacement)** 实现非终端添加和替换步骤。 |
+| 1        | **`public Matcher appendReplacement(StringBuffer sb, String replacement)`** 实现非终端添加和替换步骤。 |
 | 2        | **public StringBuffer appendTail(StringBuffer sb)** 实现终端添加和替换步骤。 |
 | 3        | **public String replaceAll(String replacement)**   替换模式与给定替换字符串相匹配的输入序列的每个子序列。 |
 | 4        | **public String replaceFirst(String replacement)**  替换模式与给定替换字符串匹配的输入序列的第一个子序列。 |
 | 5        | **public static String quoteReplacement(String s)** 返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给Matcher类的appendReplacement 方法一个字面字符串一样工作。 |
 
-## start 和 end 方法
+#### 15.4.4 start 和 end 方法
 
 下面是一个对单词 "cat" 出现在输入字符串中出现次数进行计数的例子：
 
-## RegexMatches.java 文件代码：
+```java
+public class RegexTest_3 {
+    private static final String REGEX = "\\bcat\\b";
+    private static final String INPUT =
+            "cat cat cat cattie cat";
 
-import java.util.regex.Matcher; import java.util.regex.Pattern;   public class RegexMatches {     private static final String REGEX = "\\bcat\\b";     private static final String INPUT =                                     "cat cat cat cattie cat";       public static void main( String args[] ){        Pattern p = Pattern.compile(REGEX);        Matcher m = p.matcher(INPUT); // 获取 matcher 对象        int count = 0;          while(m.find()) {          count++;          System.out.println("Match number "+count);          System.out.println("start(): "+m.start());          System.out.println("end(): "+m.end());       }    } }
+    public static void main(String args[]) {
+        Pattern p = Pattern.compile(REGEX);
+        // 获取 matcher 对象
+        Matcher m = p.matcher(INPUT);
+        int count = 0;
+
+        while (m.find()) {
+            count++;
+            System.out.println("Match number " + count);
+            System.out.println("start(): " + m.start());
+            System.out.println("end(): " + m.end());
+        }
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 Match number 1
 start(): 0
 end(): 3
@@ -3993,7 +4051,7 @@ end(): 22
 
 Start 方法返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引，end 方法最后一个匹配字符的索引加 1。
 
-## matches 和 lookingAt 方法
+#### 15.4.5 matches 和 lookingAt 方法
 
 matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而lookingAt 不要求。
 
@@ -4003,13 +4061,31 @@ lookingAt 方法虽然不需要整句都匹配，但是需要从第一个字符�
 
 我们通过下面这个例子，来解释这个功能：
 
-## RegexMatches.java 文件代码：
+```java
+public class RegexTest_4 {
+    private static final String REGEX = "foo";
+    private static final String INPUT = "fooooooooooooooooo";
+    private static final String INPUT2 = "ooooofoooooooooooo";
 
-import java.util.regex.Matcher; import java.util.regex.Pattern;   public class RegexMatches {     private static final String REGEX = "foo";     private static final String INPUT = "fooooooooooooooooo";     private static final String INPUT2 = "ooooofoooooooooooo";     private static Pattern pattern;     private static Matcher matcher;     private static Matcher matcher2;       public static void main( String args[] ){        pattern = Pattern.compile(REGEX);        matcher = pattern.matcher(INPUT);        matcher2 = pattern.matcher(INPUT2);          System.out.println("Current REGEX is: "+REGEX);        System.out.println("Current INPUT is: "+INPUT);        System.out.println("Current INPUT2 is: "+INPUT2);            System.out.println("lookingAt(): "+matcher.lookingAt());        System.out.println("matches(): "+matcher.matches());        System.out.println("lookingAt(): "+matcher2.lookingAt());    } }
+    public static void main(String args[]) {
+        Pattern pattern = Pattern.compile(REGEX);
+        Matcher matcher = pattern.matcher(INPUT);
+        Matcher matcher2 = pattern.matcher(INPUT2);
+
+        System.out.println("Current REGEX is: " + REGEX);
+        System.out.println("Current INPUT is: " + INPUT);
+        System.out.println("Current INPUT2 is: " + INPUT2);
+
+        System.out.println("lookingAt(): " + matcher.lookingAt());
+        System.out.println("matches(): " + matcher.matches());
+        System.out.println("lookingAt(): " + matcher2.lookingAt());
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 Current REGEX is: foo
 Current INPUT is: fooooooooooooooooo
 Current INPUT2 is: ooooofoooooooooooo
@@ -4018,39 +4094,67 @@ matches(): false
 lookingAt(): false
 ```
 
-## replaceFirst 和 replaceAll 方法
+#### 15.4.6 replaceFirst 和 replaceAll 方法
 
 replaceFirst 和 replaceAll 方法用来替换匹配正则表达式的文本。不同的是，replaceFirst 替换首次匹配，replaceAll 替换所有匹配。
 
 下面的例子来解释这个功能：
 
-## RegexMatches.java 文件代码：
+```java
+public class RegexTest_5 {
+    private static String INPUT = "The dog says meow. " +
+            "All dogs say meow.";
 
-import java.util.regex.Matcher; import java.util.regex.Pattern;   public class RegexMatches {     private static String REGEX = "dog";     private static String INPUT = "The dog says meow. " +                                     "All dogs say meow.";     private static String REPLACE = "cat";       public static void main(String[] args) {        Pattern p = Pattern.compile(REGEX);        // get a matcher object        Matcher m = p.matcher(INPUT);         INPUT = m.replaceAll(REPLACE);        System.out.println(INPUT);    } }
+    public static void main(String[] args) {
+        String REGEX = "dog";
+        Pattern p = Pattern.compile(REGEX);
+        // get a matcher object
+        Matcher m = p.matcher(INPUT);
+        String REPLACE = "cat";
+        INPUT = m.replaceAll(REPLACE);
+        System.out.println(INPUT);
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 The cat says meow. All cats say meow.
 ```
 
-## appendReplacement 和 appendTail 方法
+#### 15.4.7 appendReplacement 和 appendTail 方法
 
 Matcher 类也提供了appendReplacement 和 appendTail 方法用于文本替换：
 
 看下面的例子来解释这个功能：
 
-## RegexMatches.java 文件代码：
-
-import java.util.regex.Matcher; import java.util.regex.Pattern;   public class RegexMatches {    private static String REGEX = "a*b";    private static String INPUT = "aabfooaabfooabfoobkkk";    private static String REPLACE = "-";    public static void main(String[] args) {       Pattern p = Pattern.compile(REGEX);       // 获取 matcher 对象       Matcher m = p.matcher(INPUT);       StringBuffer sb = new StringBuffer();       while(m.find()){          m.appendReplacement(sb,REPLACE);       }       m.appendTail(sb);       System.out.println(sb.toString());    } }
+```java
+public class RegexTest_6 {
+    public static void main(String[] args) {
+        String REGEX = "a*b";
+        Pattern p = Pattern.compile(REGEX);
+        // 获取 matcher 对象
+        String INPUT = "aabfooaabfooabfoobkkk";
+        Matcher m = p.matcher(INPUT);
+        StringBuffer sb = new StringBuffer();
+        while (m.find()) {
+            String REPLACE = "-";
+            m.appendReplacement(sb, REPLACE);
+        }
+        m.appendTail(sb);
+        System.out.println(sb.toString());
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 -foo-foo-foo-kkk
 ```
 
-## PatternSyntaxException 类的方法
+### 15.5 PatternSyntaxException 类的方法
 
 PatternSyntaxException 是一个非强制异常类，它指示一个正则表达式模式中的语法错误。
 
@@ -4065,41 +4169,46 @@ PatternSyntaxException 类提供了下面的方法来帮助我们查看发生了
 
 ## 16 Method
 
-在前面几个章节中我们经常使用到 **System.out.println()**，那么它是什么呢？
+在前面几个章节中我们经常使用到 **`System.out.println()`**，那么它是什么呢？
 
-- println() 是一个方法。
-- System 是系统类。
-- out 是标准输出对象。
+- `println()` 是一个方法。
+- `System` 是系统类。
+- `out` 是标准输出对象。
 
 这句话的用法是调用系统类 System 中的标准输出对象 out 中的方法 println()。
 
-### 那么什么是方法呢？
+### 16.1 那么什么是方法呢？
 
-Java方法是语句的集合，它们在一起执行一个功能。
+Java 方法是语句的集合，它们在一起执行一个功能。
 
 - 方法是解决一类问题的步骤的有序组合
 - 方法包含于类或对象中
 - 方法在程序中被创建，在其他地方被引用
 
-### 方法的优点
+### 16.2 方法的优点
 
-- \1. 使程序变得更简短而清晰。
-- \2. 有利于程序维护。
-- \3. 可以提高程序开发的效率。
-- \4. 提高了代码的重用性。
+1. 使程序变得更简短而清晰。
+2. 有利于程序维护。
+3. 可以提高程序开发的效率。
+4. 提高了代码的重用性。
 
-### 方法的命名规则
+### 16.3 方法的命名规则
 
-- 1.方法的名字的第一个单词应以小写字母作为开头，后面的单词则用大写字母开头写，不使用连接符。例如：addPerson。
-- 2.下划线可能出现在 JUnit 测试方法名称中用以分隔名称的逻辑组件。一个典型的模式是：test<MethodUnderTest>_<state>，例如 testPop_emptyStack。
+1. 方法的名字的第一个单词应以**小写字母**作为开头，后面的单词则用大写字母开头写，**不使用连接符**。例如：addPerson。
+2. 下划线可能出现在 JUnit 测试方法名称中用以分隔名称的逻辑组件。一个典型的模式是：`test<MethodUnderTest>_<state>`，例如 `testPop_emptyStack`。
 
-------
 
-## 方法的定义
+
+### 16.4 方法的定义
 
 一般情况下，定义一个方法包含以下语法：
 
-修饰符 返回值类型 方法名(参数类型 参数名){     ...     方法体     ...     return 返回值; }
+```java
+修饰符 返回值类型 方法名(参数类型 参数名) {
+    ...     方法体     ...     
+    return 返回值; 
+}
+```
 
 方法包含一个方法头和一个方法体。下面是一个方法的所有部分：
 
@@ -4113,23 +4222,43 @@ Java方法是语句的集合，它们在一起执行一个功能。
 
 如：
 
-public static int age(int birthday){...}
+```java
+public static int age(int birthday {
+    ...
+}
+```
 
 参数可以有多个：
 
-static float interest(float principal, int year){...}
+```java
+static float interest(float principal, int year) {
+    ...
+}
+```
 
 **注意：** 在一些其它语言中方法指过程和函数。一个返回非void类型返回值的方法称为函数；一个返回void类型返回值的方法叫做过程。
 
-### 实例
+#### 实例
 
 下面的方法包含 2 个参数 num1 和 num2，它返回这两个参数的最大值。
 
-/** 返回两个整型变量数据的较大值 */ public static int max(int num1, int num2) {    int result;    if (num1 > num2)       result = num1;    else       result = num2;      return result;  }
+```java
+// 返回两个整数变量较大的值
+private static int max(int num1, int num2) {
+    int result;
+    
+    if (num1 > num2)
+        result = num1;
+    else
+        result = num2;
+        
+    return result;
+}
+```
 
-------
 
-## 方法调用
+
+### 16.5 方法调用
 
 Java 支持两种调用方法的方式，根据方法是否返回值来选择。
 
@@ -4137,23 +4266,45 @@ Java 支持两种调用方法的方式，根据方法是否返回值来选择。
 
 当方法返回一个值的时候，方法调用通常被当做一个值。例如：
 
+```java
 int larger = max(30, 40);
+```
 
 如果方法返回值是void，方法调用一定是一条语句。例如，方法println返回void。下面的调用是个语句：
 
+```java
 System.out.println("欢迎访问菜鸟教程！");
+```
 
-### 示例
+#### 示例
 
 下面的例子演示了如何定义一个方法，以及如何调用它：
 
-## TestMax.java 文件代码：
+```java
+public class TestMax {
+    // 主方法
+    public static void main(String[] args) {
+        int i = 5;
+        int j = 2;
+        int k = max(i, j);
+        System.out.println(i + " 和 " + j + " 比较，最大值是：" + k);
+    }
 
-public class TestMax {    /** 主方法 */    public static void main(String[] args) {       int i = 5;       int j = 2;       int k = max(i, j);       System.out.println( i + " 和 " + j + " 比较，最大值是：" + k);    }      /** 返回两个整数变量较大的值 */    public static int max(int num1, int num2) {       int result;       if (num1 > num2)          result = num1;       else          result = num2;         return result;     } }
+    // 返回两个整数变量较大的值
+    private static int max(int num1, int num2) {
+        int result;
+        if (num1 > num2)
+            result = num1;
+        else
+            result = num2;
+        return result;
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 5 和 2 比较，最大值是：5
 ```
 
@@ -4161,55 +4312,103 @@ public class TestMax {    /** 主方法 */    public static void main(String[] a
 
 main 方法的头部是不变的，如例子所示，带修饰符 public 和 static,返回 void 类型值，方法名字是 main,此外带个一个 String[] 类型参数。String[] 表明参数是字符串数组。
 
-------
 
-## void 关键字
+
+### 16.6 void 关键字
 
 本节说明如何声明和调用一个 void 方法。
 
 下面的例子声明了一个名为 printGrade 的方法，并且调用它来打印给定的分数。
 
-### 示例
+#### 示例
 
-## TestVoidMethod.java 文件代码：
+```java
+public class TestVoidMethod {
+    public static void main(String[] args) {
+        printGrade();
+    }
 
-public class TestVoidMethod {   public static void main(String[] args) {     printGrade(78.5);   }     public static void printGrade(double score) {     if (score >= 90.0) {        System.out.println('A');     }     else if (score >= 80.0) {        System.out.println('B');     }     else if (score >= 70.0) {        System.out.println('C');     }     else if (score >= 60.0) {        System.out.println('D');     }     else {        System.out.println('F');     }   } }
+    private static void printGrade() {
+        if (78.5 >= 90.0) {
+            System.out.println('A');
+        } else if (78.5 >= 80.0) {
+            System.out.println('B');
+        } else if (78.5 >= 70.0) {
+            System.out.println('C');
+        } else if (78.5 >= 60.0) {
+            System.out.println('D');
+        } else {
+            System.out.println('F');
+        }
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 C
 ```
 
-这里printGrade方法是一个void类型方法，它不返回值。
+这里 printGrade 方法是一个void类型方法，它不返回值。
 
 一个void方法的调用一定是一个语句。 所以，它被在main方法第三行以语句形式调用。就像任何以分号结束的语句一样。
 
-------
 
-## 通过值传递参数
+
+### 16.7 通过值传递参数
 
 调用一个方法时候需要提供参数，你必须按照参数列表指定的顺序提供。
 
-例如，下面的方法连续n次打印一个消息：
+例如，下面的方法连续 n 次打印一个消息：
 
-## TestVoidMethod.java 文件代码：
+```java
+public static void nPrintln(String message, int n) {
+    for (int i = 0; i < n; i++)
+        System.out.println(message);
+}
+```
 
-public static void nPrintln(String message, int n) {   for (int i = 0; i < n; i++) {     System.out.println(message);   } }
-
-### 示例
+#### 示例
 
 下面的例子演示按值传递的效果。
 
 该程序创建一个方法，该方法用于交换两个变量。
 
-## TestPassByValue.java 文件代码：
+```java
+public class TestPassByValue {
+    public static void main(String[] args) {
+        int num1 = 1;
+        int num2 = 2;
 
-public class TestPassByValue {   public static void main(String[] args) {     int num1 = 1;     int num2 = 2;       System.out.println("交换前 num1 的值为：" +                         num1 + " ，num2 的值为：" + num2);       // 调用swap方法     swap(num1, num2);     System.out.println("交换后 num1 的值为：" +                        num1 + " ，num2 的值为：" + num2);   }   /** 交换两个变量的方法 */   public static void swap(int n1, int n2) {     System.out.println("\t进入 swap 方法");     System.out.println("\t\t交换前 n1 的值为：" + n1                          + "，n2 的值：" + n2);     // 交换 n1 与 n2的值     int temp = n1;     n1 = n2;     n2 = temp;       System.out.println("\t\t交换后 n1 的值为 " + n1                          + "，n2 的值：" + n2);   } }
+        System.out.println("交换前 num1 的值为：" +
+                num1 + " ，num2 的值为：" + num2);
+
+        // 调用 swap 方法
+        swap(num1, num2);
+        System.out.println("交换后 num1 的值为：" +
+                num1 + " ，num2 的值为：" + num2);
+    }
+
+    // 交换两个变量的方法
+    private static void swap(int n1, int n2) {
+        System.out.println("\t进入 swap 方法");
+        System.out.println("\t\t交换前 n1 的值为：" + n1
+                + "，n2 的值：" + n2);
+        // 交换 n1 与 n2的值
+        int temp = n1;
+        n1 = n2;
+        n2 = temp;
+
+        System.out.println("\t\t交换后 n1 的值为 " + n1
+                + "，n2 的值：" + n2);
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 交换前 num1 的值为：1 ，num2 的值为：2
     进入 swap 方法
         交换前 n1 的值为：1，n2 的值：2
@@ -4219,15 +4418,22 @@ public class TestPassByValue {   public static void main(String[] args) {     in
 
 传递两个参数调用swap方法。有趣的是，方法被调用后，实参的值并没有改变。
 
-------
 
-## 方法的重载
+
+### 16.8 方法的重载
 
 上面使用的max方法仅仅适用于int型数据。但如果你想得到两个浮点类型数据的最大值呢？
 
 解决方法是创建另一个有相同名字但参数不同的方法，如下面代码所示：
 
-public static double max(double num1, double num2) {   if (num1 > num2)     return num1;   else     return num2; }
+```java
+public static double max(double num1, double num2) {
+    if (num1 > num2)
+        return num1;
+    else
+        return num2;
+}
+```
 
 如果你调用max方法时传递的是int型参数，则 int型参数的max方法就会被调用；
 
@@ -4241,9 +4447,9 @@ Java编译器根据方法签名判断哪个方法应该被调用。
 
 重载的方法必须拥有不同的参数列表。你不能仅仅依据修饰符或者返回类型的不同来重载方法。
 
-------
 
-## 变量作用域
+
+### 16.9 变量作用域
 
 变量的范围是程序中该变量可以被引用的部分。
 
@@ -4263,23 +4469,28 @@ for循环的初始化部分声明的变量，其作用范围在整个循环。
 
 你可以在一个方法里，不同的非嵌套块中多次声明一个具有相同的名称局部变量，但你不能在嵌套块内两次声明局部变量。
 
-## 命令行参数的使用
+### 16.10 命令行参数的使用
 
 有时候你希望运行一个程序时候再传递给它消息。这要靠传递命令行参数给main()函数实现。
 
 命令行参数是在执行程序时候紧跟在程序名字后面的信息。
 
-### 实例
+#### 实例
 
 下面的程序打印所有的命令行参数：
 
-## CommandLine.java 文件代码：
-
-public class CommandLine {    public static void main(String args[]){        for(int i=0; i<args.length; i++){          System.out.println("args[" + i + "]: " + args[i]);       }    } }
+```java
+public class CommandLine {
+    public static void main(String args[]) {
+        for (int i = 0; i < args.length; i++)
+            System.out.println("args[" + i + "]: " + args[i]);
+    }
+}
+```
 
 如下所示，运行这个程序：
 
-```
+```powershell
 $ javac CommandLine.java 
 $ java CommandLine this is a command line 200 -100
 args[0]: this
@@ -4291,9 +4502,9 @@ args[5]: 200
 args[6]: -100
 ```
 
-------
 
-## 构造方法
+
+### 16.11 构造方法
 
 当一个对象被创建时候，构造方法用来初始化该对象。构造方法和它所在类的名字相同，但构造方法没有返回值。
 
@@ -4303,66 +4514,135 @@ args[6]: -100
 
 一旦你定义了自己的构造方法，默认构造方法就会失效。
 
-### 实例
+#### 实例
 
 下面是一个使用构造方法的例子：
 
-// 一个简单的构造函数 class MyClass {   int x;     // 以下是构造函数   MyClass() {     x = 10;   } }
+```java
+// 一个简单的构造函数
+class MyClass {
+    int x;
+    // 以下是构造函数
+    MyClass() {
+        x = 10;
+    }
+}
+```
 
 你可以像下面这样调用构造方法来初始化一个对象：
 
-## ConsDemo.java 文件代码：
+```java
+public class ConsDemo {
+    public static void main(String args[]) {
+        MyClass t1 = new MyClass(10);
+        MyClass t2 = new MyClass(20);
+        System.out.println(t1.x + " " + t2.x);
+    }
+}
 
-public class ConsDemo {    public static void main(String args[]) {       MyClass t1 = new MyClass();       MyClass t2 = new MyClass();       System.out.println(t1.x + " " + t2.x);    } }
+// 一个简单的构造函数
+class MyClass {
+    int x;
+    // 以下是构造函数
+    MyClass(int i) {
+        x = i;
+    }
+}
+```
 
 大多时候需要一个有参数的构造方法。
 
-### 实例
+#### 实例
 
 下面是一个使用构造方法的例子：
 
-// 一个简单的构造函数 class MyClass {   int x;     // 以下是构造函数   MyClass(int i ) {     x = i;   } }
+```java
+// 一个简单的构造函数
+class MyClass {
+    int x;     
+    // 以下是构造函数
+    MyClass(int i) {
+        x = i;
+    }
+}
+```
 
 你可以像下面这样调用构造方法来初始化一个对象：
 
-## ConsDemo.java 文件代码：
+```java
+public class ConsDemo {
+    public static void main(String args[]) {
+        MyClass t1 = new MyClass(10);
+        MyClass t2 = new MyClass(20);
+        System.out.println(t1.x + " " + t2.x);
+    }
+}
 
-public class ConsDemo {   public static void main(String args[]) {     MyClass t1 = new MyClass( 10 );     MyClass t2 = new MyClass( 20 );     System.out.println(t1.x + " " + t2.x);   } }
+// 一个简单的构造函数
+class MyClass {
+    int x;
+    // 以下是构造函数
+    MyClass(int i) {
+        x = i;
+    }
+}
+```
 
 运行结果如下：
 
-```
+```powershell
 10 20
 ```
 
-## 可变参数
+### 16.10 可变参数
 
 JDK 1.5 开始，Java支持传递同类型的可变参数给一个方法。
 
 方法的可变参数的声明如下所示：
 
+```java
 typeName... parameterName
+```
 
 在方法声明中，在指定参数类型后加一个省略号(...) 。
 
 一个方法中只能指定一个可变参数，它必须是方法的最后一个参数。任何普通的参数必须在它之前声明。
 
-### 实例
+#### 实例
 
-## VarargsDemo.java 文件代码：
+```java
+public class VarargsDemo {
+    public static void main(String args[]) {
+        // 调用可变参数的方法
+        printMax(34, 3, 3, 2, 56.5);
+        printMax(1, 2, 3);
+    }
 
-public class VarargsDemo {     public static void main(String args[]) {         // 调用可变参数的方法         printMax(34, 3, 3, 2, 56.5);         printMax(new double[]{1, 2, 3});     }       public static void printMax( double... numbers) {         if (numbers.length == 0) {             System.out.println("No argument passed");             return;         }           double result = numbers[0];           for (int i = 1; i <  numbers.length; i++){             if (numbers[i] >  result) {                 result = numbers[i];             }         }         System.out.println("The max value is " + result);     } }
+    private static void printMax(double... numbers) {
+        if (numbers.length == 0) {
+            System.out.println("No argument passed");
+            return;
+        }
+
+        double result = numbers[0];
+        for (int i = 1; i < numbers.length; i++)
+            if (numbers[i] > result)
+                result = numbers[i];
+        System.out.println("The max value is: " + result);
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
-The max value is 56.5
-The max value is 3.0
+```powershell
+The max value is: 56.5
+The max value is: 3.0
 ```
 
-------
 
-## finalize() 方法
+
+### 16.11 finalize() 方法
 
 Java 允许定义这样的方法，它在对象被垃圾收集器析构(回收)之前调用，这个方法叫做 finalize( )，它用来清除回收对象。
 
@@ -4372,21 +4652,48 @@ Java 允许定义这样的方法，它在对象被垃圾收集器析构(回收)�
 
 finalize() 一般格式是：
 
-protected void finalize() {    // 在这里终结代码 }
+```java
+protected void finalize() {
+    // TODO 在这里终结代码
+}
+```
 
 关键字 protected 是一个限定符，它确保 finalize() 方法不会被该类以外的代码调用。
 
 当然，Java 的内存回收可以由 JVM 来自动完成。如果你手动使用，则可以使用上面的方法。
 
-### 实例
+#### 实例
 
-## FinalizationDemo.java 文件代码：
+```java
+public class FinalizationDemo {
+    public static void main(String[] args) {
+        Cake c1 = new Cake(1);
+        Cake c2 = new Cake(2);
+        Cake c3 = new Cake(3);
+        c2 = c3 = null;
+        // 调用Java垃圾收集器
+        System.gc();
+    }
+}
 
-public class FinalizationDemo {     public static void main(String[] args) {       Cake c1 = new Cake(1);       Cake c2 = new Cake(2);       Cake c3 = new Cake(3);              c2 = c3 = null;       System.gc(); //调用Java垃圾收集器   }   }     class Cake extends Object {     private int id;     public Cake(int id) {       this.id = id;       System.out.println("Cake Object " + id + "is created");     }          protected void finalize() throws java.lang.Throwable {       super.finalize();       System.out.println("Cake Object " + id + "is disposed");     }   }
+class Cake {
+    private int id;
+
+    Cake(int id) {
+        this.id = id;
+        System.out.println("Cake Object " + id + "is created");
+    }
+
+    protected void finalize() throws java.lang.Throwable {
+        super.finalize();
+        System.out.println("Cake Object " + id + "is disposed");
+    }
+}
+```
 
 运行以上代码，输出结果如下：
 
-```
+```powershell
 $ javac FinalizationDemo.java 
 $ java FinalizationDemo
 Cake Object 1is created
@@ -4408,9 +4715,9 @@ Java 为 I/O 提供了强大的而灵活的支持，使其更广泛地应用到�
 
 但本节讲述最基本的和流与 I/O 相关的功能。我们将通过一个个例子来学习这些功能。
 
-------
 
-## 读取控制台输入
+
+### 17.1 读取控制台输入
 
 Java 的控制台输入由 System.in 完成。
 
@@ -4418,62 +4725,94 @@ Java 的控制台输入由 System.in 完成。
 
 下面是创建 BufferedReader 的基本语法：
 
+```java
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+```
 
 BufferedReader 对象创建后，我们便可以使用 read() 方法从控制台读取一个字符，或者用 readLine() 方法读取一个字符串。
 
-------
 
-## 从控制台读取多字符输入
+
+### 17.2 从控制台读取多字符输入
 
 从 BufferedReader 对象读取一个字符要使用 read() 方法，它的语法如下：
 
+```java
 int read( ) throws IOException
+```
 
 每次调用 read() 方法，它从输入流读取一个字符并把该字符作为整数值返回。 当流结束的时候返回 -1。该方法抛出 IOException。
 
 下面的程序示范了用 read() 方法从控制台不断读取字符直到用户输入 "q"。
 
-## BRRead.java 文件代码：
-
-//使用 BufferedReader 在控制台读取字符 import java.io.*; public class BRRead { public static void main(String args[]) throws IOException { char c; // 使用 System.in 创建 BufferedReader BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); System.out.println("输入字符, 按下 'q' 键退出。"); // 读取字符 do { c = (char) br.read(); System.out.println(c); } while (c != 'q'); } }
+```java
+public class BRRead {
+    public static void main(String args[]) throws IOException {
+        char c;
+        // 使用 System.in 创建 BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("输入字符, 按下 'q' 键退出。");
+        // 读取字符
+        do {
+            c = (char) br.read();
+            System.out.println(c);
+        } while (c != 'q');
+    }
+}
+```
 
 以上实例编译运行结果如下:
 
-```
+```powershell
 输入字符, 按下 'q' 键退出。
-runoob
-r
-u
+Lightwing Ng
+L
+i
+g
+h
+t
+w
+i
 n
-o
-o
-b
-
-
-q
-q
+g
+ 
+N
+g
 ```
 
-------
 
-## 从控制台读取字符串
+
+### 17.3 从控制台读取字符串
 
 从标准输入读取一个字符串需要使用 BufferedReader 的 readLine() 方法。
 
 它的一般格式是：
 
+```java
 String readLine( ) throws IOException
+```
 
 下面的程序读取和显示字符行直到你输入了单词"end"。
 
-## BRReadLines.java 文件代码：
-
-//使用 BufferedReader 在控制台读取字符 import java.io.*; public class BRReadLines { public static void main(String args[]) throws IOException { // 使用 System.in 创建 BufferedReader BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); String str; System.out.println("Enter lines of text."); System.out.println("Enter 'end' to quit."); do { str = br.readLine(); System.out.println(str); } while (!str.equals("end")); } }
+```java
+public class BRReadLines {
+    public static void main(String args[]) throws IOException {
+        // 使用 System.in 创建 BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        System.out.println("Enter lines of text.");
+        System.out.println("Enter 'end' to quit.");
+        do {
+            str = br.readLine();
+            System.out.println(str);
+        } while (!str.equals("end"));
+    }
+}
+```
 
 以上实例编译运行结果如下:
 
-```
+```powershell
 Enter lines of text.
 Enter 'end' to quit.
 This is line one
@@ -4486,7 +4825,7 @@ end
 
 > JDK 5 后的版本我们也可以使用 [Java Scanner](http://www.runoob.com/java/java-scanner-class.html) 类来获取控制台的输入。
 
-## 控制台输出
+### 17.4 控制台输出
 
 在此前已经介绍过，控制台的输出由 print( ) 和 println() 完成。这些方法都由类 PrintStream 定义，System.out 是该类对象的一个引用。
 
@@ -4498,13 +4837,20 @@ void write(int byteval)
 
 该方法将 byteval 的低八位字节写到流中。
 
-### 实例
+#### 实例
 
 下面的例子用 write() 把字符 "A" 和紧跟着的换行符输出到屏幕：
 
-## WriteDemo.java 文件代码：
-
-import java.io.*; //演示 System.out.write(). public class WriteDemo { public static void main(String args[]) { int b; b = 'A'; System.out.write(b); System.out.write('\n'); } }
+```java
+public class WriteDemo {
+    public static void main(String args[]) {
+        int b;
+        b = 'A';
+        System.out.write(b);
+        System.out.write('\n');
+    }
+}
+```
 
 运行以上实例在输出窗口输出 "A" 字符
 
@@ -4514,9 +4860,9 @@ A
 
 **注意：**write() 方法不经常使用，因为 print() 和 println() 方法用起来更为方便。
 
-------
 
-## 读写文件
+
+### 17.5 读写文件
 
 如前所述，一个流被定义为一个数据序列。输入流用于从源读取数据，输出流用于向目标写数据。
 
@@ -4526,9 +4872,9 @@ A
 
 下面将要讨论的两个重要的流是 FileInputStream 和 FileOutputStream：
 
-------
 
-## FileInputStream
+
+#### 17.5.1 FileInputStream
 
 该流用于从文件读取数据，它的对象可以用关键字 new 来创建。
 
@@ -4536,11 +4882,15 @@ A
 
 可以使用字符串类型的文件名来创建一个输入流对象来读取文件：
 
+```java
 InputStream f = new FileInputStream("C:/java/hello");
+```
 
 也可以使用一个文件对象来创建一个输入流对象来读取文件。我们首先得使用 File() 方法来创建一个文件对象：
 
+```java
 File f = new File("C:/java/hello"); InputStream out = new FileInputStream(f);
+```
 
 创建了InputStream对象，就可以使用下面的方法来读取流或者进行其他的流操作。
 
@@ -4557,9 +4907,9 @@ File f = new File("C:/java/hello"); InputStream out = new FileInputStream(f);
 - [ByteArrayInputStream](http://www.runoob.com/java/java-bytearrayinputstream.html)
 - [DataInputStream](http://www.runoob.com/java/java-datainputstream.html)
 
-------
 
-## FileOutputStream
+
+#### 17.5.2 FileOutputStream
 
 该类用来创建一个文件并向文件中写数据。
 
@@ -4569,13 +4919,17 @@ File f = new File("C:/java/hello"); InputStream out = new FileInputStream(f);
 
 使用字符串类型的文件名来创建一个输出流对象：
 
+```java
 OutputStream f = new FileOutputStream("C:/java/hello")
+```
 
 也可以使用一个文件对象来创建一个输出流来写文件。我们首先得使用File()方法来创建一个文件对象：
 
+```java
 File f = new File("C:/java/hello"); OutputStream f = new FileOutputStream(f);
+```
 
-创建OutputStream 对象完成后，就可以使用下面的方法来写入流或者进行其他的流操作。
+创建 OutputStream 对象完成后，就可以使用下面的方法来写入流或者进行其他的流操作。
 
 | **序号** | **方法及描述**                                               |
 | -------- | ------------------------------------------------------------ |
@@ -4589,25 +4943,89 @@ File f = new File("C:/java/hello"); OutputStream f = new FileOutputStream(f);
 - [ByteArrayOutputStream](http://www.runoob.com/java/java-bytearrayoutputstream.html)
 - [DataOutputStream](http://www.runoob.com/java/java-dataoutputstream.html)
 
-### 实例
+实例
 
 下面是一个演示 InputStream 和 OutputStream 用法的例子：
 
-## fileStreamTest.java 文件代码：
+```java
+public class fileStreamTest {
+    public static void main(String args[]) {
+        try {
+            byte bWrite[] = {11, 21, 3, 40, 5};
+            OutputStream os = new FileOutputStream("test.txt");
+            for (byte aBWrite : bWrite)
+                // writes the bytes
+                os.write(aBWrite);
 
-import java.io.*; public class fileStreamTest { public static void main(String args[]) { try { byte bWrite[] = { 11, 21, 3, 40, 5 }; OutputStream os = new FileOutputStream("test.txt"); for (int x = 0; x < bWrite.length; x++) { os.write(bWrite[x]); // writes the bytes } os.close(); InputStream is = new FileInputStream("test.txt"); int size = is.available(); for (int i = 0; i < size; i++) { System.out.print((char) is.read() + " "); } is.close(); } catch (IOException e) { System.out.print("Exception"); } } }
+            os.close();
+
+            InputStream is = new FileInputStream("test.txt");
+            int size = is.available();
+
+            for (int i = 0; i < size; i++)
+                System.out.print((char) is.read() + "  ");
+
+            is.close();
+        } catch (IOException e) {
+            System.out.print("Exception");
+        }
+    }
+}
+```
 
 上面的程序首先创建文件test.txt，并把给定的数字以二进制形式写进该文件，同时输出到控制台上。
 
 以上代码由于是二进制写入，可能存在乱码，你可以使用以下代码实例来解决乱码问题：
 
-## fileStreamTest2.java 文件代码：
+```java
+public class fileStreamTest2 {
+    public static void main(String[] args) throws IOException {
+        File f = new File("a.txt");
+        FileOutputStream fop = new FileOutputStream(f);
+        // 构建 FileOutputStream 对象,文件不存在会自动新建
 
-//文件名 :fileStreamTest2.java import java.io.*; public class fileStreamTest2 { public static void main(String[] args) throws IOException { File f = new File("a.txt"); FileOutputStream fop = new FileOutputStream(f); // 构建FileOutputStream对象,文件不存在会自动新建 OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8"); // 构建OutputStreamWriter对象,参数可以指定编码,默认为操作系统默认编码,windows上是gbk writer.append("中文输入"); // 写入到缓冲区 writer.append("\r\n"); // 换行 writer.append("English"); // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入 writer.close(); // 关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉 fop.close(); // 关闭输出流,释放系统资源 FileInputStream fip = new FileInputStream(f); // 构建FileInputStream对象 InputStreamReader reader = new InputStreamReader(fip, "UTF-8"); // 构建InputStreamReader对象,编码与写入相同 StringBuffer sb = new StringBuffer(); while (reader.ready()) { sb.append((char) reader.read()); // 转成char加到StringBuffer对象中 } System.out.println(sb.toString()); reader.close(); // 关闭读取流 fip.close(); // 关闭输入流,释放系统资源 } }
+        OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
+        // 构建OutputStreamWriter对象,参数可以指定编码,默认为操作系统默认编码,windows上是gbk
 
-------
+        writer.append("中文输入");
+        // 写入到缓冲区
 
-## 文件和I/O
+        writer.append("\r\n");
+        // 换行
+
+        writer.append("English");
+        // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入
+
+        writer.close();
+        // 关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉
+
+        fop.close();
+        // 关闭输出流,释放系统资源
+
+        FileInputStream fip = new FileInputStream(f);
+        // 构建FileInputStream对象
+
+        InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
+        // 构建InputStreamReader对象,编码与写入相同
+
+        StringBuilder sb = new StringBuilder();
+        while (reader.ready()) {
+            sb.append((char) reader.read());
+            // 转成char加到StringBuffer对象中
+        }
+        System.out.println(sb.toString());
+        reader.close();
+        // 关闭读取流
+
+        fip.close();
+        // 关闭输入流,释放系统资源
+    }
+}
+```
+
+
+
+### 17.6 文件和 I/O
 
 还有一些关于文件和I/O的类，我们也需要知道：
 
@@ -4615,30 +5033,37 @@ import java.io.*; public class fileStreamTest { public static void main(String a
 - [FileReader Class(类)](http://www.runoob.com/java/java-filereader.html)
 - [FileWriter Class(类)](http://www.runoob.com/java/java-filewriter.html)
 
-------
 
-## Java中的目录
 
-### 创建目录：
+#### 17.6.1 Java 中的目录
+
+##### 17.6.1.1 创建目录：
 
 File类中有两个方法可以用来创建文件夹：
 
-- **mkdir( )**方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。
-- **mkdirs()**方法创建一个文件夹和它的所有父文件夹。
+- **mkdir()** 方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。
+- **mkdirs()** 方法创建一个文件夹和它的所有父文件夹。
 
-下面的例子创建 "/tmp/user/java/bin"文件夹：
+下面的例子创建 "`/tmp/user/java/bin`"文件夹：
 
-## CreateDir.java 文件代码：
-
-import java.io.File; public class CreateDir { public static void main(String args[]) { String dirname = "/tmp/user/java/bin"; File d = new File(dirname); // 现在创建目录 d.mkdirs(); } }
+```java
+public class CreateDir {
+    public static void main(String args[]) {
+        String dirname = "com.lightwing.ch17_StreamFileIO/bin";
+        File d = new File(dirname);
+        // 现在创建目录
+        d.mkdirs();
+    }
+}
+```
 
 编译并执行上面代码来创建目录 "/tmp/user/java/bin"。
 
 **注意：** Java 在 UNIX 和 Windows 自动按约定分辨文件路径分隔符。如果你在 Windows 版本的 Java 中使用分隔符 (/) ，路径依然能够被正确解析。
 
-------
 
-## 读取目录
+
+##### 17.6.1.2 读取目录
 
 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。
 
@@ -4648,26 +5073,51 @@ import java.io.File; public class CreateDir { public static void main(String arg
 
 下面展示的例子说明如何使用 list() 方法来检查一个文件夹中包含的内容：
 
-## DirList.java 文件代码：
-
-import java.io.File; public class DirList { public static void main(String args[]) { String dirname = "/tmp"; File f1 = new File(dirname); if (f1.isDirectory()) { System.out.println("目录 " + dirname); String s[] = f1.list(); for (int i = 0; i < s.length; i++) { File f = new File(dirname + "/" + s[i]); if (f.isDirectory()) { System.out.println(s[i] + " 是一个目录"); } else { System.out.println(s[i] + " 是一个文件"); } } } else { System.out.println(dirname + " 不是一个目录"); } } }
+```java
+public class DirList {
+    public static void main(String args[]) {
+        String dirname = "/tmp";
+        File f1 = new File(dirname);
+        if (f1.isDirectory()) {
+            System.out.println("目录 " + dirname);
+            String s[] = f1.list();
+            assert s != null;
+            for (String value : s) {
+                File f = new File(dirname + "/" + value);
+                if (f.isDirectory())
+                    System.out.println(value + " 是一个目录");
+                else
+                    System.out.println(value + " 是一个文件");
+            }
+        } else
+            System.out.println(dirname + " 不是一个目录");
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 目录 /tmp
-bin 是一个目录
-lib 是一个目录
-demo 是一个目录
-test.txt 是一个文件
-README 是一个文件
-index.html 是一个文件
-include 是一个目录
+employee.ser 是一个文件
+powerlog 是一个目录
+.vbox-lightwingng-ipc 是一个目录
+mysql.sock 是一个文件
+.s.PGSQL.5432.lock 是一个文件
+user 是一个目录
+com.apple.launchd.FD4eoDlg9p 是一个目录
+SourceKittenSublTemp.swift 是一个文件
+adobegc.log 是一个文件
+com.adobe.AdobeIPCBroker.ctrl-lightwingng 是一个文件
+AGS.out 是一个文件
+AGS.err 是一个文件
+com.apple.launchd.CKhXfhRTCn 是一个目录
+.s.PGSQL.5432 是一个文件
 ```
 
-------
 
-## 删除目录或文件
+
+##### 17.6.1.3 删除目录或文件
 
 删除文件可以使用 **java.io.File.delete()** 方法。
 
@@ -4675,15 +5125,33 @@ include 是一个目录
 
 测试目录结构：
 
-```
+```powershell
 /tmp/java/
 |-- 1.log
 |-- test
 ```
 
-## DeleteFileDemo.java 文件代码：
+```java
+public class DeleteFileDemo {
+    public static void main(String args[]) {
+        // 这里修改为自己的测试目录
+        File folder = new File("com.lightwing.ch17_StreamFileIO/");
+        deleteFolder(folder);
+    }
 
-import java.io.File; public class DeleteFileDemo { public static void main(String args[]) { // 这里修改为自己的测试目录 File folder = new File("/tmp/java/"); deleteFolder(folder); } // 删除文件及目录 public static void deleteFolder(File folder) { File[] files = folder.listFiles(); if (files != null) { for (File f : files) { if (f.isDirectory()) { deleteFolder(f); } else { f.delete(); } } } folder.delete(); } }
+    // 删除文件及目录
+    private static void deleteFolder(File folder) {
+        File[] files = folder.listFiles();
+        if (files != null)
+            for (File f : files)
+                if (f.isDirectory())
+                    deleteFolder(f);
+                else
+                    f.delete();
+        folder.delete();
+    }
+}
+```
 
 ## 18 Scanner Class
 
@@ -4695,15 +5163,28 @@ Scanner s = new Scanner(System.in);
 
 接下来我们演示一个最简单的数据输入，并通过 Scanner 类的 next() 与 nextLine() 方法获取输入的字符串，在读取前我们一般需要 使用 hasNext 与 hasNextLine 判断是否还有输入的数据：
 
-### 使用 next 方法：
+### 18.1 使用 next 方法：
 
-## ScannerDemo.java 文件代码：
-
-import java.util.Scanner;    public class ScannerDemo {     public static void main(String[] args) {         Scanner scan = new Scanner(System.in);         // 从键盘接收数据           // next方式接收字符串         System.out.println("next方式接收：");         // 判断是否还有输入         if (scan.hasNext()) {             String str1 = scan.next();             System.out.println("输入的数据为：" + str1);         }         scan.close();     } }
+```java
+public class ScannerDemo_1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        // 从键盘接收数据
+        // next方式接收字符串
+        System.out.println("next方式接收: ");
+        // 判断是否还有输入
+        if (scan.hasNext()) {
+            String str1 = scan.next();
+            System.out.println("输入的数据为: " + str1);
+        }
+        scan.close();
+    }
+}
+```
 
 执行以上程序输出结果为：
 
-```
+```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
 next方式接收：
@@ -4713,15 +5194,28 @@ runoob com
 
 可以看到 com 字符串并未输出，接下来我们看 nextLine。
 
-### 使用 nextLine 方法：
+### 18.2 使用 nextLine 方法：
 
-## ScannerDemo.java 文件代码：
-
-import java.util.Scanner;   public class ScannerDemo {     public static void main(String[] args) {         Scanner scan = new Scanner(System.in);         // 从键盘接收数据           // nextLine方式接收字符串         System.out.println("nextLine方式接收：");         // 判断是否还有输入         if (scan.hasNextLine()) {             String str2 = scan.nextLine();             System.out.println("输入的数据为：" + str2);         }         scan.close();     } }
+```java
+public class ScannerDemo_2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        // 从键盘接收数据
+        // nextLine方式接收字符串
+        System.out.println("nextLine方式接收：");
+        // 判断是否还有输入
+        if (scan.hasNextLine()) {
+            String str2 = scan.nextLine();
+            System.out.println("输入的数据为：" + str2);
+        }
+        scan.close();
+    }
+}
+```
 
 执行以上程序输出结果为：
 
-```
+```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
 nextLine方式接收：
@@ -4731,29 +5225,58 @@ runoob com
 
 可以看到 com 字符串输出。
 
-### next() 与 nextLine() 区别
+### 18.3 next() 与 nextLine() 区别
 
-next():
+#### next():
 
-- 1、一定要读取到有效字符后才可以结束输入。
-- 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-- 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-- next() 不能得到带有空格的字符串。
+1. 一定要读取到有效字符后才可以结束输入。
+2. 对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
+3. 只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
 
-nextLine()：
+next() 不能得到带有空格的字符串。
 
-- 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-- 2、可以获得空白。
+#### nextLine()：
+
+1. 以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+2. 可以获得空白。
 
 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：
 
-## ScannerDemo.java 文件代码：
-
-import java.util.Scanner;   public class ScannerDemo {     public static void main(String[] args) {         Scanner scan = new Scanner(System.in);         // 从键盘接收数据         int i = 0;         float f = 0.0f;         System.out.print("输入整数：");         if (scan.hasNextInt()) {             // 判断输入的是否是整数             i = scan.nextInt();             // 接收整数             System.out.println("整数数据：" + i);         } else {             // 输入错误的信息             System.out.println("输入的不是整数！");         }         System.out.print("输入小数：");         if (scan.hasNextFloat()) {             // 判断输入的是否是小数             f = scan.nextFloat();             // 接收小数             System.out.println("小数数据：" + f);         } else {             // 输入错误的信息             System.out.println("输入的不是小数！");         }         scan.close();     } }
+```java
+public class ScannerDemo_3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        // 从键盘接收数据
+        int i;
+        float f;
+        System.out.print("输入整数：");
+        if (scan.hasNextInt()) {
+            // 判断输入的是否是整数
+            i = scan.nextInt();
+            // 接收整数
+            System.out.println("整数数据：" + i);
+        } else {
+            // 输入错误的信息
+            System.out.println("输入的不是整数！");
+        }
+        System.out.print("输入小数：");
+        if (scan.hasNextFloat()) {
+            // 判断输入的是否是小数
+            f = scan.nextFloat();
+            // 接收小数
+            System.out.println("小数数据：" + f);
+        } else {
+            // 输入错误的信息
+            System.out.println("输入的不是小数！");
+        }
+        scan.close();
+    }
+}
+```
 
 执行以上程序输出结果为：
 
-```
+```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
 输入整数：12
@@ -4764,13 +5287,30 @@ $ java ScannerDemo
 
 以下实例我们可以输入多个数字，并求其总和与平均数，每输入一个数字用回车确认，通过输入非数字来结束输入并输出执行结果：
 
-## ScannerDemo.java 文件代码：
+```java
+public class ScannerDemo_4 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-import java.util.Scanner;   class ScannerDemo {     public static void main(String[] args) {         Scanner scan = new Scanner(System.in);           double sum = 0;         int m = 0;           while (scan.hasNextDouble()) {             double x = scan.nextDouble();             m = m + 1;             sum = sum + x;         }           System.out.println(m + "个数的和为" + sum);         System.out.println(m + "个数的平均值是" + (sum / m));         scan.close();     } }
+        double sum = 0;
+        int m = 0;
+
+        while (scan.hasNextDouble()) {
+            double x = scan.nextDouble();
+            m += 1;
+            sum += x;
+        }
+
+        System.out.println(m + "个数的和为" + sum);
+        System.out.println(m + "个数的平均值是" + (sum / m));
+        scan.close();
+    }
+}
+```
 
 执行以上程序输出结果为：
 
-```
+```powershell
 $ javac ScannerDemo.java
 $ java ScannerDemo
 12
@@ -4804,9 +5344,9 @@ end
 - **运行时异常：** 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
 - **错误：** 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
 
-------
 
-## Exception 类的层次
+
+### 19.1 Exception 类的层次
 
 所有的异常类是从 java.lang.Exception 类继承的子类。
 
@@ -4824,9 +5364,9 @@ Error 用来指示运行时环境发生的错误。
 
 在 Java 内置类中(接下来会说明)，有大部分常用检查性和非检查性异常。
 
-------
 
-## Java 内置异常类
+
+### 19.2 Java 内置异常类
 
 Java 语言定义了一些异常类在 java.lang 标准包中。
 
@@ -4864,9 +5404,9 @@ Java 根据各个类库也定义了一些其他的异常，下面的表中列出
 | NoSuchFieldException       | 请求的变量不存在                                             |
 | NoSuchMethodException      | 请求的方法不存在                                             |
 
-------
 
-## 异常方法
+
+### 19.3 异常方法
 
 下面的列表是 Throwable 类的主要方法:
 
@@ -4879,21 +5419,19 @@ Java 根据各个类库也定义了一些其他的异常，下面的表中列出
 | 5        | **public StackTraceElement [] getStackTrace()** 返回一个包含堆栈层次的数组。下标为0的元素代表栈顶，最后一个元素代表方法调用堆栈的栈底。 |
 | 6        | **public Throwable fillInStackTrace()** 用当前的调用栈层次填充Throwable 对象栈层次，添加到栈层次任何先前信息中。 |
 
-------
 
-## 捕获异常
+
+### 19.4 捕获异常
 
 使用 try 和 catch 关键字可以捕获异常。try/catch 代码块放在异常可能发生的地方。
 
 try/catch代码块中的代码称为保护代码，使用 try/catch 的语法如下：
 
-```
-try
-{
-   // 程序代码
-}catch(ExceptionName e1)
-{
-   //Catch 块
+```java
+try {
+    // 程序代码
+} catch(ExceptionName e1) {
+    //Catch 块
 }
 ```
 
@@ -4901,30 +5439,50 @@ Catch 语句包含要捕获异常类型的声明。当保护代码块中发生�
 
 如果发生的异常包含在 catch 块中，异常会被传递到该 catch 块，这和传递一个参数到方法是一样。
 
-### 实例
+#### 实例
 
 下面的例子中声明有两个元素的一个数组，当代码试图访问数组的第三个元素的时候就会抛出一个异常。
 
-## ExcepTest.java 文件代码：
-
-// 文件名 : ExcepTest.java import java.io.*; public class ExcepTest{      public static void main(String args[]){       try{          int a[] = new int[2];          System.out.println("Access element three :" + a[3]);       }catch(ArrayIndexOutOfBoundsException e){          System.out.println("Exception thrown  :" + e);       }       System.out.println("Out of the block");    } }
+```java
+public class ExcepTest_1 {
+    public static void main(String args[]) {
+        try {
+            int a[] = new int[2];
+            System.out.println("Access element three :" + a[3]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception thrown  :" + e);
+        }
+        System.out.println("Out of the block");
+    }
+}
+```
 
 以上代码编译运行输出结果如下：
 
-```
+```powershell
 Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
 Out of the block
 ```
 
-------
 
-## 多重捕获块
+
+### 19.5 多重捕获块
 
 一个 try 代码块后面跟随多个 catch 代码块的情况就叫多重捕获。
 
 多重捕获块的语法如下所示：
 
-try{    // 程序代码 }catch(异常类型1 异常的变量名1){   // 程序代码 }catch(异常类型2 异常的变量名2){   // 程序代码 }catch(异常类型2 异常的变量名2){   // 程序代码 }
+```java
+try {
+    // 程序代码
+} catch (异常类型1 异常的变量名1) {
+    // 程序代码
+} catch (异常类型2 异常的变量名2) {
+    // 程序代码
+} catch (异常类型2 异常的变量名2) {
+    // 程序代码
+}
+```
 
 上面的代码段包含了 3 个 catch块。
 
@@ -4938,15 +5496,29 @@ try{    // 程序代码 }catch(异常类型1 异常的变量名1){   // 程序�
 
 如此，直到异常被捕获或者通过所有的 catch 块。
 
-### 实例
+#### 实例
 
 该实例展示了怎么使用多重 try/catch。
 
-try {   file = new FileInputStream(fileName);   x = (byte) file.read(); }catch(IOException i) {   i.printStackTrace();   return -1; }catch(FileNotFoundException f) //Not valid! {   f.printStackTrace();   return -1; }
+```java
+try {
+    file = new FileInputStream(fileName);
+    x = (byte) file.read();
+} catch (IOException i) {
+    i.printStackTrace();
+    return -1;
+} catch (FileNotFoundException f) {
+    // Not valid!
+    f.printStackTrace();
+    return -1;
+}
+```
 
-------
 
-## throws/throw 关键字：
+
+
+
+### 19.6 throws/throw 关键字：
 
 如果一个方法没有捕获一个检查性异常，那么该方法必须使用 throws 关键字来声明。throws 关键字放在方法签名的尾部。
 
@@ -4954,17 +5526,37 @@ try {   file = new FileInputStream(fileName);   x = (byte) file.read(); }catch(I
 
 下面方法的声明抛出一个 RemoteException 异常：
 
-import java.io.*; public class className {   public void deposit(double amount) throws RemoteException   {     // Method implementation     throw new RemoteException();   }   //Remainder of class definition }
+```java
+import java.io.*;
+public class className {
+    public void deposit(double amount) throws RemoteException {
+        // Method implementation
+        throw new RemoteException();
+    }   
+    //Remainder of class definition
+}
+```
 
 一个方法可以声明抛出多个异常，多个异常之间用逗号隔开。
 
 例如，下面的方法声明抛出 RemoteException 和 InsufficientFundsException：
 
-import java.io.*; public class className {    public void withdraw(double amount) throws RemoteException,                               InsufficientFundsException    {        // Method implementation    }    //Remainder of class definition }
+```java
+import java.io.*;
+public class className {
+    public void withdraw(double amount) throws RemoteException,
+        InsufficientFundsException {
+        // Method implementation
+    }
+    //Remainder of class definition
+}
+```
 
-------
 
-## finally关键字
+
+
+
+### 19.7 finally关键字
 
 finally 关键字用来创建在 try 代码块后面执行的代码块。
 
@@ -4974,17 +5566,40 @@ finally 关键字用来创建在 try 代码块后面执行的代码块。
 
 finally 代码块出现在 catch 代码块最后，语法如下：
 
-try{   // 程序代码 }catch(异常类型1 异常的变量名1){   // 程序代码 }catch(异常类型2 异常的变量名2){   // 程序代码 }finally{   // 程序代码 }
+```java
+try {
+    // 程序代码
+} catch (异常类型1 异常的变量名1) {
+    // 程序代码
+} catch (异常类型2 异常的变量名2) {
+    // 程序代码
+} finally {
+    // 程序代码
+}
+```
 
-### 实例
+#### 实例
 
-## ExcepTest.java 文件代码：
-
-public class ExcepTest{   public static void main(String args[]){     int a[] = new int[2];     try{        System.out.println("Access element three :" + a[3]);     }catch(ArrayIndexOutOfBoundsException e){        System.out.println("Exception thrown  :" + e);     }     finally{        a[0] = 6;        System.out.println("First element value: " +a[0]);        System.out.println("The finally statement is executed");     }   } }
+```java
+public class ExcepTest_2 {
+    public static void main(String args[]) {
+        int a[] = new int[2];
+        try {
+            System.out.println("Access element three: " + a[3]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception thrown: " + e);
+        } finally {
+            a[0] = 6;
+            System.out.println("First element value: " + a[0]);
+            System.out.println("The finally statement is executed");
+        }
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
 First element value: 6
 The finally statement is executed
@@ -4997,9 +5612,9 @@ The finally statement is executed
 - try 代码后不能既没 catch 块也没 finally 块。
 - try, catch, finally 块之间不能添加任何代码。
 
-------
 
-## 声明自定义异常
+
+### 19.8 声明自定义异常
 
 在 Java 中你可以自定义异常。编写自己的异常类时需要记住下面的几点。
 
@@ -5009,7 +5624,10 @@ The finally statement is executed
 
 可以像下面这样定义自己的异常类：
 
-class MyException extends Exception{ }
+```java
+class MyException extends Exception {
+}
+```
 
 只继承Exception 类来创建的异常类是检查性异常类。
 
@@ -5017,45 +5635,106 @@ class MyException extends Exception{ }
 
 一个异常类和其它任何类一样，包含有变量和方法。
 
-### 实例
+#### 实例
 
 以下实例是一个银行账户的模拟，通过银行卡的号码完成识别，可以进行存钱和取钱的操作。
 
-## InsufficientFundsException.java 文件代码：
+```java
+public class InsufficientFundsException extends Exception {
+    // 此处的 amount 用来储存当出现异常（取出钱多于余额时）所缺乏的钱
+    private double amount;
 
-// 文件名InsufficientFundsException.java import java.io.*;   //自定义异常类，继承Exception类 public class InsufficientFundsException extends Exception {   //此处的amount用来储存当出现异常（取出钱多于余额时）所缺乏的钱   private double amount;   public InsufficientFundsException(double amount)   {     this.amount = amount;   }    public double getAmount()   {     return amount;   } }
+    public InsufficientFundsException(double amount) {
+        this.amount = amount;
+    }
+
+    double getAmount() {
+        return amount;
+    }
+}
+```
 
 为了展示如何使用我们自定义的异常类，
 
 在下面的 CheckingAccount 类中包含一个 withdraw() 方法抛出一个 InsufficientFundsException 异常。
 
-## CheckingAccount.java 文件代码：
+```java
+public class CheckingAccount {
+    // balance为余额，number为卡号
+    private double balance;
+    private int number;
 
-// 文件名称 CheckingAccount.java import java.io.*;   //此类模拟银行账户 public class CheckingAccount {   //balance为余额，number为卡号    private double balance;    private int number;    public CheckingAccount(int number)    {       this.number = number;    }   //方法：存钱    public void deposit(double amount)    {       balance += amount;    }   //方法：取钱    public void withdraw(double amount) throws                               InsufficientFundsException    {       if(amount <= balance)       {          balance -= amount;       }       else       {          double needs = amount - balance;          throw new InsufficientFundsException(needs);       }    }   //方法：返回余额    public double getBalance()    {       return balance;    }   //方法：返回卡号    public int getNumber()    {       return number;    } }
+    CheckingAccount(int number) {
+        this.number = number;
+    }
+
+    // 方法：存钱
+    void deposit() {
+        balance += 500.0;
+    }
+
+    // 方法：取钱
+    void withdraw(double amount) throws
+            InsufficientFundsException {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            double needs = amount - balance;
+            throw new InsufficientFundsException(needs);
+        }
+    }
+
+    // 方法：返回余额
+    public double getBalance() {
+        return balance;
+    }
+
+    // 方法：返回卡号
+    public int getNumber() {
+        return number;
+    }
+}
+```
 
 下面的 BankDemo 程序示范了如何调用 CheckingAccount 类的 deposit() 和 withdraw() 方法。
 
-## BankDemo.java 文件代码：
-
-//文件名称 BankDemo.java public class BankDemo {    public static void main(String [] args)    {       CheckingAccount c = new CheckingAccount(101);       System.out.println("Depositing $500...");       c.deposit(500.00);       try       {          System.out.println("\nWithdrawing $100...");          c.withdraw(100.00);          System.out.println("\nWithdrawing $600...");          c.withdraw(600.00);       }catch(InsufficientFundsException e)       {          System.out.println("Sorry, but you are short $"                                   + e.getAmount());          e.printStackTrace();       }     } }
+```java
+public class BankDemo {
+    public static void main(String[] args) {
+        CheckingAccount c = new CheckingAccount(101);
+        System.out.println("Depositing $500...");
+        c.deposit();
+        try {
+            System.out.println("\nWithdrawing $100...");
+            c.withdraw(100.00);
+            System.out.println("\nWithdrawing $600...");
+            c.withdraw(600.00);
+        } catch (InsufficientFundsException e) {
+            System.out.println("Sorry, but you are short $"
+                    + e.getAmount());
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 编译上面三个文件，并运行程序 BankDemo，得到结果如下所示：
 
-```
+```powershell
 Depositing $500...
 
 Withdrawing $100...
 
 Withdrawing $600...
+com.lightwing.ch19_Exception.InsufficientFundsException
+	at com.lightwing.ch19_Exception.CheckingAccount.withdraw(CheckingAccount.java:31)
+	at com.lightwing.ch19_Exception.BankDemo.main(BankDemo.java:19)
 Sorry, but you are short $200.0
-InsufficientFundsException
-        at CheckingAccount.withdraw(CheckingAccount.java:25)
-        at BankDemo.main(BankDemo.java:13)
 ```
 
-------
 
-## 通用异常
+
+### 19.9 通用异常
 
 在Java中定义了两种类型的异常和错误。
 
@@ -5064,13 +5743,13 @@ InsufficientFundsException
 
 ## 20 Inherit
 
-## 继承的概念
+### 20.1 继承的概念
 
-继承是java面向对象编程技术的一块基石，因为它允许创建分等级层次的类。
+继承是Java面向对象编程技术的一块基石，因为它允许创建分等级层次的类。
 
 继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。
 
-### 生活中的继承：
+### 20.2 生活中的继承：
 
 ![img](http://www.runoob.com/wp-content/uploads/2013/12/14B0951E-FC75-47A3-B611-4E1883887339.jpg)
 
@@ -5082,15 +5761,15 @@ InsufficientFundsException
 
 虽然食草动物和食肉动物都是属于动物，但是两者的属性和行为上有差别，所以子类会具有父类的一般特性也会具有自身的特性。
 
-### 类的继承格式
+### 20.3 类的继承格式
 
 在 Java 中通过 extends 关键字可以申明一个类是从另外一个类继承而来的，一般形式如下：
 
-## 类的继承格式
+```java
+class 父类 { } class 子类 extends 父类 { }
+```
 
-class 父类 { }   class 子类 extends 父类 { }
-
-### 为什么需要继承
+### 20.4 为什么需要继承
 
 接下来我们通过实例来说明这个需求。
 
@@ -5099,33 +5778,97 @@ class 父类 { }   class 子类 extends 父类 { }
 - 企鹅：属性（姓名，id），方法（吃，睡，自我介绍）
 - 老鼠：属性（姓名，id），方法（吃，睡，自我介绍）
 
-## 企鹅类：
+#### 20.4.1 企鹅类：
 
-public class Penguin {      private String name;      private int id;      public Penguin(String myName, int  myid) {          name = myName;          id = myid;      }      public void eat(){          System.out.println(name+"正在吃");      }     public void sleep(){         System.out.println(name+"正在睡");     }     public void introduction() {          System.out.println("大家好！我是"         + id + "号" + name + ".");      }  }
+```java
+public class Penguin {
+    private String name;
+    private int id;
+    public Penguin(String myName, int  myid) {
+        name = myName;
+        id = myid;
+    } public void eat() {
+        System.out.println(name + "正在吃");
+    } public void sleep() {
+        System.out.println(name + "正在睡");
+    } public void introduction() {
+        System.out.println("大家好！我是" + id + "号" + name + ".");
+    }
+}
+```
 
-## 老鼠类：
+#### 20.4.2 老鼠类：
 
-public class Mouse {      private String name;      private int id;      public Mouse(String myName, int  myid) {          name = myName;          id = myid;      }      public void eat(){          System.out.println(name+"正在吃");      }     public void sleep(){         System.out.println(name+"正在睡");     }     public void introduction() {          System.out.println("大家好！我是"         + id + "号" + name + ".");      }  }
+```java
+public class Mouse {
+    private String name;
+    private int id;
+    public Mouse(String myName, int  myid) {
+        name = myName;
+        id = myid;
+    }      public void eat() {
+        System.out.println(name + "正在吃");
+    }     public void sleep() {
+        System.out.println(name + "正在睡");
+    }     public void introduction() {
+        System.out.println("大家好！我是" + id + "号" + name + ".");
+    }
+}
+```
 
 从这两段代码可以看出来，代码存在重复了，导致后果就是代码量大且臃肿，而且维护性不高(维护性主要是后期需要修改的时候，就需要修改很多的代码，容易出错)，所以要从根本上解决这两段代码的问题，就需要继承，将两段代码中相同的部分提取出来组成 一个父类：
 
-## 公共父类：
+#### 20.4.3 公共父类：
 
-public class Animal {      private String name;       private int id;      public Animal(String myName, int myid) {          name = myName;          id = myid;     }      public void eat(){          System.out.println(name+"正在吃");      }     public void sleep(){         System.out.println(name+"正在睡");     }     public void introduction() {          System.out.println("大家好！我是"         + id + "号" + name + ".");      }  }
+```java
+public class Animal {
+    private String name;
+    private int id;
+
+    public Animal(String myName, int myid) {
+        name = myName;
+        id = myid;
+    }
+
+    public void eat() {
+        System.out.println(name + "正在吃");
+    }
+
+    public void sleep() {
+        System.out.println(name + "正在睡");
+    }
+
+    public void introduction() {
+        System.out.println("大家好！我是" + id + "号" + name + ".");
+    }
+}
+```
 
 这个Animal类就可以作为一个父类，然后企鹅类和老鼠类继承这个类之后，就具有父类当中的属性和方法，子类就不会存在重复的代码，维护性也提高，代码也更加简洁，提高代码的复用性（复用性主要是可以多次使用，不用再多次写同样的代码） 继承之后的代码：
 
-## 企鹅类：
+#### 20.4.4 企鹅类：
 
-public class Penguin extends Animal {      public Penguin(String myName, int myid) {          super(myName, myid);      }  }
+```java
+public class Penguin extends Animal {
+    public Penguin(String myName, int myid) {
+        super(myName, myid);
+    }
+}
+```
 
-## 老鼠类：
+#### 20.4.5 老鼠类：
 
-public class Mouse extends Animal {      public Mouse(String myName, int myid) {          super(myName, myid);      }  }
+```java
+public class Mouse extends Animal {
+    public Mouse(String myName, int myid) {
+        super(myName, myid);
+    }
+}
+```
 
-------
 
-## 继承的特性
+
+### 20.5 继承的特性
 
 - 子类拥有父类非private的属性，方法。
 - 子类可以拥有自己的属性和方法，即子类可以对父类进行扩展。
@@ -5133,88 +5876,177 @@ public class Mouse extends Animal {      public Mouse(String myName, int myid) {
 - Java的继承是单继承，但是可以多重继承，单继承就是一个子类只能继承一个父类，多重继承就是，例如A类继承B类，B类继承C类，所以按照关系就是C类是B类的父类，B类是A类的父类，这是java继承区别于C++继承的一个特性。
 - 提高了类之间的耦合性（继承的缺点，耦合度高就会造成代码之间的联系）。
 
-------
 
-## 继承关键字
+
+### 20.6 继承关键字
 
 继承可以使用 extends 和 implements 这两个关键字来实现继承，而且所有的类都是继承于 java.lang.Object，当一个类没有继承的两个关键字，则默认继承object（这个类在 **java.lang** 包中，所以不需要 **import**）祖先类。
 
-### extends关键字
+#### 20.6.1 extends关键字
 
 在 Java 中，类的继承是单一继承，也就是说，一个子类只能拥有一个父类，所以 extends 只能继承一个类。
 
-## extends 关键字
+```java
+public class Animal {
+    private String name;
+    private int id;
+    public Animal(String myName, String myid) {
+        // 初始化属性值
+    }
+    public void eat() {
+        // 吃东西方法的具体实现
+    }
+    public void sleep() {
+        // 睡觉方法的具体实现
+    }
+}
+public class Penguin  extends  Animal {
+}
+```
 
-public class Animal {      private String name;        private int id;      public Animal(String myName, String myid) {          //初始化属性值     }      public void eat() {  //吃东西方法的具体实现  }      public void sleep() { //睡觉方法的具体实现  }  }    public class Penguin  extends  Animal{  }
-
-### implements关键字
+#### 20.6.2 implements 关键字
 
 使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。
 
-## implements 关键字
+```java
+public interface A {
+    public void eat();
+    public void sleep();
+}
+public interface B {
+    public void show();
+}
+public class C implements A, B {
+}
+```
 
-public interface A {     public void eat();     public void sleep(); }   public interface B {     public void show(); }   public class C implements A,B { }
-
-### super 与 this 关键字
+#### 20.6.3 super 与 this 关键字
 
 super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。
 
 this关键字：指向自己的引用。
 
-## 实例
+##### 实例
 
-class Animal {   void eat() {     System.out.println("animal : eat");   } }   class Dog extends Animal {   void eat() {     System.out.println("dog : eat");   }   void eatTest() {     this.eat();   // this 调用自己的方法     super.eat();  // super 调用父类方法   } }   public class Test {   public static void main(String[] args) {     Animal a = new Animal();     a.eat();     Dog d = new Dog();     d.eatTest();   } }
+```java
+class Animal {
+    void eat() {
+        System.out.println("animal : eat");
+    }
+}
+
+class Dog extends Animal {
+    void eat() {
+        System.out.println("dog : eat");
+    }
+    
+    void eatTest() {
+        this.eat();   // this 调用自己的方法
+        super.eat();  // super 调用父类方法
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        a.eat();
+        Dog d = new Dog();
+        d.eatTest();
+    }
+}
+```
 
 输出结果为：
 
-```
+```powershell
 animal : eat
 dog : eat
 animal : eat
 ```
 
-### final关键字
+#### 20.6.4 final 关键字
 
 final 关键字声明类可以把类定义为不能继承的，即最终类；或者用于修饰方法，该方法不能被子类重写：
 
 - 声明类：
 
-  ```
-  final class 类名 {//类体}
+  ```java
+  final class 类名 {
+      //类体
+  }
   ```
 
 - 声明方法：
 
-  ```
-  修饰符(public/private/default/protected) final 返回值类型 方法名(){//方法体}
+  ```java
+  修饰符(public/private/default/protected) final 返回值类型 方法名() {
+      //方法体
+  }
   ```
 
 **注**:实例变量也可以被定义为 final，被定义为 final 的变量不能被修改。被声明为 final 类的方法自动地声明为 final，但是实例变量并不是 final
 
-------
 
-## 构造器
+
+### 20.7 构造器
 
 子类不能继承父类的构造器（构造方法或者构造函数），如果父类的构造器带有参数，则必须在子类的构造器中显式地通过 super 关键字调用父类的构造器并配以适当的参数列表。
 
 如果父类构造器没有参数，则在子类的构造器中不需要使用 super 关键字调用父类构造器，系统会自动调用父类的无参构造器。
 
-## 实例
+#### 实例
 
-class SuperClass {   private int n;   SuperClass(){     System.out.println("SuperClass()");   }   SuperClass(int n) {     System.out.println("SuperClass(int n)");     this.n = n;   } } class SubClass extends SuperClass{   private int n;      SubClass(){     super(300);     System.out.println("SubClass");   }        public SubClass(int n){     System.out.println("SubClass(int n):"+n);     this.n = n;   } } public class TestSuperSub{   public static void main (String args[]){     SubClass sc = new SubClass();     SubClass sc2 = new SubClass(200);    } }
+```java
+package com.lightwing.ch20_Inherit;
+
+/**
+ * @ClassName TestSuperSub
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/7, 16:29
+ * @Version 1.0
+ **/
+class SuperClass {
+    SuperClass() {
+        System.out.println("SuperClass()");
+    }
+
+    SuperClass(int n) {
+        System.out.println("SuperClass(int n)");
+    }
+}
+
+class SubClass extends SuperClass {
+    SubClass() {
+        super(300);
+        System.out.println("SubClass");
+    }
+
+    SubClass(int n) {
+        System.out.println("SubClass(int n): " + n);
+    }
+}
+
+public class TestSuperSub {
+    public static void main(String args[]) {
+        SubClass sc_1 = new SubClass();
+        SubClass sc_2 = new SubClass(200);
+    }
+}
+```
 
 输出结果为：
 
-```
+```powershell
 SuperClass(int n)
 SubClass
 SuperClass()
-SubClass(int n):200
+SubClass(int n): 200
 ```
 
 ## 21 Override And Overload
 
-## 重写(Override)
+### 21.1 重写(Override)
 
 重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。**即外壳不变，核心重写！**
 
@@ -5224,13 +6056,34 @@ SubClass(int n):200
 
 在面向对象原则里，重写意味着可以重写任何现有方法。实例如下：
 
-## TestDog.java 文件代码：
+```java
+class Animal {
+    public void move() {
+        System.out.println("动物可以移动");
+    }
+}
 
-class Animal{    public void move(){       System.out.println("动物可以移动");    } }   class Dog extends Animal{    public void move(){       System.out.println("狗可以跑和走");    } }   public class TestDog{    public static void main(String args[]){       Animal a = new Animal(); // Animal 对象       Animal b = new Dog(); // Dog 对象         a.move();// 执行 Animal 类的方法         b.move();//执行 Dog 类的方法    } }
+class Dog extends Animal {
+    public void move() {
+        // 应用 super 类的方法
+        super.move();
+        System.out.println("狗可以跑和走");
+    }
+}
+
+public class TestDog {
+    public static void main(String args[]) {
+        // Dog 对象
+        Animal b = new Dog();
+        //执行 Dog 类的方法
+        b.move();
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 动物可以移动
 狗可以跑和走
 ```
@@ -5245,13 +6098,34 @@ class Animal{    public void move(){       System.out.println("动物可以移�
 
 思考以下例子：
 
-## TestDog.java 文件代码：
+```java
+class Animal {
+    public void move() {
+        System.out.println("动物可以移动");
+    }
+}
 
-class Animal{    public void move(){       System.out.println("动物可以移动");    } }   class Dog extends Animal{    public void move(){       System.out.println("狗可以跑和走");    }    public void bark(){       System.out.println("狗可以吠叫");    } }   public class TestDog{    public static void main(String args[]){       Animal a = new Animal(); // Animal 对象       Animal b = new Dog(); // Dog 对象         a.move();// 执行 Animal 类的方法       b.move();//执行 Dog 类的方法       b.bark();    } }
+class Dog extends Animal {
+    public void move() {
+        // 应用 super 类的方法
+        super.move();
+        System.out.println("狗可以跑和走");
+    }
+}
+
+public class TestDog {
+    public static void main(String args[]) {
+        // Dog 对象
+        Animal b = new Dog();
+        //执行 Dog 类的方法
+        b.move();
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 TestDog.java:30: cannot find symbol
 symbol  : method bark()
 location: class Animal
@@ -5261,9 +6135,9 @@ location: class Animal
 
 该程序将抛出一个编译错误，因为b的引用类型Animal没有bark方法。
 
-------
 
-## 方法的重写规则
+
+#### 21.1.1 方法的重写规则
 
 - 参数列表必须完全与被重写方法的相同；
 - 返回类型必须完全与被重写方法的返回类型相同；
@@ -5277,24 +6151,45 @@ location: class Animal
 - 构造方法不能被重写。
 - 如果不能继承一个方法，则不能重写这个方法。
 
-------
 
-## Super关键字的使用
+
+#### 21.1.2 Super关键字的使用
 
 当需要在子类中调用父类的被重写方法时，要使用super关键字。
 
-## TestDog.java 文件代码：
+```java
+class Animal {
+    public void move() {
+        System.out.println("动物可以移动");
+    }
+}
 
-class Animal{    public void move(){       System.out.println("动物可以移动");    } }   class Dog extends Animal{    public void move(){       super.move(); // 应用super类的方法       System.out.println("狗可以跑和走");    } }   public class TestDog{    public static void main(String args[]){         Animal b = new Dog(); // Dog 对象       b.move(); //执行 Dog类的方法      } }
+class Dog extends Animal {
+    public void move() {
+        // 应用 super 类的方法
+        super.move();
+        System.out.println("狗可以跑和走");
+    }
+}
+
+public class TestDog {
+    public static void main(String args[]) {
+        // Dog 对象
+        Animal b = new Dog();
+        //执行 Dog 类的方法
+        b.move();
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 动物可以移动
 狗可以跑和走
 ```
 
-## 重载(Overload)
+### 21.2 重载(Overload)
 
 重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。
 
@@ -5311,15 +6206,43 @@ class Animal{    public void move(){       System.out.println("动物可以移�
 - 方法能够在同一个类中或者在一个子类中被重载。
 - 无法以返回值类型作为重载函数的区分标准。
 
-### 实例
+#### 实例
 
-## Overloading.java 文件代码：
+```java
+public class Overloading {
+    private int test() {
+        System.out.println("test1");
+        return 1;
+    }
 
-public class Overloading {     public int test(){         System.out.println("test1");         return 1;     }       public void test(int a){         System.out.println("test2");     }          //以下两个参数类型顺序不同     public String test(int a,String s){         System.out.println("test3");         return "returntest3";     }          public String test(String s,int a){         System.out.println("test4");         return "returntest4";     }          public static void main(String[] args){         Overloading o = new Overloading();         System.out.println(o.test());         o.test(1);         System.out.println(o.test(1,"test3"));         System.out.println(o.test("test4",1));     } }
+    private void test(int a) {
+        System.out.println("test2");
+    }
 
-------
+    // 以下两个参数类型顺序不同
+    private String test(int a, String s) {
+        System.out.println("test3");
+        return "returntest3";
+    }
 
-## 重写与重载之间的区别
+    private String test(String s, int a) {
+        System.out.println("test4");
+        return "returntest4";
+    }
+
+    public static void main(String[] args) {
+        Overloading o = new Overloading();
+        System.out.println(o.test());
+        o.test(1);
+        System.out.println(o.test(1, "test3"));
+        System.out.println(o.test("test4", 1));
+    }
+}
+```
+
+
+
+### 21.3 重写与重载之间的区别
 
 | 区别点   | 重载方法 | 重写方法                                       |
 | -------- | -------- | ---------------------------------------------- |
@@ -5328,9 +6251,9 @@ public class Overloading {     public int test(){         System.out.println("te
 | 异常     | 可以修改 | 可以减少或删除，一定不能抛出新的或者更广的异常 |
 | 访问     | 可以修改 | 一定不能做更严格的限制（可以降低限制）         |
 
-------
 
-## 总结
+
+### 21.4 总结
 
 方法的重写(Overriding)和重载(Overloading)是java多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。
 
@@ -5360,16 +6283,16 @@ public class Overloading {     public int test(){         System.out.println("te
 >
 > 同一个事件发生在不同的对象上会产生不同的结果。
 
-### 多态的优点
+### 22.1 多态的优点
 
-- \1. 消除类型之间的耦合关系
-- \2. 可替换性
-- \3. 可扩充性
-- \4. 接口性
-- \5. 灵活性
-- \6. 简化性
+1. 消除类型之间的耦合关系
+2. 可替换性
+3. 可扩充性
+4. 接口性
+5. 灵活性
+6. 简化性
 
-### 多态存在的三个必要条件
+### 22.2 多态存在的三个必要条件
 
 - 继承
 - 重写
@@ -5377,7 +6300,7 @@ public class Overloading {     public int test(){         System.out.println("te
 
 比如：
 
-```
+```java
 Parent p = new Child();
 ```
 
@@ -5387,13 +6310,59 @@ Parent p = new Child();
 
 以下是一个多态实例的演示，详细说明请看注释：
 
-## Test.java 文件代码：
+```java
+public class PolymorphismTest {
+    public static void main(String[] args) {
+        show(new Cat()); // 以 Cat 对象调用 show 方法
+        show(new Dog()); // 以 Dog 对象调用 show 方法
+        Animal a = new Cat(); // 向上转型
+        a.eat(); // 调用的是 Cat 的 eat
+        Cat c = (Cat) a; // 向下转型
+        c.work(); // 调用的是 Cat 的 work
+    }
 
-public class Test {     public static void main(String[] args) {       show(new Cat());  // 以 Cat 对象调用 show 方法       show(new Dog());  // 以 Dog 对象调用 show 方法                        Animal a = new Cat();  // 向上转型         a.eat();               // 调用的是 Cat 的 eat       Cat c = (Cat)a;        // 向下转型         c.work();        // 调用的是 Cat 的 work   }                    public static void show(Animal a)  {       a.eat();           // 类型判断         if (a instanceof Cat)  {  // 猫做的事情              Cat c = (Cat)a;               c.work();           } else if (a instanceof Dog) { // 狗做的事情              Dog c = (Dog)a;               c.work();           }       }   }   abstract class Animal {       abstract void eat();   }      class Cat extends Animal {       public void eat() {           System.out.println("吃鱼");       }       public void work() {           System.out.println("抓老鼠");       }   }      class Dog extends Animal {       public void eat() {           System.out.println("吃骨头");       }       public void work() {           System.out.println("看家");       }   }
+    private static void show(Animal a) {
+        a.eat();
+        // 类型判断
+        if (a instanceof Cat) {
+            // 猫做的事情
+            Cat c = (Cat) a;
+            c.work();
+        } else if (a instanceof Dog) { // 狗做的事情
+            Dog c = (Dog) a;
+            c.work();
+        }
+    }
+}
+
+abstract class Animal {
+    abstract void eat();
+}
+
+class Cat extends Animal {
+    public void eat() {
+        System.out.println("吃鱼");
+    }
+
+    void work() {
+        System.out.println("抓老鼠");
+    }
+}
+
+class Dog extends Animal {
+    public void eat() {
+        System.out.println("吃骨头");
+    }
+
+    void work() {
+        System.out.println("看家");
+    }
+}
+```
 
 执行以上程序，输出结果为：
 
-```
+```powershell
 吃鱼
 抓老鼠
 吃骨头
@@ -5402,9 +6371,9 @@ public class Test {     public static void main(String[] args) {       show(new 
 抓老鼠
 ```
 
-------
 
-## 虚方法
+
+### 22.3 虚方法
 
 我们将介绍在Java中，当设计类时，被重写的方法的行为怎样影响多态性。
 
@@ -5414,37 +6383,114 @@ public class Test {     public static void main(String[] args) {       show(new 
 
 要想调用父类中被重写的方法，则必须使用关键字super。
 
-## Employee.java 文件代码：
+```java
+public class Employee {
+    private String name;
+    private String address;
+    private int number;
 
-/* 文件名 : Employee.java */ public class Employee {    private String name;    private String address;    private int number;    public Employee(String name, String address, int number) {       System.out.println("Employee 构造函数");       this.name = name;       this.address = address;       this.number = number;    }    public void mailCheck() {       System.out.println("邮寄支票给： " + this.name        + " " + this.address);    }    public String toString() {       return name + " " + address + " " + number;    }    public String getName() {       return name;    }    public String getAddress() {       return address;    }    public void setAddress(String newAddress) {       address = newAddress;    }    public int getNumber() {      return number;    } }
+    public Employee(String name, String address, int number) {
+        System.out.println("Employee 构造函数");
+        this.name = name;
+        this.address = address;
+        this.number = number;
+    }
+
+    public void mailCheck() {
+        System.out.println(
+                "邮寄支票给： " +
+                        this.name + " " +
+                        this.address
+        );
+    }
+
+    public String toString() {
+        return name + " " + address + " " + number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String newAddress) {
+        address = newAddress;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+}
+```
 
 假设下面的类继承Employee类：
 
-## Salary.java 文件代码：
+```java
+public class Salary extends Employee {
+    // 全年工资
+    private double salary;
 
-/* 文件名 : Salary.java */ public class Salary extends Employee {    private double salary; // 全年工资    public Salary(String name, String address, int number, double salary) {        super(name, address, number);        setSalary(salary);    }    public void mailCheck() {        System.out.println("Salary 类的 mailCheck 方法 ");        System.out.println("邮寄支票给：" + getName()        + " ，工资为：" + salary);    }    public double getSalary() {        return salary;    }    public void setSalary(double newSalary) {        if(newSalary >= 0.0) {           salary = newSalary;        }    }    public double computePay() {       System.out.println("计算工资，付给：" + getName());       return salary/52;    } }
+    public Salary(String name, String address, int number, double salary) {
+        super(name, address, number);
+        setSalary(salary);
+    }
+
+    public void mailCheck() {
+        System.out.println("Salary 类的 mailCheck 方法 ");
+        System.out.println("邮寄支票给：" + getName()
+                + " ，工资为：" + salary);
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    private void setSalary(double newSalary) {
+        if (newSalary >= 0.0) {
+            salary = newSalary;
+        }
+    }
+
+    public double computePay() {
+        System.out.println("计算工资，付给：" + getName());
+        return salary / 52;
+    }
+}
+```
 
 现在我们仔细阅读下面的代码，尝试给出它的输出结果：
 
-## VirtualDemo.java 文件代码：
-
-/* 文件名 : VirtualDemo.java */ public class VirtualDemo {    public static void main(String [] args) {       Salary s = new Salary("员工 A", "北京", 3, 3600.00);       Employee e = new Salary("员工 B", "上海", 2, 2400.00);       System.out.println("使用 Salary 的引用调用 mailCheck -- ");       s.mailCheck();       System.out.println("\n使用 Employee 的引用调用 mailCheck--");       e.mailCheck();     } }
+```java
+public class VirtualDemo {
+    public static void main(String[] args) {
+        Salary s = new Salary("员工 A", "北京", 3, 3600.00);
+        Employee e = new Salary("员工 B", "上海", 2, 2400.00);
+        System.out.println("使用 Salary 的引用调用 mailCheck -- ");
+        s.mailCheck();
+        System.out.println("\n使用 Employee 的引用调用 mailCheck--");
+        e.mailCheck();
+    }
+}
+```
 
 以上实例编译运行结果如下：
 
-```
+```powershell
 Employee 构造函数
 Employee 构造函数
 使用 Salary 的引用调用 mailCheck -- 
 Salary 类的 mailCheck 方法 
-邮寄支票给：员工 A ，工资为：3600.0
+邮寄支票给: 员工 A ，工资为: 3,600.00
 
 使用 Employee 的引用调用 mailCheck--
 Salary 类的 mailCheck 方法 
-邮寄支票给：员工 B ，工资为：2400.0
+邮寄支票给: 员工 B ，工资为: 2,400.00
 ```
 
-### 例子解析
+#### 例子解析
 
 - 实例中，实例化了两个 Salary 对象：一个使用 Salary 引用 s，另一个使用 Employee 引用 e。
 - 当调用 s.mailCheck() 时，编译器在编译时会在 Salary 类中找到 mailCheck()，执行过程 JVM 就调用 Salary 类的 mailCheck()。
@@ -5455,24 +6501,22 @@ Salary 类的 mailCheck 方法
 
 Java中所有的方法都能以这种方式表现，因此，重写的方法能在运行时调用，不管编译的时候源代码中引用变量是什么数据类型。
 
-------
 
-## 多态的实现方式
 
-### 方式一：重写：
+### 22.4 多态的实现方式
+
+#### 方式一：重写：
 
 这个内容已经在上一章节详细讲过，就不再阐述，详细可访问：
 
-Java 重写(Override)与重载(Overload)
+Java 重写(Override)与重载(Overload)。
 
-。
+#### 方式二：接口
 
-### 方式二：接口
+1. 生活中的接口最具代表性的就是插座，例如一个三接头的插头都能接在三孔插座中，因为这个是每个国家都有各自规定的接口规则，有可能到国外就不行，那是因为国外自己定义的接口类型。
+2. java中的接口类似于生活中的接口，就是一些方法特征的集合，但没有方法的实现。具体可以看 [java接口](http://www.runoob.com/java/java-interfaces.html) 这一章节的内容。
 
-- \1. 生活中的接口最具代表性的就是插座，例如一个三接头的插头都能接在三孔插座中，因为这个是每个国家都有各自规定的接口规则，有可能到国外就不行，那是因为国外自己定义的接口类型。
-- \2. java中的接口类似于生活中的接口，就是一些方法特征的集合，但没有方法的实现。具体可以看 [java接口](http://www.runoob.com/java/java-interfaces.html) 这一章节的内容。
-
-### 方式三：抽象类和抽象方法
+#### 方式三：抽象类和抽象方法
 
 详情请看 [Java抽象类](http://www.runoob.com/java/java-abstraction.html) 章节。
 
@@ -5488,64 +6532,166 @@ Java 重写(Override)与重载(Overload)
 
 在Java中抽象类表示的是一种继承关系，一个类只能继承一个抽象类，而一个类却可以实现多个接口。
 
-------
 
-## 抽象类
+
+### 23.1 抽象类
 
 在Java语言中使用abstract class来定义抽象类。如下实例：
 
-## Employee.java 文件代码：
+```java
+public abstract class Employee {
+    private String name;
+    private String address;
+    private int number;
 
-/* 文件名 : Employee.java */ public abstract class Employee {    private String name;    private String address;    private int number;    public Employee(String name, String address, int number)    {       System.out.println("Constructing an Employee");       this.name = name;       this.address = address;       this.number = number;    }    public double computePay()    {      System.out.println("Inside Employee computePay");      return 0.0;    }    public void mailCheck()    {       System.out.println("Mailing a check to " + this.name        + " " + this.address);    }    public String toString()    {       return name + " " + address + " " + number;    }    public String getName()    {       return name;    }    public String getAddress()    {       return address;    }    public void setAddress(String newAddress)    {       address = newAddress;    }    public int getNumber()    {      return number;    } }
+    public Employee(String name, String address, int number) {
+        System.out.println("Constructing an Employee");
+        this.name = name;
+        this.address = address;
+        this.number = number;
+    }
+
+    public double computePay() {
+        System.out.println("Inside Employee computePay");
+        return 0.0;
+    }
+
+    public void mailCheck() {
+        System.out.println(
+                "Mailing a check to " + this.name
+                + " " + this.address
+        );
+    }
+
+    public String toString() {
+        return name + " " + address + " " + number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String newAddress) {
+        address = newAddress;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+}
+```
 
 注意到该Employee类没有什么不同，尽管该类是抽象类，但是它仍然有3个成员变量，7个成员方法和1个构造方法。 现在如果你尝试如下的例子：
 
-## AbstractDemo.java 文件代码：
-
-/* 文件名 : AbstractDemo.java */ public class AbstractDemo {    public static void main(String [] args)    {       /* 以下是不允许的，会引发错误 */       Employee e = new Employee("George W.", "Houston, TX", 43);         System.out.println("\n Call mailCheck using Employee reference--");       e.mailCheck();     } }
+```java
+public class AbstractDemo {
+    public static void main(String[] args) {
+        Salary s = new Salary(
+                "Mohd Mohtashim", "Ambehta, UP", 3, 3600.00
+        );
+        Employee e = new Salary(
+                "John Adams", "Boston, MA", 2, 2400.00
+        );
+        System.out.println("Call mailCheck using Salary reference --");
+        s.mailCheck();
+        System.out.println("\n Call mailCheck using Employee reference--");
+        e.mailCheck();
+    }
+}
+```
 
 当你尝试编译AbstractDemo类时，会产生如下错误：
 
-```
+```shell
 Employee.java:46: Employee is abstract; cannot be instantiated
       Employee e = new Employee("George W.", "Houston, TX", 43);
                    ^
 1 error
 ```
 
-------
 
-## 继承抽象类
+
+### 23.2 继承抽象类
 
 我们能通过一般的方法继承Employee类：
 
-## Salary.java 文件代码：
+```java
+public class Salary extends Employee {
+    // Annual salary
+    private double salary;
 
-/* 文件名 : Salary.java */ public class Salary extends Employee {    private double salary; //Annual salary    public Salary(String name, String address, int number, double       salary)    {        super(name, address, number);        setSalary(salary);    }    public void mailCheck()    {        System.out.println("Within mailCheck of Salary class ");        System.out.println("Mailing check to " + getName()        + " with salary " + salary);    }    public double getSalary()    {        return salary;    }    public void setSalary(double newSalary)    {        if(newSalary >= 0.0)        {           salary = newSalary;        }    }    public double computePay()    {       System.out.println("Computing salary pay for " + getName());       return salary/52;    } }
+    public Salary(String name, String address, int number, double
+            salary) {
+        super(name, address, number);
+        setSalary(salary);
+    }
+
+    public void mailCheck() {
+        System.out.println("Within mailCheck of Salary class ");
+        System.out.println(
+                "Mailing check to " + getName()
+                        + " with salary " + String.format("%,.2f", salary)
+        );
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    private void setSalary(double newSalary) {
+        if (newSalary >= 0.0)
+            salary = newSalary;
+    }
+
+    public double computePay() {
+        System.out.println(
+                "Computing salary pay for " + getName()
+        );
+        return salary / 52;
+    }
+}
+```
 
 尽管我们不能实例化一个Employee类的对象，但是如果我们实例化一个Salary类对象，该对象将从 Employee 类继承7个成员方法，且通过该方法可以设置或获取三个成员变量。
 
-## AbstractDemo.java 文件代码：
-
-/* 文件名 : AbstractDemo.java */ public class AbstractDemo {    public static void main(String [] args)    {       Salary s = new Salary("Mohd Mohtashim", "Ambehta, UP", 3, 3600.00);       Employee e = new Salary("John Adams", "Boston, MA", 2, 2400.00);         System.out.println("Call mailCheck using Salary reference --");       s.mailCheck();         System.out.println("\n Call mailCheck using Employee reference--");       e.mailCheck();     } }
+```java
+public class AbstractDemo {
+    public static void main(String[] args) {
+        Salary s = new Salary(
+                "Mohd Mohtashim", "Ambehta, UP", 3, 3600.00
+        );
+        Employee e = new Salary(
+                "John Adams", "Boston, MA", 2, 2400.00
+        );
+        System.out.println("Call mailCheck using Salary reference --");
+        s.mailCheck();
+        System.out.println("\n Call mailCheck using Employee reference--");
+        e.mailCheck();
+    }
+}
+```
 
 以上程序编译运行结果如下：
 
-```
+```powershell
 Constructing an Employee
 Constructing an Employee
-Call mailCheck using  Salary reference --
-Within mailCheck of Salary class
-Mailing check to Mohd Mohtashim with salary 3600.0
+Call mailCheck using Salary reference --
+Within mailCheck of Salary class 
+Mailing check to Mohd Mohtashim with salary 3,600.00
 
-Call mailCheck using Employee reference--
-Within mailCheck of Salary class
-Mailing check to John Adams with salary 2400.
+ Call mailCheck using Employee reference--
+Within mailCheck of Salary class 
+Mailing check to John Adams with salary 2,400.00
 ```
 
-------
 
-## 抽象方法
+
+### 23.3 抽象方法
 
 如果你想设计这样一个类，该类包含一个特别的成员方法，该方法的具体实现由它的子类确定，那么你可以在父类中声明该方法为抽象方法。
 
@@ -5553,7 +6699,15 @@ Abstract关键字同样可以用来声明抽象方法，抽象方法只包含一
 
 抽象方法没有定义，方法名后面直接跟一个分号，而不是花括号。
 
-public abstract class Employee {    private String name;    private String address;    private int number;        public abstract double computePay();        //其余代码 }
+```java
+public abstract class Employee {
+    private String name;
+    private String address;
+    private int number;
+    public abstract double computePay();
+    // 其余代码
+}
+```
 
 声明抽象方法会造成以下两个结果：
 
@@ -5564,19 +6718,52 @@ public abstract class Employee {    private String name;    private String addre
 
 如果Salary类继承了Employee类，那么它必须实现computePay()方法：
 
-## Salary.java 文件代码：
+```java
+public class Salary extends Employee {
+    // Annual salary
+    private double salary;
 
-/* 文件名 : Salary.java */ public class Salary extends Employee {    private double salary; // Annual salary       public double computePay()    {       System.out.println("Computing salary pay for " + getName());       return salary/52;    }      //其余代码 }
+    public Salary(String name, String address, int number, double
+            salary) {
+        super(name, address, number);
+        setSalary(salary);
+    }
 
-------
+    public void mailCheck() {
+        System.out.println("Within mailCheck of Salary class ");
+        System.out.println(
+                "Mailing check to " + getName()
+                        + " with salary " + String.format("%,.2f", salary)
+        );
+    }
 
-## 抽象类总结规定
+    public double getSalary() {
+        return salary;
+    }
 
-- \1. 抽象类不能被实例化(初学者很容易犯的错)，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象。
-- \2. 抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类。
-- \3. 抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能。
-- \4. 构造方法，类方法（用static修饰的方法）不能声明为抽象方法。
-- \5. 抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类。
+    private void setSalary(double newSalary) {
+        if (newSalary >= 0.0)
+            salary = newSalary;
+    }
+
+    public double computePay() {
+        System.out.println(
+                "Computing salary pay for " + getName()
+        );
+        return salary / 52;
+    }
+}
+```
+
+
+
+### 23.4 抽象类总结规定
+
+1. 抽象类不能被实例化(初学者很容易犯的错)，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象。
+2. 抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类。
+3. 抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能。
+4. 构造方法，类方法（用static修饰的方法）不能声明为抽象方法。
+5. 抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类。
 
 ## 24 Encapsulation
 
@@ -5590,38 +6777,88 @@ public abstract class Employee {    private String name;    private String addre
 
 适当的封装可以让程式码更容易理解与维护，也加强了程式码的安全性。
 
-### 封装的优点
+### 24.1 封装的优点
 
-- \1. 良好的封装能够减少耦合。
-- \2. 类内部的结构可以自由修改。
-- \3. 可以对成员变量进行更精确的控制。
-- \4. 隐藏信息，实现细节。
+1. 良好的封装能够减少耦合。
+2. 类内部的结构可以自由修改。
+3. 可以对成员变量进行更精确的控制。
+4. 隐藏信息，实现细节。
 
-------
 
-## 实现Java封装的步骤
 
-\1. 修改属性的可见性来限制对属性的访问（一般限制为private），例如：
+### 24.2 实现Java封装的步骤
 
-public class Person {     private String name;     private int age; }
+1. 修改属性的可见性来限制对属性的访问（一般限制为private），例如：
+
+```java
+public class Person {
+    private String name;
+    private int age;
+}
+```
 
 这段代码中，将 **name** 和 **age** 属性设置为私有的，只能本类才能访问，其他类都访问不了，如此就对信息进行了隐藏。
 
-\2. 对每个值属性提供对外的公共方法访问，也就是创建一对赋取值方法，用于对私有属性的访问，例如：
+2. 对每个值属性提供对外的公共方法访问，也就是创建一对赋取值方法，用于对私有属性的访问，例如：
 
-public class Person{     private String name;     private int age;      public int getAge(){       return age;     }      public String getName(){       return name;     }      public void setAge(int age){       this.age = age;     }      public void setName(String name){       this.name = name;     } }
+```java
+public class Person {
+    private String name;
+    private int age;
+    public int getAge() {
+        return age;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
 
 采用 **this** 关键字是为了解决实例变量（private String name）和局部变量（setName(String name)中的name变量）之间发生的同名的冲突。
 
-------
 
-## 实例
+
+#### 实例
 
 让我们来看一个java封装类的例子：
 
-## EncapTest.java 文件代码：
+```java
+public class EncapTest {
+    private String name;
+    private String idNum;
+    private int age;
 
-/* 文件名: EncapTest.java */ public class EncapTest{      private String name;    private String idNum;    private int age;      public int getAge(){       return age;    }      public String getName(){       return name;    }      public String getIdNum(){       return idNum;    }      public void setAge( int newAge){       age = newAge;    }      public void setName(String newName){       name = newName;    }      public void setIdNum( String newId){       idNum = newId;    } }
+    int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getIdNum() {
+        return idNum;
+    }
+
+    void setAge() {
+        age = 20;
+    }
+
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    void setIdNum(String newId) {
+        idNum = newId;
+    }
+}
+```
 
 以上实例中public方法是外部类访问该类成员变量的入口。
 
@@ -5631,19 +6868,31 @@ public class Person{     private String name;     private int age;      public i
 
 通过如下的例子说明EncapTest类的变量怎样被访问：
 
-## RunEncap.java 文件代码：
+```java
+public class RunEncap {
+    public static void main(String args[]) {
+        EncapTest encap = new EncapTest();
+        encap.setName("James");
+        encap.setAge();
+        encap.setIdNum("12343ms");
 
-/* F文件名 : RunEncap.java */ public class RunEncap{    public static void main(String args[]){       EncapTest encap = new EncapTest();       encap.setName("James");       encap.setAge(20);       encap.setIdNum("12343ms");         System.out.print("Name : " + encap.getName()+                               " Age : "+ encap.getAge());     } }
+        System.out.print(
+                "Name: " + encap.getName() +
+                        " Age: " + encap.getAge()
+        );
+    }
+}
+```
 
 以上代码编译运行结果如下:
 
-```
-Name : James Age : 20
+```powershell
+Name: James Age: 20
 ```
 
 ## 25 Interface
 
-接口（英文：Interface），在JAVA编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。
+接口（英文：Interface），在 JAVA 编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。
 
 接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法。
 
@@ -5651,14 +6900,14 @@ Name : James Age : 20
 
 接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。另外，在 Java 中，接口类型可用来声明一个变量，他们可以成为一个空指针，或是被绑定在一个以此接口实现的对象。
 
-### 接口与类相似点：
+### 25.1 接口与类相似点：
 
 - 一个接口可以有多个方法。
 - 接口文件保存在 .java 结尾的文件中，文件名使用接口名。
 - 接口的字节码文件保存在 .class 结尾的文件中。
 - 接口相应的字节码文件必须在与包名称相匹配的目录结构中。
 
-### 接口与类的区别：
+### 25.2 接口与类的区别：
 
 - 接口不能用于实例化对象。
 - 接口没有构造方法。
@@ -5667,32 +6916,42 @@ Name : James Age : 20
 - 接口不是被类继承了，而是要被类实现。
 - 接口支持多继承。
 
-### 接口特性
+### 25.3 接口特性
 
 - 接口中每一个方法也是隐式抽象的,接口中的方法会被隐式的指定为 **public abstract**（只能是 public abstract，其他修饰符都会报错）。
 - 接口中可以含有变量，但是接口中的变量会被隐式的指定为 **public static final** 变量（并且只能是 public，用 private 修饰会报编译错误）。
 - 接口中的方法是不能在接口中实现的，只能由实现接口的类来实现接口中的方法。
 
-### 抽象类和接口的区别
+### 25.4 抽象类和接口的区别
 
-- \1. 抽象类中的方法可以有方法体，就是能实现方法的具体功能，但是接口中的方法不行。
-- \2. 抽象类中的成员变量可以是各种类型的，而接口中的成员变量只能是 **public static final** 类型的。
-- \3. 接口中不能含有静态代码块以及静态方法(用 static 修饰的方法)，而抽象类是可以有静态代码块和静态方法。
-- \4. 一个类只能继承一个抽象类，而一个类却可以实现多个接口。
+1. 抽象类中的方法可以有方法体，就是能实现方法的具体功能，但是接口中的方法不行。
+2. 抽象类中的成员变量可以是各种类型的，而接口中的成员变量只能是 **public static final** 类型的。
+3. 接口中不能含有静态代码块以及静态方法(用 static 修饰的方法)，而抽象类是可以有静态代码块和静态方法。
+4. 一个类只能继承一个抽象类，而一个类却可以实现多个接口。
 
-------
 
-## 接口的声明
+
+### 25.5 接口的声明
 
 接口的声明语法格式如下：
 
-[可见度] interface 接口名称 [extends 其他的类名] {         // 声明变量         // 抽象方法 }
+```java
+[可见度] interface 接口名称 [extends 其他的类名] {
+    // 声明变量
+    // 抽象方法
+}
+```
 
 Interface关键字用来声明一个接口。下面是接口声明的一个简单例子。
 
-## NameOfInterface.java 文件代码：
-
-/* 文件名 : NameOfInterface.java */ import java.lang.*; //引入包   public interface NameOfInterface {    //任何类型 final, static 字段    //抽象方法 }
+```java
+import java.lang.; //引入包
+public interface NameOfInterface {
+    //任何类型
+    final, static 字段
+    //抽象方法
+}
+```
 
 接口有以下特性：
 
@@ -5700,15 +6959,20 @@ Interface关键字用来声明一个接口。下面是接口声明的一个简�
 - 接口中每一个方法也是隐式抽象的，声明时同样不需要**abstract**关键字。
 - 接口中的方法都是公有的。
 
-### 实例
+#### 实例
 
-## Animal.java 文件代码：
+```java
+interface Animal {
+    public void eat();
+    public void travel();
+}
+```
 
-/* 文件名 : Animal.java */ interface Animal {    public void eat();    public void travel(); }
 
-------
 
-## 接口的实现
+
+
+### 25.6 接口的实现
 
 当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。
 
@@ -5716,19 +6980,37 @@ Interface关键字用来声明一个接口。下面是接口声明的一个简�
 
 实现一个接口的语法，可以使用这个公式：
 
-## Animal.java 文件代码：
-
+```java
 ...implements 接口名称[, 其他接口名称, 其他接口名称..., ...] ...
+```
 
-### 实例
+#### 实例
 
-## MammalInt.java 文件代码：
+```java
+public class MammalInt extends Animal {
+    public void eat() {
+        System.out.println("Mammal eats");
+    }
 
-/* 文件名 : MammalInt.java */ public class MammalInt implements Animal{      public void eat(){       System.out.println("Mammal eats");    }      public void travel(){       System.out.println("Mammal travels");    }       public int noOfLegs(){       return 0;    }      public static void main(String args[]){       MammalInt m = new MammalInt();       m.eat();       m.travel();    } }
+    public void travel() {
+        System.out.println("Mammal travels");
+    }
+
+    public int noOfLegs() {
+        return 0;
+    }
+
+    public static void main(String args[]) {
+        MammalInt m = new MammalInt();
+        m.eat();
+        m.travel();
+    }
+}
+```
 
 以上实例编译运行结果如下:
 
-```
+```powershell
 Mammal eats
 Mammal travels
 ```
@@ -5745,23 +7027,43 @@ Mammal travels
 - 一个类只能继承一个类，但是能实现多个接口。
 - 一个接口能继承另一个接口，这和类之间的继承比较相似。
 
-------
 
-## 接口的继承
+
+### 25.7 接口的继承
 
 一个接口能继承另一个接口，和类之间的继承方式比较相似。接口的继承使用extends关键字，子接口继承父接口的方法。
 
 下面的Sports接口被Hockey和Football接口继承：
 
-// 文件名: Sports.java public interface Sports {    public void setHomeTeam(String name);    public void setVisitingTeam(String name); }   // 文件名: Football.java public interface Football extends Sports {    public void homeTeamScored(int points);    public void visitingTeamScored(int points);    public void endOfQuarter(int quarter); }   // 文件名: Hockey.java public interface Hockey extends Sports {    public void homeGoalScored();    public void visitingGoalScored();    public void endOfPeriod(int period);    public void overtimePeriod(int ot); }
+```java
+public interface Hockey extends Sports {
+    void homeGoalScored();
+
+    void visitingGoalScored();
+
+    void endOfPeriod(int period);
+
+    void overtimePeriod(int ot);
+}
+```
+
+```java
+public interface Football extends Sports {
+    void homeTeamScored(int points);
+
+    void visitingTeamScored(int points);
+
+    void endOfQuarter(int quarter);
+}
+```
 
 Hockey接口自己声明了四个方法，从Sports接口继承了两个方法，这样，实现Hockey接口的类需要实现六个方法。
 
 相似的，实现Football接口的类需要实现五个方法，其中两个来自于Sports接口。
 
-------
 
-## 接口的多继承
+
+### 25.8 接口的多继承
 
 在Java中，类的多继承是不合法，但接口允许多继承。
 
@@ -5771,9 +7073,9 @@ public interface Hockey extends Sports, Event
 
 以上的程序片段是合法定义的子接口，与类不同的是，接口允许多继承，而 Sports及 Event 可能定义或是继承相同的方法
 
-------
 
-## 标记接口
+
+### 25.9 标记接口
 
 最常用的继承接口是没有包含任何方法的接口。
 
@@ -5783,7 +7085,11 @@ public interface Hockey extends Sports, Event
 
 例如：java.awt.event 包中的 MouseListener 接口继承的 java.util.EventListener 接口定义如下：
 
-package java.util; public interface EventListener {}
+```java
+package java.util; 
+public interface EventListener {
+}
+```
 
 没有任何方法的接口被称为标记接口。标记接口主要用于以下两种目的：
 
@@ -5799,21 +7105,28 @@ package java.util; public interface EventListener {}
 
 为了更好地组织类，Java 提供了包机制，用于区别类名的命名空间。
 
-### 包的作用
+### 26.1 包的作用
 
-- 1、把功能相似或相关的类或接口组织在同一个包中，方便类的查找和使用。
-- 2、如同文件夹一样，包也采用了树形目录的存储方式。同一个包中的类名字是不同的，不同的包中的类的名字是可以相同的，当同时调用两个不同包中相同类名的类时，应该加上包名加以区别。因此，包可以避免名字冲突。
-- 3、包也限定了访问权限，拥有包访问权限的类才能访问某个包中的类。
+1. 把功能相似或相关的类或接口组织在同一个包中，方便类的查找和使用。
+2. 如同文件夹一样，包也采用了树形目录的存储方式。同一个包中的类名字是不同的，不同的包中的类的名字是可以相同的，当同时调用两个不同包中相同类名的类时，应该加上包名加以区别。因此，包可以避免名字冲突。
+3. 包也限定了访问权限，拥有包访问权限的类才能访问某个包中的类。
 
 Java 使用包（package）这种机制是为了防止命名冲突，访问控制，提供搜索和定位类（class）、接口、枚举（enumerations）和注释（annotation）等。
 
 包语句的语法格式为：
 
+```java
 package pkg1[．pkg2[．pkg3…]];
+```
 
 例如,一个Something.java 文件它的内容
 
-package net.java.util; public class Something{    ... }
+```java
+package net.java.util;
+public class Something {    
+    ... 
+}
+```
 
 那么它的路径应该是 **net/java/util/Something.java** 这样保存的。 package(包) 的作用是把不同的 java 程序分类保存，更方便的被其他 java 程序调用。
 
@@ -5828,9 +7141,9 @@ package net.java.util; public class Something{    ... }
 
 由于包创建了新的命名空间（namespace），所以不会跟其他包中的任何名字产生命名冲突。使用包这种机制，更容易实现访问控制，并且让定位相关类更加简单。
 
-------
 
-## 创建包
+
+### 26.2 创建包
 
 创建包的时候，你需要为这个包取一个合适的名字。之后，如果其他的一个源文件包含了这个包提供的类、接口、枚举或者注释类型的时候，都必须将这个包的声明放在这个源文件的开头。
 
@@ -5838,25 +7151,45 @@ package net.java.util; public class Something{    ... }
 
 如果一个源文件中没有使用包声明，那么其中的类，函数，枚举，注释等将被放在一个无名的包（unnamed package）中。
 
-### 例子
+#### 实例
 
 让我们来看一个例子，这个例子创建了一个叫做animals的包。通常使用小写的字母来命名避免与类、接口名字的冲突。
 
 在 animals 包中加入一个接口（interface）：
 
-## Animal.java 文件代码：
+```java
+public abstract class Animal {
+    public abstract void eat();
 
-/* 文件名: Animal.java */ package animals;   interface Animal {    public void eat();    public void travel(); }
+    public abstract void travel();
+}
+```
 
-接下来，在同一个包中加入该接口的实现：
+```java
+public class MammalInt extends Animal {
+    public void eat() {
+        System.out.println("Mammal eats");
+    }
 
-## MammalInt.java 文件代码：
+    public void travel() {
+        System.out.println("Mammal travels");
+    }
 
-package animals;   /* 文件名 : MammalInt.java */ public class MammalInt implements Animal{      public void eat(){       System.out.println("Mammal eats");    }      public void travel(){       System.out.println("Mammal travels");    }       public int noOfLegs(){       return 0;    }      public static void main(String args[]){       MammalInt m = new MammalInt();       m.eat();       m.travel();    } }
+    public int noOfLegs() {
+        return 0;
+    }
+
+    public static void main(String args[]) {
+        MammalInt m = new MammalInt();
+        m.eat();
+        m.travel();
+    }
+}
+```
 
 然后，编译这两个文件，并把他们放在一个叫做animals的子目录中。 用下面的命令来运行：
 
-```
+```powershell
 $ mkdir animals
 $ cp Animal.class  MammalInt.class animals
 $ java animals/MammalInt
@@ -5864,47 +7197,59 @@ Mammal eats
 Mammal travel
 ```
 
-------
 
-## import 关键字
+
+### 26.3 import 关键字
 
 为了能够使用某一个包的成员，我们需要在 Java 程序中明确导入该包。使用 "import" 语句可完成此功能。
 
 在 java 源文件中 import 语句应位于 package 语句之后，所有类的定义之前，可以没有，也可以有多条，其语法格式为：
 
+```java
 import package1[.package2…].(classname|*);
+```
 
 如果在一个包中，一个类想要使用本包中的另一个类，那么该包名可以省略。
 
-### 例子
+#### 例子
 
 下面的 payroll 包已经包含了 Employee 类，接下来向 payroll 包中添加一个 Boss 类。Boss 类引用 Employee 类的时候可以不用使用 payroll 前缀，Boss类的实例如下。
 
-## Boss.java 文件代码：
-
-package payroll;   public class Boss {    public void payEmployee(Employee e)    {       e.mailCheck();    } }
+```java
+public class Boss {
+    public void payEmployee(Employee e) {
+        e.mailCheck();
+    }
+}
+```
 
 如果 Boss 类不在 payroll 包中又会怎样？Boss 类必须使用下面几种方法之一来引用其他包中的类。
 
 使用类全名描述，例如：
 
+```java
 payroll.Employee
+```
 
 用 **import** 关键字引入，使用通配符 "*"
 
+```java
 import payroll.*;
+```
 
 使用 **import** 关键字引入 Employee 类:
 
+```java
 import payroll.Employee;
+```
 
 **注意：**
 
 类文件中可以包含任意数量的 import 声明。import 声明必须在包声明之后，类声明之前。
 
-------
 
-## package 的目录结构
+
+### 26.4 package 的目录结构
 
 类放在包中会有两种主要的结果：
 
@@ -5915,11 +7260,17 @@ import payroll.Employee;
 
 将类、接口等类型的源码放在一个文本中，这个文件的名字就是这个类型的名字，并以.java作为扩展名。例如：
 
-// 文件名 :  Car.java   package vehicle;   public class Car {    // 类实现   }
+```java
+// 文件名: Car.java
+package vehicle;
+public class Car {
+    // 类实现
+}
+```
 
 接下来，把源文件放在一个目录中，这个目录要对应类所在包的名字。
 
-....\vehicle\Car.java
+`....\vehicle\Car.java`
 
 现在，正确的类名和路径将会是如下样子：
 
@@ -5934,30 +7285,37 @@ import payroll.Employee;
 
 编译的时候，编译器为包中定义的每个类、接口等类型各创建一个不同的输出文件，输出文件的名字就是这个类型的名字，并加上 .class 作为扩展后缀。 例如：
 
-// 文件名: Runoob.java   package com.runoob.test; public class Runoob {        } class Google {        }
+```java
+// 文件名: Runoob.java
+package com.runoob.test;
+public class Runoob {
+}
+class Google {
+}
+```
 
 现在，我们用-d选项来编译这个文件，如下：
 
-```
+```powershell
 $javac -d . Runoob.java
 ```
 
 这样会像下面这样放置编译了的文件：
 
-```
+```powershell
 .\com\runoob\test\Runoob.class
 .\com\runoob\test\Google.class
 ```
 
 你可以像下面这样来导入所有 **\com\runoob\test\** 中定义的类、接口等：
 
-```
+```powershell
 import com.runoob.test.*;
 ```
 
 编译之后的 .class 文件应该和 .java 源文件一样，它们放置的目录应该跟包的名字对应起来。但是，并不要求 .class 文件的路径跟相应的 .java 的路径一样。你可以分开来安排源码和类的目录。
 
-```
+```powershell
 <path-one>\sources\com\runoob\test\Runoob.java
 <path-two>\classes\com\runoob\test\Google.class
 ```
@@ -5970,9 +7328,9 @@ import com.runoob.test.*;
 
 一个 class path 可能会包含好几个路径，多路径应该用分隔符分开。默认情况下，编译器和 JVM 查找当前目录。JAR 文件按包含 Java 平台相关的类，所以他们的目录默认放在了 class path 中。
 
-------
 
-## 设置 CLASSPATH 系统变量
+
+### 26.5 设置 CLASSPATH 系统变量
 
 用下面的命令显示当前的CLASSPATH变量：
 
@@ -5980,8 +7338,6 @@ import com.runoob.test.*;
 - UNIX 平台（Bourne shell 下）：# echo $CLASSPATH
 
 删除当前CLASSPATH变量内容：
-
- 
 
 - Windows 平台（DOS 命令行下）：C:\> set CLASSPATH=
 - UNIX 平台（Bourne shell 下）：# unset CLASSPATH; export CLASSPATH
@@ -6005,9 +7361,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 以上这些类是传统遗留的，在Java2中引入了一种新的框架-集合框架(Collection)，我们后面再讨论。
 
-------
 
-## 枚举（Enumeration）
+
+### 27.1 枚举（Enumeration）
 
 枚举（Enumeration）接口虽然它本身不属于数据结构,但它在其他数据结构的范畴里应用很广。 枚举（The Enumeration）接口定义了一种从数据结构中取回连续元素的方式。
 
@@ -6015,9 +7371,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 关于枚举接口的更多信息，[请参见枚举（Enumeration）](http://www.runoob.com/java/java-enumeration-interface.html)。
 
-------
 
-## 位集合（BitSet）
+
+### 27.2 位集合（BitSet）
 
 位集合类实现了一组可以单独设置和清除的位或标志。
 
@@ -6025,9 +7381,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 关于该类的更多信息，[请参见位集合（BitSet）](http://www.runoob.com/java/java-bitset-class.html)。
 
-------
 
-## 向量（Vector）
+
+### 27.3 向量（Vector）
 
 向量（Vector）类和传统数组非常相似，但是Vector的大小能根据需要动态的变化。
 
@@ -6037,9 +7393,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 关于该类的更多信息，[请参见向量(Vector)](http://www.runoob.com/java/java-vector-class.html)
 
-------
 
-## 栈（Stack）
+
+### 27.4 栈（Stack）
 
 栈（Stack）实现了一个后进先出（LIFO）的数据结构。
 
@@ -6049,9 +7405,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 关于该类的更多信息，[请参见栈（Stack）](http://www.runoob.com/java/java-stack-class.html)。
 
-------
 
-## 字典（Dictionary）
+
+### 27.5 字典（Dictionary）
 
 字典（Dictionary） 类是一个抽象类，它定义了键映射到值的数据结构。
 
@@ -6061,9 +7417,9 @@ Java工具包提供了强大的数据结构。在Java中的数据结构主要包
 
 关于该类的更多信息，[请参见字典（ Dictionary）](http://www.runoob.com/java/java-dictionary-class.html)。
 
-------
 
-## 哈希表（Hashtable）
+
+### 27.6 哈希表（Hashtable）
 
 Hashtable类提供了一种在用户定义键结构的基础上来组织数据的手段。
 
@@ -6073,9 +7429,9 @@ Hashtable类提供了一种在用户定义键结构的基础上来组织数据�
 
 关于该类的更多信息，[请参见哈希表（HashTable）](http://www.runoob.com/java/java-hashTable-class.html)。
 
-------
 
-## 属性（Properties）
+
+### 27.8 属性（Properties）
 
 Properties 继承于 Hashtable.Properties 类表示了一个持久的属性集.属性列表中每个键及其对应值都是一个字符串。
 
@@ -6103,9 +7459,7 @@ Properties 类被许多Java类使用。例如，在获取环境变量时它就�
 
 集合框架是一个用来代表和操纵集合的统一架构。所有的集合框架都包含如下内容：
 
-- 
-
-  **接口：**是代表集合的抽象数据类型。例如 Collection、List、Set、Map 等。之所以定义多个接口，是为了以不同的方式操作集合对象
+- **接口：**是代表集合的抽象数据类型。例如 Collection、List、Set、Map 等。之所以定义多个接口，是为了以不同的方式操作集合对象
 
 - **实现（类）：**是集合接口的具体实现。从本质上讲，它们是可重复使用的数据结构，例如：ArrayList、LinkedList、HashSet、HashMap。
 
@@ -6113,15 +7467,15 @@ Properties 类被许多Java类使用。例如，在获取环境变量时它就�
 
 除了集合，该框架也定义了几个 Map 接口和类。Map 里存储的是键/值对。尽管 Map 不是集合，但是它们完全整合在集合中。
 
-### 集合框架体系如图所示
+集合框架体系如图所示
 
 ![img](http://www.runoob.com/wp-content/uploads/2014/01/java-coll.png)
 
 Java 集合框架提供了一套性能优良，使用方便的接口和类，java集合框架位于java.util包中， 所以当使用集合框架的时候需要进行导包。
 
-------
 
-## 集合接口
+
+### 28.1 集合接口
 
 集合框架定义了一些接口。本节提供了每个接口的概述：
 
@@ -6136,15 +7490,15 @@ Java 集合框架提供了一套性能优良，使用方便的接口和类，jav
 | 7    | SortedMap 继承于 Map，使 Key 保持在升序排列。                |
 | 8    | Enumeration 这是一个传统的接口和定义的方法，通过它可以枚举（一次获得一个）对象集合中的元素。这个传统接口已被迭代器取代。 |
 
-### Set和List的区别
+### 28.2 Set 和 List 的区别
 
-- \1. Set 接口实例存储的是无序的，不重复的数据。List 接口实例存储的是有序的，可以重复的元素。
-- \2. Set检索效率低下，删除和插入效率高，插入和删除不会引起元素位置改变 **<实现类有HashSet,TreeSet>**。
-- \3. List和数组类似，可以动态增长，根据实际存储的数据的长度自动增长List的长度。查找元素效率高，插入删除效率低，因为会引起其他元素位置改变 **<实现类有ArrayList,LinkedList,Vector>** 。
+1. Set 接口实例存储的是无序的，不重复的数据。List 接口实例存储的是有序的，可以重复的元素。
+2. Set检索效率低下，删除和插入效率高，插入和删除不会引起元素位置改变 **<实现类有HashSet,TreeSet>**。
+3. List和数组类似，可以动态增长，根据实际存储的数据的长度自动增长List的长度。查找元素效率高，插入删除效率低，因为会引起其他元素位置改变 **<实现类有ArrayList,LinkedList,Vector>** 。
 
-------
 
-## 集合实现类（集合类）
+
+### 28.3 集合实现类（集合类）
 
 Java提供了一套实现了Collection接口的标准集合类。其中一些是具体类，这些类可以直接拿来使用，而另外一些是抽象类，提供了接口的部分实现。
 
@@ -6179,9 +7533,9 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 | 5    | Properties  Properties 继承于 Hashtable，表示一个持久的属性集，属性列表中每个键及其对应值都是一个字符串。 |
 | 6    | BitSet 一个Bitset类创建一种特殊类型的数组来保存位值。BitSet中数组大小会随需要增加。 |
 
-------
 
-## 集合算法
+
+### 28.4 集合算法
 
 集合框架定义了几种算法，可用于集合和映射。这些算法被定义为集合类的静态方法。
 
@@ -6193,9 +7547,9 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 | ---- | ------------------------------------------------------ |
 | 1    | Collection Algorithms 这里是一个列表中的所有算法实现。 |
 
-------
 
-## 如何使用迭代器
+
+### 28.5 如何使用迭代器
 
 通常情况下，你会希望遍历一个集合中的元素。例如，显示集合中的每个元素。
 
@@ -6207,29 +7561,96 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 | ---- | ------------------------------------------------------------ |
 | 1    | 使用 Java Iterator 这里通过实例列出Iterator和listIterator接口提供的所有方法。 |
 
-### 遍历 ArrayList
+#### 28.5.1 遍历 ArrayList
 
-## 实例
+```java
+public class TraversalArray {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>();
+        list.add("Hello");
+        list.add("World");
+        list.add("HAHAHAHA");
+        // 第一种遍历方法使用foreach遍历List
+        for (String str : list) {
+            // 也可以改写for(int i=0;i<list.size();i++)这种形式
+            System.out.println(str);
+        }
 
-import java.util.*;   public class Test{  public static void main(String[] args) {      List<String> list=new ArrayList<String>();      list.add("Hello");      list.add("World");      list.add("HAHAHAHA");      //第一种遍历方法使用foreach遍历List      for (String str : list) {            //也可以改写for(int i=0;i<list.size();i++)这种形式         System.out.println(str);      }        //第二种遍历，把链表变为数组相关的内容进行遍历      String[] strArray=new String[list.size()];      list.toArray(strArray);      for(int i=0;i<strArray.length;i++) //这里也可以改写为  foreach(String str:strArray)这种形式      {         System.out.println(strArray[i]);      }           //第三种遍历 使用迭代器进行相关遍历            Iterator<String> ite=list.iterator();      while(ite.hasNext())//判断下一个元素之后有值      {          System.out.println(ite.next());      }  } }
+        // 第二种遍历，把链表变为数组相关的内容进行遍历
+        String[] strArray = new String[list.size()];
+        list.toArray(strArray);
+        for (int i = 0; i < strArray.length; i++) //这里也可以改写为  foreach(String str:strArray)这种形式
+        {
+            System.out.println(strArray[i]);
+        }
 
- 
+        //第三种遍历 使用迭代器进行相关遍历
+        Iterator<String> ite = list.iterator();
+        while (ite.hasNext()) {
+            //判断下一个元素之后有值
+            System.out.println(ite.next());
+        }
+    }
+}
+```
 
-**解析：**
+ **解析：**
 
 三种方法都是用来遍历ArrayList集合，第三种方法是采用迭代器的方法，该方法可以不用担心在遍历的过程中会超出集合的长度。
 
-### 遍历 Map
+#### 28.5.2 遍历 Map
 
-## 实例
+```java
+public class TraversalMap {
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("1", "value1");
+        map.put("2", "value2");
+        map.put("3", "value3");
 
-import java.util.*;   public class Test{      public static void main(String[] args) {       Map<String, String> map = new HashMap<String, String>();       map.put("1", "value1");       map.put("2", "value2");       map.put("3", "value3");              //第一种：普遍使用，二次取值       System.out.println("通过Map.keySet遍历key和value：");       for (String key : map.keySet()) {        System.out.println("key= "+ key + " and value= " + map.get(key));       }              //第二种       System.out.println("通过Map.entrySet使用iterator遍历key和value：");       Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();       while (it.hasNext()) {        Map.Entry<String, String> entry = it.next();        System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());       }              //第三种：推荐，尤其是容量大时       System.out.println("通过Map.entrySet遍历key和value");       for (Map.Entry<String, String> entry : map.entrySet()) {        System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());       }            //第四种       System.out.println("通过Map.values()遍历所有的value，但不能遍历key");       for (String v : map.values()) {        System.out.println("value= " + v);       }      } }
+        // 第一种：普遍使用，二次取值
+        System.out.println("通过Map.keySet遍历key和value：");
+        for (String key : map.keySet()) {
+            System.out.println(
+                    "key= " + key +
+                            " and value= " + map.get(key)
+            );
+        }
+
+        //第二种
+        System.out.println("通过Map.entrySet使用iterator遍历key和value：");
+        Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry<String, String> entry = it.next();
+            System.out.println(
+                    "key= " + entry.getKey() +
+                            " and value= " + entry.getValue()
+            );
+        }
+
+        // 第三种：推荐，尤其是容量大时
+        System.out.println("通过Map.entrySet遍历key和value");
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(
+                    "key= " + entry.getKey() +
+                            " and value= " + entry.getValue()
+            );
+        }
+
+        // 第四种
+        System.out.println("通过Map.values()遍历所有的value，但不能遍历key");
+        for (String v : map.values()) {
+            System.out.println("value= " + v);
+        }
+    }
+}
+```
 
  
 
-------
 
-## 如何使用比较器
+
+### 28.6 如何使用比较器
 
 TreeSet和TreeMap的按照排序顺序来存储元素. 然而，这是通过比较器来精确定义按照什么样的排序顺序。
 
@@ -6239,9 +7660,9 @@ TreeSet和TreeMap的按照排序顺序来存储元素. 然而，这是通过比�
 | ---- | ------------------------------------------------------------ |
 | 1    | 使用 Java Comparator 这里通过实例列出Comparator接口提供的所有方法 |
 
-------
 
-## 总结
+
+### 28.7 总结
 
 Java集合框架为程序员提供了预先包装的数据结构和算法来操纵他们。
 
@@ -6263,9 +7684,9 @@ Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了�
 >
 > 使用 Java 泛型的概念，我们可以写一个泛型方法来对一个对象数组排序。然后，调用该泛型方法来对整型数组、浮点数数组、字符串数组等进行排序。
 
-------
 
-## 泛型方法
+
+### 29.1 泛型方法
 
 你可以写一个泛型方法，该方法在调用时可以接收不同类型的参数。根据传递给泛型方法的参数类型，编译器适当地处理每一个方法调用。
 
@@ -6276,19 +7697,41 @@ Java 泛型（generics）是 JDK 5 中引入的一个新特性, 泛型提供了�
 - 类型参数能被用来声明返回值类型，并且能作为泛型方法得到的实际参数类型的占位符。
 - 泛型方法体的声明和其他方法一样。注意类型参数只能代表引用型类型，不能是原始类型（像int,double,char的等）。
 
-### 实例
+#### 实例
 
 下面的例子演示了如何使用泛型方法打印不同字符串的元素：
 
-## 实例
+```java
+public class GenericMethodTest {
+    // 泛型方法 printArray
+    private static <E> void printArray(E[] inputArray) {
+        // 输出数组元素
+        for (E element : inputArray)
+            System.out.printf("%s ", element);
+        System.out.println();
+    }
 
-public class GenericMethodTest {    // 泛型方法 printArray                             public static < E > void printArray( E[] inputArray )    {       // 输出数组元素                      for ( E element : inputArray ){                     System.out.printf( "%s ", element );          }          System.out.println();     }       public static void main( String args[] )     {         // 创建不同类型数组： Integer, Double 和 Character         Integer[] intArray = { 1, 2, 3, 4, 5 };         Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };         Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };           System.out.println( "整型数组元素为:" );         printArray( intArray  ); // 传递一个整型数组           System.out.println( "\n双精度型数组元素为:" );         printArray( doubleArray ); // 传递一个双精度型数组           System.out.println( "\n字符型数组元素为:" );         printArray( charArray ); // 传递一个字符型数组     }  }
+    public static void main(String args[]) {
+        // 创建不同类型数组： Integer, Double 和 Character
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        Double[] doubleArray = {1.1, 2.2, 3.3, 4.4};
+        Character[] charArray = {'H', 'E', 'L', 'L', 'O'};
 
- 
+        System.out.println("整型数组元素为:");
+        printArray(intArray); // 传递一个整型数组
 
-编译以上代码，运行结果如下所示：
+        System.out.println("\n双精度型数组元素为:");
+        printArray(doubleArray); // 传递一个双精度型数组
 
+        System.out.println("\n字符型数组元素为:");
+        printArray(charArray); // 传递一个字符型数组
+    }
+}
 ```
+
+ 编译以上代码，运行结果如下所示：
+
+```powershell
 整型数组元素为:
 1 2 3 4 5 
 
@@ -6305,19 +7748,40 @@ H E L L O
 
 要声明一个有界的类型参数，首先列出类型参数的名称，后跟extends关键字，最后紧跟它的上界。
 
-### 实例
+#### 实例
 
 下面的例子演示了"extends"如何使用在一般意义上的意思"extends"（类）或者"implements"（接口）。该例子中的泛型方法返回三个可比较对象的最大值。
 
-## 实例
+```java
+public class MaximumTest {
+    // 比较三个值并返回最大值
+    private static <T extends Comparable<T>> T maximum(T x, T y, T z) {
+        T max = x; // 假设x是初始最大值
+        if (y.compareTo(max) > 0) 
+            max = y; // y 更大
+        
+        if (z.compareTo(max) > 0) 
+            max = z; // 现在 z 更大
+        
+        return max; // 返回最大对象
+    }
 
-public class MaximumTest {    // 比较三个值并返回最大值    public static <T extends Comparable<T>> T maximum(T x, T y, T z)    {                            T max = x; // 假设x是初始最大值       if ( y.compareTo( max ) > 0 ){          max = y; //y 更大       }       if ( z.compareTo( max ) > 0 ){          max = z; // 现在 z 更大                  }       return max; // 返回最大对象    }    public static void main( String args[] )    {       System.out.printf( "%d, %d 和 %d 中最大的数为 %d\n\n",                    3, 4, 5, maximum( 3, 4, 5 ) );         System.out.printf( "%.1f, %.1f 和 %.1f 中最大的数为 %.1f\n\n",                    6.6, 8.8, 7.7, maximum( 6.6, 8.8, 7.7 ) );         System.out.printf( "%s, %s 和 %s 中最大的数为 %s\n","pear",          "apple", "orange", maximum( "pear", "apple", "orange" ) );    } }
+    public static void main(String args[]) {
+        System.out.printf("%d, %d 和 %d 中最大的数为 %d\n\n",
+                3, 4, 5, maximum(3, 4, 5));
 
- 
+        System.out.printf("%.1f, %.1f 和 %.1f 中最大的数为 %.1f\n\n",
+                6.6, 8.8, 7.7, maximum(6.6, 8.8, 7.7));
 
-编译以上代码，运行结果如下所示：
-
+        System.out.printf("%s, %s 和 %s 中最大的数为 %s\n", "pear",
+                "apple", "orange", maximum("pear", "apple", "orange"));
+    }
+}
 ```
+
+ 编译以上代码，运行结果如下所示：
+
+```powershell
 3, 4 和 5 中最大的数为 5
 
 6.6, 8.8 和 7.7 中最大的数为 8.8
@@ -6325,72 +7789,127 @@ public class MaximumTest {    // 比较三个值并返回最大值    public sta
 pear, apple 和 orange 中最大的数为 pear
 ```
 
-------
 
-## 泛型类
+
+### 29.2 泛型类
 
 泛型类的声明和非泛型类的声明类似，除了在类名后面添加了类型参数声明部分。
 
 和泛型方法一样，泛型类的类型参数声明部分也包含一个或多个类型参数，参数间用逗号隔开。一个泛型参数，也被称为一个类型变量，是用于指定一个泛型类型名称的标识符。因为他们接受一个或多个参数，这些类被称为参数化的类或参数化的类型。
 
-### 实例
+#### 实例
 
 如下实例演示了我们如何定义一个泛型类:
 
-## 实例
+```java
+public class Box<T> {
+    private T t;
 
-public class Box<T> {       private T t;     public void add(T t) {     this.t = t;   }     public T get() {     return t;   }     public static void main(String[] args) {     Box<Integer> integerBox = new Box<Integer>();     Box<String> stringBox = new Box<String>();       integerBox.add(new Integer(10));     stringBox.add(new String("菜鸟教程"));       System.out.printf("整型值为 :%d\n\n", integerBox.get());     System.out.printf("字符串为 :%s\n", stringBox.get());   } }
+    private void add(T t) {
+        this.t = t;
+    }
 
- 
+    private T get() {
+        return t;
+    }
 
-编译以上代码，运行结果如下所示：
+    public static void main(String[] args) {
+        Box<Integer> integerBox = new Box<Integer>();
+        Box<String> stringBox = new Box<String>();
 
-```
-整型值为 :10
+        integerBox.add(10);
+        stringBox.add("菜鸟教程");
 
-字符串为 :菜鸟教程
-```
-
-------
-
-## 类型通配符
-
-1、类型通配符一般是使用?代替具体的类型参数。例如 **List<?>** 在逻辑上是**List<String>,List<Integer>** 等所有List<具体类型实参>的父类。
-
-## 实例
-
-import java.util.*;   public class GenericTest {           public static void main(String[] args) {         List<String> name = new ArrayList<String>();         List<Integer> age = new ArrayList<Integer>();         List<Number> number = new ArrayList<Number>();                  name.add("icon");         age.add(18);         number.add(314);           getData(name);         getData(age);         getData(number);            }      public static void getData(List<?> data) {       System.out.println("data :" + data.get(0));    } }
-
- 
-
-输出结果为：
-
-```
-data :icon
-data :18
-data :314
+        System.out.printf("整型值为: %d\n", integerBox.get());
+        System.out.printf("字符串为: %s\n", stringBox.get());
+    }
+}
 ```
 
-**解析：** 因为getData()方法的参数是List类型的，所以name，age，number都可以作为这个方法的实参，这就是通配符的作用
+ 编译以上代码，运行结果如下所示：
 
-2、类型通配符上限通过形如List来定义，如此定义就是通配符泛型值接受Number及其下层子类类型。
-
-## 实例
-
-import java.util.*;   public class GenericTest {           public static void main(String[] args) {         List<String> name = new ArrayList<String>();         List<Integer> age = new ArrayList<Integer>();         List<Number> number = new ArrayList<Number>();                  name.add("icon");         age.add(18);         number.add(314);           //getUperNumber(name);//1         getUperNumber(age);//2         getUperNumber(number);//3            }      public static void getData(List<?> data) {       System.out.println("data :" + data.get(0));    }        public static void getUperNumber(List<? extends Number> data) {           System.out.println("data :" + data.get(0));        } }
-
- 
-
-输出结果：
-
-```
-data :18
-data :314
+```shell
+整型值为: 10
+字符串为: 菜鸟教程
 ```
 
-**解析：** 在(//1)处会出现错误，因为getUperNumber()方法中的参数已经限定了参数泛型上限为Number，所以泛型为String是不在这个范围之内，所以会报错
 
-3、类型通配符下限通过形如 **List<? super Number>**来定义，表示类型只能接受Number及其三层父类类型，如Objec类型的实例。
+
+### 29.3 类型通配符
+
+1. 类型通配符一般是使用?代替具体的类型参数。例如 **List<?>** 在逻辑上是**List<String>, List<Integer>** 等所有List<具体类型实参>的父类。
+
+#### 实例
+
+```java
+public class GenericTest_1 {
+    public static void main(String[] args) {
+        List<String> name = new ArrayList<String>();
+        List<Integer> age = new ArrayList<Integer>();
+        List<Number> number = new ArrayList<Number>();
+
+        name.add("icon");
+        age.add(18);
+        number.add(314);
+
+        getData(name);
+        getData(age);
+        getData(number);
+    }
+
+    private static void getData(List<?> data) {
+        System.out.println("data :" + data.get(0));
+    }
+}
+```
+
+ 输出结果为：
+
+```
+data: icon
+data: 18
+data: 314
+```
+
+**解析：** 因为 getData()方法的参数是 List 类型的，所以 name，age，number 都可以作为这个方法的实参，这就是通配符的作用
+
+2. 类型通配符上限通过形如 List 来定义，如此定义就是通配符泛型值接受 Number 及其下层子类类型。
+
+```java
+public class GenericTest_2 {
+    public static void main(String[] args) {
+        List<String> name = new ArrayList<String>();
+        List<Integer> age = new ArrayList<Integer>();
+        List<Number> number = new ArrayList<Number>();
+
+        name.add("icon");
+        age.add(18);
+        number.add(314);
+
+        getUperNumber(age);     // 2
+        getUperNumber(number);  // 3
+    }
+
+    public static void getData(List<?> data) {
+        System.out.println("data: " + data.get(0));
+    }
+
+    private static void getUperNumber(List<? extends Number> data) {
+        System.out.println("data :" + data.get(0));
+    }
+}
+```
+
+ 输出结果：
+
+```powershell
+data: 18
+data: 314
+```
+
+**解析：** 在(//1)处会出现错误，因为 getUperNumber()方法中的参数已经限定了参数泛型上限为 Number，所以泛型为 String 是不在这个范围之内，所以会报错
+
+3. 类型通配符下限通过形如 **List<? super Number>**来定义，表示类型只能接受 Number 及其三层父类类型，如 Objec 类型的实例。
 
 ## 30 Serialize
 
@@ -6410,13 +7929,25 @@ public final void writeObject(Object x) throws IOException
 
 public final Object readObject() throws IOException,                                   ClassNotFoundException
 
-该方法从流中取出下一个对象，并将对象反序列化。它的返回值为Object，因此，你需要将它转换成合适的数据类型。
+该方法从流中取出下一个对象，并将对象反序列化。它的返回值为 Object，因此，你需要将它转换成合适的数据类型。
 
-为了演示序列化在Java中是怎样工作的，我将使用之前教程中提到的Employee类，假设我们定义了如下的Employee类，该类实现了Serializable 接口。
+为了演示序列化在 Java 中是怎样工作的，我将使用之前教程中提到的 Employee 类，假设我们定义了如下的 Employee 类，该类实现了 Serializable 接口。
 
-## Employee.java 文件代码：
+```java
+public class Employee implements java.io.Serializable {
+    public String name;
+    public String address;
+    transient int SSN;
+    public int number;
 
-public class Employee implements java.io.Serializable {    public String name;    public String address;    public transient int SSN;    public int number;    public void mailCheck()    {       System.out.println("Mailing a check to " + name                            + " " + address);    } }
+    public void mailCheck() {
+        System.out.println(
+                "Mailing a check to " + name
+                + " " + address
+        );
+    }
+}
+```
 
 请注意，一个类的对象要想序列化成功，必须满足两个条件：
 
@@ -6424,11 +7955,11 @@ public class Employee implements java.io.Serializable {    public String name;  
 
 该类的所有属性必须是可序列化的。如果有一个属性不是可序列化的，则该属性必须注明是短暂的。
 
-如果你想知道一个 Java 标准类是否是可序列化的，请查看该类的文档。检验一个类的实例是否能序列化十分简单， 只需要查看该类有没有实现 java.io.Serializable接口。
+如果你想知道一个 Java 标准类是否是可序列化的，请查看该类的文档。检验一个类的实例是否能序列化十分简单， 只需要查看该类有没有实现 java.io.Serializable 接口。
 
-------
 
-## 序列化对象
+
+### 30.1 序列化对象
 
 ObjectOutputStream 类用来序列化一个对象，如下的 SerializeDemo 例子实例化了一个 Employee 对象，并将该对象序列化到一个文件中。
 
@@ -6436,33 +7967,84 @@ ObjectOutputStream 类用来序列化一个对象，如下的 SerializeDemo 例�
 
 **注意：** 当序列化一个对象到文件时， 按照 Java 的标准约定是给文件一个 .ser 扩展名。
 
-## SerializeDemo.java 文件代码：
+```java
+public class DeserializeDemo {
+    public static void main(String[] args) {
+        Employee e;
+        try {
+            FileInputStream fileIn = new FileInputStream(
+                    "com.lightwing.ch30_Serialize/employee.ser"
+            );
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            e = (Employee) in.readObject();
+            in.close();
+            fileIn.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+            return;
+        } catch (ClassNotFoundException c) {
+            System.out.println("Employee class not found");
+            c.printStackTrace();
+            return;
+        }
+        System.out.println("Deserialize Employee...");
+        System.out.println("Name: " + e.name);
+        System.out.println("Address: " + e.address);
+        System.out.println("SSN: " + e.SSN);
+        System.out.println("Number: " + e.number);
+    }
+}
+```
 
-import java.io.*;   public class SerializeDemo {    public static void main(String [] args)    {       Employee e = new Employee();       e.name = "Reyan Ali";       e.address = "Phokka Kuan, Ambehta Peer";       e.SSN = 11122333;       e.number = 101;       try       {          FileOutputStream fileOut =          new FileOutputStream("/tmp/employee.ser");          ObjectOutputStream out = new ObjectOutputStream(fileOut);          out.writeObject(e);          out.close();          fileOut.close();          System.out.printf("Serialized data is saved in /tmp/employee.ser");       }catch(IOException i)       {           i.printStackTrace();       }    } }
 
-------
 
-## 反序列化对象
+### 30.2 反序列化对象
 
 下面的 DeserializeDemo 程序实例了反序列化，/tmp/employee.ser 存储了 Employee 对象。
 
-## DeserializeDemo.java 文件代码：
-
-import java.io.*;   public class DeserializeDemo {    public static void main(String [] args)    {       Employee e = null;       try       {          FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");          ObjectInputStream in = new ObjectInputStream(fileIn);          e = (Employee) in.readObject();          in.close();          fileIn.close();       }catch(IOException i)       {          i.printStackTrace();          return;       }catch(ClassNotFoundException c)       {          System.out.println("Employee class not found");          c.printStackTrace();          return;       }       System.out.println("Deserialized Employee...");       System.out.println("Name: " + e.name);       System.out.println("Address: " + e.address);       System.out.println("SSN: " + e.SSN);       System.out.println("Number: " + e.number);     } }
+```java
+public class DeserializeDemo {
+    public static void main(String[] args) {
+        Employee e;
+        try {
+            FileInputStream fileIn = new FileInputStream(
+                    "com.lightwing.ch30_Serialize/employee.ser"
+            );
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            e = (Employee) in.readObject();
+            in.close();
+            fileIn.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+            return;
+        } catch (ClassNotFoundException c) {
+            System.out.println("Employee class not found");
+            c.printStackTrace();
+            return;
+        }
+        System.out.println("Deserialize Employee...");
+        System.out.println("Name: " + e.name);
+        System.out.println("Address: " + e.address);
+        System.out.println("SSN: " + e.SSN);
+        System.out.println("Number: " + e.number);
+    }
+}
+```
 
 以上程序编译运行结果如下所示：
 
-```
+```powershell
 Deserialized Employee...
 Name: Reyan Ali
-Address:Phokka Kuan, Ambehta Peer
+Address: Phokka Kuan, Ambehta Peer
 SSN: 0
-Number:101
+Number: 101
 ```
 
 这里要注意以下要点：
 
-readObject() 方法中的 try/catch代码块尝试捕获 ClassNotFoundException 异常。对于 JVM 可以反序列化对象，它必须是能够找到字节码的类。如果JVM在反序列化对象的过程中找不到该类，则抛出一个 ClassNotFoundException 异常。
+readObject() 方法中的 try/catch 代码块尝试捕获 ClassNotFoundException 异常。对于 JVM 
+可以反序列化对象，它必须是能够找到字节码的类。如果 JVM 在反序列化对象的过程中找不到该类，则抛出一个 ClassNotFoundException 异常。
 
 注意，readObject() 方法的返回值被转化成 Employee 引用。
 
@@ -6484,17 +8066,17 @@ java.net 包中提供了两种常见的网络协议的支持：
 - **Socket 编程**：这是使用最广泛的网络概念，它已被解释地非常详细。
 - **URL 处理**：这部分会在另外的篇幅里讲，点击这里更详细地了解在 [Java 语言中的 URL 处理](http://www.runoob.com/java/java-url-processing.html)。
 
-------
 
-## Socket 编程
 
-套接字使用TCP提供了两台计算机之间的通信机制。 客户端程序创建一个套接字，并尝试连接服务器的套接字。
+### 31.1 Socket 编程
+
+套接字使用 TCP 提供了两台计算机之间的通信机制。 客户端程序创建一个套接字，并尝试连接服务器的套接字。
 
 当连接建立时，服务器会创建一个 Socket 对象。客户端和服务器现在可以通过对 Socket 对象的写入和读取来进行通信。
 
 java.net.Socket 类代表一个套接字，并且 java.net.ServerSocket 类为服务器程序提供了一种来监听客户端，并与他们建立连接的机制。
 
-以下步骤在两台计算机之间使用套接字建立TCP连接时会出现：
+以下步骤在两台计算机之间使用套接字建立 TCP 连接时会出现：
 
 - 服务器实例化一个 ServerSocket 对象，表示通过服务器上的端口通信。
 - 服务器调用 ServerSocket 类的 accept() 方法，该方法将一直等待，直到客户端连接到服务器上给定的端口。
@@ -6502,13 +8084,13 @@ java.net.Socket 类代表一个套接字，并且 java.net.ServerSocket 类为�
 - Socket 类的构造函数试图将客户端连接到指定的服务器和端口号。如果通信被建立，则在客户端创建一个 Socket 对象能够与服务器进行通信。
 - 在服务器端，accept() 方法返回服务器上一个新的 socket 引用，该 socket 连接到客户端的 socket。
 
-连接建立后，通过使用 I/O 流在进行通信，每一个socket都有一个输出流和一个输入流，客户端的输出流连接到服务器端的输入流，而客户端的输入流连接到服务器端的输出流。
+连接建立后，通过使用 I/O 流在进行通信，每一个 socket 都有一个输出流和一个输入流，客户端的输出流连接到服务器端的输入流，而客户端的输入流连接到服务器端的输出流。
 
 TCP 是一个双向的通信协议，因此数据可以通过两个数据流在同一时间发送.以下是一些类提供的一套完整的有用的方法来实现 socket。
 
-------
 
-## ServerSocket 类的方法
+
+### 30.2 ServerSocket 类的方法
 
 服务器应用程序通过使用 java.net.ServerSocket 类以获取一个端口,并且侦听客户端请求。
 
@@ -6532,9 +8114,9 @@ ServerSocket 类有四个构造方法：
 | 3        | **public void setSoTimeout(int timeout)**  通过指定超时值启用/禁用 SO_TIMEOUT，以毫秒为单位。 |
 | 4        | **public void bind(SocketAddress host, int backlog)** 将 ServerSocket 绑定到特定地址（IP 地址和端口号）。 |
 
-------
 
-## Socket 类的方法
+
+### 30.3 Socket 类的方法
 
 java.net.Socket 类代表客户端和服务器都用来互相沟通的套接字。客户端要获取一个 Socket 对象通过实例化 ，而 服务器获得一个 Socket 对象则通过 accept() 方法的返回值。
 
@@ -6563,9 +8145,9 @@ Socket 类有五个构造方法.
 | 7        | **public OutputStream getOutputStream() throws IOException** 返回此套接字的输出流。 |
 | 8        | **public void close() throws IOException** 关闭此套接字。    |
 
-------
 
-## InetAddress 类的方法
+
+### 30.4 InetAddress 类的方法
 
 这个类表示互联网协议(IP)地址。下面列出了 Socket 编程时比较有用的方法：
 
@@ -6579,29 +8161,88 @@ Socket 类有五个构造方法.
 | 6        | **static InetAddress getLocalHost()** 返回本地主机。         |
 | 7        | **String toString()** 将此 IP 地址转换为 String。            |
 
-------
 
-## Socket 客户端实例
+
+### 30.5 Socket 客户端实例
 
 如下的 GreetingClient 是一个客户端程序，该程序通过 socket 连接到服务器并发送一个请求，然后等待一个响应。
 
-## GreetingClient.java 文件代码：
+```java
+public class GreetingClient {
+    public static void main(String[] args) {
+        String serverName = args[0];
+        int port = Integer.parseInt(args[1]);
+        try {
+            System.out.println("连接到主机：" + serverName + " ，端口号：" + port);
+            Socket client = new Socket(serverName, port);
+            System.out.println("远程主机地址：" + client.getRemoteSocketAddress());
+            OutputStream outToServer = client.getOutputStream();
+            DataOutputStream out = new DataOutputStream(outToServer);
 
-// 文件名 GreetingClient.java   import java.net.*; import java.io.*;   public class GreetingClient {    public static void main(String [] args)    {       String serverName = args[0];       int port = Integer.parseInt(args[1]);       try       {          System.out.println("连接到主机：" + serverName + " ，端口号：" + port);          Socket client = new Socket(serverName, port);          System.out.println("远程主机地址：" + client.getRemoteSocketAddress());          OutputStream outToServer = client.getOutputStream();          DataOutputStream out = new DataOutputStream(outToServer);            out.writeUTF("Hello from " + client.getLocalSocketAddress());          InputStream inFromServer = client.getInputStream();          DataInputStream in = new DataInputStream(inFromServer);          System.out.println("服务器响应： " + in.readUTF());          client.close();       }catch(IOException e)       {          e.printStackTrace();       }    } }
+            out.writeUTF("Hello from " + client.getLocalSocketAddress());
+            InputStream inFromServer = client.getInputStream();
+            DataInputStream in = new DataInputStream(inFromServer);
+            System.out.println("服务器响应： " + in.readUTF());
+            client.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-------
 
-## Socket 服务端实例
 
-如下的GreetingServer 程序是一个服务器端应用程序，使用 Socket 来监听一个指定的端口。
+### 30.6 Socket 服务端实例
 
-## GreetingServer.java 文件代码：
+如下的 GreetingServer 程序是一个服务器端应用程序，使用 Socket 来监听一个指定的端口。
 
-// 文件名 GreetingServer.java   import java.net.*; import java.io.*;   public class GreetingServer extends Thread {    private ServerSocket serverSocket;        public GreetingServer(int port) throws IOException    {       serverSocket = new ServerSocket(port);       serverSocket.setSoTimeout(10000);    }      public void run()    {       while(true)       {          try          {             System.out.println("等待远程连接，端口号为：" + serverSocket.getLocalPort() + "...");             Socket server = serverSocket.accept();             System.out.println("远程主机地址：" + server.getRemoteSocketAddress());             DataInputStream in = new DataInputStream(server.getInputStream());             System.out.println(in.readUTF());             DataOutputStream out = new DataOutputStream(server.getOutputStream());             out.writeUTF("谢谢连接我：" + server.getLocalSocketAddress() + "\nGoodbye!");             server.close();          }catch(SocketTimeoutException s)          {             System.out.println("Socket timed out!");             break;          }catch(IOException e)          {             e.printStackTrace();             break;          }       }    }    public static void main(String [] args)    {       int port = Integer.parseInt(args[0]);       try       {          Thread t = new GreetingServer(port);          t.run();       }catch(IOException e)       {          e.printStackTrace();       }    } }
+```java
+public class GreetingServer extends Thread {
+    private ServerSocket serverSocket;
+    private GreetingServer(int port) throws IOException {
+        serverSocket = new ServerSocket(port);
+        serverSocket.setSoTimeout(10000);
+    }
+
+    public void run() {
+        while (true) {
+            try {
+                System.out.println(
+                        "等待远程连接，端口号为：" + serverSocket.getLocalPort() + "..."
+                );
+                Socket server = serverSocket.accept();
+                System.out.println("远程主机地址：" + server.getRemoteSocketAddress());
+                DataInputStream in = new DataInputStream(server.getInputStream());
+                System.out.println(in.readUTF());
+                DataOutputStream out = new DataOutputStream(server.getOutputStream());
+                out.writeUTF("谢谢连接我：" + server.getLocalSocketAddress() + "\nGoodbye!");
+                server.close();
+            } catch (SocketTimeoutException s) {
+                System.out.println("Socket timed out!");
+                break;
+            } catch (IOException e) {
+                e.printStackTrace();
+                break;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int port = Integer.parseInt(args[0]);
+        try {
+            Thread t = new GreetingServer(port);
+            t.run();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 编译以上两个 java 文件代码，并执行以下命令来启动服务，使用端口号为 6066：
 
-```
+```powershell
 $ javac GreetingServer.java 
 $ java GreetingServer 6066
 等待远程连接，端口号为：6066...
@@ -6609,7 +8250,7 @@ $ java GreetingServer 6066
 
 新开一个命令窗口，执行以上命令来开启客户端：
 
-```
+```powershell
 $ javac GreetingClient.java 
 $ java GreetingClient localhost 6066
 连接到主机：localhost ，端口号：6066
@@ -6620,7 +8261,7 @@ Goodbye!
 
 ## 32 Email
 
-使用Java应用程序发送 E-mail 十分简单，但是首先你应该在你的机器上安装 JavaMail API 和Java Activation Framework (JAF) 。
+使用 Java 应用程序发送 E-mail 十分简单，但是首先你应该在你的机器上安装 JavaMail API 和 Java Activation Framework (JAF) 。
 
 - 您可以从 Java 网站下载最新版本的 [JavaMail](http://www.oracle.com/technetwork/java/javamail/index.html)，打开网页右侧有个 **Downloads** 链接，点击它下载。
 - 您可以从 Java 网站下载最新版本的 [JAF（版本 1.1.1）](http://www.oracle.com/technetwork/articles/java/index-135046.html)。
@@ -6634,58 +8275,169 @@ Goodbye!
 
 下载并解压缩这些文件，在新创建的顶层目录中，您会发现这两个应用程序的一些 jar 文件。您需要把 **mail.jar** 和 **activation.jar** 文件添加到您的 CLASSPATH 中。
 
-如果你使用第三方邮件服务器如QQ的SMTP服务器，可查看文章底部用户认证完整的实例。
+如果你使用第三方邮件服务器如 QQ 的 SMTP 服务器，可查看文章底部用户认证完整的实例。
 
-------
 
-## 发送一封简单的 E-mail
 
-下面是一个发送简单E-mail的例子。假设你的本地主机已经连接到网络。
+### 32.1 发送一封简单的 E-mail
 
-## SendEmail.java 文件代码：
+下面是一个发送简单 E-mail 的例子。假设你的本地主机已经连接到网络。
 
-// 文件名 SendEmail.java   import java.util.*; import javax.mail.*; import javax.mail.internet.*; import javax.activation.*;   public class SendEmail {    public static void main(String [] args)    {          // 收件人电子邮箱       String to = "abcd@gmail.com";         // 发件人电子邮箱       String from = "web@gmail.com";         // 指定发送邮件的主机为 localhost       String host = "localhost";         // 获取系统属性       Properties properties = System.getProperties();         // 设置邮件服务器       properties.setProperty("mail.smtp.host", host);         // 获取默认session对象       Session session = Session.getDefaultInstance(properties);         try{          // 创建默认的 MimeMessage 对象          MimeMessage message = new MimeMessage(session);            // Set From: 头部头字段          message.setFrom(new InternetAddress(from));            // Set To: 头部头字段          message.addRecipient(Message.RecipientType.TO,                                   new InternetAddress(to));            // Set Subject: 头部头字段          message.setSubject("This is the Subject Line!");            // 设置消息体          message.setText("This is actual message");            // 发送消息          Transport.send(message);          System.out.println("Sent message successfully....");       }catch (MessagingException mex) {          mex.printStackTrace();       }    } }
+```java
+public class SendEmail {
+    public static void main(String[] args) {
+        // 收件人电子邮箱
+        String to = "abcd@gmail.com";
 
-编译并运行这个程序来发送一封简单的E-mail：
+        // 发件人电子邮箱
+        String from = "web@gmail.com";
 
+        // 指定发送邮件的主机为 localhost
+        String host = "localhost";
+
+        // 获取系统属性
+        Properties properties = System.getProperties();
+
+        // 设置邮件服务器
+        properties.setProperty("mail.smtp.host", host);
+
+        // 获取默认 session 对象
+        Session session = Session.getDefaultInstance(properties);
+
+        try {
+            // 创建默认的 MimeMessage 对象
+            MimeMessage message = new MimeMessage(session);
+
+            // Set From: 头部头字段
+            message.setFrom(new InternetAddress(from));
+
+            // Set To: 头部头字段
+            message.addRecipient(Message.RecipientType.TO,
+                    new InternetAddress(to));
+
+            // Set Subject: 头部头字段
+            message.setSubject("This is the Subject Line!");
+
+            // 设置消息体
+            message.setText("This is actual message");
+
+            // 发送消息
+            Transport.send(message);
+            System.out.println("Sent message successfully....");
+        } catch (MessagingException mex) {
+            mex.printStackTrace();
+        }
+    }
+}
 ```
+
+编译并运行这个程序来发送一封简单的 E-mail：
+
+```powershell
 $ java SendEmail
 Sent message successfully....
 ```
 
-如果你想发送一封e-mail给多个收件人，那么使用下面的方法来指定多个收件人ID：
+如果你想发送一封 e-mail 给多个收件人，那么使用下面的方法来指定多个收件人 ID：
 
+```java
 void addRecipients(Message.RecipientType type,                    Address[] addresses) throws MessagingException
+```
 
 下面是对于参数的描述：
 
 - **type:**要被设置为 TO, CC 或者 BCC，这里 CC 代表抄送、BCC 代表秘密抄送。举例：**Message.RecipientType.TO**
 - **addresses:** 这是 email ID 的数组。在指定电子邮件 ID 时，你将需要使用 InternetAddress() 方法。
 
-------
 
-## 发送一封 HTML E-mail
+
+### 30.2 发送一封 HTML E-mail
 
 下面是一个发送 HTML E-mail 的例子。假设你的本地主机已经连接到网络。
 
 和上一个例子很相似，除了我们要使用 setContent() 方法来通过第二个参数为 "text/html"，来设置内容来指定要发送HTML 内容。
 
-## SendHTMLEmail.java 文件代码：
+```java
+public class SendFileEmail {
+    public static void main(String[] args) {
 
-// 文件名 SendHTMLEmail.java   import java.util.*; import javax.mail.*; import javax.mail.internet.*; import javax.activation.*;   public class SendHTMLEmail {    public static void main(String [] args)    {             // 收件人电子邮箱       String to = "abcd@gmail.com";         // 发件人电子邮箱       String from = "web@gmail.com";         // 指定发送邮件的主机为 localhost       String host = "localhost";         // 获取系统属性       Properties properties = System.getProperties();         // 设置邮件服务器       properties.setProperty("mail.smtp.host", host);         // 获取默认的 Session 对象。       Session session = Session.getDefaultInstance(properties);         try{          // 创建默认的 MimeMessage 对象。          MimeMessage message = new MimeMessage(session);            // Set From: 头部头字段          message.setFrom(new InternetAddress(from));            // Set To: 头部头字段          message.addRecipient(Message.RecipientType.TO,                                   new InternetAddress(to));            // Set Subject: 头字段          message.setSubject("This is the Subject Line!");            // 发送 HTML 消息, 可以插入html标签          message.setContent("<h1>This is actual message</h1>",                             "text/html" );            // 发送消息          Transport.send(message);          System.out.println("Sent message successfully....");       }catch (MessagingException mex) {          mex.printStackTrace();       }    } }
+        // 收件人电子邮箱
+        String to = "abcd@gmail.com";
 
-编译并运行此程序来发送HTML e-mail：
+        // 发件人电子邮箱
+        String from = "web@gmail.com";
 
+        // 指定发送邮件的主机为 localhost
+        String host = "localhost";
+
+        // 获取系统属性
+        Properties properties = System.getProperties();
+
+        // 设置邮件服务器
+        properties.setProperty("mail.smtp.host", host);
+
+        // 获取默认的 Session 对象。
+        Session session = Session.getDefaultInstance(properties);
+
+        try {
+            // 创建默认的 MimeMessage 对象。
+            MimeMessage message = new MimeMessage(session);
+
+            // Set From: 头部头字段
+            message.setFrom(new InternetAddress(from));
+
+            // Set To: 头部头字段
+            message.addRecipient(Message.RecipientType.TO,
+                    new InternetAddress(to));
+
+            // Set Subject: 头字段
+            message.setSubject("This is the Subject Line!");
+
+            // 创建消息部分
+            BodyPart messageBodyPart = new MimeBodyPart();
+
+            // 消息
+            messageBodyPart.setText("This is message body");
+
+            // 创建多重消息
+            Multipart multipart = new MimeMultipart();
+
+            // 设置文本消息部分
+            multipart.addBodyPart(messageBodyPart);
+
+            // 附件部分
+            messageBodyPart = new MimeBodyPart();
+            String filename = "file.txt";
+            DataSource source = new FileDataSource(filename);
+            messageBodyPart.setDataHandler(new DataHandler(source));
+            messageBodyPart.setFileName(filename);
+            multipart.addBodyPart(messageBodyPart);
+
+            // 发送完整消息
+            message.setContent(multipart);
+
+            //   发送消息
+            Transport.send(message);
+            System.out.println("Sent message successfully....");
+        } catch (MessagingException mex) {
+            mex.printStackTrace();
+        }
+    }
+}
 ```
+
+编译并运行此程序来发送 HTML e-mail：
+
+```powershell
 $ java SendHTMLEmail
 Sent message successfully....
 ```
 
-------
 
-## 发送带有附件的 E-mail
 
-下面是一个发送带有附件的 E-mail的例子。假设你的本地主机已经连接到网络。
+### 30.2 发送带有附件的 E-mail
+
+下面是一个发送带有附件的 E-mail 的例子。假设你的本地主机已经连接到网络。
 
 ## SendFileEmail.java 文件代码：
 
@@ -6693,24 +8445,26 @@ Sent message successfully....
 
 编译并运行你的程序来发送一封带有附件的邮件。
 
-```
+```powershell
 $ java SendFileEmail
 Sent message successfully....
 ```
 
-------
 
-## 用户认证部分
 
-如果需要提供用户名和密码给e-mail服务器来达到用户认证的目的，你可以通过如下设置来完成：
+### 30.4 用户认证部分
 
+如果需要提供用户名和密码给 e-mail 服务器来达到用户认证的目的，你可以通过如下设置来完成：
+
+```java
 props.put("mail.smtp.auth", "true"); props.setProperty("mail.user", "myuser"); props.setProperty("mail.password", "mypwd");
+```
 
-e-mail其他的发送机制和上述保持一致。
+e-mail 其他的发送机制和上述保持一致。
 
 ### 需要用户名密码验证邮件发送实例:
 
-本实例以 QQ 邮件服务器为例，你需要在登录QQ邮箱后台在"设置"=》账号中开启POP3/SMTP服务 ，如下图所示：
+本实例以 QQ 邮件服务器为例，你需要在登录 QQ 邮箱后台在"设置"=》账号中开启 POP3/SMTP 服务 ，如下图所示：
 
 ![img](http://www.runoob.com/wp-content/uploads/2014/01/qqmail-set2.jpg)
 
@@ -6734,9 +8488,9 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
 多线程能满足程序员编写高效率的程序来达到充分利用 CPU 的目的。
 
-------
 
-## 一个线程的生命周期
+
+### 33.1 一个线程的生命周期
 
 线程是一个动态执行的过程，它也有一个从产生到死亡的过程。
 
@@ -6750,7 +8504,7 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
 - 就绪状态:
 
-  当线程对象调用了start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待JVM里线程调度器的调度。
+  当线程对象调用了 start()方法之后，该线程就进入就绪状态。就绪状态的线程处于就绪队列中，要等待JVM里线程调度器的调度。
 
 - 运行状态:
 
@@ -6758,7 +8512,7 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
 - 阻塞状态:
 
-  如果一个线程执行了sleep（睡眠）、suspend（挂起）等方法，失去所占用资源之后，该线程就从运行状态进入阻塞状态。在睡眠时间已到或获得设备资源后可以重新进入就绪状态。可以分为三种：
+  如果一个线程执行了 sleep（睡眠）、suspend（挂起）等方法，失去所占用资源之后，该线程就从运行状态进入阻塞状态。在睡眠时间已到或获得设备资源后可以重新进入就绪状态。可以分为三种：
 
   - 等待阻塞：运行状态中的线程执行 wait() 方法，使线程进入到等待阻塞状态。
   - 同步阻塞：线程在获取 synchronized 同步锁失败(因为同步锁被其他线程占用)。
@@ -6768,9 +8522,9 @@ Java 给多线程编程提供了内置的支持。 一条线程指的是进程�
 
   一个运行状态的线程完成任务或者其他终止条件发生时，该线程就切换到终止状态。
 
-------
 
-## 线程的优先级
+
+### 33.2 线程的优先级
 
 每一个 Java 线程都有一个优先级，这样有助于操作系统确定线程的调度顺序。
 
@@ -6780,9 +8534,9 @@ Java 线程的优先级是一个整数，其取值范围是 1 （Thread.MIN_PRIO
 
 具有较高优先级的线程对程序更重要，并且应该在低优先级的线程之前分配处理器资源。但是，线程优先级不能保证线程执行的顺序，而且非常依赖于平台。
 
-------
 
-## 创建一个线程
+
+### 33.3 创建一个线程
 
 Java 提供了三种创建线程的方法：
 
@@ -6790,15 +8544,17 @@ Java 提供了三种创建线程的方法：
 - 通过继承 Thread 类本身；
 - 通过 Callable 和 Future 创建线程。
 
-------
 
-## 通过实现 Runnable 接口来创建线程
+
+### 33.4 通过实现 Runnable 接口来创建线程
 
 创建一个线程，最简单的方法是创建一个实现 Runnable 接口的类。
 
 为了实现 Runnable，一个类只需要执行一个方法调用 run()，声明如下：
 
+```java
 public void run()
+```
 
 你可以重写该方法，重要的是理解的 run() 可以调用其他方法，使用其他类，并声明变量，就像主线程一样。
 
@@ -6806,23 +8562,34 @@ public void run()
 
 Thread 定义了几个构造方法，下面的这个是我们经常使用的：
 
+```java
 Thread(Runnable threadOb,String threadName);
+```
 
 这里，threadOb 是一个实现 Runnable 接口的类的实例，并且 threadName 指定新线程的名字。
 
 新线程创建之后，你调用它的 start() 方法它才会运行。
 
+```java
 void start();
+```
 
 下面是一个创建线程并开始让它执行的实例：
 
-## 实例
+#### 实例
 
-class RunnableDemo implements Runnable {    private Thread t;    private String threadName;        RunnableDemo( String name) {       threadName = name;       System.out.println("Creating " +  threadName );    }        public void run() {       System.out.println("Running " +  threadName );       try {          for(int i = 4; i > 0; i--) {             System.out.println("Thread: " + threadName + ", " + i);             // 让线程睡眠一会             Thread.sleep(50);          }       }catch (InterruptedException e) {          System.out.println("Thread " +  threadName + " interrupted.");       }       System.out.println("Thread " +  threadName + " exiting.");    }        public void start () {       System.out.println("Starting " +  threadName );       if (t == null) {          t = new Thread (this, threadName);          t.start ();       }    } }   public class TestThread {      public static void main(String args[]) {       RunnableDemo R1 = new RunnableDemo( "Thread-1");       R1.start();              RunnableDemo R2 = new RunnableDemo( "Thread-2");       R2.start();    }    }
+```java
+public class TestThread_1 {
+    public static void main(String args[]) {
+        RunnableDemo R1 = new RunnableDemo("Thread-1");
+        R1.start();
+        RunnableDemo R2 = new RunnableDemo("Thread-2");
+        R2.start();
+    }
+}
+```
 
- 
-
-编译以上程序运行结果如下：
+ 编译以上程序运行结果如下：
 
 ```
 Creating Thread-1
@@ -6843,9 +8610,9 @@ Thread Thread-1 exiting.
 Thread Thread-2 exiting.
 ```
 
-------
 
-## 通过继承Thread来创建线程
+
+### 30.5 通过继承 Thread 来创建线程
 
 创建一个线程的第二种方法是创建一个新的类，该类继承 Thread 类，然后创建一个该类的实例。
 
@@ -6853,15 +8620,22 @@ Thread Thread-2 exiting.
 
 该方法尽管被列为一种多线程实现方式，但是本质上也是实现了 Runnable 接口的一个实例。
 
-## 实例
+#### 实例
 
-class ThreadDemo extends Thread {    private Thread t;    private String threadName;        ThreadDemo( String name) {       threadName = name;       System.out.println("Creating " +  threadName );    }        public void run() {       System.out.println("Running " +  threadName );       try {          for(int i = 4; i > 0; i--) {             System.out.println("Thread: " + threadName + ", " + i);             // 让线程睡眠一会             Thread.sleep(50);          }       }catch (InterruptedException e) {          System.out.println("Thread " +  threadName + " interrupted.");       }       System.out.println("Thread " +  threadName + " exiting.");    }        public void start () {       System.out.println("Starting " +  threadName );       if (t == null) {          t = new Thread (this, threadName);          t.start ();       }    } }   public class TestThread {      public static void main(String args[]) {       ThreadDemo T1 = new ThreadDemo( "Thread-1");       T1.start();              ThreadDemo T2 = new ThreadDemo( "Thread-2");       T2.start();    }    }
-
- 
-
-编译以上程序运行结果如下：
-
+```java
+public class TestThread_2 {
+    public static void main(String args[]) {
+        ThreadDemo T1 = new ThreadDemo("Thread-1");
+        T1.start();
+        ThreadDemo T2 = new ThreadDemo("Thread-2");
+        T2.start();
+    }
+}
 ```
+
+ 编译以上程序运行结果如下：
+
+```shell
 Creating Thread-1
 Starting Thread-1
 Creating Thread-2
@@ -6880,11 +8654,11 @@ Thread Thread-1 exiting.
 Thread Thread-2 exiting.
 ```
 
-------
 
-## Thread 方法
 
-下表列出了Thread类的一些重要方法：
+### 30.6 Thread 方法
+
+下表列出了 Thread 类的一些重要方法：
 
 | **序号** | **方法描述**                                                 |
 | -------- | ------------------------------------------------------------ |
@@ -6897,7 +8671,7 @@ Thread Thread-2 exiting.
 | 7        | **public void interrupt()** 中断线程。                       |
 | 8        | **public final boolean isAlive()** 测试线程是否处于活动状态。 |
 
-测试线程是否处于活动状态。 上述方法是被Thread对象调用的。下面的方法是Thread类的静态方法。
+测试线程是否处于活动状态。 上述方法是被 Thread 对象调用的。下面的方法是 Thread 类的静态方法。
 
 | **序号** | **方法描述**                                                 |
 | -------- | ------------------------------------------------------------ |
@@ -6907,31 +8681,81 @@ Thread Thread-2 exiting.
 | 4        | **public static Thread currentThread()** 返回对当前正在执行的线程对象的引用。 |
 | 5        | **public static void dumpStack()** 将当前线程的堆栈跟踪打印至标准错误流。 |
 
-### 实例
+#### 实例
 
-如下的ThreadClassDemo 程序演示了Thread类的一些方法：
+如下的 ThreadClassDemo 程序演示了 Thread 类的一些方法：
 
-## DisplayMessage.java 文件代码：
+```java
+public class DisplayMessage implements Runnable {
+    private String message;
 
-// 文件名 : DisplayMessage.java // 通过实现 Runnable 接口创建线程 public class DisplayMessage implements Runnable {    private String message;        public DisplayMessage(String message) {       this.message = message;    }        public void run() {       while(true) {          System.out.println(message);       }    } }
+    public DisplayMessage(String message) {
+        this.message = message;
+    }
 
- 
-
-## GuessANumber.java 文件代码：
-
-// 文件名 : GuessANumber.java // 通过继承 Thread 类创建线程   public class GuessANumber extends Thread {    private int number;    public GuessANumber(int number) {       this.number = number;    }        public void run() {       int counter = 0;       int guess = 0;       do {          guess = (int) (Math.random() * 100 + 1);          System.out.println(this.getName() + " guesses " + guess);          counter++;       } while(guess != number);       System.out.println("** Correct!" + this.getName() + "in" + counter + "guesses.**");    } }
-
- 
-
-## ThreadClassDemo.java 文件代码：
-
-// 文件名 : ThreadClassDemo.java public class ThreadClassDemo {      public static void main(String [] args) {       Runnable hello = new DisplayMessage("Hello");       Thread thread1 = new Thread(hello);       thread1.setDaemon(true);       thread1.setName("hello");       System.out.println("Starting hello thread...");       thread1.start();              Runnable bye = new DisplayMessage("Goodbye");       Thread thread2 = new Thread(bye);       thread2.setPriority(Thread.MIN_PRIORITY);       thread2.setDaemon(true);       System.out.println("Starting goodbye thread...");       thread2.start();         System.out.println("Starting thread3...");       Thread thread3 = new GuessANumber(27);       thread3.start();       try {          thread3.join();       }catch(InterruptedException e) {          System.out.println("Thread interrupted.");       }       System.out.println("Starting thread4...");       Thread thread4 = new GuessANumber(75);              thread4.start();       System.out.println("main() is ending...");    } }
-
- 
-
-运行结果如下，每一次运行的结果都不一样。
-
+    public void run() {
+        while (true) {
+            System.out.println(message);
+        }
+    }
+}
 ```
+
+```java
+public class GuessANumber extends Thread {
+    private int number;
+
+    GuessANumber(int number) {
+        this.number = number;
+    }
+
+    public void run() {
+        int counter = 0;
+        int guess;
+        do {
+            guess = (int) (Math.random() * 100 + 1);
+            System.out.println(this.getName() + " guesses " + guess);
+            counter++;
+        } while (guess != number);
+        System.out.println("** Correct!" + this.getName() + "in" + counter + "guesses.**");
+    }
+}
+```
+
+```java
+public class ThreadClassDemo {
+    public static void main(String[] args) {
+        Runnable hello = new DisplayMessage("Hello");
+        Thread thread1 = new Thread(hello);
+        thread1.setDaemon(true);
+        thread1.setName("hello");
+        System.out.println("Starting hello thread...");
+        thread1.start();
+        Runnable bye = new DisplayMessage("Goodbye");
+        Thread thread2 = new Thread(bye);
+        thread2.setPriority(Thread.MIN_PRIORITY);
+        thread2.setDaemon(true);
+        System.out.println("Starting goodbye thread...");
+        thread2.start();
+        System.out.println("Starting thread3...");
+        Thread thread3 = new GuessANumber(27);
+        thread3.start();
+        try {
+            thread3.join();
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted.");
+        }
+        System.out.println("Starting thread4...");
+        Thread thread4 = new GuessANumber(75);
+        thread4.start();
+        System.out.println("main() is ending...");
+    }
+}
+```
+
+ 运行结果如下，每一次运行的结果都不一样。
+
+```powershell
 Starting hello thread...
 Starting goodbye thread...
 Hello
@@ -6948,31 +8772,58 @@ Goodbye
 .......
 ```
 
-------
 
-## 通过 Callable 和 Future 创建线程
 
-- \1. 创建 Callable 接口的实现类，并实现 call() 方法，该 call() 方法将作为线程执行体，并且有返回值。
-- \2. 创建 Callable 实现类的实例，使用 FutureTask 类来包装 Callable 对象，该 FutureTask 对象封装了该 Callable 对象的 call() 方法的返回值。
-- \3. 使用 FutureTask 对象作为 Thread 对象的 target 创建并启动新线程。
-- \4. 调用 FutureTask 对象的 get() 方法来获得子线程执行结束后的返回值。
+### 30.7 通过 Callable 和 Future 创建线程
 
-## 实例
+1. 创建 Callable 接口的实现类，并实现 call() 方法，该 call() 方法将作为线程执行体，并且有返回值。
+2. 创建 Callable 实现类的实例，使用 FutureTask 类来包装 Callable 对象，该 FutureTask 对象封装了该 Callable 对象的 call() 方法的返回值。
+3. 使用 FutureTask 对象作为 Thread 对象的 target 创建并启动新线程。
+4. 调用 FutureTask 对象的 get() 方法来获得子线程执行结束后的返回值。
 
-public class CallableThreadTest implements Callable<Integer> {     public static void main(String[] args)       {           CallableThreadTest ctt = new CallableThreadTest();           FutureTask<Integer> ft = new FutureTask<>(ctt);           for(int i = 0;i < 100;i++)           {               System.out.println(Thread.currentThread().getName()+" 的循环变量i的值"+i);               if(i==20)               {                   new Thread(ft,"有返回值的线程").start();               }           }           try           {               System.out.println("子线程的返回值："+ft.get());           } catch (InterruptedException e)           {               e.printStackTrace();           } catch (ExecutionException e)           {               e.printStackTrace();           }          }     @Override       public Integer call() throws Exception       {           int i = 0;           for(;i<100;i++)           {               System.out.println(Thread.currentThread().getName()+" "+i);           }           return i;       }   }
+#### 实例
+
+```java
+public class CallableThreadTest implements Callable<Integer> {
+    public static void main(String[] args) {
+        CallableThreadTest ctt = new CallableThreadTest();
+        FutureTask<Integer> ft = new FutureTask<>(ctt);
+        for (int i = 0; i < 100; i++) {
+            System.out.println(
+                    Thread.currentThread().getName() + " 的循环变量i的值" + i
+            );
+            if (i == 20)
+                new Thread(ft, "有返回值的线程").start();
+        }
+        try {
+            System.out.println("子线程的返回值：" + ft.get());
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public Integer call() {
+        int i = 0;
+        for (; i < 100; i++)
+            System.out.println(Thread.currentThread().getName() + " " + i);
+        return i;
+    }
+}
+```
 
  
 
-------
 
-## 创建线程的三种方式的对比
 
-- \1. 采用实现 Runnable、Callable 接口的方式创建多线程时，线程类只是实现了 Runnable 接口或 Callable 接口，还可以继承其他类。
-- \2. 使用继承 Thread 类的方式创建多线程时，编写简单，如果需要访问当前线程，则无需使用 Thread.currentThread() 方法，直接使用 this 即可获得当前线程。
+### 30.8 创建线程的三种方式的对比
 
-------
+1. 采用实现 Runnable、Callable 接口的方式创建多线程时，线程类只是实现了 Runnable 接口或 Callable 接口，还可以继承其他类。
+2. 使用继承 Thread 类的方式创建多线程时，编写简单，如果需要访问当前线程，则无需使用 Thread.currentThread() 方法，直接使用 this 即可获得当前线程。
 
-## 线程的几个主要概念
+
+
+### 30.9 线程的几个主要概念
 
 在多线程编程时，你需要了解以下几个概念：
 
@@ -6981,9 +8832,9 @@ public class CallableThreadTest implements Callable<Integer> {     public static
 - 线程死锁
 - 线程控制：挂起、停止和恢复
 
-------
 
-## 多线程的使用
+
+### 30.10 多线程的使用
 
 有效利用多线程的关键是理解程序是并发执行而不是串行执行的。例如：程序中有两个子系统需要并发执行，这时候就需要利用多线程编程。
 
@@ -6993,7 +8844,7 @@ public class CallableThreadTest implements Callable<Integer> {     public static
 
 ## 34 Applet Base
 
-Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器内。因为它有完整的 Java API支持,所以Applet 是一个全功能的 Java 应用程序。
+Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器内。因为它有完整的 Java API 支持,所以 Applet 是一个全功能的 Java 应用程序。
 
 如下所示是独立的 Java 应用程序和 applet 程序之间重要的不同：
 
@@ -7006,9 +8857,9 @@ Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器�
 - Applet 有 Web 浏览器强制执行的严格的安全规则，Applet 的安全机制被称为沙箱安全。
 - Applet 需要的其他类可以用 Java 归档（JAR）文件的形式下载下来。
 
-------
 
-## Applet的生命周期
+
+### 34.1 Applet的生命周期
 
 Applet 类中的四个方法给我们提供了一个框架，你可以在该框架上开发小程序：
 
@@ -7018,15 +8869,19 @@ Applet 类中的四个方法给我们提供了一个框架，你可以在该框�
 - **destroy:** 此方法仅当浏览器正常关闭时调用。因为 Applet 只有在 HTML 网页上有效，所以你不应该在用户离开包含 Applet 的页面后遗漏任何资源。
 - **paint:** 该方法在 start() 方法之后立即被调用，或者在 Applet 需要重绘在浏览器的时候调用。paint() 方法实际上继承于 java.awt。
 
-------
 
-## "Hello, World" Applet:
+
+### 34.2 "Hello, World" Applet:
 
 下面是一个简单的 Applet 程序 HelloWorldApplet.java:
 
-## HelloWorldApplet.java 文件代码：
-
-import java.applet.*; import java.awt.*;   public class HelloWorldApplet extends Applet {    public void paint (Graphics g)    {       g.drawString ("Hello World", 25, 50);    } }
+```java
+public class HelloWorldApplet extends Applet {
+    public void paint(Graphics g) {
+        g.drawString("Hello World", 25, 50);
+    }
+}
+```
 
 这些 import 语句将以下类导入到我们的 Applet 类中：
 
@@ -7034,9 +8889,9 @@ java.applet.Applet. java.awt.Graphics.
 
 没有这些 import 语句，Java 编译器就识别不了 Applet 和 Graphics 类。
 
-------
 
-## Applet 类
+
+### 34.3 Applet 类
 
 每一个 Applet 都是 java.applet.Applet 类的子类，基础的 Applet 类提供了供衍生类调用的方法,以此来得到浏览器上下文的信息和服务。
 
@@ -7066,13 +8921,13 @@ Applet 类提供了对这些方法的默认实现，这些方法可以在需要�
 
 "Hello，World"applet 都是按标准编写的。唯一被重写的方法是 paint 方法。
 
-------
 
-## Applet 的调用
+
+### 34.4 Applet 的调用
 
 Applet 是一种 Java 程序。它一般运行在支持 Java 的 Web 浏览器内。因为它有完整的 Java API 支持,所以 Applet 是一个全功能的 Java 应用程序。
 
-<applet> 标签是在HTML文件中嵌入 Applet 的基础。以下是一个调用"Hello World"applet的例子；
+<applet> 标签是在 HTML 文件中嵌入 Applet 的基础。以下是一个调用"Hello World"applet的例子；
 
 ## HTML 代码：
 
@@ -7104,7 +8959,7 @@ code="HelloWorldApplet.class" width="320" height="120">
 
 ## 
 
-## 获得applet参数
+## 获得 applet 参数
 
 下面的例子演示了如何使用一个 Applet 响应来设置文件中指定的参数。该 Applet 显示了一个黑色棋盘图案和第二种颜色。
 
@@ -7132,21 +8987,21 @@ public void init () {    String squareSizeParam = getParameter ("squareSize");  
 
 Applet 调用 parseColor()方法将颜色参数解析为一个 Color 值。parseColor() 方法做了一系列字符串的比较，来匹配参数的值和预定义颜色的名字。你需要实现这些方法来使 Applet 工作。
 
-------
+
 
 ## 指定 applet 参数
 
-如下的例子是一个HTML文件，其中嵌入了 CheckerApplet 类。HTML文件通过使用 <param> 标签的方法给 applet 指定了两个参数。
+如下的例子是一个 HTML 文件，其中嵌入了 CheckerApplet 类。HTML 文件通过使用 <param> 标签的方法给 applet 指定了两个参数。
 
 <html> <title>Checkerboard Applet</title> <hr> <applet code="CheckerApplet.class" width="480" height="320"> <param name="color" value="blue"> <param name="squaresize" value="30"> </applet> <hr> </html>
 
 **注意:** 参数名字大小写不敏感。
 
-------
+
 
 ## 应用程序转换成 Applet
 
-将图形化的 Java 应用程序（是指，使用AWT的应用程序和使用 java 程序启动器启动的程序）转换成嵌入在web页面里的applet是很简单的。
+将图形化的 Java 应用程序（是指，使用 AWT 的应用程序和使用 java 程序启动器启动的程序）转换成嵌入在 web 页面里的 applet 是很简单的。
 
 下面是将应用程序转换成 Applet 的几个步骤：
 
@@ -7159,7 +9014,7 @@ Applet 调用 parseColor()方法将颜色参数解析为一个 Color 值。parse
 - 如果应用程序调用了 setTitle() 方法，消除对该方法的调用。applet 不能有标题栏。（当然你可以给通过 html 的 title 标签给网页自身命名）
 - 不要调用 setVisible(true),Applet 是自动显示的。
 
-------
+
 
 ## 事件处理
 
@@ -7177,7 +9032,7 @@ import java.awt.event.MouseListener; import java.awt.event.MouseEvent; import ja
 
 最开始运行，Applet 显示 "initializing the applet. Starting the applet."，然后你一点击矩形框，就会显示 "mouse clicked" 。
 
-------
+
 
 ## 显示图片
 
@@ -7189,11 +9044,11 @@ Applet 能显示 GIF,JPEG,BMP 等其他格式的图片。为了在 Applet 中显
 
 import java.applet.*; import java.awt.*; import java.net.*; public class ImageDemo extends Applet {   private Image image;   private AppletContext context;   public void init()   {       context = this.getAppletContext();       String imageURL = this.getParameter("image");       if(imageURL == null)       {          imageURL = "java.jpg";       }       try       {          URL url = new URL(this.getDocumentBase(), imageURL);          image = context.getImage(url);       }catch(MalformedURLException e)       {          e.printStackTrace();          // Display in browser status bar          context.showStatus("Could not load image!");       }    }    public void paint(Graphics g)    {       context.showStatus("Displaying image");       g.drawImage(image, 0, 0, 200, 84, null);       g.drawString("www.javalicense.com", 35, 100);    }  }
 
-如下调用该applet：
+如下调用该 applet：
 
 <html> <title>The ImageDemo applet</title> <hr> <applet code="ImageDemo.class" width="300" height="200"> <param name="image" value="java.jpg"> </applet> <hr> </html>
 
-------
+
 
 ## 播放音频
 
@@ -7213,7 +9068,7 @@ Applet 能通过使用 java.applet 包中的 AudioClip 接口播放音频。Audi
 
 import java.applet.*; import java.awt.*; import java.net.*; public class AudioDemo extends Applet {    private AudioClip clip;    private AppletContext context;    public void init()    {       context = this.getAppletContext();       String audioURL = this.getParameter("audio");       if(audioURL == null)       {          audioURL = "default.au";       }       try       {          URL url = new URL(this.getDocumentBase(), audioURL);          clip = context.getAudioClip(url);       }catch(MalformedURLException e)       {          e.printStackTrace();          context.showStatus("Could not load audio file!");       }    }    public void start()    {       if(clip != null)       {          clip.loop();       }    }    public void stop()    {       if(clip != null)       {          clip.stop();       }    } }
 
-如下调用applet：
+如下调用 applet：
 
 <html> <title>The ImageDemo applet</title> <hr> <applet code="ImageDemo.class" width="0" height="0"> <param name="audio" value="test.wav"> </applet> <hr>
 
@@ -7223,13 +9078,13 @@ import java.applet.*; import java.awt.*; import java.net.*; public class AudioDe
 
 Java 支持三种注释方式。前两种分别是 **//** 和 **/\* */**，第三种被称作说明注释，它以 **/\****开始，以 ***/**结束。
 
-说明注释允许你在程序中嵌入关于程序的信息。你可以使用 javadoc 工具软件来生成信息，并输出到HTML文件中。
+说明注释允许你在程序中嵌入关于程序的信息。你可以使用 javadoc 工具软件来生成信息，并输出到 HTML 文件中。
 
 说明注释，使你更加方便的记录你的程序信息。
 
-------
 
-## javadoc 标签
+
+### 35.1 javadoc 标签
 
 javadoc 工具软件识别以下标签：
 
@@ -7246,16 +9101,20 @@ javadoc 工具软件识别以下标签：
 | @return       | 说明返回值类型                                         | @return explanation                                          |
 | @see          | 指定一个到另一个主题的链接                             | @see anchor                                                  |
 | @serial       | 说明一个序列化属性                                     | @serial description                                          |
-| @serialData   | 说明通过writeObject( ) 和 writeExternal( )方法写的数据 | @serialData description                                      |
-| @serialField  | 说明一个ObjectStreamField组件                          | @serialField name type description                           |
+| @serialData   | 说明通过 writeObject() 和 writeExternal() 方法写的数据 | @serialData description         
+                             |
+| @serialField  | 说明一个 ObjectStreamField 组件                          | @serialField name type 
+description                           |
 | @since        | 标记当引入一个特定的变化时                             | @since release                                               |
-| @throws       | 和 @exception标签一样.                                 | The @throws tag has the same meaning as the @exception tag.  |
-| {@value}      | 显示常量的值，该常量必须是static属性。                 | Displays the value of a constant, which must be a static field. |
+| @throws       | 和 @exception 标签一样.                                 | The @throws tag has the 
+same meaning as the @exception tag.  |
+| {@value}      | 显示常量的值，该常量必须是 static 属性。                 | Displays the value of a constant, 
+which must be a static field. |
 | @version      | 指定类的版本                                           | @version info                                                |
 
-------
 
-## 文档注释
+
+### 35.2 文档注释
 
 在开始的 **/\**** 之后，第一行或几行是关于类、变量和方法的主要描述。
 
@@ -7265,73 +9124,142 @@ javadoc 工具软件识别以下标签：
 
 下面是一个类的说明注释的实例：
 
+```java
 /*** 这个类绘制一个条形图 * @author runoob * @version 1.2 */
+```
 
-------
 
-## javadoc 输出什么
 
-javadoc 工具将你 Java 程序的源代码作为输入，输出一些包含你程序注释的HTML文件。
+### 35.2 javadoc 输出什么
 
-每一个类的信息将在独自的HTML文件里。javadoc 也可以输出继承的树形结构和索引。
+javadoc 工具将你 Java 程序的源代码作为输入，输出一些包含你程序注释的 HTML 文件。
+
+每一个类的信息将在独自的 HTML 文件里。javadoc 也可以输出继承的树形结构和索引。
 
 由于 javadoc 的实现不同，工作也可能不同，你需要检查你的 Java 开发系统的版本等细节，选择合适的 Javadoc 版本。
 
-### 实例
+#### 实例
 
 下面是一个使用说明注释的简单实例。注意每一个注释都在它描述的项目的前面。
 
 在经过 javadoc 处理之后，SquareNum 类的注释将在 SquareNum.html 中找到。
 
-## SquareNum.java 文件代码：
+```java
+public class SquareNum {
+    /**
+     * This method returns the square of num.
+     * This is a multiline description. You can use
+     * as many lines as you like.
+     *
+     * @param num The value to be squared.
+     * @return num squared.
+     */
+    private double square(double num) {
+        return num * num;
+    }
 
-import java.io.*;   /** * 这个类演示了文档注释 * @author Ayan Amhed * @version 1.2 */ public class SquareNum {    /**    * This method returns the square of num.    * This is a multiline description. You can use    * as many lines as you like.    * @param num The value to be squared.    * @return num squared.    */    public double square(double num) {       return num * num;    }    /**    * This method inputs a number from the user.    * @return The value input as a double.    * @exception IOException On input error.    * @see IOException    */    public double getNumber() throws IOException {       InputStreamReader isr = new InputStreamReader(System.in);       BufferedReader inData = new BufferedReader(isr);       String str;       str = inData.readLine();       return (new Double(str)).doubleValue();    }    /**    * This method demonstrates square().    * @param args Unused.    * @return Nothing.    * @exception IOException On input error.    * @see IOException    */    public static void main(String args[]) throws IOException    {       SquareNum ob = new SquareNum();       double val;       System.out.println("Enter value to be squared: ");       val = ob.getNumber();       val = ob.square(val);       System.out.println("Squared value is " + val);    } }
+    /**
+     * This method inputs a number from the user.
+     *
+     * @return The value input as a double.
+     * @throws IOException On input error.
+     * @see IOException
+     */
+    public double getNumber() throws IOException {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader inData = new BufferedReader(isr);
+        String str;
+        str = inData.readLine();
+        return new Double(str);
+    }
+
+    /**
+     * This method demonstrates square().
+     *
+     * @param args Unused.
+     * @return Nothing.
+     * @throws IOException On input error.
+     * @see IOException
+     */
+    public static void main(String args[]) throws IOException {
+        SquareNum ob = new SquareNum();
+        double val;
+        System.out.println("Enter value to be squared: ");
+        val = ob.getNumber();
+        val = ob.square(val);
+        System.out.println("Squared value is " + val);
+    }
+}
+```
 
 如下，使用 javadoc 工具处理 SquareNum.java 文件：
 
 ```powershell
-$ javadoc SquareNum.java
+$ javadoc SquareNum.java 
 Loading source file SquareNum.java...
 Constructing Javadoc information...
-Standard Doclet version 1.5.0_13
+javadoc: warning - You have not specified the version of HTML to use.
+The default is currently HTML 4.01, but this will change to HTML5
+in a future release. To suppress this warning, please specify the
+version of HTML used in your documentation comments and to be
+generated by this doclet, using the -html4 or -html5 options.
+Standard Doclet version 10.0.2
 Building tree for all the packages and classes...
-Generating SquareNum.html...
-SquareNum.java:39: warning - @return tag cannot be used\
-                      in method with void return type.
-Generating package-frame.html...
-Generating package-summary.html...
-Generating package-tree.html...
-Generating constant-values.html...
+SquareNum.java:8: error: unknown tag: ClassName
+ * @ClassName SquareNum
+   ^
+SquareNum.java:9: error: unknown tag: Description
+ * @Description Annotations
+   ^
+SquareNum.java:10: error: unknown tag: Author
+ * @Author Lightwing Ng
+   ^
+SquareNum.java:11: error: unknown tag: DateTime
+ * @DateTime 2018/8/7, 20:29
+   ^
+SquareNum.java:12: error: unknown tag: Version
+ * @Version 1.0
+   ^
+Generating ./com/lightwing/ch35_DocAnnotation/SquareNum.html...
+SquareNum.java:46: error: invalid use of @return
+     * @return Nothing.
+       ^
+Generating ./com/lightwing/ch35_DocAnnotation/package-frame.html...
+Generating ./com/lightwing/ch35_DocAnnotation/package-summary.html...
+Generating ./com/lightwing/ch35_DocAnnotation/package-tree.html...
+Generating ./constant-values.html...
 Building index for all the packages and classes...
-Generating overview-tree.html...
-Generating index-all.html...
-Generating deprecated-list.html...
+Generating ./overview-tree.html...
+Generating ./index-all.html...
+Generating ./deprecated-list.html...
 Building index for all classes...
-Generating allclasses-frame.html...
-Generating allclasses-noframe.html...
-Generating index.html...
-Generating help-doc.html...
-Generating stylesheet.css...
+Generating ./allclasses-frame.html...
+Generating ./allclasses-frame.html...
+Generating ./allclasses-noframe.html...
+Generating ./allclasses-noframe.html...
+Generating ./index.html...
+Generating ./help-doc.html...
+6 errors
 1 warning
-$
+
 ```
 
 ## 36 Examples
 
 本章节我们将为大家介绍 Java 常用的实例，通过实例学习我们可以更快的掌握 Java 的应用。
 
-------
 
-## Java 环境设置实例
 
-1. [Java 实例 – 如何编译一个Java 文件？](http://www.runoob.com/java/env-compile.html)
+### 36.1 Java 环境设置实例
+
+1. [Java 实例 – 如何编译一个 Java 文件？](http://www.runoob.com/java/env-compile.html)
 2. [Java 实例 – Java 如何运行一个编译过的类文件?](http://www.runoob.com/java/env-run.html)
-3. [Java 实例 - 如何执行指定class文件目录（classpath）？](http://www.runoob.com/java/env-classpath.html)
+3. [Java 实例 - 如何执行指定 class 文件目录（classpath）？](http://www.runoob.com/java/env-classpath.html)
 4. [Java 实例 – 如何查看当前 Java 运行的版本?](http://www.runoob.com/java/env-version.html)
 
-------
 
-## Java 字符串
+
+### 36.2 Java 字符串
 
 1. [Java 实例 – 字符串比较](http://www.runoob.com/java/string-compare.html)
 2. [Java 实例 - 查找字符串最后一次出现的位置](http://www.runoob.com/java/string-last-occurance.html)
@@ -7348,9 +9276,9 @@ $
 13. [Java 实例 - 字符串格式化](http://www.runoob.com/java/string-format.html)
 14. [Java 实例 - 连接字符串](http://www.runoob.com/java/string-concatenation.html)
 
-------
 
-## Java 数组
+
+### 36.3 Java 数组
 
 1. [Java 实例 – 数组排序及元素查找](http://www.runoob.com/java/arrays-search.html)
 2. [Java 实例 – 数组添加元素](http://www.runoob.com/java/arrays-insert.html)
@@ -7369,18 +9297,18 @@ $
 15. [Java 实例 – 判断数组是否相等](http://www.runoob.com/java/arrays-equal.html)
 16. [Java 实例 - 数组并集](http://www.runoob.com/java/arrays-union.html)
 
-------
 
-## Java 时间处理
+
+### 36.4 Java 时间处理
 
 1. [Java 实例 - 格式化时间（SimpleDateFormat）](http://www.runoob.com/java/date-time-am-pm.html)
 2. [Java 实例 - 获取当前时间](http://www.runoob.com/java/date-time-datetime.html)
 3. [Java 实例 - 获取年份、月份等](http://www.runoob.com/java/date-year-month.html)
 4. [Java 实例 - 时间戳转换成时间](http://www.runoob.com/java/date-timestamp2date.html)
 
-------
 
-## Java 方法
+
+### 36.5 Java 方法
 
 1. [Java 实例 – 方法重载](http://www.runoob.com/java/method-overloading.html)
 2. [Java 实例 – 输出数组元素](http://www.runoob.com/java/method-array.html)
@@ -7398,9 +9326,9 @@ $
 14. [Java 实例 – Varargs 可变参数使用](http://www.runoob.com/java/java/method-varargs.html)
 15. [Java 实例 – 重载(overloading)方法中使用 Varargs](http://www.runoob.com/java/java/method-varargs1.html)
 
-------
 
-## 打印图形
+
+### 36.6 打印图形
 
 1. [Java 实例 – 打印菱形](http://www.runoob.com/java/java-print-diamond.html)
 2. [Java 实例 – 九九乘法表](http://www.runoob.com/java/java-print-multiplicationtable.html)
@@ -7409,9 +9337,9 @@ $
 5. [Java 实例 – 打印平行四边形](http://www.runoob.com/java/java-print-parallelogram.html)
 6. [Java 实例 – 打印矩形](http://www.runoob.com/java/java-print-rect.html)
 
-------
 
-## Java 文件操作
+
+### 36.7 Java 文件操作
 
 1. [Java 实例 - 文件写入](http://www.runoob.com/java/file-write.html)
 2. [Java 实例 - 读取文件内容](http://www.runoob.com/java/file-read.html)
@@ -7429,9 +9357,9 @@ $
 14. [Java 实例 - 创建文件](http://www.runoob.com/java/file-create.html)
 15. [Java 实例 - 文件路径比较](http://www.runoob.com/java/file-compare.html)
 
-------
 
-## Java 目录操作
+
+### 36.8 Java 目录操作
 
 1. [Java 实例 - 递归创建目录](http://www.runoob.com/java/dir-create.html)
 2. [Java 实例 - 删除目录](http://www.runoob.com/java/dir-delete.html)
@@ -7449,9 +9377,9 @@ $
 14. [Java 实例 - 查看当前工作目录](http://www.runoob.com/java/dir-current.html)
 15. [Java 实例 - 遍历目录](http://www.runoob.com/java/dir-traverse.html)
 
-------
 
-## Java 异常处理
+
+### 36.9 Java 异常处理
 
 1. [Java 实例 - 异常处理方法](http://www.runoob.com/java/exception-method.html)
 2. [Java 实例 - 多个异常处理（多个catch）](http://www.runoob.com/java/exception-hierarchy.html)
@@ -7463,9 +9391,9 @@ $
 8. [Java 实例 - 链试异常](http://www.runoob.com/java/exception-chain.html)
 9. [Java 实例 - 自定义异常](http://www.runoob.com/java/exception-user.html)
 
-------
 
-## Java 数据结构
+
+### 36.10 Java 数据结构
 
 1. [Java 实例 – 数字求和运算](http://www.runoob.com/java/data-add.html)
 2. [Java 实例 – 利用堆栈将中缀表达式转换成后缀](http://www.runoob.com/java/data-intopost.html)
@@ -7482,9 +9410,9 @@ $
 13. [Java 实例 – 链表修改](http://www.runoob.com/java/data-update.html)
 14. [Java 实例 – 旋转向量](http://www.runoob.com/java/data-swap.html)
 
-------
 
-## Java 集合
+
+### 36.11 Java 集合
 
 1. [Java 实例 – 数组转集合](http://www.runoob.com/java/collection-array.html)
 2. [Java 实例 – 集合比较](http://www.runoob.com/java/collection-compare.html)
@@ -7505,9 +9433,9 @@ $
 17. [Java 实例 – List 元素替换](http://www.runoob.com/java/collection-replace.html)
 18. [Java 实例 – List 截取](http://www.runoob.com/java/collection-sublist.html)
 
-------
 
-## Java 网络实例
+
+### 36.12 Java 网络实例
 
 1. [Java 实例 – 获取指定主机的IP地址](http://www.runoob.com/java/net-address.html)
 2. [Java 实例 – 查看端口是否已使用](http://www.runoob.com/java/net-port.html)
@@ -7522,9 +9450,9 @@ $
 11. [Java 实例 – 解析 URL](http://www.runoob.com/java/net-url.html)
 12. [Java 实例 – ServerSocket 和 Socket 通信实例](http://www.runoob.com/java/net-serversocket-socket.html)
 
-------
 
-## Java 线程
+
+### 36.13 Java 线程
 
 1. [Java 实例 – 查看线程是否存活](http://www.runoob.com/java/thread-alive.html)
 2. [Java 实例 – 获取当前线程名称](http://www.runoob.com/java/thread-name.html)
@@ -7542,53 +9470,93 @@ $
 
 ## 37 Java8 New Features
 
-Java 8 (又称为 jdk 1.8) 是 Java 语言开发的一个主要版本。 Oracle 公司于 2014 年 3 月 18 日发布 Java 8 ，它支持函数式编程，新的 JavaScript 引擎，新的日期 API，新的Stream API 等。
+Java 8 (又称为 jdk 1.8) 是 Java 语言开发的一个主要版本。 Oracle 公司于 2014 年 3 月 18 日发布 Java 8 ，它支持函数式编程，新的 
+JavaScript 引擎，新的日期 API，新的 Stream API 等。
 
-------
 
-## 新特性
+
+### 37.1 新特性
 
 Java8 新增了非常多的特性，我们主要讨论以下几个：
 
-- **Lambda 表达式** − Lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中。
-- **方法引用** − 方法引用提供了非常有用的语法，可以直接引用已有Java类或对象（实例）的方法或构造器。与lambda联合使用，方法引用可以使语言的构造更紧凑简洁，减少冗余代码。
+- **Lambda 表达式** − Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中。
+- **方法引用** − 方法引用提供了非常有用的语法，可以直接引用已有 Java 类或对象（实例）的方法或构造器。与 lambda 联合使用，方法引用可以使语言的构造更紧凑简洁，减少冗余代码。
 - **默认方法** − 默认方法就是一个在接口里面有了一个实现的方法。
-- **新工具** − 新的编译工具，如：Nashorn引擎 jjs、 类依赖分析器jdeps。
-- **Stream API** −新添加的Stream API（java.util.stream） 把真正的函数式编程风格引入到Java中。
+- **新工具** − 新的编译工具，如：Nashorn 引擎 jjs、 类依赖分析器 jdeps。
+- **Stream API** −新添加的 Stream API（java.util.stream） 把真正的函数式编程风格引入到 Java 中。
 - **Date Time API** − 加强对日期与时间的处理。
 - **Optional 类** − Optional 类已经成为 Java 8 类库的一部分，用来解决空指针异常。
-- **Nashorn, JavaScript 引擎** − Java 8提供了一个新的Nashorn javascript引擎，它允许我们在JVM上运行特定的javascript应用。
+- **Nashorn, JavaScript 引擎** − Java 8提供了一个新的 Nashorn javascript 引擎，它允许我们在 JVM 上运行特定的 javascript 应用。
 
 更多的新特性可以参阅官网：[What's New in JDK 8](http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html)
 
 在关于 Java 8 文章的实例，我们均使用 jdk 1.8 环境，你可以使用以下命令查看当前 jdk 的版本：
 
-```
+```powershell
 $ java -version
 java version "1.8.0_31"
 Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
 ```
 
-------
 
-## 编程风格
+
+### 37.2 编程风格
 
 Java 8 希望有自己的编程风格，并与 Java 7 区别开，以下实例展示了 Java 7 和 Java 8 的编程格式：
 
-## Java8Tester.java 文件代码：
+```java
+public class Java8Tester {
+    public static void main(String args[]) {
+        List<String> names1 = new ArrayList<String>();
+        names1.add("Google");
+        names1.add("Runoob");
+        names1.add("Taobao");
+        names1.add("Baidu");
+        names1.add("Sina");
 
-import java.util.Collections; import java.util.List; import java.util.ArrayList; import java.util.Comparator;   public class Java8Tester {    public static void main(String args[]){           List<String> names1 = new ArrayList<String>();       names1.add("Google ");       names1.add("Runoob ");       names1.add("Taobao ");       names1.add("Baidu ");       names1.add("Sina ");                List<String> names2 = new ArrayList<String>();       names2.add("Google ");       names2.add("Runoob ");       names2.add("Taobao ");       names2.add("Baidu ");       names2.add("Sina ");                Java8Tester tester = new Java8Tester();       System.out.println("使用 Java 7 语法: ");                tester.sortUsingJava7(names1);       System.out.println(names1);       System.out.println("使用 Java 8 语法: ");                tester.sortUsingJava8(names2);       System.out.println(names2);    }        // 使用 java 7 排序    private void sortUsingJava7(List<String> names){          Collections.sort(names, new Comparator<String>() {          @Override          public int compare(String s1, String s2) {             return s1.compareTo(s2);          }       });    }        // 使用 java 8 排序    private void sortUsingJava8(List<String> names){       Collections.sort(names, (s1, s2) -> s1.compareTo(s2));    } }
+        List<String> names2 = new ArrayList<String>();
+        names2.add("Google");
+        names2.add("Runoob");
+        names2.add("Taobao");
+        names2.add("Baidu");
+        names2.add("Sina");
+
+        Java8Tester tester = new Java8Tester();
+        System.out.println("使用 Java7 语法: ");
+
+        tester.sortUsingJava7(names1);
+        System.out.println(names1);
+        System.out.println("使用 Java8 语法: ");
+
+        tester.sortUsingJava8(names2);
+        System.out.println(names2);
+    }
+
+    // 使用 java 7 排序
+    private void sortUsingJava7(List<String> names) {
+        Collections.sort(names, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                return s1.compareTo(s2);
+            }
+        });
+    }
+
+    // 使用 java 8 排序
+    private void sortUsingJava8(List<String> names) {
+        Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
+    }
+}
+```
 
 执行以上脚本，输出结果为：
 
-```
-$ javac Java8Tester.java
-$ java Java8Tester
-使用 Java 7 语法: 
-[Baidu , Google , Runoob , Sina , Taobao ]
-使用 Java 8 语法: 
-[Baidu , Google , Runoob , Sina , Taobao ]
+```powershell
+使用 Java7 语法: 
+[Baidu, Google, Runoob, Sina, Taobao]
+使用 Java8 语法: 
+[Baidu, Google, Runoob, Sina, Taobao]
 ```
 
 接下来我们将详细为大家简介 Java 8 的新特性：
@@ -7609,66 +9577,245 @@ $ java Java8Tester
 
 本章节我们为大家介绍 Java 如何使用 使用 JDBC 连接 MySQL 数据库。
 
-Java 连接 MySQL 需要驱动包，最新版下载地址为：**http://dev.mysql.com/downloads/connector/j/**，解压后得到jar库文件，然后在对应的项目中导入该库文件。
+Java 连接 MySQL 需要驱动包，最新版下载地址为：**http://dev.mysql.com/downloads/connector/j/**，解压后得到 
+jar 库文件，然后在对应的项目中导入该库文件。
 
 你可以下载本站提供的 jar 包：**mysql-connector-java-5.1.39-bin.jar**
 
-本实例使用的是 Eclipse，导入 jar 包：
+本实例使用的是 IDEA，导入 jar 包：
 
-![img](https://www.runoob.com/wp-content/uploads/2013/12/191E2E30-DD23-41C8-A419-DFEAEAE06BF6.jpg)
+```powershell
+.
+├── lightwing
+│   ├── ch01_BasicGrammer
+│   ├── ch02_ObjectClass
+│   ├── ch03_BasicDataType
+│   ├── ch04_VariableType
+│   ├── ch05_Modifier
+│   ├── ch06_Operator
+│   ├── ch07_LoopStructure
+│   ├── ch08_BranchStructure
+│   ├── ch09_Number_Math
+│   ├── ch10_CharacterClass
+│   ├── ch11_CharacterClass
+│   ├── ch12_StringBufferAndStringBuilder
+│   ├── ch13_Array
+│   ├── ch14_DateTime
+│   ├── ch15_RegularExpression
+│   ├── ch16_Method
+│   ├── ch17_StreamFileIO
+│   ├── ch18_ScannerClass
+│   ├── ch19_Exception
+│   ├── ch20_Inherit
+│   ├── ch21_OverrideAndOverload
+│   ├── ch22_Polymorphism
+│   ├── ch23_AbstractClass
+│   ├── ch24_Encapsulation
+│   ├── ch25_Interface
+│   │   └── animals
+│   ├── ch26_Package
+│   ├── ch27_DataStructure
+│   ├── ch28_CollectionsAndFrameworks
+│   ├── ch29_Generic
+│   ├── ch30_Serialize
+│   ├── ch31_SocketDevelopment
+│   ├── ch32_Email
+│   ├── ch33_MultiThreadedProgramming
+│   ├── ch34_AppletBase
+│   ├── ch35_DocAnnotation
+│   │   ├── com
+│   │   │   └── lightwing
+│   │   │       └── ch35_DocAnnotation
+│   │   ├── jquery
+│   │   │   ├── external
+│   │   │   │   └── jquery
+│   │   │   ├── images
+│   │   │   ├── jszip
+│   │   │   │   └── dist
+│   │   │   └── jszip-utils
+│   │   │       └── dist
+│   │   └── resources
+│   │       └── fonts
+│   ├── ch36_Examples
+│   ├── ch37_Java8NewFeatures
+│   ├── ch38_MySQL
+│   └── ch39_Java9NewFeatrue
+└── mysql
+    └── jdbc
+        └── Driver
+```
 
-------
 
-## 创建测试数据
 
-接下来我们在 MySQL 中创建 RUNOOB 数据库，并创建 websites 数据表，表结构如下：
+### 38.1 创建测试数据
 
-CREATE TABLE `websites` (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` char(20) NOT NULL DEFAULT '' COMMENT '站点名称',   `url` varchar(255) NOT NULL DEFAULT '',   `alexa` int(11) NOT NULL DEFAULT '0' COMMENT 'Alexa 排名',   `country` char(10) NOT NULL DEFAULT '' COMMENT '国家',   PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+接下来我们在 MySQL 中创建 RUNOOB 数据库，并创建 CRM.customer 数据表，表结构如下：
+
+```sql
+CREATE TABLE CRM.customer
+(
+    cust_id BIGINT(32) AUTO_INCREMENT
+    COMMENT '客户编号(主键)'
+        PRIMARY KEY,
+    cust_name VARCHAR(32) NOT NULL
+    COMMENT '客户名称(公司名称)',
+    cust_user_id BIGINT(32) NULL
+    COMMENT '负责人id',
+    cust_create_id BIGINT(32) NULL
+    COMMENT '创建人id',
+    cust_source VARCHAR(32) NULL
+    COMMENT '客户信息来源',
+    cust_industry VARCHAR(32) NULL
+    COMMENT '客户所属行业',
+    cust_level VARCHAR(32) NULL
+    COMMENT '客户级别',
+    cust_linkman VARCHAR(64) NULL
+    COMMENT '联系人',
+    cust_phone VARCHAR(64) NULL
+    COMMENT '固定电话',
+    cust_mobile VARCHAR(50) NULL
+    COMMENT '移动电话',
+    cust_zipcode VARCHAR(10) NULL,
+    cust_address VARCHAR(100) NULL,
+    cust_createtime DATETIME NULL
+    COMMENT '创建时间'
+)
+    ENGINE = InnoDB;
+
+CREATE INDEX FK_cst_customer_create_id
+    ON CRM.customer (cust_create_id);
+
+CREATE INDEX FK_cst_customer_industry
+    ON CRM.customer (cust_industry);
+
+CREATE INDEX FK_cst_customer_level
+    ON CRM.customer (cust_level);
+
+CREATE INDEX FK_cst_customer_source
+    ON CRM.customer (cust_source);
+
+CREATE INDEX FK_cst_customer_user_id
+    ON CRM.customer (cust_user_id);
+```
 
 插入一些数据：
 
-INSERT INTO `websites` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'USA'), ('2', '淘宝', 'https://www.taobao.com/', '13', 'CN'), ('3', '菜鸟教程', 'http://www.runoob.com', '5892', ''), ('4', '微博', 'http://weibo.com/', '20', 'CN'), ('5', 'Facebook', 'https://www.facebook.com/', '3', 'USA');
+```sql
+INSERT INTO CRM.customer (cust_id, cust_name, cust_user_id, cust_create_id, cust_source, cust_industry, cust_level, cust_linkman, cust_phone, cust_mobile, cust_zipcode, cust_address, cust_createtime) VALUES (10067716, '淑颖', null, null, '7', '4', '23', 'Gerardo Holland', '(133) 4352491', '+63 (300) 596-8299', null, '2 Moulton Avenue', '2018-02-21 00:00:00');
+INSERT INTO CRM.customer (cust_id, cust_name, cust_user_id, cust_create_id, cust_source, cust_industry, cust_level, cust_linkman, cust_phone, cust_mobile, cust_zipcode, cust_address, cust_createtime) VALUES (10087095, '松源', null, null, '7', '4', '22', 'Ellen Hamilton', '(670) 8600765', '+86 (551) 708-3767', null, '20 Norway Maple Center', '2018-06-13 00:00:00');
+...
+```
 
 数据表显示如下：
 
-![img](https://www.runoob.com/wp-content/uploads/2013/12/mysql-data.jpg)
+![img](img/customer.png)
 
-------
 
-## 连接数据库
+
+### 38.2 连接数据库
 
 以下实例使用了 JDBC 连接 MySQL 数据库，注意一些数据如用户名，密码需要根据你的开发环境来配置：
 
-## MySQLDemo.java 文件代码：
+```java
+public class MySQLDemo {
+    // JDBC 驱动名及数据库 URL
+    private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/CRM";
+    // 数据库的用户名与密码，需要根据自己的设置
+    private static final String USER = "root";
+    private static final String PASS = "canton0520";
 
-package com.runoob.test;   import java.sql.*;   public class MySQLDemo {       // JDBC 驱动名及数据库 URL     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";       static final String DB_URL = "jdbc:mysql://localhost:3306/RUNOOB";       // 数据库的用户名与密码，需要根据自己的设置     static final String USER = "root";     static final String PASS = "123456";       public static void main(String[] args) {         Connection conn = null;         Statement stmt = null;         try{             // 注册 JDBC 驱动             Class.forName("com.mysql.jdbc.Driver");                      // 打开链接             System.out.println("连接数据库...");             conn = DriverManager.getConnection(DB_URL,USER,PASS);                      // 执行查询             System.out.println(" 实例化Statement对象...");             stmt = conn.createStatement();             String sql;             sql = "SELECT id, name, url FROM websites";             ResultSet rs = stmt.executeQuery(sql);                      // 展开结果集数据库             while(rs.next()){                 // 通过字段检索                 int id  = rs.getInt("id");                 String name = rs.getString("name");                 String url = rs.getString("url");                      // 输出数据                 System.out.print("ID: " + id);                 System.out.print(", 站点名称: " + name);                 System.out.print(", 站点 URL: " + url);                 System.out.print("\n");             }             // 完成后关闭             rs.close();             stmt.close();             conn.close();         }catch(SQLException se){             // 处理 JDBC 错误             se.printStackTrace();         }catch(Exception e){             // 处理 Class.forName 错误             e.printStackTrace();         }finally{             // 关闭资源             try{                 if(stmt!=null) stmt.close();             }catch(SQLException se2){             }// 什么都不做             try{                 if(conn!=null) conn.close();             }catch(SQLException se){                 se.printStackTrace();             }         }         System.out.println("Goodbye!");     } }
+    public static void main(String[] args) {
+        Connection conn = null;
+        Statement stmt = null;
+        try {
+            // 1.注册 JDBC 驱动
+            Class.forName(JDBC_DRIVER);
+            // 2.打开链接
+            System.out.println("连接数据库...");
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            // 3.执行查询
+            System.out.println("实例化 Statement 对象...");
+            stmt = conn.createStatement();
+            String sql;
+            sql = "SELECT " +
+                    "`cust_id`, `cust_name`, `cust_phone`, `cust_address`" +
+                    "FROM " +
+                    "`customer`";
+            ResultSet rs = stmt.executeQuery(sql);
+
+            // 4.展开结果集数据库
+            while (rs.next()) {
+                // 5.通过字段检索
+                int id = rs.getInt("cust_id");
+                String name = rs.getString("cust_name");
+                String phone = rs.getString("cust_phone");
+                String add = rs.getString("cust_address");
+
+                // 6.输出数据
+                System.out.print("Customer ID: " + id);
+                System.out.print(", Name: " + name);
+                System.out.print(", Phone: " + phone);
+                System.out.println(", Address: " + add);
+                System.out.print("\n");
+            }
+            // 7.完成后关闭
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            // 8.处理 Class.forName 错误
+            e.printStackTrace();
+        } finally {
+            // 9.关闭资源
+            try {
+                if (stmt != null) stmt.close();
+            } catch (SQLException ignored) {
+            }
+            try {
+                if (conn != null) conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Goodbye!");
+    }
+}
+```
 
 以上实例执行输出结果如下：
 
-![img](https://www.runoob.com/wp-content/uploads/2016/08/result.jpg)
+```powershell
+连接数据库...
+Thu Aug 09 22:48:25 CST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+实例化 Statement 对象...
+Customer ID: 10067716, Name: 淑颖, Phone: (133) 4352491, Address: 2 Moulton Avenue
+Customer ID: 10087095, Name: 松源, Phone: (670) 8600765, Address: 20 Norway Maple Center
+Customer ID: 10135551, Name: 远帆, Phone: (967) 2117876, Address: 44329 Briar Crest Trail
+```
 
 ## 39 Java9 New Featrues
 
 Java 9 发布于 2017 年 9 月 22 日，带来了很多新特性，其中最主要的变化是已经实现的模块化系统。接下来我们会详细介绍 Java 9 的新特性。
 
-## Java 9 新特性
+### 39.1 Java 9 新特性
 
 - **模块系统**：模块是一个包的容器，Java 9 最大的变化之一是引入了模块系统（Jigsaw 项目）。
 - **REPL (JShell)**：交互式编程环境。
-- **HTTP 2 客户端**：HTTP/2标准是HTTP协议的最新版本，新的 HTTPClient API 支持 WebSocket 和 HTTP2 流以及服务器推送特性。
+- **HTTP 2 客户端**：HTTP/2标准是 HTTP 协议的最新版本，新的 HTTPClient API 支持 WebSocket 和 HTTP2 流以及服务器推送特性。
 - **改进的 Javadoc**：Javadoc 现在支持在 API 文档中的进行搜索。另外，Javadoc 的输出现在符合兼容 HTML5 标准。
 - **多版本兼容 JAR 包**：多版本兼容 JAR 功能能让你创建仅在特定版本的 Java 环境中运行库程序时选择使用的 class 版本。
 - **集合工厂方法**：List，Set 和 Map 接口中，新的静态工厂方法可以创建这些集合的不可变实例。
-- **私有接口方法**：在接口中使用private私有方法。我们可以使用 private 访问修饰符在接口中编写私有方法。
+- **私有接口方法**：在接口中使用 private 私有方法。我们可以使用 private 访问修饰符在接口中编写私有方法。
 - **进程 API**: 改进的 API 来控制和管理操作系统进程。引进 java.lang.ProcessHandle 及其嵌套接口 Info 来让开发者逃离时常因为要获取一个本地进程的 PID 而不得不使用本地代码的窘境。
 - **改进的 Stream API**：改进的 Stream API 添加了一些便利的方法，使流处理更容易，并使用收集器编写复杂的查询。
 - **改进 try-with-resources**：如果你已经有一个资源是 final 或等效于 final 变量,您可以在 try-with-resources 语句中使用该变量，而无需在 try-with-resources 语句中声明一个新变量。
 - **改进的弃用注解 @Deprecated**：注解 @Deprecated 可以标记 Java API 状态，可以表示被标记的 API 将会被移除，或者已经破坏。
 - **改进钻石操作符(Diamond Operator)** ：匿名类可以使用钻石操作符(Diamond Operator)。
 - **改进 Optional 类**：java.util.Optional 添加了很多新的有用方法，Optional 可以直接转为 stream。
-- **多分辨率图像 API**：定义多分辨率图像API，开发者可以很容易的操作和展示不同分辨率的图像了。
+- **多分辨率图像 API**：定义多分辨率图像 API，开发者可以很容易的操作和展示不同分辨率的图像了。
 - **改进的 CompletableFuture API** ： CompletableFuture 类的异步机制可以在 ProcessHandle.onExit 方法退出时执行操作。
-- **轻量级的 JSON API**：内置了一个轻量级的JSON API
+- **轻量级的 JSON API**：内置了一个轻量级的 JSON API
 - **响应式流（Reactive Streams) API**: Java 9中引入了新的响应式流 API 来支持 Java 9 中的响应式编程。
 
 更多的新特性可以参阅官网：[What's New in JDK 9](https://docs.oracle.com/javase/9/whatsnew/toc.htm)
@@ -7677,7 +9824,7 @@ JDK 9 下载地址：<http://www.oracle.com/technetwork/java/javase/downloads/jd
 
 在关于 Java 9 文章的实例，我们均使用 jdk 1.9 环境，你可以使用以下命令查看当前 jdk 的版本：
 
-```
+```powershell
 $ java -version
 java version "9-ea"
 Java(TM) SE Runtime Environment (build 9-ea+163)
