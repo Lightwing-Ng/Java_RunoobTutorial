@@ -3,13 +3,13 @@ package com.lightwing.ch36_Examples.p03;
 import java.util.Arrays;
 
 /**
- * @ClassName _01_addElement
+ * @ClassName _02_addElement
  * @Description TODO
  * @Author Lightwing Ng
  * @DateTime 2018/8/10, 14:28
  * @Version 1.0
  **/
-public class _01_addElement {
+public class _02_addElement {
     public static void main(String args[]) {
         int array[] = {
                 2, 5, -2, 6, -3, 8, 0, -7, -9, 4

@@ -13,8 +13,12 @@ import java.util.Set;
  **/
 public class _16_UnionSet {
     public static void main(String[] args) {
-        String[] arr1 = {"1", "2", "3"};
-        String[] arr2 = {"4", "5", "6"};
+        String[] arr1 = {
+                "1", "2", "3"
+        };
+        String[] arr2 = {
+                "4", "5", "6"
+        };
         String[] result_union = union(arr1, arr2);
         System.out.println("并集的结果如下：");
 

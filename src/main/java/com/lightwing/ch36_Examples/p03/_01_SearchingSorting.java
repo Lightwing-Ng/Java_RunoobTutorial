@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @DateTime 2018/8/10, 14:30
  * @Version 1.0
  **/
-public class _02_SearchingSorting {
+public class _01_SearchingSorting {
     public static void main(String args[]) {
         int array[] = {
                 2, 5, -2, 6, -3, 8, 0, -7, -9, 4
