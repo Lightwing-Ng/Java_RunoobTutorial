@@ -8994,25 +8994,30 @@ Generating ./help-doc.html...
 1. [Java 实例 – 如何编译一个 Java 文件？](http://www.runoob.com/java/env-compile.html)
 
 ```java
-
+public class _01_HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
 ```
 
 2. [Java 实例 – Java 如何运行一个编译过的类文件?](http://www.runoob.com/java/env-run.html)
 
-```java
-
+```powershell
+$ javac _01_HelloWorld.java
+$ java _01_HelloWorld
 ```
 
 3. [Java 实例 - 如何执行指定 class 文件目录（classpath）？](http://www.runoob.com/java/env-classpath.html)
 
-```java
-
+```powershell
+java -classpath com.lightwing.ch36_Examples.p01_EnvironmentCong _01_HelloWorld
 ```
 
 4. [Java 实例 – 如何查看当前 Java 运行的版本?](http://www.runoob.com/java/env-version.html)
 
-```java
-
+```powershell
+java -version
 ```
 
 ### 36.2 Java 字符串
@@ -9020,85 +9025,313 @@ Generating ./help-doc.html...
 1. [Java 实例 – 字符串比较](http://www.runoob.com/java/string-compare.html)
 
 ```java
+public class _01_StringCompareEmp {
+    public static void main(String args[]) {
+        String str_1 = "Hello World";
+        String str_2 = "hello world";
 
+        System.out.println(str_1.compareTo(str_2));
+        System.out.println(str_1.compareToIgnoreCase(str_2));  //忽略大小写
+        System.out.println(str_1.compareTo(((Object) str_1).toString()));
+    }
+}
 ```
 
 2. [Java 实例 - 查找字符串最后一次出现的位置](http://www.runoob.com/java/string-last-occurance.html)
 
 ```java
+public class _02_SearchlastString {
+    public static void main(String[] args) {
+        String strOrig = "Hello world, Hello Lightwing";
+        int lastIndex = strOrig.lastIndexOf("Lightwing");
+        if (lastIndex == -1)
+            System.out.println("没有找到字符串 Lightwing");
+        else
+            System.out.println("Lightwing 字符串最后出现的位置： " + lastIndex);
 
+    }
+}
 ```
 
 3. [Java 实例 - 删除字符串中的一个字符](http://www.runoob.com/java/string-removing-char.html)
 
 ```java
+ublic class _03_removeCharAt {
+    public static void main(String args[]) {
+        String str = "this is Java";
+        System.out.println(removeCharAt(str, 3));
+    }
 
+    private static String removeCharAt(String s, int pos) {
+        return s.substring(0, pos) + s.substring(pos + 1);
+    }
+}
 ```
 
 4. [Java 实例 - 字符串替换](http://www.runoob.com/java/string-replace.html)
 
 ```java
-
+public class _04_StringReplaceEmp {
+    public static void main(String args[]) {
+        String str = "Hello World";
+        System.out.println(str.replace('H', 'W'));
+        System.out.println(str.replaceFirst("He", "Wa"));
+        System.out.println(str.replaceAll("He", "Ha"));
+    }
+}
 ```
 
 5. [Java 实例 - 字符串反转](http://www.runoob.com/java/string-reverse.html)
 
 ```java
-
+public class _05_StringReverseExample {
+    public static void main(String[] args) {
+        String string = "lightwing";
+        String reverse = new StringBuffer(string).reverse().toString();
+        System.out.println("字符串反转前: " + string);
+        System.out.println("字符串反转后: " + reverse);
+    }
+}
 ```
 
 6. [Java 实例 - 字符串查找](http://www.runoob.com/java/string-search.html)
 
 ```java
+public class _06_SearchStringEmp {
+    public static void main(String[] args) {
+        String strOrig = "Google PornHub Facebook";
+        int intIndex = strOrig.indexOf("PornHub");
+        if (intIndex == -1)
+            System.out.println("没有找到字符串 PornHub");
+        else
+            System.out.println("PornHub 字符串位置 " + intIndex);
 
+    }
+}
 ```
 
 7. [Java 实例 - 字符串分割](http://www.runoob.com/java/string-split.html)
 
 ```java
+public class _07_JavaStringSplitEmp {
+    public static void main(String args[]) {
+        String str = "www-runoob-com";
+        String[] temp;
+        String delimeter = "-";  // 指定分割字符
+        temp = str.split(delimeter); // 分割字符串
+        // 普通 for 循环
+        for (String aTemp : temp)
+            System.out.println(aTemp);
 
+        System.out.println("------java for each循环输出的方法-----");
+        String str1 = "www.runoob.com";
+        String[] temp1;
+        String delimeter1 = "\\.";  // 指定分割字符，.号需要转义
+        temp1 = str1.split(delimeter1); // 分割字符串
+        for (String x : temp1)
+            System.out.println(x);
+    }
+}
 ```
 
 8. [Java 实例 - 字符串分割(StringTokenizer)](http://www.runoob.com/java/java-stringtokenizer-example.html)
 
 ```java
+public class _08_StringTokenizer {
+    public static void main(String[] args) {
+        String str = "This is String, split by StringTokenizer, created by Lightwing";
+        StringTokenizer st = new StringTokenizer(str);
 
+        System.out.println("----- 通过空格分隔 ------");
+        while (st.hasMoreElements())
+            System.out.println(st.nextElement());
+
+        System.out.println("----- 通过逗号分隔 ------");
+        StringTokenizer st2 = new StringTokenizer(str, ",");
+
+        while (st2.hasMoreElements())
+            System.out.println(st2.nextElement());
+    }
+}
 ```
 
 9. [Java 实例 - 字符串小写转大写](http://www.runoob.com/java/string-uppercase.html)
 
 ```java
-
+public class _09_StringToUpperCaseEmp {
+    public static void main(String[] args) {
+        String str = "string Lightwing";
+        String strUpper = str.toUpperCase();
+        System.out.println("原始字符串: " + str);
+        System.out.println("转换为大写: " + strUpper);
+    }
+}
 ```
 
 10. [Java 实例 - 测试两个字符串区域是否相等](http://www.runoob.com/java/string-regionmatch.html)
 
 ```java
-
+public class _10_StringRegionMatch {
+    public static void main(String[] args) {
+        String first_str = "Welcome to Microsoft";
+        String second_str = "I work with microsoft";
+        boolean match1 = first_str.
+                regionMatches(
+                        11,
+                        second_str,
+                        12,
+                        9
+                );
+        boolean match2 = first_str.
+                regionMatches(
+                        true,
+                        11,
+                        second_str,
+                        12,
+                        9
+                ); //第一个参数 true 表示忽略大小写区别
+        System.out.println("区分大小写返回值：" + match1);
+        System.out.println("不区分大小写返回值：" + match2);
+    }
+}
 ```
 
 11. [Java 实例 - 字符串性能比较测试](http://www.runoob.com/java/string-performance.html)
 
 ```java
-
+public class _11_StringComparePerformance {
+    public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < 50000; i++) {
+            String s1 = "hello";
+            String s2 = "hello";
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println(
+                "通过 String 关键词创建字符串"
+                        + ": " + (endTime - startTime)
+                        + " 毫秒"
+        );
+        long startTime1 = System.currentTimeMillis();
+        for (int i = 0; i < 50000; i++) {
+            String s3 = "hello";
+            String s4 = "hello";
+        }
+        long endTime1 = System.currentTimeMillis();
+        System.out.println(
+                "通过 String 对象创建字符串"
+                        + ": " + (endTime1 - startTime1)
+                        + " 毫秒"
+        );
+    }
+}
 ```
 
 12. [Java 实例 - 字符串优化](http://www.runoob.com/java/string-optimization.html)
 
 ```java
+public class _12_StringOptimization {
+    public static void main(String[] args) {
+        String variables[] = new String[50000];
 
+        for (int i = 0; i < 50000; i++)
+            variables[i] = "s" + i;
+
+        long startTime0 = System.currentTimeMillis();
+
+        for (int i = 0; i < 50000; i++)
+            variables[i] = "hello";
+
+        long endTime0 = System.currentTimeMillis();
+        System.out.println(
+                "直接使用字符串： " +
+                        (endTime0 - startTime0) +
+                        "ms"
+        );
+        long startTime1 = System.currentTimeMillis();
+
+        for (int i = 0; i < 50000; i++)
+            variables[i] = "hello";
+
+        long endTime1 = System.currentTimeMillis();
+        System.out.println(
+                "使用 new 关键字：" +
+                        (endTime1 - startTime1) +
+                        "ms"
+        );
+        long startTime2 = System.currentTimeMillis();
+
+        for (int i = 0; i < 50000; i++) {
+            variables[i] = "hello";
+            variables[i] = variables[i].intern();
+        }
+
+        long endTime2 = System.currentTimeMillis();
+        System.out.println(
+                "使用字符串对象的 intern() 方法: "
+                        + (endTime2 - startTime2)
+                        + "ms"
+        );
+    }
+}
 ```
 
 13. [Java 实例 - 字符串格式化](http://www.runoob.com/java/string-format.html)
 
 ```java
-
+public class _13_StringFormat {
+    public static void main(String[] args) {
+        double e = Math.E;
+        System.out.format("%f%n", e);
+        // 指定本地为中国（CHINA）
+        System.out.format(
+                Locale.CHINA,
+                "%-10.4f%n%n",
+                e
+        );
+    }
+}
 ```
 
 14. [Java 实例 - 连接字符串](http://www.runoob.com/java/string-concatenation.html)
 
 ```java
+public class _14_StringConcatenate {
+    public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
 
+        for (int i = 0; i < 5000; i++) {
+            String result = "This is"
+                    + "testing the"
+                    + "difference" + "between"
+                    + "String" + "and" + "StringBuffer";
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println(
+                "字符串连接"
+                        + " - 使用 + 操作符 : "
+                        + (endTime - startTime) + "ms"
+        );
+        long startTime1 = System.currentTimeMillis();
+
+        for (int i = 0; i < 5000; i++) {
+            StringBuilder result = new StringBuilder();
+            result.append("This is");
+            result.append("testing the");
+            result.append("difference");
+            result.append("between");
+            result.append("String");
+            result.append("and");
+            result.append("StringBuffer");
+        }
+        long endTime1 = System.currentTimeMillis();
+        System.out.println(
+                "字符串连接" +
+                        " - 使用 StringBuffer : " +
+                        (endTime1 - startTime1) + "ms"
+        );
+    }
+}
 ```
 
 ### 36.3 Java 数组
@@ -9106,97 +9339,342 @@ Generating ./help-doc.html...
 1. [Java 实例 – 数组排序及元素查找](http://www.runoob.com/java/arrays-search.html)
 
 ```java
+public class _01_SearchingSorting {
+    public static void main(String args[]) {
+        int array[] = {
+                2, 5, -2, 6, -3, 8, 0, -7, -9, 4
+        };
+        Arrays.sort(array);
+        printArray("数组排序结果为", array);
+        int index = Arrays.binarySearch(array, 2);
+        System.out.println("元素 2 在第 " + index + " 个位置");
+    }
 
+    private static void printArray(String message, int array[]) {
+        System.out.println(
+                message + ": [length: " +
+                        array.length + "]"
+        );
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0)
+                System.out.print(", ");
+            System.out.print(array[i]);
+        }
+        System.out.println();
+    }
+}
 ```
 
 2. [Java 实例 – 数组添加元素](http://www.runoob.com/java/arrays-insert.html)
 
 ```java
+public class _02_addElement {
+    public static void main(String args[]) {
+        int array[] = {
+                2, 5, -2, 6, -3, 8, 0, -7, -9, 4
+        };
+        Arrays.sort(array);
+        printArray("数组排序", array);
+        int index = Arrays.binarySearch(array, 1);
+        System.out.println(
+                "元素 1 所在位置（负数为不存在）："
+                        + index
+        );
+        int newIndex = -index - 1;
+        array = insertElement(array, 1, newIndex);
+        printArray("数组添加元素 1", array);
+    }
 
+    private static void printArray(String message, int array[]) {
+        System.out.println(message
+                + ": [length: " + array.length + "]");
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0)
+                System.out.print(", ");
+            System.out.print(array[i]);
+        }
+        System.out.println();
+    }
+
+    private static int[] insertElement(
+            int original[], int element, int index) {
+        int length = original.length;
+        int destination[] = new int[length + 1];
+        System.arraycopy(original, 0, destination, 0, index);
+        destination[index] = element;
+        System.arraycopy(original, index, destination, index
+                + 1, length - index);
+        return destination;
+    }
+}
 ```
 
 3. [Java 实例 – 获取数组长度](http://www.runoob.com/java/arrays-upperbound.html)
 
 ```java
-
+public class _03_getArrayLength {
+    public static void main(String args[]) {
+        String[][] data = new String[2][5];
+        System.out.println("第一维数组长度: " + data.length);
+        System.out.println("第二维数组长度: " + data[0].length);
+    }
+}
 ```
 
 4. [Java 实例 – 数组反转](http://www.runoob.com/java/arrays-reverse.html)
 
 ```java
-
+public class _04_ArrayReverse {
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("A");
+        arrayList.add("B");
+        arrayList.add("C");
+        arrayList.add("D");
+        arrayList.add("E");
+        System.out.println("反转前排序: " + arrayList);
+        Collections.reverse(arrayList);
+        System.out.println("反转后排序: " + arrayList);
+    }
+}
 ```
 
 5. [Java 实例 – 数组输出](http://www.runoob.com/java/arrays-output.html)
 
 ```java
+public class _05_printArray {
+    public static void main(String[] args) {
+        String[] runoobs = new String[3];
+        runoobs[0] = "菜鸟教程";
+        runoobs[1] = "菜鸟工具";
+        runoobs[2] = "菜鸟笔记";
 
+        for (String x : runoobs)
+            System.out.println(x);
+    }
+}
 ```
 
 6. [Java 实例 – 数组获取最大和最小值](http://www.runoob.com/java/arrays-min-max.html)
 
 ```java
-
+public class _06_getMax {
+    public static void main(String[] args) {
+        Integer[] numbers = {
+                8, 2, 7, 1, 4, 9, 5
+        };
+        int min = Collections.min(Arrays.asList(numbers));
+        int max = Collections.max(Arrays.asList(numbers));
+        System.out.println("最小值: " + min);
+        System.out.println("最大值: " + max);
+    }
+}
 ```
 
 7. [Java 实例 – 数组合并](http://www.runoob.com/java/arrays_merge.html)
 
 ```java
-
+public class _07_mergeArray {
+    public static void main(String args[]) {
+        String a[] = {
+                "A", "E", "I"
+        };
+        String b[] = {
+                "O", "U"
+        };
+        List list = new ArrayList(Arrays.asList(a));
+        list.addAll(Arrays.asList(b));
+        Object[] c = list.toArray();
+        System.out.println(Arrays.toString(c));
+    }
+}
 ```
 
 8. [Java 实例 – 数组填充](http://www.runoob.com/java/arrays-fill.html)
 
 ```java
+public class _08_fillArray {
+    public static void main(String args[]) {
+        int array[] = new int[6];
+        Arrays.fill(array, 100);
+        for (int anArray : array)
+            System.out.println(anArray);
 
+        System.out.println();
+        Arrays.fill(array, 3, 6, 50);
+        for (int anArray : array)
+            System.out.println(anArray);
+    }
+}
 ```
 
 9. [Java 实例 – 数组扩容](http://www.runoob.com/java/arrays-extension.html)
 
 ```java
-
+public class _09_ArrayExpansion {
+    public static void main(String[] args) {
+        String[] names = new String[]{"A", "B", "C"};
+        String[] extended = new String[5];
+        extended[3] = "D";
+        extended[4] = "E";
+        System.arraycopy(names, 0, extended, 0, names.length);
+        for (String str : extended)
+            System.out.println(str);
+    }
+}
 ```
 
 10. [Java 实例 – 查找数组中的重复元素](http://www.runoob.com/java/arrays-compare.html)
 
 ```java
+public class _10_findRepeat {
+    public static void main(String[] args) {
+        int[] my_array = {
+                1, 2, 5, 5, 6, 6, 7, 2
+        };
 
+        for (int i = 0; i < my_array.length - 1; i++)
+            for (int j = i + 1; j < my_array.length; j++)
+                if ((my_array[i] == my_array[j]) && (i != j))
+                    System.out.println("重复元素 : " + my_array[j]);
+    }
+}
 ```
 
 11. [Java 实例 – 删除数组元素](http://www.runoob.com/java/arrays-remove.html)
 
 ```java
-
+public class _11_deleteElement {
+    public static void main(String[] args) {
+        ArrayList<String> objArray = new ArrayList<String>();
+        objArray.clear();
+        objArray.add(0, "第 0 个元素");
+        objArray.add(1, "第 1 个元素");
+        objArray.add(2, "第 2 个元素");
+        System.out.println("数组删除元素前：" + objArray);
+        objArray.remove(1);
+        objArray.remove("第 0 个元素");
+        System.out.println("数组删除元素后：" + objArray);
+    }
+}
 ```
 
 12. [Java 实例 – 数组差集](http://www.runoob.com/java/arrays-removeall.html)
 
 ```java
-
+public class _12_DifferenceSet {
+    public static void main(String[] args) {
+        ArrayList objArray = new ArrayList();
+        ArrayList objArray2 = new ArrayList();
+        objArray2.add(0, "common1");
+        objArray2.add(1, "common2");
+        objArray2.add(2, "notcommon");
+        objArray2.add(3, "notcommon1");
+        objArray.add(0, "common1");
+        objArray.add(1, "common2");
+        objArray.add(2, "notcommon2");
+        System.out.println("array1 的元素" + objArray);
+        System.out.println("array2 的元素" + objArray2);
+        objArray.removeAll(objArray2);
+        System.out.println("array1 与 array2 数组差集为：" + objArray);
+    }
+}
 ```
 
 13. [Java 实例 – 数组交集](http://www.runoob.com/java/arrays-retainall.html)
 
 ```java
-
+public class _13_Intersection {
+    public static void main(String[] args) {
+        ArrayList objArray = new ArrayList();
+        ArrayList objArray2 = new ArrayList();
+        objArray2.add(0, "common1");
+        objArray2.add(1, "common2");
+        objArray2.add(2, "notcommon");
+        objArray2.add(3, "notcommon1");
+        objArray.add(0, "common1");
+        objArray.add(1, "common2");
+        objArray.add(2, "notcommon2");
+        System.out.println("array1 数组元素：" + objArray);
+        System.out.println("array2 数组元素：" + objArray2);
+        objArray.retainAll(objArray2);
+        System.out.println("array2 & array1 数组交集为：" + objArray);
+    }
+}
 ```
 
 14. [Java 实例 – 在数组中查找指定元素](http://www.runoob.com/java/arrays-find.html)
 
 ```java
-
+public class _14_findCertainElement {
+    public static void main(String[] args) {
+        ArrayList<String> objArray = new ArrayList<>();
+        ArrayList<String> objArray2 = new ArrayList<>();
+        objArray2.add(0, "common1");
+        objArray2.add(1, "common2");
+        objArray2.add(2, "notcommon");
+        objArray2.add(3, "notcommon1");
+        objArray.add(0, "common1");
+        objArray.add(1, "common2");
+        System.out.println("objArray 的数组元素：" + objArray);
+        System.out.println("objArray2 的数组元素：" + objArray2);
+        System.out.println("objArray 是否包含字符串common2? ： "
+                + objArray.contains("common2"));
+        System.out.println("objArray2 是否包含数组 objArray? ："
+                + objArray2.contains(objArray));
+    }
+}
 ```
 
 15. [Java 实例 – 判断数组是否相等](http://www.runoob.com/java/arrays-equal.html)
 
 ```java
-
+public class _15_isArrayEqual {
+    public static void main(String[] args) {
+        int[] ary = {
+                1, 2, 3, 4, 5, 6
+        };
+        int[] ary1 = {
+                1, 2, 3, 4, 5, 6
+        };
+        int[] ary2 = {
+                1, 2, 3, 4
+        };
+        System.out.println("数组 ary 是否与数组 ary1相等? ："
+                + Arrays.equals(ary, ary1));
+        System.out.println("数组 ary 是否与数组 ary2相等? ："
+                + Arrays.equals(ary, ary2));
+    }
+}
 ```
 
 16. [Java 实例 - 数组并集](http://www.runoob.com/java/arrays-union.html)
 
 ```java
+public class _16_UnionSet {
+    public static void main(String[] args) {
+        String[] arr1 = {
+                "1", "2", "3"
+        };
+        String[] arr2 = {
+                "4", "5", "6"
+        };
+        String[] result_union = union(arr1, arr2);
+        System.out.println("并集的结果如下：");
 
+        for (String str : result_union)
+            System.out.println(str);
+    }
+
+    // 求两个字符串数组的并集，利用set的元素唯一性
+    private static String[] union(String[] arr1, String[] arr2) {
+        Set<String> set = new HashSet<String>();
+        Collections.addAll(set, arr1);
+        Collections.addAll(set, arr2);
+        String[] result = {};
+        return set.toArray(result);
+    }
+}
 ```
 
 ### 36.4 Java 时间处理
@@ -9204,25 +9682,74 @@ Generating ./help-doc.html...
 1. [Java 实例 - 格式化时间（SimpleDateFormat）](http://www.runoob.com/java/date-time-am-pm.html)
 
 ```java
-
+public class _01_SimpleDateFormat {
+    public static void main(String[] args) {
+        Date date = new Date();
+        String strDateFormat = "yyyy/MM/dd HH:mm:ss";
+        SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
+        System.out.println(sdf.format(date));
+    }
+}
 ```
 
 2. [Java 实例 - 获取当前时间](http://www.runoob.com/java/date-time-datetime.html)
 
 ```java
-
+public class _02_LocalTime {
+    public static void main(String[] args) {
+        // 格式化时间
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        // a为am/pm的标记
+        sdf.applyPattern("yyyy-MM-dd HH:mm:ss a");
+        // 获取当前时间
+        Date date = new Date();
+        // 输出已经格式化的现在时间（24小时制）
+        System.out.println("现在时间：" + sdf.format(date));
+    }
+}
 ```
 
 3. [Java 实例 - 获取年份、月份等](http://www.runoob.com/java/date-year-month.html)
 
 ```java
+public class _03_acquireTime {
+    public static void main(String[] args) {
+        Calendar cal = Calendar.getInstance();
+        int day = cal.get(Calendar.DATE);
+        int month = cal.get(Calendar.MONTH) + 1;
+        int year = cal.get(Calendar.YEAR);
+        int dow = cal.get(Calendar.DAY_OF_WEEK);
+        int dom = cal.get(Calendar.DAY_OF_MONTH);
+        int doy = cal.get(Calendar.DAY_OF_YEAR);
 
+        System.out.println("当期时间: " + cal.getTime());
+        System.out.println("日期: " + day);
+        System.out.println("月份: " + month);
+        System.out.println("年份: " + year);
+        // 星期日为一周的第一天输出为 1，星期一输出为 2，以此类推
+        System.out.println("一周的第几天: " + dow);
+        System.out.println("一月中的第几天: " + dom);
+        System.out.println("一年的第几天: " + doy);
+    }
+}
 ```
 
 4. [Java 实例 - 时间戳转换成时间](http://www.runoob.com/java/date-timestamp2date.html)
 
 ```java
-
+public class _04_TimeStamp {
+    public static void main(String[] args) {
+        // 获取当前时间戳
+        Long timeStamp = System.currentTimeMillis();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        // 时间戳转换成时间
+        String sd = sdf.format(new Date(Long.parseLong(String.valueOf(timeStamp))));
+        System.out.println("格式化结果：" + sd);
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy年MM月dd日HH时mm分ss秒");
+        String sd2 = sdf2.format(new Date(Long.parseLong(String.valueOf(timeStamp))));
+        System.out.println("格式化结果：" + sd2);
+    }
+}
 ```
 
 ### 36.5 Java 方法
@@ -9230,91 +9757,436 @@ Generating ./help-doc.html...
 1. [Java 实例 – 方法重载](http://www.runoob.com/java/method-overloading.html)
 
 ```java
+public class _01_MyClass {
+    int height;
 
+    _01_MyClass() {
+        System.out.println("无参数构造函数");
+        height = 4;
+    }
+
+    _01_MyClass(int i) {
+        System.out.println("房子高度为 " + i + " 米");
+        height = i;
+    }
+
+    void info() {
+        System.out.println("房子高度为 " + height + " 米");
+    }
+
+    void info(String s) {
+        System.out.println(s + ": 房子高度为 " + height + " 米");
+    }
+}
+
+public class _01_Overload {
+    public static void main(String[] args) {
+        _01_MyClass t = new _01_MyClass(3);
+        t.info();
+        t.info("重载方法");
+        // 重载构造函数
+        new _01_Overload();
+    }
+}
 ```
 
 2. [Java 实例 – 输出数组元素](http://www.runoob.com/java/method-array.html)
 
 ```java
+public class _02_printArray {
+    private static void printArray(Integer[] inputArray) {
+        for (Integer element : inputArray) {
+            System.out.printf("%s ", element);
+            System.out.println();
+        }
+    }
 
+    private static void printArray(Double[] inputArray) {
+        for (Double element : inputArray) {
+            System.out.printf("%s ", element);
+            System.out.println();
+        }
+    }
+
+    private static void printArray(Character[] inputArray) {
+        for (Character element : inputArray) {
+            System.out.printf("%s ", element);
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[]) {
+        Integer[] integerArray = {1, 2, 3, 4, 5, 6};
+        Double[] doubleArray = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
+        Character[] characterArray = {'H', 'E', 'L', 'L', 'O'};
+        System.out.println("输出整型数组:");
+        printArray(integerArray);
+        System.out.println("\n输出双精度型数组:");
+        printArray(doubleArray);
+        System.out.println("\n输出字符型数组:");
+        printArray(characterArray);
+    }
+}
 ```
 
 3. [Java 实例 – 汉诺塔算法](http://www.runoob.com/java/method-tower.html)
 
 ```java
+public class _03_HanoiAlgorithm {
+    public static void main(String[] args) {
+        int nDisks = 3;
+        doTowers(nDisks, 'A', 'B', 'C');
+    }
 
+    private static void doTowers(int topN, char from, char inter, char to) {
+        if (topN == 1) {
+            System.out.println(
+                    "Disk 1 from "
+                            + from + " to " + to
+            );
+        } else {
+            doTowers(topN - 1, from, to, inter);
+            System.out.println(
+                    "Disk "
+                            + topN + " from " + from + " to " + to
+            );
+            doTowers(topN - 1, inter, from, to);
+        }
+    }
+}
 ```
 
 4. [Java 实例 – 斐波那契数列](http://www.runoob.com/java/method-fibonacci.html)
 
 ```java
+public class _04_Fibonacci {
+    private static long fibonacci(long number) {
+        if ((number == 0) || (number == 1))
+            return number;
+        else
+            return fibonacci(number - 1) + fibonacci(number - 2);
+    }
 
+    public static void main(String[] args) {
+        for (int counter = 0; counter <= 10; counter++)
+            System.out.printf("Fibonacci of %d is: %d\n",
+                    counter, fibonacci(counter));
+    }
+}
 ```
 
 5. [Java 实例 – 阶乘](http://www.runoob.com/java/method-factorial.html)
 
 ```java
+public class _05_Factorial {
+    public static void main(String args[]) {
+        for (int counter = 0; counter <= 10; counter++)
+            System.out.printf(
+                    "%d! = %d\n", counter,
+                    factorial(counter)
+            );
+    }
 
+    private static long factorial(long number) {
+        if (number <= 1)
+            return 1;
+        else
+            return number * factorial(number - 1);
+    }
+}
 ```
 
 6. [Java 实例 – 方法覆盖](http://www.runoob.com/java/java/method-override.html)
 
 ```java
+public class _06_Findareas {
+    public static void main(String[] agrs) {
+        Figure f = new Figure(10, 10);
+        Rectangle r = new Rectangle(9, 5);
+        Figure figref;
+        figref = f;
+        System.out.println("Area is: " + figref.area());
+        figref = r;
+        System.out.println("Area is: " + figref.area());
+    }
+}
 
+class Figure {
+    double dim1;
+    double dim2;
+
+    Figure(double a, double b) {
+        dim1 = a;
+        dim2 = b;
+    }
+
+    Double area() {
+        System.out.println("Inside area for figure.");
+        return (dim1 * dim2);
+    }
+}
+
+class Rectangle extends Figure {
+    Rectangle(double a, double b) {
+        super(a, b);
+    }
+
+    Double area() {
+        System.out.println("Inside area for rectangle.");
+        return (dim1 * dim2);
+    }
+}
 ```
 
 7. [Java 实例 – instanceOf 关键字用法](http://www.runoob.com/java/java/method-instanceof.html)
 
 ```java
+public class _07_instanceOf {
+    public static void main(String[] args) {
+        Object testObject = new ArrayList();
+        displayObjectClass(testObject);
+    }
 
+    private static void displayObjectClass(Object o) {
+        if (o instanceof Vector)
+            System.out.println("对象是 java.util.Vector 类的实例");
+        else if (o instanceof ArrayList)
+            System.out.println("对象是 java.util.ArrayList 类的实例");
+        else
+            System.out.println("对象是 " + o.getClass() + " 类的实例");
+    }
+}
 ```
 
 8. [Java 实例 – break 关键字用法](http://www.runoob.com/java/java/method-break.html)
 
 ```java
+public class _08_Break {
+    public static void main(String[] args) {
+        int[] intAry = {
+                99, 12, 22, 34, 45, 67, 5678, 8990
+        };
+        int no = 5678;
+        int i = 0;
+        boolean found = false;
+        for (; i < intAry.length; i++)
+            if (intAry[i] == no) {
+                found = true;
+                break;
+            }
 
+        if (found)
+            System.out.println(no + " 元素的索引位置在: " + i);
+        else
+            System.out.println(no + " 元素不在数组总");
+    }
+}
 ```
 
 9. [Java 实例 – continue 关键字用法](http://www.runoob.com/java/java/method-continue.html)
 
 ```java
-
+public class _09_continue {
+    public static void main(String[] args) {
+        StringBuffer searchStr = new StringBuffer("hello how are you.");
+        int length = searchStr.length();
+        int count = 0;
+        for (int i = 0; i < length; i++) {
+            if (searchStr.charAt(i) != 'h')
+                continue;
+            count++;
+            searchStr.setCharAt(i, 'h');
+        }
+        System.out.println(
+                "发现 " +
+                        count +
+                        " 个 h 字符"
+        );
+        System.out.println(searchStr);
+    }
+}
 ```
 
 10. [Java 实例 – 标签(Label)](http://www.runoob.com/java/java/method-label.html)
 
 ```java
+public class _10_Label {
+    public static void main(String[] args) {
+        String strSearch = "This is the string in which you have to search for a substring.";
+        String substring = "substring";
+        boolean found = false;
+        int max = strSearch.length() - substring.length();
+        testLabel:
+        for (int i = 0; i <= max; i++) {
+            int length = substring.length();
+            int j = i;
+            int k = 0;
+            while (length-- != 0)
+                if (strSearch.charAt(j++) != substring.charAt(k++))
+                    continue testLabel;
 
+            found = true;
+            break testLabel;
+        }
+        if (found)
+            System.out.println("发现子字符串。");
+        else
+            System.out.println("字符串中没有发现子字符串。");
+    }
+}
 ```
 
 11. [Java 实例 – enum 和 switch 语句使用](http://www.runoob.com/java/java/method-enum.html)
 
 ```java
+enum Car {
+    Lamborghini, Phaeton, Audi, Fiat, Honda
+}
 
+public class _11_EnumSwitch {
+    public static void main(String args[]) {
+        Car c;
+        c = Car.Phaeton;
+        switch (c) {
+            case Lamborghini:
+                System.out.println("你选择了 lamborghini!");
+                break;
+            case Phaeton:
+                System.out.println("你选择了顶配辉腾!");
+                break;
+            case Audi:
+                System.out.println("你选择了 Audi!");
+                break;
+            case Fiat:
+                System.out.println("你选择了 Fiat!");
+                break;
+            case Honda:
+                System.out.println("你选择了 Honda!");
+                break;
+            default:
+                System.out.println("我不知道你的车型。");
+                break;
+        }
+    }
+}
 ```
 
 12. [Java 实例 – Enum（枚举）构造函数及方法的使用](http://www.runoob.com/java/java/method-enum1.html)
 
 ```java
+    Lamborghini(9888888), Phaeton(1758888), Audi(500000), Fiat(150000), Honda(120000);
+    private int price;
 
+    Auto(int p) {
+        price = p;
+    }
+
+    int getPrice() {
+        return price;
+    }
+}
+
+public class _12_Constructor {
+    public static void main(String args[]) {
+        System.out.println("所有汽车的价格：");
+        for (Auto c : Auto.values())
+            System.out.println(
+                    c + " 需要 HK$" +
+                            String.format("%,d", c.getPrice())
+            );
+    }
+}
 ```
 
 13. [Java 实例 – for 和 foreach 循环使用](http://www.runoob.com/java/java/method-for.html)
 
 ```java
+public class _13_ForEach {
+    public static void main(String[] args) {
+        int[] intAry = {
+                1, 2, 3, 4
+        };
+        forDisplay(intAry);
+        foreachDisplay(intAry);
+    }
 
+    private static void forDisplay(int[] a) {
+        System.out.println("使用 for 循环数组");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    private static void foreachDisplay(int[] data) {
+        System.out.println("使用 foreach 循环数组");
+        for (int a : data) {
+            System.out.print(a + " ");
+        }
+    }
+}
 ```
 
 14. [Java 实例 – Varargs 可变参数使用](http://www.runoob.com/java/java/method-varargs.html)
 
 ```java
+public class _14_Varargs {
+    static int sumVarargs(int... intArrays) {
+        int sum = 0, i;
+        for (i = 0; i < intArrays.length; i++)
+            sum += intArrays[i];
 
+        return (sum);
+    }
+
+    public static void main(String args[]) {
+        int sum;
+        sum = sumVarargs(10, 12, 33);
+        System.out.println("数字相加之和为: " + sum);
+    }
+}
 ```
 
 15. [Java 实例 – 重载(overloading)方法中使用 Varargs](http://www.runoob.com/java/java/method-varargs1.html)
 
 ```java
+public class _15_OverloadingVarargs {
+    static void vaTest(int... no) {
+        System.out.print(
+                "vaTest(int ...): "
+                        + "参数个数: " + no.length + " 内容: "
+        );
+        for (int n : no)
+            System.out.print(n + " ");
+        System.out.println();
+    }
 
+    static void vaTest(boolean... bl) {
+        System.out.print(
+                "vaTest(boolean ...) " +
+                        "参数个数: " + bl.length + " 内容: "
+        );
+        for (boolean b : bl)
+            System.out.print(b + " ");
+        System.out.println();
+    }
+
+    static void vaTest(String msg, int... no) {
+        System.out.print(
+                "vaTest(String, int ...): " +
+                        msg + "参数个数: " + no.length + " 内容: "
+        );
+        for (int n : no)
+            System.out.print(n + " ");
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        vaTest(1, 2, 3);
+        vaTest("测试: ", 10, 20);
+        vaTest(true, false, false);
+    }
+}
 ```
 
 ### 36.6 打印图形
@@ -9322,36 +10194,188 @@ Generating ./help-doc.html...
 1. [Java 实例 – 打印菱形](http://www.runoob.com/java/java-print-diamond.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _01_DimondShape
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:38
+ * @Version 1.0
+ **/
+public class _01_DimondShape {
+    public static void main(String[] args) {
+        // 输出 8 行的菱形
+        print(10);
+    }
+
+    public static void print(int size) {
+        if (size % 2 == 0) {
+            // 计算菱形大小
+            size++;
+        }
+
+        for (int i = 0; i < size / 2 + 1; i++) {
+            for (int j = size / 2 + 1; j > i + 1; j--)
+                // 输出左上角位置的空白
+                System.out.print(" ");
+
+            for (int j = 0; j < 2 * i + 1; j++)
+                // 输出菱形上半部边缘
+                System.out.print("*");
+            // 换行
+            System.out.println();
+        }
+        for (int i = size / 2 + 1; i < size; i++) {
+            for (int j = 0; j < i - size / 2; j++)
+                // 输出菱形左下角空白
+                System.out.print(" ");
+
+            for (int j = 0; j < 2 * size - 1 - 2 * i; j++)
+                // 输出菱形下半部边缘
+                System.out.print("*");
+            System.out.println(); // 换行
+        }
+    }
+}
 
 ```
 
 2. [Java 实例 – 九九乘法表](http://www.runoob.com/java/java-print-multiplicationtable.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _02_MultiplicationTable
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:41
+ * @Version 1.0
+ **/
+public class _02_MultiplicationTable {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= i; j++)
+                System.out.print(j + "×" + i + "=" + i * j + "\t");
+            System.out.println();
+        }
+    }
+}
 
 ```
 
 3. [Java 实例 – 打印三角形](http://www.runoob.com/java/java-print-the-triangle.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _03_Triangle
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:42
+ * @Version 1.0
+ **/
+public class _03_Triangle {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 5; i <= j; j--)
+                System.out.print(" ");
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+            for (int j = 1; j < i; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
 
 ```
 
 4. [Java 实例 – 打印倒立的三角形](http://www.runoob.com/java/java-print-invertedtriangle.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _04_HandstandTriangle
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:43
+ * @Version 1.0
+ **/
+public class _04_HandstandTriangle {
+    public static void main(String[] args) {
+        // 打印倒立的三角形
+        for (int m = 1; m <= 4; m++) {
+            // 打印空格
+            for (int n = 0; n <= m; n++)
+                System.out.print(" ");
+            // 打印 *
+            for (int x = 1; x <= 7 - 2 * (m - 1); x++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
 
 ```
 
 5. [Java 实例 – 打印平行四边形](http://www.runoob.com/java/java-print-parallelogram.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _05_Parallelogram
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:44
+ * @Version 1.0
+ **/
+public class _05_Parallelogram {
+    public static void main(String[] args) {
+        // 外层循环 每次打出一个 *
+        for (int i = 1; i <= 5; i++) {
+            // 填充空格
+            for (int j = 1; j <= 5 - i; j++)
+                System.out.print(" ");
+
+            // 内层循环 每次打印一个 *
+            for (int k = 1; k <= 5; k++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
 
 ```
 
 6. [Java 实例 – 打印矩形](http://www.runoob.com/java/java-print-rect.html)
 
 ```java
+package com.lightwing.ch36_Examples.p06_printFigure;
+
+/**
+ * @ClassName _06_Rectangle
+ * @Description TODO
+ * @Author Lightwing Ng
+ * @DateTime 2018/8/10, 16:46
+ * @Version 1.0
+ **/
+public class _06_Rectangle {
+    public static void main(String[] args) {
+        // 外层循环 每次输出一行 *
+        for (int i = 1; i <= 5; i++) {
+            System.out.print("*");
+            // 内层循环 每次输出一个 *
+            for (int j = 1; j <= 5; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
 
 ```
 
@@ -9360,91 +10384,277 @@ Generating ./help-doc.html...
 1. [Java 实例 - 文件写入](http://www.runoob.com/java/file-write.html)
 
 ```java
-
+public class _01_Write {
+    public static void main(String[] args) {
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter("runoob.txt"));
+            out.write("菜鸟教程");
+            out.close();
+            System.out.println("文件创建成功！");
+        } catch (IOException ignored) {
+        }
+    }
+}
 ```
 
 2. [Java 实例 - 读取文件内容](http://www.runoob.com/java/file-read.html)
 
 ```java
-
+public class _02_Read {
+    public static void main(String[] args) {
+        try {
+            BufferedReader in = new BufferedReader(new FileReader("test.log"));
+            String str;
+            while ((str = in.readLine()) != null) {
+                System.out.println(str);
+            }
+            System.out.println((String) null);
+        } catch (IOException ignored) {
+        }
+    }
+}
 ```
 
 3. [Java 实例 - 删除文件](http://www.runoob.com/java/file-delete.html)
 
 ```java
-
+public class _03_Delete {
+    public static void main(String[] args) {
+        try {
+            File file = new File("/Users/lightwingng/Desktop/JavaTutorial/src/main/java/com" +
+                    "/lightwing/ch36_Examples/p07_File/test.txt");
+            if (file.delete()) {
+                System.out.println(file.getName() + " 文件已被删除！");
+            } else {
+                System.out.println("文件删除失败！");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 4. [Java 实例 - 将文件内容复制到另一个文件](http://www.runoob.com/java/file-copy.html)
 
 ```java
-
+public class _04_copy {
+    public static void main(String[] args) throws Exception {
+        BufferedWriter out1 = new BufferedWriter(new FileWriter("srcfile"));
+        out1.write("string to be copied\n");
+        out1.close();
+        InputStream in = new FileInputStream(new File("srcfile"));
+        OutputStream out = new FileOutputStream
+                (new File("destnfile"));
+        byte[] buf = new byte[1024];
+        int len;
+        while ((len = in.read(buf)) > 0) {
+            out.write(buf, 0, len);
+        }
+        in.close();
+        out.close();
+        BufferedReader in1 = new BufferedReader(new FileReader("destnfile"));
+        String str;
+        while ((str = in1.readLine()) != null) {
+            System.out.println(str);
+        }
+        in1.close();
+    }
+}
 ```
 
 5. [Java 实例 - 向文件中追加数据](http://www.runoob.com/java/file-append.html)
 
 ```java
-
+public class _05_appendData {
+    public static void main(String[] args) throws Exception {
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter("filename"));
+            out.write("aString1\n");
+            out.close();
+            out = new BufferedWriter(new FileWriter("filename", true));
+            out.write("aString2");
+            out.close();
+            BufferedReader in = new BufferedReader(new FileReader("filename"));
+            String str;
+            while ((str = in.readLine()) != null) {
+                System.out.println(str);
+            }
+            in.close();
+        } catch (IOException e) {
+            System.out.println("exception occoured" + e);
+        }
+    }
+}
 ```
 
 6. [Java 实例 - 创建临时文件](http://www.runoob.com/java/file-create-temp.html)
 
 ```java
+public class _06_newFile {
+    public static void main(String[] args) {
+        File f;
+        try {
+            // 创建临时文件
+            f = File.createTempFile("tmp", ".txt", new File("C:/"));
 
+            // 输出绝对路径
+            System.out.println("File path: " + f.getAbsolutePath());
+
+            // 终止后删除临时文件
+            f.deleteOnExit();
+
+            // 创建临时文件
+            f = File.createTempFile("tmp", null, new File("D:/"));
+
+            // 输出绝对路径
+            System.out.print("File path: " + f.getAbsolutePath());
+
+            // 终止后删除临时文件
+            f.deleteOnExit();
+
+        } catch (Exception e) {
+            // 如果有错误输出内容
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 7. [Java 实例 - 修改文件最后的修改日期](http://www.runoob.com/java/file-date-modify.html)
 
 ```java
-
+public class _07_modifyLastDate {
+    public static void main(String[] args) throws Exception {
+        File fileToChange = new File("/Users/lightwingng/Desktop/JavaTutorial/src/main/java/com/lightwing/ch36_Examples/p07_File/myjavafile.txt");
+        fileToChange.createNewFile();
+        Date filetime = new Date(fileToChange.lastModified());
+        System.out.println(filetime.toString());
+        System.out.println(fileToChange.setLastModified(System.currentTimeMillis()));
+        filetime = new Date(fileToChange.lastModified());
+        System.out.println(filetime.toString());
+    }
+}
 ```
 
 8. [Java 实例 - 获取文件大小](http://www.runoob.com/java/file-size.html)
 
 ```java
+public class _08_acquireSize {
+    private static long getFileSize(String filename) {
+        File file = new File(filename);
+        if (!file.exists() || !file.isFile()) {
+            System.out.println("文件不存在");
+            return -1;
+        }
+        return file.length();
+    }
 
+    public static void main(String[] args) {
+        long size = getFileSize("/Users/lightwingng/Desktop/JavaTutorial/src/main/java/com/lightwing/ch36_Examples/p07_File/java.txt");
+        System.out.println("java.txt文件大小为: " + size);
+    }
+}
 ```
 
 9. [Java 实例 - 文件重命名](http://www.runoob.com/java/file-rename.html)
 
 ```java
-
+public class _09_renameFile {
+    public static void main(String[] args) {
+        File oldName = new File("C:/program.txt");
+        File newName = new File("C:/java.txt");
+        if (oldName.renameTo(newName)) {
+            System.out.println("已重命名");
+        } else {
+            System.out.println("Error");
+        }
+    }
+}
 ```
 
 10. [Java 实例 - 设置文件只读](http://www.runoob.com/java/file-read-only.html)
 
 ```java
-
+public class _10_readOnly {
+    public static void main(String[] args) {
+        File file = new File("C:/java.txt");
+        System.out.println(file.setReadOnly());
+        System.out.println(file.canWrite());
+    }
+}
 ```
 
 11. [Java 实例 - 检测文件是否存在](http://www.runoob.com/java/file-exist.html)
 
 ```java
-
+public class _11_isExisted {
+    public static void main(String[] args) {
+        File file = new File("C:/java.txt");
+        System.out.println(file.exists());
+    }
+}
 ```
 
 12. [Java 实例 - 在指定目录中创建文件](http://www.runoob.com/java/file-dir.html)
 
 ```java
-
+public class _12_createDirectory {
+    public static void main(String[] args) throws Exception {
+        File file = null;
+        File dir = new File("C:/");
+        file = File.createTempFile
+                ("JavaTemp", ".javatemp", dir);
+        System.out.println(file.getPath());
+    }
+}
 ```
 
 13. [Java 实例 - 获取文件修改时间](http://www.runoob.com/java/file-date.html)
 
 ```java
-
+public class _13_acquireModifiedTime {
+    public static void main(String[] args) {
+        File file = new File("_13_acquireModifiedTime.java");
+        Long lastModified = file.lastModified();
+        Date date = new Date(lastModified);
+        System.out.println(date);
+    }
+}
 ```
 
 14. [Java 实例 - 创建文件](http://www.runoob.com/java/file-create.html)
 
 ```java
-
+public class _14_createFile {
+    public static void main(String[] args) {
+        try {
+            File file = new File("C:/myfile.txt");
+            if (file.createNewFile())
+                System.out.println("文件创建成功！");
+            else
+                System.out.println("出错了，该文件已经存在。");
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+}
 ```
 
 15. [Java 实例 - 文件路径比较](http://www.runoob.com/java/file-compare.html)
 
 ```java
-
+public class _15_comparePath {
+    public static void main(String[] args) {
+        File file1 = new File("C:/File/demo1.txt");
+        File file2 = new File("C:/java/demo1.txt");
+        if (file1.compareTo(file2) == 0) {
+            System.out.println("文件路径一致！");
+        } else {
+            System.out.println("文件路径不一致！");
+        }
+    }
+}
 ```
 
 ### 36.8 Java 目录操作
@@ -9452,91 +10662,247 @@ Generating ./help-doc.html...
 1. [Java 实例 - 递归创建目录](http://www.runoob.com/java/dir-create.html)
 
 ```java
-
+public class _01_RecursionCreate {
+    public static void main(String[] args) {
+        String directories = "com.lightwing.ch36_Examples.p08\\a\\b\\c\\d\\e\\f\\g\\h\\i";
+        File file = new File(directories);
+        boolean result = file.mkdirs();
+        System.out.println("Status = " + result);
+    }
+}
 ```
 
 2. [Java 实例 - 删除目录](http://www.runoob.com/java/dir-delete.html)
 
 ```java
-
+public class _02_DeleteDirectory {
+    public static void main(String[] argv) throws Exception {
+        // 删除当前目录下的 test 目录
+        deleteDir(new File("./test"));
+    }
+    private static boolean deleteDir(File dir) {
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+            assert children != null;
+            for (String aChildren : children) {
+                boolean success = deleteDir
+                        (new File(dir, aChildren));
+                if (!success)
+                    return false;
+            }
+        }
+        if(dir.delete()) {
+            System.out.println("目录已被删除！");
+            return true;
+        } else {
+            System.out.println("目录删除失败！");
+            return false;
+        }
+    }
+}
 ```
 
 3. [Java 实例 - 判断目录是否为空](http://www.runoob.com/java/dir-empty.html)
 
 ```java
-
+public class _03_isDirectoryEmpty {
+    public static void main(String[] args) {
+        File file = new File("./testdir");
+        // 当前目录下的 testdir目录
+        if (file.isDirectory())
+            if (Objects.requireNonNull(file.list()).length > 0)
+                System.out.println("目录不为空!");
+            else
+                System.out.println("目录为空!");
+        else
+            System.out.println("这不是一个目录!");
+    }
+}
 ```
 
 4. [Java 实例 - 判断文件是否隐藏](http://www.runoob.com/java/dir-hidden.html)
 
 ```java
-
+public class _04_isDirectoryHidder {
+    public static void main(String[] args) {
+        File file = new File("C:/Demo.txt");
+        System.out.println(file.isHidden());
+    }
+}
 ```
 
 5. [Java 实例 - 获取目录大小](http://www.runoob.com/java/dir-size.html)
 
 ```java
-
+public class _05_acquireDirectorySize {
+    public static void main(String[] args) {
+        long size = FileUtils.sizeOfDirectory(new File("C:/test"));
+        System.out.println(
+                "Size: " + size + " bytes"
+        );
+    }
+}
 ```
 
 6. [Java 实例 - 在指定目录中查找文件](http://www.runoob.com/java/dir-search.html)
 
 ```java
-
+public class _06_findDirectory {
+    public static void main(String[] argv) throws Exception {
+        File dir = new File("../java");
+        String[] children = dir.list();
+        if (children == null)
+            System.out.println("该目录不存在");
+        else
+            for (String filename : children)
+                System.out.println(filename);
+    }
+}
 ```
 
 7. [Java 实例 - 获取文件的上级目录](http://www.runoob.com/java/dir-parent.html)
 
 ```java
-
+public class _07_getUpperDirectory {
+    public static void main(String[] args) {
+        File file = new File("/Users/lightwingng/Desktop/JavaTutorial/src/main/java/com/lightwing/ch36_Examples/p08/_07_getUpperDirectory.java");
+        String strParentDirectory = file.getParent();
+        System.out.println("文件的上级目录为 : " + strParentDirectory);
+    }
+}
 ```
 
 8. [Java 实例 - 获取目录最后修改时间](http://www.runoob.com/java/dir-modification.html)
 
 ```java
-
+public class _08_acquireLastModifiedTime {
+    public static void main(String[] args) {
+        File file = new File("/Users/lightwingng/Desktop/JavaTutorial/src/main/java/com/lightwing/ch36_Examples/p08/_08_acquireLastModifiedTime.java");
+        System.out.println("最后修改时间：" + new Date(file.lastModified()));
+    }
+}
 ```
 
 9. [Java 实例 - 打印目录结构](http://www.runoob.com/java/dir-hierarchy.html)
 
 ```java
+public class _09_printDirectoryStructure {
+    public static void main(String[] a) {
+        showDir(1, new File("d:\\Java"));
+    }
 
+    private static void showDir(int indent, File file) {
+        for (int i = 0; i < indent; i++)
+            System.out.print('-');
+        System.out.println(file.getName());
+        if (file.isDirectory()) {
+            File[] files = file.listFiles();
+            assert files != null;
+            for (File file1 : files)
+                showDir(indent + 4, file1);
+        }
+    }
+}
 ```
 
 10. [Java 实例 - 遍历指定目录下的所有目录](http://www.runoob.com/java/dir-display.html)
 
 ```java
-
+public class _10_traversalDirectory {
+    public static void main(String[] args) {
+        File dir = new File("com.lightwing.ch36_Examples.p08._10_traversalDirectory");
+        File[] files;
+        FileFilter fileFilter = File::isDirectory;
+        files = dir.listFiles(fileFilter);
+        assert files != null;
+        System.out.println(files.length);
+        if (files.length == 0)
+            System.out.println("目录不存在或它不是一个目录");
+        else
+            for (File filename : files)
+                System.out.println(filename.toString());
+    }
+}
 ```
 
 11. [Java 实例 - 遍历指定目录下的所有文件](http://www.runoob.com/java/dir-sub.html)
 
 ```java
-
+public class _11_listAllFiles {
+    public static void main(String[] args) {
+        File dir = new File("com.lightwing.ch36_Examples.p08._11_listAllFiles");
+        String[] children = dir.list();
+        if (children == null)
+            System.out.println("目录不存在或它不是一个目录");
+        else
+            for (String filename : children)
+                System.out.println(filename);
+    }
+}
 ```
 
 12. [Java 实例 - 在指定目录中查找文件](http://www.runoob.com/java/dir-search-file.html)
 
 ```java
-
+public class _12_findFile {
+    public static void main(String[] args) {
+        File dir = new File("com/lightwing/ch36_Examples/p08");
+        FilenameFilter filter = (dir1, name) -> name.startsWith("_");
+        String[] children = dir.list(filter);
+        if (children == null)
+            System.out.println("目录不存在或它不是一个目录");
+        else
+            for (String filename : children)
+                System.out.println(filename);
+    }
+}
 ```
 
 13. [Java 实例 - 遍历系统根目录](http://www.runoob.com/java/dir-root.html)
 
 ```java
-
+public class _13_findRootDirectory {
+    public static void main(String[] args) {
+        File[] roots = File.listRoots();
+        System.out.println("系统所有根目录：");
+        for (File root : roots)
+            System.out.println(root.toString());
+    }
+}
 ```
 
 14. [Java 实例 - 查看当前工作目录](http://www.runoob.com/java/dir-current.html)
 
 ```java
-
+public class _14_checkCurrentDirectory {
+    public static void main(String[] args) {
+        String curDir = System.getProperty("user.dir");
+        System.out.println("你当前的工作目录为 :" + curDir);
+    }
+}
 ```
 
 15. [Java 实例 - 遍历目录](http://www.runoob.com/java/dir-traverse.html)
 
 ```java
+public class _15_travesalDirectory {
+    public static void main(String[] argv) throws Exception {
+        System.out.println("遍历目录");
+        // 要遍历的目录
+        File dir = new File("/www/java");
+        visitAllDirsAndFiles(dir);
+    }
 
+    private static void visitAllDirsAndFiles(File dir) {
+        System.out.println(dir);
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+            assert children != null;
+            for (String aChildren : children)
+                visitAllDirsAndFiles(new File(dir, aChildren));
+        }
+    }
+}
 ```
 
 ### 36.9 Java 异常处理
@@ -9544,55 +10910,246 @@ Generating ./help-doc.html...
 1. [Java 实例 - 异常处理方法](http://www.runoob.com/java/exception-method.html)
 
 ```java
-
+public class _01_method {
+    public static void main(String[] args) {
+        try {
+            throw new Exception("My Exception");
+        } catch (Exception e) {
+            System.err.println("Caught Exception");
+            System.err.println("getMessage():" + e.getMessage());
+            System.err.println("getLocalizedMessage():" + e.getLocalizedMessage());
+            System.err.println("toString():" + e);
+            System.err.println("printStackTrace():");
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 2. [Java 实例 - 多个异常处理（多个 catch）](http://www.runoob.com/java/exception-hierarchy.html)
 
 ```java
+class Demo {
+    int div(int a, int b) throws ArithmeticException,
+            ArrayIndexOutOfBoundsException {
+        //在功能上通过throws的关键字声明该功能可能出现问题
 
+        int[] arr = new int[a];
+        // 制造的第一处异常
+        System.out.println(arr[4]);
+        // 制造的第二处异常
+        return a / b;
+    }
+}
+
+public class _02_MultiException {
+    public static void main(String[] args) {
+        // throws Exception
+        Demo d = new Demo();
+        try {
+            int x = d.div(4, 0);
+            // 程序运行截图中的三组示例 分别对应此处的三行代码
+            // int x = d.div(5,0);
+            // int x = d.div(4,1);
+            System.out.println("x=" + x);
+        } catch (Exception e) {
+            // 父类 写在此处是为了捕捉其他没预料到的异常 只能写在子类异常的代码后面
+            // 不过一般情况下是不写的
+            System.out.println(e.toString());
+        }
+        System.out.println("Over");
+    }
+}
 ```
 
 3. [Java 实例 - Finally 的用法](http://www.runoob.com/java/exception-finally.html)
 
 ```java
+public class _03_finallyMethod {
+    public static void main(String[] argv) {
+        new _03_finallyMethod().doTheWork();
+    }
 
+    private void doTheWork() {
+        Object o = null;
+        for (int i = 0; i < 5; i++) {
+            try {
+                o = makeObj(i);
+            } catch (IllegalArgumentException e) {
+                System.err.println(
+                        "Error: (" + e.getMessage() + ")."
+                );
+                return;
+            } finally {
+                System.err.println("都已执行完毕");
+                if (o == null)
+                    System.exit(0);
+            }
+            System.out.println(o);
+        }
+    }
+
+    private Object makeObj(int type)
+            throws IllegalArgumentException {
+        if (type == 1)
+            throw new IllegalArgumentException
+                    ("不是指定的类型: " + type);
+        return new Object();
+    }
+}
 ```
 
 4. [Java 实例 - 使用 catch 处理异常](http://www.runoob.com/java/exception-catch.html)
 
 ```java
-
+public class _04_catchMethod {
+    public static void main(String args[]) {
+        int array[] = {
+                20, 20, 40
+        };
+        int num1 = 15, num2 = 10;
+        int result;
+        try {
+            result = num1 / num2;
+            System.out.println("结果为: " + result);
+            for (int i = 5; i >= 0; i--)
+                System.out.println("数组的元素值为: " + array[i]);
+        } catch (Exception e) {
+            System.out.println("触发异常 : " + e);
+        }
+    }
+}
 ```
 
 5. [Java 实例 - 多线程异常处理](http://www.runoob.com/java/exception-thread.html)
 
 ```java
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Throwing in " + "MyThread");
+        throw new RuntimeException();
+    }
+}
 
+public class _05_MultiThreadException {
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.start();
+        try {
+            Thread.sleep(1000);
+        } catch (Exception x) {
+            System.out.println("Caught it" + x);
+        }
+        System.out.println("Exiting main");
+    }
+}
 ```
 
 6. [Java 实例 - 获取异常的堆栈信息](http://www.runoob.com/java/exception-printstack.html)
 
 ```java
-
+public class _06_StackException {
+    public static void main(String args[]) {
+        int array[] = {20, 20, 40};
+        int num1 = 15, num2 = 10;
+        int result;
+        try {
+            result = num1 / num2;
+            System.out.println("The result is" + result);
+            for (int i = 5; i >= 0; i--)
+                System.out.println(
+                        "The value of array is" +
+                                array[i]
+                );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 7. [Java 实例 - 重载方法异常处理](http://www.runoob.com/java/exception-overloaded-method.html)
 
 ```java
+public class _07_OverloadException {
+    private double method(int i) throws Exception {
+        return i / 0;
+    }
 
+    private static double method(int x, double y) throws Exception {
+        return x + y;
+    }
+
+    private static double method(double x, double y) {
+        return x + y - 3;
+    }
+
+    public static void main(String[] args) {
+        _07_OverloadException mn = new _07_OverloadException();
+        try {
+            System.out.println(method(10, 20.0));
+            System.out.println(method(10.0, 20));
+            System.out.println(method(10.0, 20.0));
+            System.out.println(mn.method(10));
+        } catch (Exception ex) {
+            System.out.println("exception occoure: " + ex);
+        }
+    }
+}
 ```
 
 8. [Java 实例 - 链试异常](http://www.runoob.com/java/exception-chain.html)
 
 ```java
+class WrongInputException extends Exception {  // 自定义的类
+    WrongInputException(String s) {
+        super(s);
+    }
+}
 
+class Input {
+    void method() throws WrongInputException {
+        // 抛出自定义的类
+        throw new WrongInputException("Wrong input");
+    }
+}
+
+public class _09_TestInput {
+    public static void main(String[] args) {
+        try {
+            new Input().method();
+        } catch (WrongInputException wie) {
+            System.out.println(wie.getMessage());
+        }
+    }
+}
 ```
 
 9. [Java 实例 - 自定义异常](http://www.runoob.com/java/exception-user.html)
 
 ```java
+class WrongInputException extends Exception {  // 自定义的类
+    WrongInputException(String s) {
+        super(s);
+    }
+}
 
+class Input {
+    void method() throws WrongInputException {
+        // 抛出自定义的类
+        throw new WrongInputException("Wrong input");
+    }
+}
+
+public class _09_TestInput {
+    public static void main(String[] args) {
+        try {
+            new Input().method();
+        } catch (WrongInputException wie) {
+            System.out.println(wie.getMessage());
+        }
+    }
+}
 ```
 
 ### 36.10 Java 数据结构
@@ -9600,85 +11157,462 @@ Generating ./help-doc.html...
 1. [Java 实例 – 数字求和运算](http://www.runoob.com/java/data-add.html)
 
 ```java
-
+public class _01_Sum {
+    public static void main(String[] args) {
+        int limit = 100;
+        int sum = 0;
+        int i = 1;
+        do {
+            sum = sum + i;
+            i++;
+        }
+        while (i <= limit);
+        System.out.println("sum = " + String.format("%,d", sum));
+    }
+}
 ```
 
 2. [Java 实例 – 利用堆栈将中缀表达式转换成后缀](http://www.runoob.com/java/data-intopost.html)
 
 ```java
+public class _02_PostfixExpression {
+    private Stack theStack;
+    private String input;
+    private String output = "";
 
+    private _02_PostfixExpression(String in) {
+        input = in;
+        int stackSize = input.length();
+        theStack = new Stack(stackSize);
+    }
+
+    private String doTrans() {
+        for (int j = 0; j < input.length(); j++) {
+            char ch = input.charAt(j);
+            switch (ch) {
+                case '+':
+                case '-':
+                    gotOper(ch, 1);
+                    break;
+                case '*':
+                case '/':
+                    gotOper(ch, 2);
+                    break;
+                case '(':
+                    theStack.push(ch);
+                    break;
+                case ')':
+                    gotParen();
+                    break;
+                default:
+                    output += ch;
+                    break;
+            }
+        }
+        while (!theStack.isEmpty()) {
+            output = output + theStack.pop();
+        }
+        System.out.println(output);
+        return output;
+    }
+
+    private void gotOper(char opThis, int prec1) {
+        while (!theStack.isEmpty()) {
+            char opTop = theStack.pop();
+            if (opTop == '(') {
+                theStack.push(opTop);
+                break;
+            } else {
+                int prec2;
+                if (opTop == '+' || opTop == '-')
+                    prec2 = 1;
+                else
+                    prec2 = 2;
+                if (prec2 < prec1) {
+                    theStack.push(opTop);
+                    break;
+                } else
+                    output = output + opTop;
+            }
+        }
+        theStack.push(opThis);
+    }
+
+    private void gotParen() {
+        while (!theStack.isEmpty()) {
+            char chx = theStack.pop();
+            if (chx == '(')
+                break;
+            else
+                output = output + chx;
+        }
+    }
+
+    public static void main(String[] args) {
+        String input = "1+2*4/5-7+3/6";
+        String output;
+        _02_PostfixExpression theTrans = new _02_PostfixExpression(input);
+        output = theTrans.doTrans();
+        System.out.println("Postfix is " + output + '\n');
+    }
+
+    class Stack {
+        private int maxSize;
+        private char[] stackArray;
+        private int top;
+
+        public Stack(int max) {
+            maxSize = max;
+            stackArray = new char[maxSize];
+            top = -1;
+        }
+
+        public void push(char j) {
+            stackArray[++top] = j;
+        }
+
+        public char pop() {
+            return stackArray[top--];
+        }
+
+        public char peek() {
+            return stackArray[top];
+        }
+
+        public boolean isEmpty() {
+            return (top == -1);
+        }
+    }
+}
 ```
 
 3. [Java 实例 – 在链表（LinkedList）的开头和结](http://www.runoob.com/java/data-insert.html)
 
 ```java
-
+public class _03_addLinkedList {
+    public static void main(String[] args) {
+        LinkedList<String> lList = new LinkedList<String>();
+        lList.add("1");
+        lList.add("2");
+        lList.add("3");
+        lList.add("4");
+        lList.add("5");
+        System.out.println(lList);
+        lList.addFirst("0");
+        System.out.println(lList);
+        lList.addLast("6");
+        System.out.println(lList);
+    }
+}
 ```
 
 4. [Java 实例 – 获取链表（LinkedList）的第一个](http://www.runoob.com/java/data-element.html)
 
 ```java
-
+public class _04_getFirstLast {
+    public static void main(String[] args) {
+        LinkedList<String> lList = new LinkedList<>();
+        lList.add("100");
+        lList.add("200");
+        lList.add("300");
+        lList.add("400");
+        lList.add("500");
+        System.out.println("链表的第一个元素是：" + lList.getFirst());
+        System.out.println("链表的最后一个元素是：" + lList.getLast());
+    }
+}
 ```
 
 5. [Java 实例 – 删除链表中的元素](http://www.runoob.com/java/data-replace.html)
 
 ```java
-
+public class _05_deleteElement {
+    public static void main(String[] args) {
+        LinkedList<String> lList = new LinkedList<>();
+        lList.add("1");
+        lList.add("8");
+        lList.add("6");
+        lList.add("4");
+        lList.add("5");
+        System.out.println(lList);
+        lList.subList(2, 4).clear();
+        System.out.println(lList);
+    }
+}
 ```
 
 6. [Java 实例 – 获取链表的元素](http://www.runoob.com/java/data_linklist.html)
 
 ```java
+public class _06_getElement {
+    private LinkedList list = new LinkedList();
 
+    public void push(Object v) {
+        list.addFirst(v);
+    }
+
+    public Object top() {
+        return list.getFirst();
+    }
+
+    public Object pop() {
+        return list.removeFirst();
+    }
+
+    public static void main(String[] args) {
+        _06_getElement stack = new _06_getElement();
+        for (int i = 30; i < 40; i++)
+            stack.push(i);
+        System.out.println(stack.top());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+    }
+}
 ```
 
 7. [Java 实例 – 获取向量元素的索引值](http://www.runoob.com/java/data-vecsort.html)
 
 ```java
-
+public class _07_getElementIndex {
+    public static void main(String[] args) {
+        Vector v = new Vector();
+        v.add("X");
+        v.add("M");
+        v.add("D");
+        v.add("A");
+        v.add("O");
+        Collections.sort(v);
+        System.out.println(v);
+        int index = Collections.binarySearch(v, "D");
+        System.out.println("元素索引值为 : " + index);
+    }
+}
 ```
 
 8. [Java 实例 – 栈的实现](http://www.runoob.com/java/data-stack.html)
 
 ```java
+public class _08_StackImplement {
+    private int maxSize;
+    private long[] stackArray;
+    private int top;
 
+    private _08_StackImplement(int s) {
+        maxSize = s;
+        stackArray = new long[maxSize];
+        top = -1;
+    }
+
+    public void push(long j) {
+        stackArray[++top] = j;
+    }
+
+    public long pop() {
+        return stackArray[top--];
+    }
+
+    public long peek() {
+        return stackArray[top];
+    }
+
+    public boolean isEmpty() {
+        return (top == -1);
+    }
+
+    public boolean isFull() {
+        return (top == maxSize - 1);
+    }
+
+    public static void main(String[] args) {
+        _08_StackImplement theStack = new _08_StackImplement(10);
+        theStack.push(10);
+        theStack.push(20);
+        theStack.push(30);
+        theStack.push(40);
+        theStack.push(50);
+        while (!theStack.isEmpty()) {
+            long value = theStack.pop();
+            System.out.print(value);
+            System.out.print(" ");
+        }
+        System.out.println();
+    }
+}
 ```
 
 9. [Java 实例 – 链表元素查找](http://www.runoob.com/java/data-search.html)
 
 ```java
-
+public class _09_findElement {
+    public static void main(String[] args) {
+        LinkedList lList = new LinkedList();
+        lList.add("1");
+        lList.add("2");
+        lList.add("3");
+        lList.add("4");
+        lList.add("5");
+        lList.add("2");
+        System.out.println("元素 2 第一次出现的位置：" + lList.indexOf("2"));
+        System.out.println("元素 2 最后一次出现的位置：" + lList.lastIndexOf("2"));
+    }
+}
 ```
 
 10. [Java 实例 – 压栈出栈的方法实现字符串反转](http://www.runoob.com/java/data-reverse.html)
 
 ```java
+public class _10_StringReverserThroughStack {
+    private String input;
 
+    private _10_StringReverserThroughStack(String in) {
+        input = in;
+    }
+
+    private String doRev() {
+        int stackSize = input.length();
+        Stack theStack = new Stack(stackSize);
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            theStack.push(ch);
+        }
+        String output = "";
+        while (!theStack.isEmpty()) {
+            char ch = theStack.pop();
+            output = output + ch;
+        }
+        return output;
+    }
+
+    public static void main(String[] args) {
+        String input = "www.w3cschool.cc";
+        String output;
+        _10_StringReverserThroughStack theReverser =
+                new _10_StringReverserThroughStack(input);
+        output = theReverser.doRev();
+        System.out.println("反转前: " + input);
+        System.out.println("反转后: " + output);
+    }
+
+    class Stack {
+        private int maxSize;
+        private char[] stackArray;
+        private int top;
+
+        public Stack(int max) {
+            maxSize = max;
+            stackArray = new char[maxSize];
+            top = -1;
+        }
+
+        public void push(char j) {
+            stackArray[++top] = j;
+        }
+
+        public char pop() {
+            return stackArray[top--];
+        }
+
+        public char peek() {
+            return stackArray[top];
+        }
+
+        public boolean isEmpty() {
+            return (top == -1);
+        }
+    }
+}
 ```
 
 11. [Java 实例 – 队列（Queue）用法](http://www.runoob.com/java/data-queue.html)
 
 ```java
+public class _11_Queue {
+    public static void main(String[] args) {
+        // add()和remove()方法在失败的时候会抛出异常(不推荐)
+        Queue<String> queue = new LinkedList<>();
+        // 添加元素
+        queue.offer("a");
+        queue.offer("b");
+        queue.offer("c");
+        queue.offer("d");
+        queue.offer("e");
+        for (String q : queue)
+            System.out.println(q);
 
+        System.out.println("===");
+        // 返回第一个元素，并在队列中删除
+        System.out.println("poll=" + queue.poll());
+        for (String q : queue)
+            System.out.println(q);
+
+        System.out.println("===");
+        // 返回第一个元素
+        System.out.println("element=" + queue.element());
+        for (String q : queue)
+            System.out.println(q);
+
+        System.out.println("===");
+        // 返回第一个元素
+        System.out.println("peek=" + queue.peek());
+        for (String q : queue)
+            System.out.println(q);
+    }
+}
 ```
 
 12. [Java 实例 – 获取向量的最大元素](http://www.runoob.com/java/data-vec-max.html)
 
 ```java
-
+public class _12_getMaxElement {
+    public static void main(String[] args) {
+        Vector v = new Vector();
+        v.add(new Double("3.4324"));
+        v.add(new Double("3.3532"));
+        v.add(new Double("3.342"));
+        v.add(new Double("3.349"));
+        v.add(new Double("2.3"));
+        Object obj = Collections.max(v);
+        System.out.println("最大元素是：" + obj);
+    }
+}
 ```
 
 13. [Java 实例 – 链表修改](http://www.runoob.com/java/data-update.html)
 
 ```java
-
+public class _13_modifyList {
+    public static void main(String[] a) {
+        LinkedList officers = new LinkedList();
+        officers.add("B");
+        officers.add("B");
+        officers.add("T");
+        officers.add("H");
+        officers.add("P");
+        System.out.println(officers);
+        officers.set(2, "M");
+        System.out.println(officers);
+    }
+}
 ```
 
 14. [Java 实例 – 旋转向量](http://www.runoob.com/java/data-swap.html)
 
 ```java
-
+public class _14_reverseVector {
+    public static void main(String[] args) {
+        Vector<String> v = new Vector();
+        v.add("1");
+        v.add("2");
+        v.add("3");
+        v.add("4");
+        v.add("5");
+        System.out.println(v);
+        Collections.swap(v, 0, 4);
+        System.out.println("旋转后");
+        System.out.println(v);
+    }
+}
 ```
 
 ### 36.11 Java 集合
@@ -9686,109 +11620,466 @@ Generating ./help-doc.html...
 1. [Java 实例 – 数组转集合](http://www.runoob.com/java/collection-array.html)
 
 ```java
+public class _01_ArrayToCollection {
+    public static void main(String args[]) {
+        // 5 个元素
+        int n = 5;
+        String[] name = new String[n];
+        for (int i = 0; i < n; i++)
+            name[i] = String.valueOf(i);
 
+        System.out.println();
+        for (String li : name)
+            System.out.print(li + " ");
+    }
+}
 ```
 
 2. [Java 实例 – 集合比较](http://www.runoob.com/java/collection-compare.html)
 
 ```java
+public class _02_CollectionComparison {
+    public static void main(String[] args) {
+        String[] coins = {
+                "Penny", "nickel", "dime", "Quarter", "dollar"
+        };
+        Set<String> set = new TreeSet<>(Arrays.asList(coins));
 
+        System.out.println(Collections.min(set));
+        System.out.println(Collections.min(set, String.CASE_INSENSITIVE_ORDER));
+        System.out.println("-----------\n");
+        System.out.println(Collections.max(set));
+        System.out.println(Collections.max(set, String.CASE_INSENSITIVE_ORDER));
+    }
+}
 ```
 
 3. [Java 实例 – HashMap 遍历](http://www.runoob.com/java/collection-iterate.html)
 
 ```java
-
+public class _03_HashMap {
+    public static void main(String[] args) {
+        HashMap<String, String> hMap =
+                new HashMap<>();
+        hMap.put("1", "1st");
+        hMap.put("2", "2nd");
+        hMap.put("3", "3rd");
+        Collection cl = hMap.values();
+        for (Object aCl : cl)
+            System.out.println(aCl);
+    }
+}
 ```
 
 4. [Java 实例 – 集合长度](http://www.runoob.com/java/collection-size.html)
 
 ```java
+public class _04_CollectionLength {
+    public static void main(String[] args) {
+        System.out.println("集合实例!\n");
+        int size;
+        HashSet collection = new HashSet();
+        String str1 = "Yellow",
+                str2 = "White",
+                str3 = "Green",
+                str4 = "Blue";
+        Iterator iterator;
+        collection.add(str1);
+        collection.add(str2);
+        collection.add(str3);
+        collection.add(str4);
+        System.out.print("集合数据: ");
+        iterator = collection.iterator();
+        while (iterator.hasNext())
+            System.out.print(iterator.next() + " ");
 
+        System.out.println();
+        size = collection.size();
+        if (collection.isEmpty())
+            System.out.println("集合是空的");
+        else
+            System.out.println("集合长度: " + size);
+
+        System.out.println();
+    }
+}
 ```
 
 5. [Java 实例 – 集合打乱顺序](http://www.runoob.com/java/collection-shuffle.html)
 
 ```java
+public class _05_ShuffleCollection {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++)
+            list.add(i);
+        System.out.println("打乱前:");
+        System.out.println(list);
 
+        for (int i = 1; i < 6; i++) {
+            System.out.println("第" + i + "次打乱：");
+            Collections.shuffle(list);
+            System.out.println(list);
+        }
+    }
+}
 ```
 
 6. [Java 实例 – 集合遍历](http://www.runoob.com/java/collection-iterator.html)
 
 ```java
+public class _06_TraversalCollection {
+    public static void main(String[] args) {
+        // List集合的遍历
+        listTest();
+        // Set集合的遍历
+        setTest();
+    }
 
+    private static void setTest() {
+        Set<String> set = new HashSet<>();
+        set.add("Java");
+        set.add("C");
+        set.add("C++");
+        // 重复数据添加失败
+        set.add("Java");
+        set.add("JavaScript");
+
+        // 使用iterator遍历set集合
+        Iterator<String> it = set.iterator();
+        while (it.hasNext()) {
+            String value = it.next();
+            System.out.println(value);
+        }
+
+        // 使用增强for循环遍历set集合
+        for (String s : set) {
+            System.out.println(s);
+        }
+    }
+
+    // 遍历list集合
+    private static void listTest() {
+        List<String> list = new ArrayList<String>();
+        list.add("菜");
+        list.add("鸟");
+        list.add("教");
+        list.add("程");
+        list.add("www.runoob.com");
+
+        // 使用iterator遍历
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            String value = it.next();
+            System.out.println(value);
+        }
+
+        // 使用传统for循环进行遍历
+        for (int i = 0, size = list.size(); i < size; i++) {
+            String value = list.get(i);
+            System.out.println(value);
+        }
+
+        // 使用增强for循环进行遍历
+        for (String value : list) {
+            System.out.println(value);
+        }
+    }
+}
 ```
 
 7. [Java 实例 – 集合反转](http://www.runoob.com/java/collection-reverse.html)
 
 ```java
-
+public class _07_ReverseCollection {
+    public static void main(String[] args) {
+        String[] coins = {"A", "B", "C", "D", "E"};
+        List l = new ArrayList(Arrays.asList(coins));
+        ListIterator liter = l.listIterator();
+        System.out.println("反转前");
+        while (liter.hasNext())
+            System.out.println(liter.next());
+        Collections.reverse(l);
+        liter = l.listIterator();
+        System.out.println("反转后");
+        while (liter.hasNext())
+            System.out.println(liter.next());
+    }
+}
 ```
 
 8. [Java 实例 – 删除集合中指定元素](http://www.runoob.com/java/collection-remove.html)
 
 ```java
+public class _08_deleteElement {
+    public static void main(String[] args) {
+        System.out.println("集合实例!\n");
+        int size;
+        HashSet collection = new HashSet();
+        String str1 = "Yellow", str2 = "White", str3 =
+                "Green", str4 = "Blue";
+        Iterator iterator;
+        collection.add(str1);
+        collection.add(str2);
+        collection.add(str3);
+        collection.add(str4);
+        System.out.print("集合数据: ");
+        iterator = collection.iterator();
+        while (iterator.hasNext())
+            System.out.print(iterator.next() + " ");
 
+        System.out.println();
+        collection.remove(str2);
+        System.out.println("删除之后 [" + str2 + "]\n");
+        System.out.print("现在集合的数据是: ");
+        iterator = collection.iterator();
+        while (iterator.hasNext())
+            System.out.print(iterator.next() + " ");
+
+        System.out.println();
+        size = collection.size();
+        System.out.println("集合大小: " + size + "\n");
+    }
+}
 ```
 
 9. [Java 实例 – 只读集合](http://www.runoob.com/java/collection-readonly.html)
 
 ```java
-
+public class _09_ReadOnlyCollection {
+    public static void main(String[] argv) {
+        List stuff = Arrays.asList("a", "b");
+        List list = new ArrayList(stuff);
+        list = Collections.unmodifiableList(list);
+        try {
+            list.set(0, "new value");
+        } catch (UnsupportedOperationException ignored) {
+        }
+        System.out.println("集合现在是只读");
+    }
+}
 ```
 
 10. [Java 实例 – 集合输出](http://www.runoob.com/java/collection-print.html)
 
 ```java
-
+public class _10_printCollection {
+    public static void main(String[] args) {
+        System.out.println("TreeMap 实例！\n");
+        TreeMap tMap = new TreeMap();
+        tMap.put(1, "Sunday");
+        tMap.put(2, "Monday");
+        tMap.put(3, "Tuesday");
+        tMap.put(4, "Wednesday");
+        tMap.put(5, "Thursday");
+        tMap.put(6, "Friday");
+        tMap.put(7, "Saturday");
+        System.out.println("TreeMap 键："
+                + tMap.keySet());
+        System.out.println("TreeMap 值："
+                + tMap.values());
+        System.out.println("键为 5 的值为: " + tMap.get(5) + "\n");
+        System.out.println("第一个键: " + tMap.firstKey()
+                + " Value: "
+                + tMap.get(tMap.firstKey()) + "\n");
+        System.out.println("最后一个键: " + tMap.lastKey()
+                + " Value: " + tMap.get(tMap.lastKey()) + "\n");
+        System.out.println("移除第一个数据: "
+                + tMap.remove(tMap.firstKey()));
+        System.out.println("现在 TreeMap 键为: "
+                + tMap.keySet());
+        System.out.println("现在 TreeMap 包含: "
+                + tMap.values() + "\n");
+        System.out.println("移除最后一个数据: "
+                + tMap.remove(tMap.lastKey()));
+        System.out.println("现在 TreeMap 键为: "
+                + tMap.keySet());
+        System.out.println("现在 TreeMap 包含: "
+                + tMap.values());
+    }
+}
 ```
 
 11. [Java 实例 – 集合转数组](http://www.runoob.com/java/collection-conversion.html)
 
 ```java
-
+public class _11_reverseCollection {
+    public static void main(String[] args){
+        List<String> list = new ArrayList<>();
+        list.add("菜");
+        list.add("鸟");
+        list.add("教");
+        list.add("程");
+        list.add("www.runoob.com");
+        String[] s1 = list.toArray(new String[0]);
+        for (String contents : s1) {
+            System.out.print(contents);
+        }
+    }
+}
 ```
 
 12. [Java 实例 – List 循环移动元素](http://www.runoob.com/java/collection-rotate.html)
 
 ```java
-
+public class _12_LoopMove {
+    public static void main(String[] args) {
+        List list = Arrays.asList(
+                "one Two three Four five six".split(" ")
+        );
+        System.out.println("List :" + list);
+        Collections.rotate(list, 3);
+        System.out.println("rotate: " + list);
+    }
+}
 ```
 
 13. [Java 实例 – 查找 List 中的最大最小值](http://www.runoob.com/java/collection-minmax.html)
 
 ```java
-
+public class _13_findMax {
+    public static void main(String[] args) {
+        List list = Arrays.asList(
+                "one Two three Four five six one three Four".split(" ")
+        );
+        System.out.println(list);
+        System.out.println("最大值: " + Collections.max(list));
+        System.out.println("最小值: " + Collections.min(list));
+    }
+}
 ```
 
 14. [Java 实例 – 遍历 HashTable 的键值](http://www.runoob.com/java/collection-hashtable-key.html)
 
 ```java
-
+public class _14_traversalHashTable {
+    public static void main(String[] args) {
+        Hashtable ht = new Hashtable();
+        ht.put("1", "One");
+        ht.put("2", "Two");
+        ht.put("3", "Three");
+        Enumeration e = ht.keys();
+        while (e.hasMoreElements()) {
+            System.out.println(e.nextElement());
+        }
+    }
+}
 ```
 
 15. [Java 实例 – 使用 Enumeration 遍历 HashTable](http://www.runoob.com/java/collection-enumeration.html)
 
 ```java
-
+public class _15_EnumerationHashTable {
+    public static void main(String[] args) {
+        Hashtable hashtable = new Hashtable();
+        hashtable.put("1", "One");
+        hashtable.put("2", "Two");
+        hashtable.put("3", "Three");
+        Enumeration e = hashtable.elements();
+        while (e.hasMoreElements()) {
+            System.out.println(e.nextElement());
+        }
+    }
+}
 ```
 
 16. [Java 实例 – 集合中添加不同类型元素](http://www.runoob.com/java/collection-all.html)
 
 ```java
+public class _16_addDifferentElement {
+    public static void main(String[] args) {
+        List lnkLst = new LinkedList();
+        lnkLst.add("element1");
+        lnkLst.add("element2");
+        lnkLst.add("element3");
+        lnkLst.add("element4");
+        displayAll(lnkLst);
+        List aryLst = new ArrayList();
+        aryLst.add("x");
+        aryLst.add("y");
+        aryLst.add("z");
+        aryLst.add("w");
+        displayAll(aryLst);
+        Set hashSet = new HashSet();
+        hashSet.add("set1");
+        hashSet.add("set2");
+        hashSet.add("set3");
+        hashSet.add("set4");
+        displayAll(hashSet);
+        SortedSet treeSet = new TreeSet();
+        treeSet.add("1");
+        treeSet.add("2");
+        treeSet.add("3");
+        treeSet.add("4");
+        displayAll(treeSet);
+        LinkedHashSet lnkHashset = new LinkedHashSet();
+        lnkHashset.add("one");
+        lnkHashset.add("two");
+        lnkHashset.add("three");
+        lnkHashset.add("four");
+        displayAll(lnkHashset);
+        Map map1 = new HashMap();
+        map1.put("key1", "J");
+        map1.put("key2", "K");
+        map1.put("key3", "L");
+        map1.put("key4", "M");
+        displayAll(map1.keySet());
+        displayAll(map1.values());
+        SortedMap map2 = new TreeMap();
+        map2.put("key1", "JJ");
+        map2.put("key2", "KK");
+        map2.put("key3", "LL");
+        map2.put("key4", "MM");
+        displayAll(map2.keySet());
+        displayAll(map2.values());
+        LinkedHashMap map3 = new LinkedHashMap();
+        map3.put("key1", "JJJ");
+        map3.put("key2", "KKK");
+        map3.put("key3", "LLL");
+        map3.put("key4", "MMM");
+        displayAll(map3.keySet());
+        displayAll(map3.values());
+    }
 
+    static void displayAll(Collection col) {
+        for (Object aCol : col) {
+            String str = (String) aCol;
+            System.out.print(str + " ");
+        }
+        System.out.println();
+    }
+}
 ```
 
 17. [Java 实例 – List 元素替换](http://www.runoob.com/java/collection-replace.html)
 
 ```java
-
+public class _17_ListReplace {
+    public static void main(String[] args) {
+        List list = Arrays.asList(
+                "one Two three Four five six one three Four".split(" "));
+        System.out.println("List :" + list);
+        Collections.replaceAll(list, "one", "hundrea");
+        System.out.println("replaceAll: " + list);
+    }
+}
 ```
 
 18. [Java 实例 – List 截取](http://www.runoob.com/java/collection-sublist.html)
 
 ```java
-
+public class _18_ListInterception {
+    public static void main(String[] args) {
+        List list = Arrays.asList("one Two three Four five six one three Four".split(" "));
+        System.out.println("List: " + list);
+        List sublist = Arrays.asList("three Four".split(" "));
+        System.out.println("子列表: " + sublist);
+        System.out.println("indexOfSubList: "
+                + Collections.indexOfSubList(list, sublist));
+        System.out.println("lastIndexOfSubList: "
+                + Collections.lastIndexOfSubList(list, sublist));
+    }
+}
 ```
 
 ### 36.12 Java 网络实例
@@ -9796,73 +12087,275 @@ Generating ./help-doc.html...
 1. [Java 实例 – 获取指定主机的 IP 地址](http://www.runoob.com/java/net-address.html)
 
 ```java
-
+public class _01_getHostIP {
+    public static void main(String[] args) {
+        InetAddress address = null;
+        try {
+            address = InetAddress.getByName("www.google.cn");
+        } catch (UnknownHostException e) {
+            System.exit(2);
+        }
+        System.out.println(address.getHostName() + "=" + address.getHostAddress());
+        System.exit(0);
+    }
+}
 ```
 
 2. [Java 实例 – 查看端口是否已使用](http://www.runoob.com/java/net-port.html)
 
 ```java
+public class _02_checkPortOccupied {
+    public static void main(String[] args) {
+        Socket socket;
+        String host = "localhost";
+        if (args.length > 0)
+            host = args[0];
 
+        for (int i = 0; i < 1024; i++)
+            try {
+                System.out.println("查看 " + i);
+                socket = new Socket(host, i);
+                System.out.println("端口 " + i + " 已被使用");
+            } catch (UnknownHostException e) {
+                System.out.println("Exception occurred" + e);
+                break;
+            } catch (IOException ignored) {
+            }
+    }
+}
 ```
 
 3. [Java 实例 – 获取本机 IP 地址及主机名](http://www.runoob.com/java/net-localip.html)
 
 ```java
-
+public class _03_getLocalIP {
+    public static void main(String[] args)
+            throws Exception {
+        InetAddress addr = InetAddress.getLocalHost();
+        System.out.println("Local HostAddress: " + addr.getHostAddress());
+        String hostname = addr.getHostName();
+        System.out.println("Local host name: " + hostname);
+    }
+}
 ```
 
 4. [Java 实例 – 获取远程文件大小](http://www.runoob.com/java/net-serverfile.html)
 
 ```java
-
+public class _04_getRemoteFileSize {
+    public static void main(String[] args) throws Exception {
+        int size;
+        URL url = new URL("http://www.runoob.com/wp-content/themes/runoob/assets/img/newlogo.png");
+        URLConnection conn = url.openConnection();
+        size = conn.getContentLength();
+        if (size < 0)
+            System.out.println("无法获取文件大小。");
+        else
+            System.out.println("文件大小为：" + size + " bytes");
+        conn.getInputStream().close();
+    }
+}
 ```
 
 5. [Java 实例 – Socket 实现多线程服务器程序](http://www.runoob.com/java/net-multisoc.html)
 
 ```java
+public class _05_MultiThreadServer implements Runnable {
+    Socket csocket;
 
+    _05_MultiThreadServer(Socket csocket) {
+        this.csocket = csocket;
+    }
+
+    public static void main(String args[])
+            throws Exception {
+        ServerSocket ssock = new ServerSocket(1234);
+        System.out.println("Listening");
+        while (true) {
+            Socket sock = ssock.accept();
+            System.out.println("Connected");
+            new Thread(new _05_MultiThreadServer(sock)).start();
+        }
+    }
+
+    public void run() {
+        try {
+            PrintStream pstream = new PrintStream
+                    (csocket.getOutputStream());
+            for (int i = 100; i >= 0; i--) {
+                pstream.println(
+                        i +
+                        " bottles of beer on the wall"
+                );
+            }
+            pstream.close();
+            csocket.close();
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+}
 ```
 
 6. [Java 实例 – 查看主机指定文件的最后修改时间](http://www.runoob.com/java/net-filetime.html)
 
 ```java
-
+public class _06_checkLastModifiedTime {
+    public static void main(String[] argv) throws Exception {
+        URL u = new URL("http://127.0.0.1/java.bmp");
+        URLConnection uc = u.openConnection();
+        uc.setUseCaches(false);
+        long timestamp = uc.getLastModified();
+        System.out.println("java.bmp 文件最后修改时间 :" + timestamp);
+    }
+}
 ```
 
 7. [Java 实例 – 使用 Socket 连接到指定主机](http://www.runoob.com/java/net-connected.html)
 
 ```java
-
+public class _07_connectHostThroughSocket {
+    public static void main(String[] args) {
+        try {
+            InetAddress addr;
+            Socket sock = new Socket("www.runoob.com", 80);
+            addr = sock.getInetAddress();
+            System.out.println("连接到 " + addr);
+            sock.close();
+        } catch (java.io.IOException e) {
+            System.out.println("无法连接 " + args[0]);
+            System.out.println(e);
+        }
+    }
+}
 ```
 
 8. [Java 实例 – 网页抓取](http://www.runoob.com/java/net-webpage.html)
 
 ```java
-
+public class _08_WebCrawler {
+    public static void main(String[] args)
+            throws Exception {
+        URL url = new URL("http://www.runoob.com");
+        BufferedReader reader = new BufferedReader
+                (new InputStreamReader(url.openStream()));
+        BufferedWriter writer = new BufferedWriter
+                (new FileWriter("data.html"));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
+            writer.write(line);
+            writer.newLine();
+        }
+        reader.close();
+        writer.close();
+    }
+}
 ```
 
 9. [Java 实例 – 获取 URL 响应头的日期信息](http://www.runoob.com/java/net-urldate.html)
 
 ```java
-
+public class _09_getURLHeaderDate {
+    public static void main(String args[])
+            throws Exception {
+        URL url = new URL("http://www.runoob.com");
+        HttpURLConnection httpCon =
+                (HttpURLConnection) url.openConnection();
+        long date = httpCon.getDate();
+        if (date == 0)
+            System.out.println("无法获取信息。");
+        else
+            System.out.println("Date: " + new Date(date));
+    }
+}
 ```
 
 10. [Java 实例 – 获取 URL 响应头信息](http://www.runoob.com/java/net-url-header.html)
 
 ```java
+public class _10_getURLHeaderInformation {
+    public static void main(String[] args) throws IOException {
+        URL url = new URL("http://www.runoob.com");
+        URLConnection conn = url.openConnection();
 
+        Map headers = conn.getHeaderFields();
+        Set<String> keys = headers.keySet();
+        for (String key : keys) {
+            String val = conn.getHeaderField(key);
+            System.out.println(key + "    " + val);
+        }
+        System.out.println(conn.getLastModified());
+    }
+}
 ```
 
 11. [Java 实例 – 解析 URL](http://www.runoob.com/java/net-url.html)
 
 ```java
-
+public class _11_parseURL {
+    public static void main(String[] args)
+            throws Exception {
+        URL url = new URL("http://www.runoob.com/html/html-tutorial.html");
+        System.out.println("URL 是 " + url.toString());
+        System.out.println("协议是 " + url.getProtocol());
+        System.out.println("文件名是 " + url.getFile());
+        System.out.println("主机是 " + url.getHost());
+        System.out.println("路径是 " + url.getPath());
+        System.out.println("端口号是 " + url.getPort());
+        System.out.println("默认端口号是 "
+                + url.getDefaultPort());
+    }
+}
 ```
 
 12. [Java 实例 – ServerSocket 和 Socket 通信实例](http://www.runoob.com/java/net-serversocket-socket.html)
 
 ```java
+public class _12_ServerSocket {
+    public static void main(String[] args) {
+        try {
+            ServerSocket ss = new ServerSocket(8888);
+            System.out.println("启动服务器....");
+            Socket s = ss.accept();
+            System.out.println("客户端:" + s.getInetAddress().getLocalHost() + "已连接到服务器");
 
+            BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            //读取客户端发送来的消息
+            String mess = br.readLine();
+            System.out.println("客户端：" + mess);
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+            bw.write(mess + "\n");
+            bw.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+public class _12_ClientSocket {
+    public static void main(String[] args) {
+        try {
+            Socket s = new Socket("127.0.0.1", 8888);
+
+            // 构建IO
+            InputStream is = s.getInputStream();
+            OutputStream os = s.getOutputStream();
+
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os));
+            // 向服务器端发送一条消息
+            bw.write("测试客户端和服务器通信，服务器接收到消息返回到客户端\n");
+            bw.flush();
+
+            // 读取服务器返回的消息
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            String mess = br.readLine();
+            System.out.println("服务器：" + mess);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 ### 36.13 Java 线程
@@ -9870,31 +12363,215 @@ Generating ./help-doc.html...
 1. [Java 实例 – 查看线程是否存活](http://www.runoob.com/java/thread-alive.html)
 
 ```java
+public class _01_checkThreadAlive extends Thread {
+    public void run() {
+        for (int i = 0; i < 10; i++)
+            printMsg();
+    }
 
+    private void printMsg() {
+        Thread t = Thread.currentThread();
+        String name = t.getName();
+        System.out.println("name=" + name);
+    }
+
+    public static void main(String[] args) {
+        _01_checkThreadAlive tt = new _01_checkThreadAlive();
+        tt.setName("Thread");
+        System.out.println("before start(), tt.isAlive()=" + tt.isAlive());
+        tt.start();
+        System.out.println("just after start(), tt.isAlive()=" + tt.isAlive());
+        for (int i = 0; i < 10; i++)
+            tt.printMsg();
+        System.out.println("The end of main(), tt.isAlive()=" + tt.isAlive());
+    }
+}
 ```
 
 2. [Java 实例 – 获取当前线程名称](http://www.runoob.com/java/thread-name.html)
 
 ```java
+public class _02_getCurrentThreadName extends Thread {
+    public void run() {
+        for (int i = 0; i < 10; i++)
+            printMsg();
+    }
 
+    private void printMsg() {
+        Thread t = Thread.currentThread();
+        String name = t.getName();
+        System.out.println("name=" + name);
+    }
+
+    public static void main(String[] args) {
+        _02_getCurrentThreadName tt = new _02_getCurrentThreadName();
+        tt.start();
+        for (int i = 0; i < 10; i++)
+            tt.printMsg();
+    }
+}
 ```
 
 3. [Java 实例 – 状态监测](http://www.runoob.com/java/thread-monitor.html)
 
 ```java
+public class _03_monitorStatus extends Thread {
+    boolean waiting = true;
+    private boolean ready = false;
 
+    _03_monitorStatus() {
+    }
+
+    public void run() {
+        String thrdName = Thread.currentThread().getName();
+        System.out.println(thrdName + " starting.");
+        while (waiting)
+            System.out.println("waiting:" + waiting);
+        System.out.println("waiting...");
+        startWait();
+        try {
+            Thread.sleep(1000);
+        } catch (Exception exc) {
+            System.out.println(thrdName + " interrupted.");
+        }
+        System.out.println(thrdName + " terminating.");
+    }
+
+    synchronized void startWait() {
+        try {
+            while (!ready) wait();
+        } catch (InterruptedException exc) {
+            System.out.println("wait() interrupted");
+        }
+    }
+
+    synchronized void notice() {
+        ready = true;
+        notify();
+    }
+}
+
+class Main {
+    public static void main(String args[])
+            throws Exception {
+        _03_monitorStatus thrd = new _03_monitorStatus();
+        thrd.setName("MyThread #1");
+        showThreadStatus(thrd);
+        thrd.start();
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        thrd.waiting = false;
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        thrd.notice();
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        while (thrd.isAlive())
+            System.out.println("alive");
+        showThreadStatus(thrd);
+    }
+
+    static void showThreadStatus(Thread thrd) {
+        System.out.println(thrd.getName() + "Alive:=" + thrd.isAlive() + " State:=" + thrd.getState());
+    }
+
+    public void setName(String thread1) {
+    }
+
+    public void start() {
+    }
+}
 ```
 
 4. [Java 实例 – 线程优先级设置](http://www.runoob.com/java/thread-getpri.html)
 
 ```java
+public class _04_PriorityConfiguration extends Thread {
+    private int countDown = 5;
+    private volatile double d = 0;
 
+    public _04_PriorityConfiguration(int priority) {
+        setPriority(priority);
+        start();
+    }
+
+    public String toString() {
+        return super.toString() + ": " + countDown;
+    }
+
+    public void run() {
+        while (true) {
+            for (int i = 1; i < 100000; i++)
+                d += (Math.PI + Math.E) / (double) i;
+            System.out.println(this);
+            if (--countDown == 0) return;
+        }
+    }
+
+    public static void main(String[] args) {
+        new _04_PriorityConfiguration(Thread.MAX_PRIORITY);
+        for (int i = 0; i < 5; i++)
+            new _04_PriorityConfiguration(Thread.MIN_PRIORITY);
+    }
+}
 ```
 
 5. [Java 实例 – 死锁及解决方法](http://www.runoob.com/java/thread-deadlock.html)
 
 ```java
+public class _05_DeadLock {
+    public static String obj1 = "obj1";
+    public static String obj2 = "obj2";
 
+    public static void main(String[] args) {
+        LockA la = new LockA();
+        new Thread(la).start();
+        LockB lb = new LockB();
+        new Thread(lb).start();
+    }
+}
+
+class LockA implements Runnable {
+    public void run() {
+        try {
+            System.out.println(new Date().toString() + " LockA 开始执行");
+            while (true) {
+                synchronized (_05_DeadLock.obj1) {
+                    System.out.println(new Date().toString() + " LockA 锁住 obj1");
+                    Thread.sleep(3000); // 此处等待是给B能锁住机会
+                    synchronized (_05_DeadLock.obj2) {
+                        System.out.println(new Date().toString() + " LockA 锁住 obj2");
+                        Thread.sleep(60 * 1000); // 为测试，占用了就不放
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+class LockB implements Runnable {
+    public void run() {
+        try {
+            System.out.println(new Date().toString() + " LockB 开始执行");
+            while (true) {
+                synchronized (_05_DeadLock.obj2) {
+                    System.out.println(new Date().toString() + " LockB 锁住 obj2");
+                    Thread.sleep(3000);
+                    // 此处等待是给A能锁住机会
+                    synchronized (_05_DeadLock.obj1) {
+                        System.out.println(new Date().toString() + " LockB 锁住 obj1");
+                        Thread.sleep(60 * 1000);
+                        // 为测试，占用了就不放
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 6. [Java 实例 – 获取线程 ID](http://www.runoob.com/java/thread-id.html)
@@ -9906,43 +12583,320 @@ Generating ./help-doc.html...
 7. [Java 实例 – 线程挂起](http://www.runoob.com/java/thread-suspend.html)
 
 ```java
+public class _07_ThreadHang extends Thread {
+    private int countDown = 5;
+    private static int threadCount = 0;
 
+    private _07_ThreadHang() {
+        super("" + ++threadCount);
+        start();
+    }
+
+    public String toString() {
+        return "#" + getName() + ": " + countDown;
+    }
+
+    public void run() {
+        while (true) {
+            System.out.println(this);
+            if (--countDown == 0)
+                return;
+            try {
+                sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    public static void main(String[] args)
+            throws InterruptedException {
+        for (int i = 0; i < 5; i++)
+            new _07_ThreadHang().join();
+        System.out.println("线程已被挂起");
+    }
+}
 ```
 
 8. [Java 实例 – 终止线程](http://www.runoob.com/java/thread-stop.html)
 
 ```java
+public class _08_terminateThread extends Thread {
+    public void run() {
+        try {
+            // 延迟50秒
+            sleep(50000);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
+    public static void main(String[] args) throws Exception {
+        Thread thread = new _08_terminateThread();
+        thread.start();
+        System.out.println("在50秒之内按任意键中断线程!");
+        System.in.read();
+        thread.interrupt();
+        thread.join();
+        System.out.println("线程已经退出!");
+    }
+}
 ```
 
 9. [Java 实例 – 生产者/消费者问题](http://www.runoob.com/html/thread-procon.html)
 
 ```java
+public class _09_ProducerConsumer {
+    public static void main(String[] args) {
+        CubbyHole c = new CubbyHole();
+        Producer p1 = new Producer(c, 1);
+        Consumer c1 = new Consumer(c, 1);
+        p1.start();
+        c1.start();
+    }
+}
 
+class CubbyHole {
+    private int contents;
+    private boolean available = false;
+
+    public synchronized int get() {
+        while (!available) {
+            try {
+                wait();
+            } catch (InterruptedException ignored) {
+            }
+        }
+        available = false;
+        notifyAll();
+        return contents;
+    }
+
+    public synchronized void put(int value) {
+        while (available) {
+            try {
+                wait();
+            } catch (InterruptedException ignored) {
+            }
+        }
+        contents = value;
+        available = true;
+        notifyAll();
+    }
+}
+
+class Consumer extends Thread {
+    private CubbyHole cubbyhole;
+    private int number;
+
+    Consumer(CubbyHole c, int number) {
+        cubbyhole = c;
+        this.number = number;
+    }
+
+    public void run() {
+        int value;
+        for (int i = 0; i < 10; i++) {
+            value = cubbyhole.get();
+            System.out.println(
+                    "消费者 #" + this.number + " got: " + value
+            );
+        }
+    }
+}
+
+class Producer extends Thread {
+    private CubbyHole cubbyhole;
+    private int number;
+
+    Producer(CubbyHole c, int number) {
+        cubbyhole = c;
+        this.number = number;
+    }
+
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            cubbyhole.put(i);
+            System.out.println("生产者 #" + this.number + " put: " + i);
+            try {
+                sleep((int) (Math.random() * 100));
+            } catch (InterruptedException ignored) {
+            }
+        }
+    }
+}
 ```
 
 10. [Java 实例 – 获取线程状态](http://www.runoob.com/java/thread-status.html)
 
 ```java
+class MyThread extends Thread {
+    boolean waiting = true;
+    private boolean ready = false;
 
+    MyThread() {
+    }
+
+    public void run() {
+        String thrdName = Thread.currentThread().getName();
+        System.out.println(thrdName + " 启动");
+        while (waiting)
+            System.out.println("等待：" + waiting);
+        System.out.println("等待...");
+        startWait();
+        try {
+            Thread.sleep(1000);
+        } catch (Exception exc) {
+            System.out.println(thrdName + " 中断。");
+        }
+        System.out.println(thrdName + " 结束。");
+    }
+
+    private synchronized void startWait() {
+        try {
+            while (!ready) wait();
+        } catch (InterruptedException exc) {
+            System.out.println("wait() 中断。");
+        }
+    }
+
+    synchronized void notice() {
+        ready = true;
+        notify();
+    }
+}
+
+public class _10_getThreadStatus {
+    public static void main(String args[])
+            throws Exception {
+        MyThread thrd = new MyThread();
+        thrd.setName("MyThread #1");
+        showThreadStatus(thrd);
+        thrd.start();
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        thrd.waiting = false;
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        thrd.notice();
+        Thread.sleep(50);
+        showThreadStatus(thrd);
+        while (thrd.isAlive()) {
+            System.out.println("alive");
+        }
+        showThreadStatus(thrd);
+    }
+
+    private static void showThreadStatus(Thread thrd) {
+        System.out.println(thrd.getName() + " 存活:" + thrd.isAlive() + " 状态:" + thrd.getState());
+    }
+}
 ```
 
 11. [Java 实例 – 获取所有线程](http://www.runoob.com/java/thread-showall.html)
 
 ```java
-
+public class _11_getAllThreads extends Thread {
+    public static void main(String[] args) {
+        _11_getAllThreads t1 = new _11_getAllThreads();
+        t1.setName("thread1");
+        t1.start();
+        ThreadGroup currentGroup =
+                Thread.currentThread().getThreadGroup();
+        int noThreads = currentGroup.activeCount();
+        Thread[] lstThreads = new Thread[noThreads];
+        currentGroup.enumerate(lstThreads);
+        for (int i = 0; i < noThreads; i++)
+            System.out.println("线程号：" + i + " = " + lstThreads[i].getName());
+    }
+}
 ```
 
 12. [Java 实例 – 查看线程优先级](http://www.runoob.com/java/thread-priorityinfo.html)
 
 ```java
+public class _12_checkAllPrioties {
+    private static Runnable makeRunnable() {
+        return () -> {
+            for (int i = 0; i < 5; i++) {
+                Thread t = Thread.currentThread();
+                System.out.println("in run() - priority="
+                        + t.getPriority() + ", name=" + t.getName());
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException ignored) {
+                }
+            }
+        };
+    }
 
+    public static void main(String[] args) {
+        System.out.println("in main() - Thread.currentThread().getPriority()=" + Thread.currentThread().getPriority());
+        System.out.println("in main() - Thread.currentThread().getName()=" + Thread.currentThread().getName());
+        Thread threadA = new Thread(makeRunnable(), "threadA");
+        threadA.start();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ignored) {
+        }
+        System.out.println("in main() - threadA.getPriority()=" + threadA.getPriority());
+    }
+}
 ```
 
 13. [Java 实例 – 中断线程](http://www.runoob.com/java/thread-interrupt.html)
 
 ```java
+public class _13_pauseThread extends Object implements Runnable {
+    public void run() {
+        try {
+            System.out.println("in run() - 将运行 work2() 方法");
+            work2();
+            System.out.println("in run() - 从 work2() 方法回来");
+        } catch (InterruptedException x) {
+            System.out.println("in run() - 中断 work2() 方法");
+            return;
+        }
+        System.out.println("in run() - 休眠后执行");
+        System.out.println("in run() - 正常离开");
+    }
 
+    private void work2() throws InterruptedException {
+        while (true) {
+            if (Thread.currentThread().isInterrupted()) {
+                System.out.println("C isInterrupted()=" + Thread.currentThread().isInterrupted());
+                Thread.sleep(2000);
+                System.out.println("D isInterrupted()=" + Thread.currentThread().isInterrupted());
+            }
+        }
+    }
+
+    public void work() throws InterruptedException {
+        while (true) {
+            for (int i = 0; i < 100000; i++) {
+                int j = i * 2;
+            }
+            System.out.println("A isInterrupted()=" + Thread.currentThread().isInterrupted());
+            if (Thread.interrupted()) {
+                System.out.println("B isInterrupted()=" + Thread.currentThread().isInterrupted());
+                throw new InterruptedException();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Main si = new Main();
+        Thread t = new Thread((Runnable) si);
+        t.start();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ignored) {
+        }
+        System.out.println("in main() - 中断其他线程");
+        t.interrupt();
+        System.out.println("in main() - 离开");
+    }
+}
 ```
 
 ## 37 Java8 New Features
